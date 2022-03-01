@@ -23,6 +23,7 @@
 
 			<acme:menu-suboption code="29617049H: Santos Perez, Pablo" action="https://tetris.com/play-tetris"/>
 			<acme:menu-suboption code="53916052G: Serrano Mena, Antonio Roberto" action="http://listen.hatnote.com/"/>
+			<acme:menu-suboption code="80232022H: Arias Exposito, Jose Ramon" action="https://buscaminas.eu/"/>
 			<acme:menu-suboption code="44068800H: Moreno Perez, Juan Carlos" action="http://www.netflix.com/"/>
 		</acme:menu-option>
 

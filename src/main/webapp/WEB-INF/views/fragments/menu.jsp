@@ -21,6 +21,7 @@
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
 			<acme:menu-suboption code="53916052G: Serrano Mena, Antonio Roberto" action="http://listen.hatnote.com/"/>
+			<acme:menu-suboption code="44068800H: Moreno Pérez, Juan Carlos" action="http://www.netflix.com/"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">

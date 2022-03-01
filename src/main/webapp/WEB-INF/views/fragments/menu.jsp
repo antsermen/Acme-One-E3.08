@@ -21,6 +21,8 @@
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
 			<acme:menu-suboption code="53916052G: Serrano Mena, Antonio Roberto" action="http://listen.hatnote.com/"/>
+			<acme:menu-suboption code="80232022H: Arias Expósito, José Ramón" action="https://buscaminas.eu/"/>
+			
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">

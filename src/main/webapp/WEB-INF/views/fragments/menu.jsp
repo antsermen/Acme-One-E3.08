@@ -25,6 +25,7 @@
 			<acme:menu-suboption code="53916052G: Serrano Mena, Antonio Roberto" action="http://listen.hatnote.com/"/>
 			<acme:menu-suboption code="80232022H: Arias Exposito, Jose Ramon" action="https://buscaminas.eu/"/>
 			<acme:menu-suboption code="44068800H: Moreno Perez, Juan Carlos" action="http://www.netflix.com/"/>
+			<acme:menu-suboption code="75917728H: Sabugueiro Troya, David" action="http://www.twitter.com/"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">

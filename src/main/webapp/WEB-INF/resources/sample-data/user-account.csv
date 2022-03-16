@@ -1,0 +1,9 @@
+key,username,password,enabled,identity
+user-account-inventor1,inventor1,inventor1,true,UserIdentity{name:'Inventor',surname:'One',email:'inventor1@mail.com'}
+user-account-inventor2,inventor2,inventor2,true,UserIdentity{name:'Inventor',surname:'Two',email:'inventor2@mail.com'}
+user-account-patron1,patron1,patron1,true,UserIdentity{name:'Patron',surname:'One',email:'patron1@mail.com'}
+user-account-patron2,patron2,patron2,true,UserIdentity{name:'Patron',surname:'Two',email:'patron2@mail.com'}
+user-account-consumer1,consumer1,consumer1,true,UserIdentity{name:'Consumer',surname:'One',email:'consumer1@mail.com'}
+user-account-consumer2,consumer2,consumer2,true,UserIdentity{name:'Consumer',surname:'Two',email:'consumer2@mail.com'}
+user-account-provider1,provider1,provider1,true,UserIdentity{name:'Provider',surname:'One',email:'provider1@mail.com'}
+user-account-provider2,provider2,provider2,true,UserIdentity{name:'Provider',surname:'Two,email:'provider2@mail.com'}

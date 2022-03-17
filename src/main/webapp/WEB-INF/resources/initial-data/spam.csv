@@ -7,13 +7,11 @@ spam-05,SPANISH,STRONG,sexo
 spam-06,SPANISH,STRONG,hardcore
 spam-07,SPANISH,STRONG,viagra
 spam-08,SPANISH,STRONG,cialis
-spam-09,ENGLISH,STRONG,nigger
-spam-10,SPANISH,STRONG,nigga
-spam-11,ENGLISH,WEAK,sexy
-spam-12,ENGLISH,WEAK,nigeria
-spam-13,ENGLISH,WEAK,you've won
-spam-14,ENGLISH,WEAK,one million
-spam-15,SPANISH,WEAK,sexy
-spam-16,SPANISH,WEAK,nigeria
-spam-17,SPANISH,WEAK,has ganado
-spam-18,SPANISH,WEAK,un millón
+spam-09,ENGLISH,WEAK,sexy
+spam-10,ENGLISH,WEAK,nigeria
+spam-11,ENGLISH,WEAK,you've won
+spam-12,ENGLISH,WEAK,one million
+spam-13,SPANISH,WEAK,sexy
+spam-14,SPANISH,WEAK,nigeria
+spam-15,SPANISH,WEAK,has ganado
+spam-16,SPANISH,WEAK,un millón

@@ -55,7 +55,7 @@ public class Toolkits extends AbstractEntity{
   
 	
 	@Valid
-	@OneToOne(optional=false)
+	@OneToOne(optional=true)
 	protected Tool tool;
   
 	

@@ -52,9 +52,7 @@ public class Tool extends AbstractEntity{
 	// Derived attributes -----------------------------------------------------
 	
 	// Relationships ----------------------------------------------------------
-	
-	 @OneToOne(optional = false, cascade = CascadeType.ALL)
-    	private Toolkits toolkits;
+
 	
 }
 

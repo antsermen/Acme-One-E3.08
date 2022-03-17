@@ -1,8 +1,12 @@
 package acme.entities;
 
+import java.util.Collection;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.validation.constraints.Min;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
@@ -19,14 +23,14 @@ import lombok.Setter;
 @Setter
 public class Toolkits extends AbstractEntity{
   
-  // Serialisation identifier -----------------------------------------------
+	// Serialisation identifier -----------------------------------------------
 	
 	protected static final long serialVersionUID = 1L;
 	
 	// Attributes -------------------------------------------------------------
   
-  @NotBlank
-	@Length(min = 5, max = 101)
+	@NotBlank
+	@Length(min = 5, max = 100)
 	protected String title;
 	
 	@Column(unique = true)
@@ -35,11 +39,11 @@ public class Toolkits extends AbstractEntity{
 	protected String code;
 	
 	@NotBlank
-	@Length(min = 5, max = 256)
+	@Length(min = 5, max = 255)
 	protected String description;
 	
 	@NotBlank
-	@Length(min = 5, max = 256)
+	@Length(min = 5, max = 255)
 	protected String notes;
 	
 	@URL
@@ -49,10 +53,14 @@ public class Toolkits extends AbstractEntity{
 	
 	// Relationships ----------------------------------------------------------
   
-   @OneToOne(optional = false, mappedBy = "toolkits", cascade = CascadeType.ALL)
-    private Tool tool;
+	
+	@Valid
+	@OneToOne(optional=false)
+	protected Tool tool;
   
-   @ManyToOne(optional = true, cascade = CascadeType.ALL)
-    private Component component;
+	
+	@Valid
+	@OneToMany()
+	protected Collection<Component> component;
 	
 }

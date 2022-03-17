@@ -53,8 +53,5 @@ public class Component extends AbstractEntity{
 	
 	// Relationships ----------------------------------------------------------
 	
-	  @OneToMany(optional = true,  mappedBy = "component", cascade = CascadeType.ALL)
-   	 private List<Toolkits> toolkits;
-	
 	
 }

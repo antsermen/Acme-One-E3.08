@@ -48,4 +48,7 @@ public class AdministratorDashboard extends AbstractEntity {
 	Money minimumRetailPriceOfDeniedPatronages;
 	Money maximumRetailPriceOfDeniedPatronages;
 	
+	// Derived attributes -----------------------------------------------------
+	
+	// Relationships ----------------------------------------------------------
 }

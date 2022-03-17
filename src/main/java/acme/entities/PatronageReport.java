@@ -32,7 +32,7 @@ public class PatronageReport extends AbstractEntity{
 
 	@NotBlank
 	@Pattern(regexp = "^[0-9]{4}$")
-	protected String serialNumber;
+	protected Integer serialNumber;
 	
 	@NotNull
 	@Past
@@ -40,11 +40,17 @@ public class PatronageReport extends AbstractEntity{
 	protected Date creationMoment;
 	
 	@NotBlank
-	@Length(max = 255)
+	@Length(min = 5, max = 255)
 	protected String memorandum;
 	
 	@URL
-	protected String info;
+	protected String link;
+	
+	// Derived attributes -----------------------------------------------------
+
+	public String sequenceNumber() {
+		return this.patronage.getCode() + ":" + this.serialNumber;
+	}
 	
 	// Relationships ----------------------------------------------------------
 
@@ -53,9 +59,4 @@ public class PatronageReport extends AbstractEntity{
 	@ManyToOne(optional = false)
 	protected Patronage patronage;
 	
-	// Derived attributes -----------------------------------------------------
-
-	public String sequenceNumber() {
-		return this.patronage.getCode() + ":" + this.serialNumber;
-	}
 }

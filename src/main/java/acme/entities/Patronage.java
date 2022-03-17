@@ -50,7 +50,7 @@ public class Patronage extends AbstractEntity{
 		protected Money budget;
 	
 		@NotNull
-		protected Period period;
+		protected Period period; //Preguntar
 	
 		@URL
 		protected String info;

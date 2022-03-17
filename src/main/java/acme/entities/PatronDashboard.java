@@ -41,7 +41,6 @@ public class PatronDashboard extends AbstractEntity {
 	// Derived attributes -----------------------------------------------------
 
 	
-	
 	// Relationships ----------------------------------------------------------
 
 	

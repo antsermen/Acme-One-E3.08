@@ -52,7 +52,7 @@ public class Toolkits extends AbstractEntity{
    @OneToOne(optional = false, mappedBy = "toolkits", cascade = CascadeType.ALL)
     private Tool tool;
   
-   @OneToMany(optional = true, mappedBy = "toolkits", cascade = CascadeType.ALL)
-    private List<Component> component;
+   @ManyToOne(optional = true, cascade = CascadeType.ALL)
+    private Component component;
 	
 }

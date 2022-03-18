@@ -1,16 +1,14 @@
-package acme.entities;
+package acme.forms;
 
-import javax.persistence.Entity;
+import java.io.Serializable;
 
 import acme.framework.datatypes.Money;
-import acme.framework.entities.AbstractEntity;
 import lombok.Getter;
 import lombok.Setter;
 
-@Entity
 @Getter
 @Setter
-public class AdministratorDashboard extends AbstractEntity {
+public class AdministratorDashboard implements Serializable {
 	
 	// Serialisation identifier -----------------------------------------------
 	

@@ -552,39 +552,43 @@ m1=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>402</x>
-      <y>660</y>
-      <w>246</w>
-      <h>270</h>
+      <x>372</x>
+      <y>618</y>
+      <w>294</w>
+      <h>318</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 AdministratorDashboard
 --
 + totalNumberOfComponents: Integer
-+ averageRetailPriceOfComponents: Money
-+ deviationRetailPriceOfComponents: Money
-+ minimumRetailPriceOfComponents: Money
-+ maximumRetailPriceOfComponents: Money
++ averageRetailPriceOfComponents: Map&lt;Pair&lt;String,String&gt;,Double&gt;	
++ deviationRetailPriceOfComponents: Map&lt;Pair&lt;String,String&gt;,Double&gt;
++ minimumRetailPriceOfComponents: Map&lt;Pair&lt;String,String&gt;,Double&gt;
++ maximumRetailPriceOfComponents: Map&lt;Pair&lt;String,String&gt;,Double&gt;
+
 + totalNumberOfTools: Integer
-+ averageRetailPriceOfTools: Money
-+ deviationRetailPriceOfTools: Money
-+ minimumRetailPriceOfTools: Money
-+ maximumRetailPriceOfTools: Money
++ averageRetailPriceOfTools: Map&lt;String,Double&gt;
++ deviationRetailPriceOfTools: Map&lt;String,Double&gt;
++ minimumRetailPriceOfTools: Map&lt;String,Double&gt;
++ maximumRetailPriceOfTools: Map&lt;String,Double&gt;
+
 + totalNumberOfProposedPatronages: Integer
-+ averageRetailPriceOfProposedPatronages: Money
-+ deviationRetailPriceOfProposedPatronages: Money
-+ minimumRetailPriceOfProposedPatronages: Money
-+ maximumRetailPriceOfProposedPatronages: Money
++ averageRetailPriceOfProposedPatronages: Map&lt;Status,Double&gt;
++ deviationRetailPriceOfProposedPatronages: Map&lt;Status,Double&gt;
++ minimumRetailPriceOfProposedPatronages: Map&lt;Status,Double&gt;
++ maximumRetailPriceOfProposedPatronages: Map&lt;Status,Double&gt;
+
 + totalNumberOfAcceptedPatronages: Integer
-+ averageRetailPriceOfAcceptedPatronages: Money
-+ deviationRetailPriceOfAcceptedPatronages: Money
-+ minimumRetailPriceOfAcceptedPatronages: Money
-+ maximumRetailPriceOfAcceptedPatronages: Money
++ averageRetailPriceOfAcceptedPatronages: Map&lt;Status,Double&gt;
++ deviationRetailPriceOfAcceptedPatronages: Map&lt;Status,Double&gt;
++ minimumRetailPriceOfAcceptedPatronages: Map&lt;Status,Double&gt;
++ maximumRetailPriceOfAcceptedPatronages: Map&lt;Status,Double&gt;
+
 + totalNumberOfDeniedPatronages: Integer
-+ averageRetailPriceOfDeniedPatronages: Money
-+ deviationRetailPriceOfDeniedPatronages: Money
-+ minimumRetailPriceOfDeniedPatronages: Money
-+ maximumRetailPriceOfDeniedPatronages: Money
++ averageRetailPriceOfDeniedPatronages: Map&lt;Status,Double&gt;
++ deviationRetailPriceOfDeniedPatronages: Map&lt;Status,Double&gt;
++ minimumRetailPriceOfDeniedPatronages: Map&lt;Status,Double&gt;
++ maximumRetailPriceOfDeniedPatronages: Map&lt;Status,Double&gt;
 bg=green
 </panel_attributes>
     <additional_attributes/>

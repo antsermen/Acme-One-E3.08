@@ -31,7 +31,7 @@ public class Component extends AbstractEntity{
 	
 	@Column(unique = true)
 	@Pattern(regexp = "^[A-Z]{3}-[0-9]{3}(-[A-Z])?$")
-	@NotNull
+	@NotBlank
 	protected String code;
 	
 	@NotBlank

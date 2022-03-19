@@ -1,6 +1,7 @@
 package acme.forms;
 
 import java.io.Serializable;
+
 import java.util.Map;
 
 import org.springframework.data.util.Pair;
@@ -49,6 +50,7 @@ public class AdministratorDashboard implements Serializable {
 	Map<Status,Double> deviationRetailPriceOfDeniedPatronages;
 	Map<Status,Double> minimumRetailPriceOfDeniedPatronages;
 	Map<Status,Double> maximumRetailPriceOfDeniedPatronages;
+
 	
 	// Derived attributes -----------------------------------------------------
 	

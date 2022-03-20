@@ -56,11 +56,11 @@ AdministratorDashboard
 &lt;&lt;Entity&gt;&gt;
 Announcement
 --
-+ creationMomment: Date (Temporal(TemporalType.TIMESTAMP), Past, NotNull)
-+ title: String (NotBlank, Lenght(min=5,max=100))
-+ body: String (NotBlank, Lenght(min=5,max=255))
++ creationMomment: Date {Temporal(TIMESTAMP), Past, NotNull}
++ title: String {NotBlank, Length(5, 100)}
++ body: String {NotBlank, Length(5,255)
 + critical: boolean
-+ link: String (URL)
++ link: String {URL}
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -95,12 +95,12 @@ Chirp
 &lt;&lt;Entity&gt;&gt;
 Component
 --
-+ name: String (NotBlank, Lenght(min=5,max=100))
-+ code: String (Column(unique = true), Pattern(regexp = "^[A-Z]{3}-[0-9]{3}(-[A-Z])?$"), NotBlank)
-+ technology: String (NotBlank, Lenght(min=5,max=100))
-+ description: String (NotBlank, Lenght(min=5,max=255))
-+ retailPrice: Double (NotNull, Positive)
-+ link: String (URL)
++ name: String {NotBlank, Length(5, 100)}
++ code: String {Column(unique), Pattern(^[A-Z]{3}-[0-9]{3}(-[A-Z])?$), NotBlank}
++ technology: String {NotBlank, Length(5, 100)}
++ description: String {NotBlank, Length(5, 255)}
++ retailPrice: Double {NotNull, Positive}
++ link: String {URL}
 
 </panel_attributes>
     <additional_attributes/>

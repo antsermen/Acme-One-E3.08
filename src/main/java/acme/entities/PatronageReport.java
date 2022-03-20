@@ -10,7 +10,6 @@ import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
-import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
@@ -29,10 +28,6 @@ public class PatronageReport extends AbstractEntity{
 	private static final long serialVersionUID = 1L;
 
 	// Attributes -------------------------------------------------------------
-
-	@NotBlank
-	@Pattern(regexp = "^[0-9]{4}$")
-	protected Integer serialNumber;
 	
 	@NotNull
 	@Past
@@ -48,8 +43,15 @@ public class PatronageReport extends AbstractEntity{
 	
 	// Derived attributes -----------------------------------------------------
 
+	@NotBlank
+	public String serialNumber() {
+		final String id = "0000" + this.id;
+		return id.substring(id.length()-4);
+	}
+	
+	@NotBlank
 	public String sequenceNumber() {
-		return this.patronage.getCode() + ":" + this.serialNumber;
+		return this.patronage.getCode() + ":" + this.serialNumber();
 	}
 	
 	// Relationships ----------------------------------------------------------

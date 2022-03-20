@@ -2,9 +2,14 @@ package acme.forms;
 
 import java.io.Serializable;
 
-import acme.framework.datatypes.Money;
+import java.util.Map;
+
+import org.springframework.data.util.Pair;
+
+import acme.entities.Status;
 import lombok.Getter;
 import lombok.Setter;
+
 
 @Getter
 @Setter
@@ -17,34 +22,35 @@ public class AdministratorDashboard implements Serializable {
 	// Attributes -------------------------------------------------------------	
 	
 	Integer totalNumberOfComponents;
-	Money averageRetailPriceOfComponents;
-	Money deviationRetailPriceOfComponents;
-	Money minimumRetailPriceOfComponents;
-	Money maximumRetailPriceOfComponents;
+	Map<Pair<String,String>,Double> averageRetailPriceOfComponents;
+	Map<Pair<String,String>,Double> deviationRetailPriceOfComponents;
+	Map<Pair<String,String>,Double> minimumRetailPriceOfComponents;
+	Map<Pair<String,String>,Double> maximumRetailPriceOfComponents;
 	
 	Integer totalNumberOfTools;
-	Money averageRetailPriceOfTools;
-	Money deviationRetailPriceOfTools;
-	Money minimumRetailPriceOfTools;
-	Money maximumRetailPriceOfTools;
+	Map<String,Double> averageRetailPriceOfTools;
+	Map<String,Double> deviationRetailPriceOfTools;
+	Map<String,Double> minimumRetailPriceOfTools;
+	Map<String,Double> maximumRetailPriceOfTools;
 	
 	Integer totalNumberOfProposedPatronages;
-	Money averageRetailPriceOfProposedPatronages;
-	Money deviationRetailPriceOfProposedPatronages;
-	Money minimumRetailPriceOfProposedPatronages;
-	Money maximumRetailPriceOfProposedPatronages;
+	Map<Status,Double> averageRetailPriceOfProposedPatronages;
+	Map<Status,Double> deviationRetailPriceOfProposedPatronages;
+	Map<Status,Double> minimumRetailPriceOfProposedPatronages;
+	Map<Status,Double> maximumRetailPriceOfProposedPatronages;
 	
 	Integer totalNumberOfAcceptedPatronages;
-	Money averageRetailPriceOfAcceptedPatronages;
-	Money deviationRetailPriceOfAcceptedPatronages;
-	Money minimumRetailPriceOfAcceptedPatronages;
-	Money maximumRetailPriceOfAcceptedPatronages;
+	Map<Status,Double> averageRetailPriceOfAcceptedPatronages;
+	Map<Status,Double> deviationRetailPriceOfAcceptedPatronages;
+	Map<Status,Double> minimumRetailPriceOfAcceptedPatronages;
+	Map<Status,Double> maximumRetailPriceOfAcceptedPatronages;
 	
 	Integer totalNumberOfDeniedPatronages;
-	Money averageRetailPriceOfDeniedPatronages;
-	Money deviationRetailPriceOfDeniedPatronages;
-	Money minimumRetailPriceOfDeniedPatronages;
-	Money maximumRetailPriceOfDeniedPatronages;
+	Map<Status,Double> averageRetailPriceOfDeniedPatronages;
+	Map<Status,Double> deviationRetailPriceOfDeniedPatronages;
+	Map<Status,Double> minimumRetailPriceOfDeniedPatronages;
+	Map<Status,Double> maximumRetailPriceOfDeniedPatronages;
+
 	
 	// Derived attributes -----------------------------------------------------
 	

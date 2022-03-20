@@ -1,6 +1,9 @@
 package acme.entities;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+import javax.validation.Valid;
+import javax.validation.constraints.Min;
 
 import acme.framework.entities.AbstractEntity;
 import lombok.Getter;
@@ -9,18 +12,27 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Currency extends AbstractEntity{
-
+public class Quantity extends AbstractEntity{
+	
 	// Serialisation identifier -----------------------------------------------
-
-	protected static final long		serialVersionUID	= 1L;
-
+	
+	protected static final long serialVersionUID = 1L;
+		
 	// Attributes -------------------------------------------------------------
-
-	protected String			currencyType="EUR";
-
+	
+	@Min(1)
+	protected Integer componentsNumber;
+	
 	// Derived attributes -----------------------------------------------------
-
+	
 	// Relationships ----------------------------------------------------------
+	
 
+	@Valid
+	@ManyToOne(optional = false)
+	protected Component component;
+	
+	@Valid
+	@ManyToOne(optional = false)
+	protected Toolkit toolkit;
 }

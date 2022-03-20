@@ -1,8 +1,8 @@
 package acme.forms;
 
 import java.io.Serializable;
+import java.util.Map;
 
-import acme.framework.datatypes.Money;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -20,21 +20,21 @@ public class PatronDashboard implements Serializable {
 	Integer totalNumberOfAcceptedPatronages;
 	Integer totalNumberOfDeniedPatronages;
 	
-	Money averageBudgetOfProposedPatronages; //average: Map<Pair<Currency,Status>,Double> - Currency es un enumerado (y hago lo mismo para min, max y demás)  
-	Money averageBudgetOfAcceptedPatronages;
-	Money averageBudgetOfDeniedPatronages;
+	Map<String, Double> averageBudgetOfProposedPatronages;
+	Map<String, Double> averageBudgetOfAcceptedPatronages;
+	Map<String, Double> averageBudgetOfDeniedPatronages;
 	
-	Money deviationBudgetOfProposedPatronages;
-	Money deviationBudgetOfAcceptedPatronages;
-	Money deviationBudgetOfDeniedPatronages;
+	Map<String, Double> deviationBudgetOfProposedPatronages;
+	Map<String, Double> deviationBudgetOfAcceptedPatronages;
+	Map<String, Double> deviationBudgetOfDeniedPatronages;
 	
-	Money minimumBudgetOfProposedPatronages;
-	Money minimumBudgetOfAcceptedPatronages;
-	Money minimumBudgetOfDeniedPatronages;
+	Map<String, Double> minimumBudgetOfProposedPatronages;
+	Map<String, Double> minimumBudgetOfAcceptedPatronages;
+	Map<String, Double> minimumBudgetOfDeniedPatronages;
 	
-	Money maximumBudgetOfProposedPatronages;
-	Money maximumBudgetOfAcceptedPatronages;
-	Money maximumBudgetOfDeniedPatronages;
+	Map<String, Double> maximumBudgetOfProposedPatronages;
+	Map<String, Double> maximumBudgetOfAcceptedPatronages;
+	Map<String, Double> maximumBudgetOfDeniedPatronages;
 	
 	// Derived attributes -----------------------------------------------------
 

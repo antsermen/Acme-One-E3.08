@@ -1,7 +1,6 @@
 package acme.forms;
 
 import java.io.Serializable;
-
 import java.util.Map;
 
 import org.springframework.data.util.Pair;

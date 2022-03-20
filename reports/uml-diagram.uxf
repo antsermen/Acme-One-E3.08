@@ -121,7 +121,7 @@ Patronage
 + code: String {Column(unique), Pattern(^[A-Z]{3}-[0-9]{3}(-[A-Z])?$)}
 + legalStuff: String {NotBlank, Lenght(5, 255)}
 + budget: Money
-+ creationDate: Date {Temporal(TIMESTAMP)}
++ creationDate: Date {Temporal(TIMESTAMP), Past}
 + startDate: Date {Temporal(TIMESTAMP)}
 + deadline: Date {Temporal(TIMESTAMP)}
 + info: String {URL}</panel_attributes>
@@ -139,11 +139,9 @@ Patronage
 &lt;&lt;Entity&gt;&gt;
 PatronageReport
 --
-+ serialNumber: Integer {NotBlank, Pattern(^[0-9]{4}$)}
 + creationMomment: Date {Temporal(TIMESTAMP), Past, NotNull}
 + memorandum: String {NotBlank, Lenght(5, 255)}
-+ link: String {URL}
-+ sequenceNumber: String</panel_attributes>
+- link: String {URL}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>

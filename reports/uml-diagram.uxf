@@ -142,8 +142,8 @@ PatronageReport
 + creationMomment: Date {Temporal(TIMESTAMP), Past, NotNull}
 + memorandum: String {NotBlank, Lenght(5, 255)}
 + link: String {URL}
-+ serialNumber: String {NotBlank}
-+ sequenceNumber: String {NotBlank}</panel_attributes>
++ / serialNumber: String {NotBlank}
++ / sequenceNumber: String {NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -184,7 +184,7 @@ PatronDashboard
     <id>UMLClass</id>
     <coordinates>
       <x>497</x>
-      <y>1001</y>
+      <y>1008</y>
       <w>161</w>
       <h>91</h>
     </coordinates>
@@ -195,7 +195,7 @@ Spam
 + spamType: SpamType {NotNull}
 + language: Language {NotNull}
 + word: String {NotBlank}
-+ threshold: Double 
++ / threshold: Double 
 
 </panel_attributes>
     <additional_attributes/>
@@ -222,8 +222,8 @@ SpamType
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>238</x>
-      <y>441</y>
+      <x>224</x>
+      <y>455</y>
       <w>98</w>
       <h>70</h>
     </coordinates>
@@ -307,8 +307,8 @@ Language
 &lt;&lt;Entity&gt;&gt;
 Provider
 --
-+ company: String (NotBlank)
-+ sector: String (NotBlank)
++ company: String {NotBlank}
++ sector: String {NotBlank}
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -358,8 +358,8 @@ Inventor
 &lt;&lt;Entity&gt;&gt;
 Consumer
 --
-+ company: String (NotBlank)
-+ sector: String (NotBlank)
++ company: String {NotBlank}
++ sector: String {NotBlank}
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -417,12 +417,12 @@ threshold = 0.1 if spamType == STRONG
     <id>Relation</id>
     <coordinates>
       <x>560</x>
-      <y>1085</y>
+      <y>1092</y>
       <w>21</w>
-      <h>84</h>
+      <h>77</h>
     </coordinates>
     <panel_attributes>lt=..</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -489,8 +489,6 @@ m2= 1</panel_attributes>
 Quantity
 --
 + integer: Integer {Min(1)}
-+ component: Component {Valid, ManyToOne(optional = false)}
-
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -766,7 +764,7 @@ UserIdentity
 DefaultUserIdentity
 --
 + name: String {NotBlank}
-+ surname: String {♫NotBlank}
++ surname: String {NotBlank}
 + email: String {NotBlank, Email}
 + / fullName: String {NotBlank}
 bg=yellow
@@ -783,5 +781,23 @@ bg=yellow
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>189</x>
+      <y>1015</y>
+      <w>189</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>bg=green
+&lt;&lt;Entity&gt;&gt;
+CurrencyConfiguration
+--
++ defaultCurrency: String {NotBlank}
++ acceptedCurrencies: String {NotBlank}
+
+</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>

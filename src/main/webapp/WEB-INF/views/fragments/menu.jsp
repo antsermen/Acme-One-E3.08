@@ -30,6 +30,10 @@
 			<acme:menu-suboption code="75917728H: Sabugueiro Troya, David" action="http://www.twitter.com/"/>
       
 		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated">
+			<acme:menu-suboption code="master.menu.authenticated.chirp.list" action="/authenticated/chirp/list"/>
+		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>

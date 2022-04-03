@@ -53,3 +53,8 @@ master.menu.user-account.become-consumer = Become a consumer
 master.menu.authenticated = Authenticated
 master.menu.authenticated.chirp.list = List chirps
 
+# master.menu.any #######################################################
+
+master.menu.any = Any
+master.menu.any.chirp.list = List chirps
+

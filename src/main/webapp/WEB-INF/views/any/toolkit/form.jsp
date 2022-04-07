@@ -22,7 +22,5 @@
 	<acme:input-textbox code="any.toolkit.form.label.notes" path="notes"/>
 	<acme:input-url code="any.toolkit.form.label.url" path="url"/>
 	
-	<acme:button code="any.toolkit.form.button.tool" action="/any/tool/list?tool=${tool}"/>
-	<acme:button code="any.toolkit.form.button.tool" action="/any/component/list?component=${component}"/>
 	
 </acme:form>

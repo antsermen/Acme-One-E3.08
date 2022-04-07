@@ -21,4 +21,7 @@
 	<acme:list-column code="any.toolkit.list.label.description" path="description" width="20%"/>
 	<acme:list-column code="any.toolkit.list.label.notes" path="notes" width="20%"/>
 	<acme:list-column code="any.toolkit.list.label.url" path="url" width="200%"/>
+	
+	<acme:button code="any.toolkit.form.button.tool" action="/any/tool/list?tool=${tool}"/>
+	<acme:button code="any.toolkit.form.button.tool" action="/any/component/list?component=${component}"/>
 </acme:list>

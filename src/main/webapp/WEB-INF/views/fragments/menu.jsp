@@ -30,6 +30,8 @@
 			<acme:menu-suboption code="75917728H: Sabugueiro Troya, David" action="http://www.twitter.com/"/>
 			<acme:menu-suboption code="master.menu.anonymous.chirp.list" action="/any/chirp/list"/>
 			<acme:menu-suboption code="List Toolkit" action="/any/toolkit/list"/>
+			<acme:menu-suboption code="List Tool" action="/any/tool/list"/>
+			<acme:menu-suboption code="List Component" action="/any/component/list"/>
       
 		</acme:menu-option>
 		
@@ -50,6 +52,7 @@
 			<acme:menu-suboption code="master.menu.administrator.shut-down" action="/administrator/shut-down"/>
 			<acme:menu-suboption code="master.menu.administrator.chirp.list" action="/any/chirp/list"/>
 			<acme:menu-suboption code="master.menu.administrator.toolkit.list" action="/any/toolit/list"/>
+			<acme:menu-suboption code="master.menu.administrator.tool.list" action="/any/tool/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">

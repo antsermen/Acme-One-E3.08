@@ -14,6 +14,9 @@ public interface AnyToolRepository extends AbstractRepository{
 	@Query("select a from Tool a")
 	Collection<Tool> findAllTool();
 	
+	@Query("select a from Tool a where a.id= :id")
+	Tool findToolById(int id);
+	
 	
 
 }

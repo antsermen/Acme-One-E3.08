@@ -58,7 +58,7 @@ public class Tool extends AbstractEntity{
 	
 	@NotNull
 	@Valid
-	@ManyToOne(optional = false)
+	@ManyToOne()
 	protected Inventor inventor;
 	
 }

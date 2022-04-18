@@ -800,4 +800,28 @@ CurrencyConfiguration
 </panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>791</x>
+      <y>378</y>
+      <w>126</w>
+      <h>399</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+m1= 1
+m2= 0..*</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;430.0;140.0;430.0;140.0;550.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>882</x>
+      <y>756</y>
+      <w>21</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
 </diagram>

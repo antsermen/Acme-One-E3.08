@@ -12,7 +12,7 @@ public interface AnyUserAccountRepository extends AbstractRepository{
 	@Query("SELECT ua FROM UserAccount ua WHERE ua.enabled = true")
 	Collection<UserAccount> findAllUserEnableds();
 
-	@Query("SELECT ua FROM UserAccount ua WHERE ua.is = :id")
+	@Query("SELECT ua FROM UserAccount ua WHERE ua.id = :id")
 	UserAccount findOneById(Integer id);
 
 }

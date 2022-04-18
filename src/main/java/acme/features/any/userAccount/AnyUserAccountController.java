@@ -13,15 +13,15 @@ import acme.framework.roles.Any;
 public class AnyUserAccountController extends AbstractController<Any, UserAccount>{
 	
 	@Autowired
-	protected AnyUserAccountListService listUserAccountService;
+	protected AnyUserAccountListService listService;
 	@Autowired
-	protected AnyUserAccountShowService showUserAccountService;
+	protected AnyUserAccountShowService showService;
 	
 	
 	@PostConstruct
 	protected void initialise() {
-		super.addCommand("list", this.listUserAccountService);
-		super.addCommand("show", this.showUserAccountService);
+		super.addCommand("list", this.listService);
+		super.addCommand("show", this.showService);
 	}
 
 }

@@ -19,7 +19,7 @@
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.any">
-			<acme:menu-suboption code="master.menu.anonymous.userAccount.list" action="/any/userAccount/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.userAccount.list" action="/any/user-account/list"/>
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">

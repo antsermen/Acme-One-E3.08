@@ -16,7 +16,7 @@
 
 <acme:list>
 	<acme:list-column code="any.userAccount.list.label.username" path="username" width="50%" />
-	<acme:list-column code="any.userAccount.list.label.role" path="role" width="50%" />
+	<acme:list-column code="any.userAccount.list.label.role" path="roles" width="50%" />
 </acme:list>
 
 </html>

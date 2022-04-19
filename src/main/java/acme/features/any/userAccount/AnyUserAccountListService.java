@@ -36,10 +36,14 @@ public class AnyUserAccountListService implements AbstractListService<Any, UserA
 		final Collection<UserAccount> result = new ArrayList<>();
 		final List<UserAccount> aux = new ArrayList<>(this.anyUserAccountRepository.findAllUserEnableds());
 		for(final UserAccount ua : aux) {
+			Boolean isListable = true;
 			for(final UserRole ur : ua.getRoles()) {
-				if(!"administrator".equals(ur.getAuthorityName()) && !ua.isAnonymous()) {
-					result.add(ua);
+				if("administrator".equals(ur.getAuthorityName()) || ua.isAnonymous()) {
+					isListable = false;
 				}
+			}
+			if(isListable) {
+				result.add(ua);
 			}
 		}
 		return result;

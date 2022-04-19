@@ -9,7 +9,7 @@ import acme.framework.repositories.AbstractRepository;
 
 public interface AnyUserAccountRepository extends AbstractRepository{
 	
-	@Query("SELECT ua FROM UserAccount ua WHERE ua.enabled = true")
+	@Query("SELECT DISTINCT ua FROM UserAccount ua WHERE ua.enabled = true")
 	Collection<UserAccount> findAllUserEnableds();
 
 	@Query("SELECT ua FROM UserAccount ua WHERE ua.id = :id")

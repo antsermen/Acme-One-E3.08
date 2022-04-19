@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import acme.entities.Toolkit;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
+import acme.framework.entities.Principal;
 import acme.framework.services.AbstractListService;
 import acme.roles.Inventor;
 
@@ -35,7 +36,8 @@ public class InventorListToolkitsService implements AbstractListService<Inventor
 				Collection<Toolkit> result;
 				int inventorId;
 				
-				inventorId = request.getModel().getInteger("inventorId");
+				final Principal principal = request.getPrincipal();
+				inventorId = principal.getActiveRoleId();
 				result = this.repository.findToolkitsFromInventorId(inventorId);
 				
 				return result;
@@ -47,6 +49,6 @@ public class InventorListToolkitsService implements AbstractListService<Inventor
 				assert entity != null;
 				assert model != null;
 				
-				request.unbind(entity, model, "code", "title", "description", "notes", "link", "retailPrice");
+				request.unbind(entity, model, "title", "description", "link");
 			}
 }

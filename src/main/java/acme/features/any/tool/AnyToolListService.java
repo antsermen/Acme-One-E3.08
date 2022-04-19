@@ -5,38 +5,39 @@ import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.Tool;
+import acme.entities.Item;
+import acme.entities.ItemType;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
 import acme.framework.roles.Any;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AnyToolListService implements AbstractListService<Any, Tool>{
+public class AnyToolListService implements AbstractListService<Any, Item>{
 	
 	@Autowired
 	protected AnyToolRepository repository;
 	
 	@Override
-	public boolean authorise(final Request<Tool> request) {
+	public boolean authorise(final Request<Item> request) {
 		assert request != null;
 
 		return true;
 	}
 	
 	@Override
-	public Collection<Tool> findMany(final Request<Tool> request) {
+	public Collection<Item> findMany(final Request<Item> request) {
 		assert request != null;
 
-		Collection<Tool> result;
+		Collection<Item> result;
 
-		result = this.repository.findAllTool();
+		result = this.repository.findAllItemsFromOneType(ItemType.TOOL);
 
 		return result;
 	}
 	
 	@Override
-	public void unbind(final Request<Tool> request, final Tool entity, final Model model) {
+	public void unbind(final Request<Item> request, final Item entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;

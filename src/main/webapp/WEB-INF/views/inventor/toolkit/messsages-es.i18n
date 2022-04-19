@@ -8,9 +8,12 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-authenticated.patron.form.label.company = Compañía
-authenticated.patron.form.label.statement = Declaración
-authenticated.patron.form.label.info = Información
+inventor.toolkit.form.label.title = Título
+inventor.toolkit.form.label.description = Descripción
+inventor.toolkit.form.label.notes = Notas
+inventor.toolkit.form.label.link = Enlace
+inventor.toolkit.form.label.toolkitPrice = Precio
 
-authenticated.patron.form.button.create = Registrar
-authenticated.patron.form.button.update = Actualizar
+toolkit.title = Título
+toolkit.description = Descripción
+toolkit.link = Enlace

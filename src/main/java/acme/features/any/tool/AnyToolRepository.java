@@ -5,17 +5,18 @@ import java.util.Collection;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import acme.entities.Tool;
+import acme.entities.Item;
+import acme.entities.ItemType;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
 public interface AnyToolRepository extends AbstractRepository{
 	
-	@Query("select a from Tool a")
-	Collection<Tool> findAllTool();
+	@Query("select i from Item i where i.itemType = :type")
+	Collection<Item> findAllItemsFromOneType(ItemType type);
 	
-	@Query("select a from Tool a where a.id= :id")
-	Tool findToolById(int id);
+	@Query("select i from Item i where i.id= :id")
+	Item findToolById(int id);
 	
 	
 

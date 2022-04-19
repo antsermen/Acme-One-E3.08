@@ -34,11 +34,6 @@ public class AuthenticatedInventorController extends AbstractController<Authenti
 	@Autowired
 	protected AuthenticatedInventorUpdateService	updateService;
 	
-	@Autowired
-	protected AuthenticatedInventorListRecentToolkitsService listRecentToolkitsService;
-	
-	@Autowired
-	protected AuthenticatedInventorShowToolkitsService showToolkitsService;
 
 	// Constructors -----------------------------------------------------------
 
@@ -47,8 +42,6 @@ public class AuthenticatedInventorController extends AbstractController<Authenti
 	protected void initialise() {
 		super.addCommand("create", this.createService);
 		super.addCommand("update", this.updateService);
-		super.addCommand("list-recent", "list", this.listRecentToolkitsService);
-		super.addCommand("show", this.showToolkitsService);
 	}
 
 }

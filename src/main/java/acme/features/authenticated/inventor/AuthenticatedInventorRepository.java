@@ -12,12 +12,9 @@
 
 package acme.features.authenticated.inventor;
 
-import java.util.Collection;
-
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import acme.entities.Toolkit;
 import acme.framework.entities.UserAccount;
 import acme.framework.repositories.AbstractRepository;
 import acme.roles.Inventor;
@@ -30,8 +27,5 @@ public interface AuthenticatedInventorRepository extends AbstractRepository {
 
 	@Query("select i from Inventor i where i.userAccount.id = :id")
 	Inventor findOneInventorByUserAccountId(int id);
-	
-	@Query("select t from Toolkit t where t.inventor.id = :id")
-	Collection<Toolkit> findToolkitsFromInventorId(int id);
 
 }

@@ -19,7 +19,7 @@ master.menu.sign-out = Salir
 
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
-master.menu.anonymous.chirp.list = Lista de Chirp
+master.menu.anonymous.chirp.list = Lista de chirps recientes
 
 # master.menu.administrator ###################################################
 
@@ -29,19 +29,19 @@ master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.populate-initial = Poblar BD (inicial)
 master.menu.administrator.populate-sample = Poblar BD (ejemplos)
 master.menu.administrator.shut-down = Parar el sistema
-master.menu.administrator.chirp.list = Lista de Chirp
+master.menu.administrator.chirp.list = Lista de chirps recientes
 
 # master.menu.provider ########################################################
 
 master.menu.provider = Proveedor
 master.menu.provider.favourite-link = Enlace favorito
-master.menu.provider.chirp.list = Lista de Chirp
+master.menu.provider.chirp.list = Lista de chirps recientes
 
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumidor
 master.menu.consumer.favourite-link = Enlace favorito
-master.menu.consumer.chirp.list = Lista de Chirp
+master.menu.consumer.chirp.list = Lista de chirps recientes
 
 # master.menu.user-account ####################################################
 
@@ -55,4 +55,9 @@ master.menu.user-account.become-consumer = Hazte consumidor
 # master.menu.authenticated #######################################################
 
 master.menu.authenticated = Autentificado
-master.menu.authenticated.chirp.list = Lista de Chirp
+master.menu.authenticated.chirp.list = Lista de chirps recientes
+
+# master.menu.patron ##########################################################
+
+master.menu.patron = Patrono
+master.menu.patron.patronage.list = Lista de patrocinios

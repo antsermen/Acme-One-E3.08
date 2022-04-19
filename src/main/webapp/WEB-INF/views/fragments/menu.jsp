@@ -45,6 +45,10 @@
 			<acme:menu-suboption code="master.menu.administrator.shut-down" action="/administrator/shut-down"/>
 			<acme:menu-suboption code="master.menu.administrator.chirp.list" action="/any/chirp/list"/>
 		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.patron" access="hasRole('Patron')">
+			<acme:menu-suboption code="master.menu.patron.patronage.list" action="/patron/patronage/list"/>	
+		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">
 			<acme:menu-suboption code="master.menu.provider.favourite-link" action="http://www.example.com/"/>

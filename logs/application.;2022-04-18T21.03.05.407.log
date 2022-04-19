@@ -1,0 +1,869 @@
+2022-04-18 20:57:39.949 INFO  [acme.Launcher@main] Starting Launcher using Java 1.8.0_281 on PC-Joserra with PID 21948 (C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Frameworks\Acme-Framework-22.3\target\classes started by Joserrita in C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08) 
+2022-04-18 20:57:39.950 DEBUG [acme.Launcher@main] Running with Spring Boot v2.4.2, Spring v5.3.3 
+2022-04-18 20:57:39.951 INFO  [acme.Launcher@main] The following profiles are active: development,default 
+2022-04-18 20:57:42.172 DEBUG [org.apache.jasper.servlet.JasperInitializer@main] Initializing Jasper for context [application] 
+2022-04-18 20:57:45.959 DEBUG [org.apache.jasper.servlet.JspServlet@main] Scratch dir for the JSP engine is: [C:\Users\Joserrita\AppData\Local\Temp\tomcat.8080.5903765381934808212\work\Tomcat\localhost\acme-toolkits-e3.08-1.0] 
+2022-04-18 20:57:45.959 DEBUG [org.apache.jasper.servlet.JspServlet@main] IMPORTANT: Do not modify the generated servlets 
+2022-04-18 20:57:45.969 INFO  [acme.Launcher@main] Started Launcher in 6.551 seconds (JVM running for 7.225) 
+2022-04-18 20:57:45.975 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/Desktop/UNI/TERCERO/SEGUNDO%20CUATRI/MVG/Workspace-22.0/Projects/Acme-Toolkits-E3.08/target/classes/' 
+2022-04-18 20:57:45.975 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/Desktop/UNI/TERCERO/SEGUNDO%20CUATRI/MVG/Workspace-22.0/Projects/Acme-Toolkits-E3.08/target/test-classes/' 
+2022-04-18 20:57:45.975 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.4.2/spring-boot-starter-tomcat-2.4.2.jar' 
+2022-04-18 20:57:45.976 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar' 
+2022-04-18 20:57:45.976 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.41/tomcat-embed-core-9.0.41.jar' 
+2022-04-18 20:57:45.976 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/glassfish/jakarta.el/3.0.3/jakarta.el-3.0.3.jar' 
+2022-04-18 20:57:45.976 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.41/tomcat-embed-websocket-9.0.41.jar' 
+2022-04-18 20:57:45.976 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/apache/tomcat/embed/tomcat-embed-jasper/9.0.41/tomcat-embed-jasper-9.0.41.jar' 
+2022-04-18 20:57:45.976 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.41/tomcat-embed-el-9.0.41.jar' 
+2022-04-18 20:57:45.977 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/eclipse/jdt/ecj/3.18.0/ecj-3.18.0.jar' 
+2022-04-18 20:57:45.977 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/javax/servlet/jstl/1.2/jstl-1.2.jar' 
+2022-04-18 20:57:45.977 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.4.2/spring-boot-starter-test-2.4.2.jar' 
+2022-04-18 20:57:45.977 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/boot/spring-boot-starter/2.4.2/spring-boot-starter-2.4.2.jar' 
+2022-04-18 20:57:45.977 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/boot/spring-boot/2.4.2/spring-boot-2.4.2.jar' 
+2022-04-18 20:57:45.977 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.4.2/spring-boot-autoconfigure-2.4.2.jar' 
+2022-04-18 20:57:45.978 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.4.2/spring-boot-starter-logging-2.4.2.jar' 
+2022-04-18 20:57:45.978 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar' 
+2022-04-18 20:57:45.978 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar' 
+2022-04-18 20:57:45.978 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.13.3/log4j-to-slf4j-2.13.3.jar' 
+2022-04-18 20:57:45.978 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/apache/logging/log4j/log4j-api/2.13.3/log4j-api-2.13.3.jar' 
+2022-04-18 20:57:45.979 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/slf4j/jul-to-slf4j/1.7.30/jul-to-slf4j-1.7.30.jar' 
+2022-04-18 20:57:45.979 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/yaml/snakeyaml/1.27/snakeyaml-1.27.jar' 
+2022-04-18 20:57:45.979 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/boot/spring-boot-test/2.4.2/spring-boot-test-2.4.2.jar' 
+2022-04-18 20:57:45.979 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.4.2/spring-boot-test-autoconfigure-2.4.2.jar' 
+2022-04-18 20:57:45.979 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar' 
+2022-04-18 20:57:45.980 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar' 
+2022-04-18 20:57:45.980 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar' 
+2022-04-18 20:57:45.980 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar' 
+2022-04-18 20:57:45.980 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar' 
+2022-04-18 20:57:45.980 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar' 
+2022-04-18 20:57:45.980 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/assertj/assertj-core/3.18.1/assertj-core-3.18.1.jar' 
+2022-04-18 20:57:45.981 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar' 
+2022-04-18 20:57:45.981 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.0/junit-jupiter-5.7.0.jar' 
+2022-04-18 20:57:45.981 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/mockito/mockito-core/3.6.28/mockito-core-3.6.28.jar' 
+2022-04-18 20:57:45.981 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.19/byte-buddy-agent-1.10.19.jar' 
+2022-04-18 20:57:45.981 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/objenesis/objenesis/3.1/objenesis-3.1.jar' 
+2022-04-18 20:57:45.981 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/mockito/mockito-junit-jupiter/3.6.28/mockito-junit-jupiter-3.6.28.jar' 
+2022-04-18 20:57:45.982 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar' 
+2022-04-18 20:57:45.982 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar' 
+2022-04-18 20:57:45.982 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/spring-core/5.3.3/spring-core-5.3.3.jar' 
+2022-04-18 20:57:45.982 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/spring-jcl/5.3.3/spring-jcl-5.3.3.jar' 
+2022-04-18 20:57:45.983 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/spring-test/5.3.3/spring-test-5.3.3.jar' 
+2022-04-18 20:57:45.983 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/xmlunit/xmlunit-core/2.7.0/xmlunit-core-2.7.0.jar' 
+2022-04-18 20:57:45.983 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/boot/spring-boot-starter-security/2.4.2/spring-boot-starter-security-2.4.2.jar' 
+2022-04-18 20:57:45.983 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/spring-aop/5.3.3/spring-aop-5.3.3.jar' 
+2022-04-18 20:57:45.983 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/security/spring-security-web/5.4.2/spring-security-web-5.4.2.jar' 
+2022-04-18 20:57:45.983 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/security/spring-security-core/5.4.2/spring-security-core-5.4.2.jar' 
+2022-04-18 20:57:45.984 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/spring-beans/5.3.3/spring-beans-5.3.3.jar' 
+2022-04-18 20:57:45.984 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/spring-context/5.3.3/spring-context-5.3.3.jar' 
+2022-04-18 20:57:45.984 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/spring-expression/5.3.3/spring-expression-5.3.3.jar' 
+2022-04-18 20:57:45.984 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/spring-web/5.3.3/spring-web-5.3.3.jar' 
+2022-04-18 20:57:45.985 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/security/spring-security-config/5.4.2/spring-security-config-5.4.2.jar' 
+2022-04-18 20:57:45.985 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/security/spring-security-taglibs/5.4.2/spring-security-taglibs-5.4.2.jar' 
+2022-04-18 20:57:45.985 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/security/spring-security-acl/5.4.2/spring-security-acl-5.4.2.jar' 
+2022-04-18 20:57:45.985 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/spring-jdbc/5.3.3/spring-jdbc-5.3.3.jar' 
+2022-04-18 20:57:45.985 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/spring-tx/5.3.3/spring-tx-5.3.3.jar' 
+2022-04-18 20:57:45.985 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.4.2/spring-boot-starter-web-2.4.2.jar' 
+2022-04-18 20:57:45.986 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.4.2/spring-boot-starter-json-2.4.2.jar' 
+2022-04-18 20:57:45.986 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.4/jackson-databind-2.11.4.jar' 
+2022-04-18 20:57:45.986 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.4/jackson-annotations-2.11.4.jar' 
+2022-04-18 20:57:45.986 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.4/jackson-core-2.11.4.jar' 
+2022-04-18 20:57:45.986 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.11.4/jackson-datatype-jdk8-2.11.4.jar' 
+2022-04-18 20:57:45.986 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.11.4/jackson-datatype-jsr310-2.11.4.jar' 
+2022-04-18 20:57:45.986 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.11.4/jackson-module-parameter-names-2.11.4.jar' 
+2022-04-18 20:57:45.986 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/spring-webmvc/5.3.3/spring-webmvc-5.3.3.jar' 
+2022-04-18 20:57:45.986 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/apache/tiles/tiles-jsp/3.0.8/tiles-jsp-3.0.8.jar' 
+2022-04-18 20:57:45.987 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/apache/tiles/tiles-servlet/3.0.8/tiles-servlet-3.0.8.jar' 
+2022-04-18 20:57:45.987 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/apache/tiles/tiles-core/3.0.8/tiles-core-3.0.8.jar' 
+2022-04-18 20:57:45.987 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/commons-digester/commons-digester/2.0/commons-digester-2.0.jar' 
+2022-04-18 20:57:45.987 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar' 
+2022-04-18 20:57:45.987 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/apache/tiles/tiles-request-servlet/1.0.7/tiles-request-servlet-1.0.7.jar' 
+2022-04-18 20:57:45.987 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/apache/tiles/tiles-template/3.0.8/tiles-template-3.0.8.jar' 
+2022-04-18 20:57:45.987 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/apache/tiles/tiles-api/3.0.8/tiles-api-3.0.8.jar' 
+2022-04-18 20:57:45.987 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/apache/tiles/tiles-autotag-core-runtime/1.2/tiles-autotag-core-runtime-1.2.jar' 
+2022-04-18 20:57:45.987 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar' 
+2022-04-18 20:57:45.987 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/apache/tiles/tiles-request-jsp/1.0.7/tiles-request-jsp-1.0.7.jar' 
+2022-04-18 20:57:45.988 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/apache/tiles/tiles-request-api/1.0.7/tiles-request-api-1.0.7.jar' 
+2022-04-18 20:57:45.988 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.4.2/spring-boot-starter-data-jpa-2.4.2.jar' 
+2022-04-18 20:57:45.988 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.4.2/spring-boot-starter-aop-2.4.2.jar' 
+2022-04-18 20:57:45.988 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/aspectj/aspectjweaver/1.9.6/aspectjweaver-1.9.6.jar' 
+2022-04-18 20:57:45.988 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.4.2/spring-boot-starter-jdbc-2.4.2.jar' 
+2022-04-18 20:57:45.988 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar' 
+2022-04-18 20:57:45.988 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar' 
+2022-04-18 20:57:45.988 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/hibernate/hibernate-core/5.4.27.Final/hibernate-core-5.4.27.Final.jar' 
+2022-04-18 20:57:45.988 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/jboss/logging/jboss-logging/3.4.1.Final/jboss-logging-3.4.1.Final.jar' 
+2022-04-18 20:57:45.988 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/javassist/javassist/3.27.0-GA/javassist-3.27.0-GA.jar' 
+2022-04-18 20:57:45.989 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar' 
+2022-04-18 20:57:45.989 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/jboss/jandex/2.1.3.Final/jandex-2.1.3.Final.jar' 
+2022-04-18 20:57:45.989 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar' 
+2022-04-18 20:57:45.989 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar' 
+2022-04-18 20:57:45.989 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar' 
+2022-04-18 20:57:45.989 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.3/jaxb-runtime-2.3.3.jar' 
+2022-04-18 20:57:45.989 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/glassfish/jaxb/txw2/2.3.3/txw2-2.3.3.jar' 
+2022-04-18 20:57:45.990 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.11/istack-commons-runtime-3.0.11.jar' 
+2022-04-18 20:57:45.990 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar' 
+2022-04-18 20:57:45.990 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/data/spring-data-jpa/2.4.3/spring-data-jpa-2.4.3.jar' 
+2022-04-18 20:57:45.990 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/data/spring-data-commons/2.4.3/spring-data-commons-2.4.3.jar' 
+2022-04-18 20:57:45.990 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/spring-orm/5.3.3/spring-orm-5.3.3.jar' 
+2022-04-18 20:57:45.990 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/spring-aspects/5.3.3/spring-aspects-5.3.3.jar' 
+2022-04-18 20:57:45.990 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.4.2/spring-boot-starter-validation-2.4.2.jar' 
+2022-04-18 20:57:45.991 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/hibernate/validator/hibernate-validator/6.1.7.Final/hibernate-validator-6.1.7.Final.jar' 
+2022-04-18 20:57:45.991 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar' 
+2022-04-18 20:57:45.991 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/mysql/mysql-connector-java/8.0.22/mysql-connector-java-8.0.22.jar' 
+2022-04-18 20:57:45.991 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/com/zaxxer/HikariCP/3.4.5/HikariCP-3.4.5.jar' 
+2022-04-18 20:57:45.991 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar' 
+2022-04-18 20:57:45.991 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar' 
+2022-04-18 20:57:45.991 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar' 
+2022-04-18 20:57:45.991 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar' 
+2022-04-18 20:57:45.991 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar' 
+2022-04-18 20:57:45.992 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar' 
+2022-04-18 20:57:45.992 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.0/junit-jupiter-params-5.7.0.jar' 
+2022-04-18 20:57:45.992 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/junit/platform/junit-platform-launcher/1.7.0/junit-platform-launcher-1.7.0.jar' 
+2022-04-18 20:57:45.992 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar' 
+2022-04-18 20:57:45.992 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar' 
+2022-04-18 20:57:45.992 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar' 
+2022-04-18 20:57:45.992 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar' 
+2022-04-18 20:57:45.993 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar' 
+2022-04-18 20:57:45.993 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar' 
+2022-04-18 20:57:45.993 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar' 
+2022-04-18 20:57:45.993 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar' 
+2022-04-18 20:57:45.993 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar' 
+2022-04-18 20:57:45.993 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar' 
+2022-04-18 20:57:45.994 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/net/bytebuddy/byte-buddy/1.10.19/byte-buddy-1.10.19.jar' 
+2022-04-18 20:57:45.994 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar' 
+2022-04-18 20:57:45.994 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar' 
+2022-04-18 20:57:45.994 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar' 
+2022-04-18 20:57:45.994 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar' 
+2022-04-18 20:57:45.994 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar' 
+2022-04-18 20:57:45.994 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar' 
+2022-04-18 20:57:45.994 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar' 
+2022-04-18 20:57:45.994 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/com/squareup/okhttp3/okhttp/3.14.9/okhttp-3.14.9.jar' 
+2022-04-18 20:57:45.995 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar' 
+2022-04-18 20:57:45.995 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar' 
+2022-04-18 20:57:45.995 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/apache/commons/commons-text/1.8/commons-text-1.8.jar' 
+2022-04-18 20:57:45.995 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar' 
+2022-04-18 20:57:45.995 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/commons-cli/commons-cli/1.4/commons-cli-1.4.jar' 
+2022-04-18 20:57:45.995 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/projectlombok/lombok/1.18.16/lombok-1.18.16.jar' 
+2022-04-18 20:57:45.995 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/com/opencsv/opencsv/5.4/opencsv-5.4.jar' 
+2022-04-18 20:57:45.995 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar' 
+2022-04-18 20:57:45.995 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar' 
+2022-04-18 20:57:45.995 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar' 
+2022-04-18 20:57:45.995 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar' 
+2022-04-18 20:57:45.995 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/Desktop/UNI/TERCERO/SEGUNDO%20CUATRI/MVG/Workspace-22.0/Frameworks/Acme-Framework-22.3/target/classes/' 
+2022-04-18 20:57:45.996 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/Desktop/UNI/TERCERO/SEGUNDO%20CUATRI/MVG/Workspace-22.0/Frameworks/Acme-Framework-22.3/target/test-classes/' 
+2022-04-18 20:57:45.996 DEBUG [acme.Launcher@main] Found classpath entry '/C:/Users/Joserrita/Desktop/UNI/TERCERO/SEGUNDO%20CUATRI/MVG/Workspace-22.0/Tools/IDEs/eclipse-jee-2021-12-R/configuration/org.eclipse.osgi/418/0/.cp/lib/javaagent-shaded.jar' 
+2022-04-18 20:57:46.077 DEBUG [acme.Launcher@main] Found entity class 'acme.entities.Announcement 
+2022-04-18 20:57:46.078 DEBUG [acme.Launcher@main] Found entity class 'acme.entities.Chirp 
+2022-04-18 20:57:46.078 DEBUG [acme.Launcher@main] Found entity class 'acme.entities.Component 
+2022-04-18 20:57:46.078 DEBUG [acme.Launcher@main] Found entity class 'acme.entities.CurrencyConfiguration 
+2022-04-18 20:57:46.078 DEBUG [acme.Launcher@main] Found entity class 'acme.entities.Patronage 
+2022-04-18 20:57:46.078 DEBUG [acme.Launcher@main] Found entity class 'acme.entities.PatronageReport 
+2022-04-18 20:57:46.078 DEBUG [acme.Launcher@main] Found entity class 'acme.entities.Quantity 
+2022-04-18 20:57:46.078 DEBUG [acme.Launcher@main] Found entity class 'acme.entities.Spam 
+2022-04-18 20:57:46.078 DEBUG [acme.Launcher@main] Found entity class 'acme.entities.Tool 
+2022-04-18 20:57:46.078 DEBUG [acme.Launcher@main] Found entity class 'acme.entities.Toolkit 
+2022-04-18 20:57:46.078 DEBUG [acme.Launcher@main] Found entity class 'acme.roles.Consumer 
+2022-04-18 20:57:46.079 DEBUG [acme.Launcher@main] Found entity class 'acme.roles.Inventor 
+2022-04-18 20:57:46.079 DEBUG [acme.Launcher@main] Found entity class 'acme.roles.Patron 
+2022-04-18 20:57:46.079 DEBUG [acme.Launcher@main] Found entity class 'acme.roles.Provider 
+2022-04-18 20:57:46.079 DEBUG [acme.Launcher@main] Found entity class 'acme.framework.entities.UserAccount 
+2022-04-18 20:57:46.079 DEBUG [acme.Launcher@main] Found entity class 'acme.framework.roles.Administrator 
+2022-04-18 20:57:46.079 DEBUG [acme.Launcher@main] Found entity class 'acme.framework.roles.Anonymous 
+2022-04-18 20:57:46.079 DEBUG [acme.Launcher@main] Found entity class 'acme.framework.roles.Any 
+2022-04-18 20:57:46.079 DEBUG [acme.Launcher@main] Found entity class 'acme.framework.roles.Authenticated 
+2022-04-18 20:57:46.082 INFO  [acme.Launcher@main] Running application (Standalone) 
+2022-04-18 20:57:46.116 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-1] View name 'master/panic', model {} 
+2022-04-18 20:57:46.128 DEBUG [org.apache.tiles.definition.dao.BaseLocaleUrlDefinitionDAO@http-nio-8080-exec-1] File Resource file:/C:/Users/Joserrita/Desktop/UNI/TERCERO/SEGUNDO%20CUATRI/MVG/Workspace-22.0/Projects/Acme-Toolkits-E3.08/target/classes/WEB-INF/views/master/tiles_en.xml at file:/C:/Users/Joserrita/Desktop/UNI/TERCERO/SEGUNDO%20CUATRI/MVG/Workspace-22.0/Projects/Acme-Toolkits-E3.08/target/classes/WEB-INF/views/master/tiles_en.xml not found, continue 
+2022-04-18 20:57:46.131 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 20:57:46.131 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 20:57:46.132 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] PathInfo: null 
+2022-04-18 20:57:46.133 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 20:57:46.133 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 20:57:46.134 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] QueryString: null 
+2022-04-18 20:57:48.643 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-2] View name 'master/panic', model {} 
+2022-04-18 20:57:48.644 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 20:57:48.644 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 20:57:48.645 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] PathInfo: null 
+2022-04-18 20:57:48.646 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 20:57:48.646 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 20:57:48.646 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] QueryString: null 
+2022-04-18 20:57:48.890 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-1] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\administrator\user-account\messages-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.891 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-1] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\any\chirp\messsages-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.891 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-1] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\any\userAccount\messsages-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.892 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-1] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\authenticated\announcement\messsages-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.893 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-1] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\authenticated\consumer\messsages-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.893 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-1] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\authenticated\inventor\messsages-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.894 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-1] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\authenticated\patron\messsages-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.895 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-1] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\authenticated\provider\messsages-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.896 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-1] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\fragments\banner-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.896 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-1] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\fragments\company-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.897 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-1] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\fragments\footer-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.897 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-1] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\fragments\license-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.898 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-1] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\fragments\menu-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.898 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-1] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\fragments\messsages-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.899 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-1] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\fragments\title-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.899 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-1] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\fragments\welcome-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.900 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-1] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\defaults-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.900 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-1] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\master-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.901 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-1] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\throwables-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.902 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-1] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\validation-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.908 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-2] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\administrator\user-account\messages-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.908 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-2] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\any\chirp\messsages-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.909 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-2] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\any\userAccount\messsages-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.909 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-2] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\authenticated\announcement\messsages-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.910 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-2] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\authenticated\consumer\messsages-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.911 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-2] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\authenticated\inventor\messsages-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.911 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-2] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\authenticated\patron\messsages-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.912 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-2] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\authenticated\provider\messsages-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.912 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-2] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\fragments\banner-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.913 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-2] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\fragments\company-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.913 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-2] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\fragments\footer-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.914 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-2] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\fragments\license-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.914 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-2] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\fragments\menu-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.915 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-2] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\fragments\messsages-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.916 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-2] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\fragments\title-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.916 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-2] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\fragments\welcome-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.917 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-2] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\defaults-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.918 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-2] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\master-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.918 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-2] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\throwables-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:48.919 DEBUG [acme.framework.configuration.ExtendedMessageSource@http-nio-8080-exec-2] Loading properties [C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\validation-en.i18n] with encoding 'utf-8' 
+2022-04-18 20:57:49.055 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] JspEngine --> /WEB-INF/views/master/panic.jsp 
+2022-04-18 20:57:49.055 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] JspEngine --> /WEB-INF/views/master/panic.jsp 
+2022-04-18 20:57:49.055 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 20:57:49.055 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 20:57:49.055 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] PathInfo: null 
+2022-04-18 20:57:49.056 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] PathInfo: null 
+2022-04-18 20:57:49.057 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\panic.jsp 
+2022-04-18 20:57:49.057 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\panic.jsp 
+2022-04-18 20:57:49.057 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 20:57:49.057 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 20:57:49.057 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] QueryString: null 
+2022-04-18 20:57:49.057 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] QueryString: null 
+2022-04-18 20:57:49.204 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-2] HTTP GET /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp HTTP/1.1 
+2022-04-18 20:57:49.204 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-1] HTTP GET /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp HTTP/1.1 
+2022-04-18 20:57:49.204 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-2] Status: 404 
+2022-04-18 20:57:49.204 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-1] Status: 404 
+2022-04-18 20:57:49.451 DEBUG [org.hibernate.SQL@http-nio-8080-exec-2] select useraccoun0_.id as id1_0_, useraccoun0_.version as version2_0_, useraccoun0_.enabled as enabled1_19_, useraccoun0_.identity as identity2_19_, useraccoun0_.password as password3_19_, useraccoun0_.username as username4_19_ from user_account useraccoun0_ where useraccoun0_.username=? 
+2022-04-18 20:57:49.451 DEBUG [org.hibernate.SQL@http-nio-8080-exec-1] select useraccoun0_.id as id1_0_, useraccoun0_.version as version2_0_, useraccoun0_.enabled as enabled1_19_, useraccoun0_.identity as identity2_19_, useraccoun0_.password as password3_19_, useraccoun0_.username as username4_19_ from user_account useraccoun0_ where useraccoun0_.username=? 
+2022-04-18 20:57:49.471 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-2] binding parameter [1] as [VARCHAR] - [anonymous] 
+2022-04-18 20:57:49.471 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-1] binding parameter [1] as [VARCHAR] - [anonymous] 
+2022-04-18 20:57:49.515 DEBUG [org.hibernate.SQL@http-nio-8080-exec-2] select roles0_.user_account_id as user_acc1_20_0_, roles0_.id as id1_20_0_, roles0_.id as id1_0_1_, roles0_.version as version2_0_1_, roles0_.user_account_id as user_acc1_20_1_, roles0_.company as company1_8_1_, roles0_.sector as sector2_8_1_, roles0_.company as company1_10_1_, roles0_.info as info2_10_1_, roles0_.statement as statemen3_10_1_, roles0_.company as company1_11_1_, roles0_.info as info2_11_1_, roles0_.statement as statemen3_11_1_, roles0_.company as company1_14_1_, roles0_.sector as sector2_14_1_, roles0_.clazz_ as clazz_1_ from ( select id, version, user_account_id, company, sector, null as info, null as statement, 12 as clazz_ from consumer union all select id, version, user_account_id, company, null as sector, info, statement, 13 as clazz_ from inventor union all select id, version, user_account_id, company, null as sector, info, statement, 14 as clazz_ from patron union all select id, version, user_account_id, company, sector, null as info, null as statement, 15 as clazz_ from provider union all select id, version, user_account_id, null as company, null as sector, null as info, null as statement, 17 as clazz_ from administrator union all select id, version, user_account_id, null as company, null as sector, null as info, null as statement, 18 as clazz_ from anonymous union all select id, version, user_account_id, null as company, null as sector, null as info, null as statement, 19 as clazz_ from any union all select id, version, user_account_id, null as company, null as sector, null as info, null as statement, 20 as clazz_ from authenticated ) roles0_ where roles0_.user_account_id=? 
+2022-04-18 20:57:49.515 DEBUG [org.hibernate.SQL@http-nio-8080-exec-1] select roles0_.user_account_id as user_acc1_20_0_, roles0_.id as id1_20_0_, roles0_.id as id1_0_1_, roles0_.version as version2_0_1_, roles0_.user_account_id as user_acc1_20_1_, roles0_.company as company1_8_1_, roles0_.sector as sector2_8_1_, roles0_.company as company1_10_1_, roles0_.info as info2_10_1_, roles0_.statement as statemen3_10_1_, roles0_.company as company1_11_1_, roles0_.info as info2_11_1_, roles0_.statement as statemen3_11_1_, roles0_.company as company1_14_1_, roles0_.sector as sector2_14_1_, roles0_.clazz_ as clazz_1_ from ( select id, version, user_account_id, company, sector, null as info, null as statement, 12 as clazz_ from consumer union all select id, version, user_account_id, company, null as sector, info, statement, 13 as clazz_ from inventor union all select id, version, user_account_id, company, null as sector, info, statement, 14 as clazz_ from patron union all select id, version, user_account_id, company, sector, null as info, null as statement, 15 as clazz_ from provider union all select id, version, user_account_id, null as company, null as sector, null as info, null as statement, 17 as clazz_ from administrator union all select id, version, user_account_id, null as company, null as sector, null as info, null as statement, 18 as clazz_ from anonymous union all select id, version, user_account_id, null as company, null as sector, null as info, null as statement, 19 as clazz_ from any union all select id, version, user_account_id, null as company, null as sector, null as info, null as statement, 20 as clazz_ from authenticated ) roles0_ where roles0_.user_account_id=? 
+2022-04-18 20:57:49.516 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-2] binding parameter [1] as [INTEGER] - [1] 
+2022-04-18 20:57:49.516 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-1] binding parameter [1] as [INTEGER] - [1] 
+2022-04-18 20:58:33.227 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-9] View name 'master/sign-in', model {username=, password=, remember=false} 
+2022-04-18 20:58:33.228 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-9] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 20:58:33.228 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-9] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 20:58:33.229 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-9] PathInfo: null 
+2022-04-18 20:58:33.230 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-9] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 20:58:33.230 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-9] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 20:58:33.230 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-9] QueryString: null 
+2022-04-18 20:58:33.345 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-9] JspEngine --> /WEB-INF/views/master/sign-in.jsp 
+2022-04-18 20:58:33.345 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-9] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 20:58:33.345 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-9] PathInfo: null 
+2022-04-18 20:58:33.346 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-9] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\sign-in.jsp 
+2022-04-18 20:58:33.346 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-9] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 20:58:33.346 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-9] QueryString: null 
+2022-04-18 20:58:34.562 DEBUG [org.hibernate.SQL@http-nio-8080-exec-9] select useraccoun0_.id as id1_0_, useraccoun0_.version as version2_0_, useraccoun0_.enabled as enabled1_19_, useraccoun0_.identity as identity2_19_, useraccoun0_.password as password3_19_, useraccoun0_.username as username4_19_ from user_account useraccoun0_ where useraccoun0_.username=? 
+2022-04-18 20:58:34.563 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-9] binding parameter [1] as [VARCHAR] - [anonymous] 
+2022-04-18 20:58:34.564 DEBUG [org.hibernate.SQL@http-nio-8080-exec-9] select roles0_.user_account_id as user_acc1_20_0_, roles0_.id as id1_20_0_, roles0_.id as id1_0_1_, roles0_.version as version2_0_1_, roles0_.user_account_id as user_acc1_20_1_, roles0_.company as company1_8_1_, roles0_.sector as sector2_8_1_, roles0_.company as company1_10_1_, roles0_.info as info2_10_1_, roles0_.statement as statemen3_10_1_, roles0_.company as company1_11_1_, roles0_.info as info2_11_1_, roles0_.statement as statemen3_11_1_, roles0_.company as company1_14_1_, roles0_.sector as sector2_14_1_, roles0_.clazz_ as clazz_1_ from ( select id, version, user_account_id, company, sector, null as info, null as statement, 12 as clazz_ from consumer union all select id, version, user_account_id, company, null as sector, info, statement, 13 as clazz_ from inventor union all select id, version, user_account_id, company, null as sector, info, statement, 14 as clazz_ from patron union all select id, version, user_account_id, company, sector, null as info, null as statement, 15 as clazz_ from provider union all select id, version, user_account_id, null as company, null as sector, null as info, null as statement, 17 as clazz_ from administrator union all select id, version, user_account_id, null as company, null as sector, null as info, null as statement, 18 as clazz_ from anonymous union all select id, version, user_account_id, null as company, null as sector, null as info, null as statement, 19 as clazz_ from any union all select id, version, user_account_id, null as company, null as sector, null as info, null as statement, 20 as clazz_ from authenticated ) roles0_ where roles0_.user_account_id=? 
+2022-04-18 20:58:34.564 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-9] binding parameter [1] as [INTEGER] - [1] 
+2022-04-18 20:58:43.921 DEBUG [org.hibernate.SQL@http-nio-8080-exec-4] select useraccoun0_.id as id1_0_, useraccoun0_.version as version2_0_, useraccoun0_.enabled as enabled1_19_, useraccoun0_.identity as identity2_19_, useraccoun0_.password as password3_19_, useraccoun0_.username as username4_19_ from user_account useraccoun0_ where useraccoun0_.username=? 
+2022-04-18 20:58:43.922 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-4] binding parameter [1] as [VARCHAR] - [administrator] 
+2022-04-18 20:58:43.923 DEBUG [org.hibernate.SQL@http-nio-8080-exec-4] select roles0_.user_account_id as user_acc1_20_0_, roles0_.id as id1_20_0_, roles0_.id as id1_0_1_, roles0_.version as version2_0_1_, roles0_.user_account_id as user_acc1_20_1_, roles0_.company as company1_8_1_, roles0_.sector as sector2_8_1_, roles0_.company as company1_10_1_, roles0_.info as info2_10_1_, roles0_.statement as statemen3_10_1_, roles0_.company as company1_11_1_, roles0_.info as info2_11_1_, roles0_.statement as statemen3_11_1_, roles0_.company as company1_14_1_, roles0_.sector as sector2_14_1_, roles0_.clazz_ as clazz_1_ from ( select id, version, user_account_id, company, sector, null as info, null as statement, 12 as clazz_ from consumer union all select id, version, user_account_id, company, null as sector, info, statement, 13 as clazz_ from inventor union all select id, version, user_account_id, company, null as sector, info, statement, 14 as clazz_ from patron union all select id, version, user_account_id, company, sector, null as info, null as statement, 15 as clazz_ from provider union all select id, version, user_account_id, null as company, null as sector, null as info, null as statement, 17 as clazz_ from administrator union all select id, version, user_account_id, null as company, null as sector, null as info, null as statement, 18 as clazz_ from anonymous union all select id, version, user_account_id, null as company, null as sector, null as info, null as statement, 19 as clazz_ from any union all select id, version, user_account_id, null as company, null as sector, null as info, null as statement, 20 as clazz_ from authenticated ) roles0_ where roles0_.user_account_id=? 
+2022-04-18 20:58:43.924 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-4] binding parameter [1] as [INTEGER] - [2] 
+2022-04-18 20:58:43.943 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-6] View name 'fragments/welcome', model {} 
+2022-04-18 20:58:43.943 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 20:58:43.944 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 20:58:43.944 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] PathInfo: null 
+2022-04-18 20:58:43.946 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 20:58:43.946 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 20:58:43.946 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] QueryString: null 
+2022-04-18 20:58:44.052 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] JspEngine --> /WEB-INF/views/fragments/welcome.jsp 
+2022-04-18 20:58:44.053 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 20:58:44.053 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] PathInfo: null 
+2022-04-18 20:58:44.054 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\fragments\welcome.jsp 
+2022-04-18 20:58:44.054 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 20:58:44.054 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] QueryString: null 
+2022-04-18 20:59:24.458 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-4] DISPATCHING GET /acme-toolkits-e3.08-1.0/authenticated/consumer/create 
+2022-04-18 20:59:24.458 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-4] Command: create 
+2022-04-18 20:59:24.458 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-4] Model:   {} 
+2022-04-18 20:59:24.459 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-4] Locale:  en 
+2022-04-18 20:59:24.475 DEBUG [org.hibernate.SQL@http-nio-8080-exec-4] select useraccoun0_.id as id1_0_, useraccoun0_.version as version2_0_, useraccoun0_.enabled as enabled1_19_, useraccoun0_.identity as identity2_19_, useraccoun0_.password as password3_19_, useraccoun0_.username as username4_19_ from user_account useraccoun0_ where useraccoun0_.id=? 
+2022-04-18 20:59:24.475 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-4] binding parameter [1] as [INTEGER] - [2] 
+2022-04-18 20:59:24.502 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-4] SERVING GET /acme-toolkits-e3.08-1.0/authenticated/consumer/create 
+2022-04-18 20:59:24.502 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-4] Result: ModelAndView [view="authenticated/consumer/form"; model={company=null, id=0, sector=null, version=0, command=create, principal=acme.framework.entities.Principal@49969f16}] 
+2022-04-18 20:59:24.506 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-4] View name 'authenticated/consumer/form', model {company=null, id=0, sector=null, version=0, command=create, principal=acme.framework.entities.Principal@49969f16, org.springframework.validation.BindingResult.principal=org.springframework.validation.BeanPropertyBindingResult: 0 errors} 
+2022-04-18 20:59:24.507 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-4] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 20:59:24.507 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-4] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 20:59:24.507 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-4] PathInfo: null 
+2022-04-18 20:59:24.509 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-4] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 20:59:24.509 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-4] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 20:59:24.509 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-4] QueryString: null 
+2022-04-18 20:59:24.619 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-4] JspEngine --> /WEB-INF/views/authenticated/consumer/form.jsp 
+2022-04-18 20:59:24.619 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-4] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 20:59:24.619 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-4] PathInfo: null 
+2022-04-18 20:59:24.620 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-4] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\authenticated\consumer\form.jsp 
+2022-04-18 20:59:24.620 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-4] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 20:59:24.621 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-4] QueryString: null 
+2022-04-18 20:59:34.997 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-5] DISPATCHING POST /acme-toolkits-e3.08-1.0/authenticated/consumer/create 
+2022-04-18 20:59:34.997 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-5] Command: create 
+2022-04-18 20:59:34.997 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-5] Model:   {id=0, version=0, _csrf=1349519b-a7f7-4ad7-b2e7-a646570976c3, company=PSG-2_G%-52, sector=Telecommunicationsc} 
+2022-04-18 20:59:34.997 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-5] Locale:  en 
+2022-04-18 20:59:34.999 DEBUG [org.hibernate.SQL@http-nio-8080-exec-5] select useraccoun0_.id as id1_0_, useraccoun0_.version as version2_0_, useraccoun0_.enabled as enabled1_19_, useraccoun0_.identity as identity2_19_, useraccoun0_.password as password3_19_, useraccoun0_.username as username4_19_ from user_account useraccoun0_ where useraccoun0_.id=? 
+2022-04-18 20:59:34.999 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-5] binding parameter [1] as [INTEGER] - [2] 
+2022-04-18 20:59:35.075 DEBUG [org.hibernate.SQL@http-nio-8080-exec-5] select next_val as id_val from hibernate_sequence for update 
+2022-04-18 20:59:35.076 DEBUG [org.hibernate.SQL@http-nio-8080-exec-5] update hibernate_sequence set next_val= ? where next_val=? 
+2022-04-18 20:59:35.092 DEBUG [org.hibernate.SQL@http-nio-8080-exec-5] insert into consumer (version, user_account_id, company, sector, id) values (?, ?, ?, ?, ?) 
+2022-04-18 20:59:35.092 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-5] binding parameter [1] as [INTEGER] - [0] 
+2022-04-18 20:59:35.092 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-5] binding parameter [2] as [INTEGER] - [2] 
+2022-04-18 20:59:35.092 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-5] binding parameter [3] as [VARCHAR] - [PSG-2_G%-52] 
+2022-04-18 20:59:35.092 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-5] binding parameter [4] as [VARCHAR] - [Telecommunicationsc] 
+2022-04-18 20:59:35.092 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-5] binding parameter [5] as [INTEGER] - [23] 
+2022-04-18 20:59:35.095 DEBUG [org.hibernate.SQL@http-nio-8080-exec-5] select useraccoun0_.id as id1_0_, useraccoun0_.version as version2_0_, useraccoun0_.enabled as enabled1_19_, useraccoun0_.identity as identity2_19_, useraccoun0_.password as password3_19_, useraccoun0_.username as username4_19_ from user_account useraccoun0_ where useraccoun0_.username=? 
+2022-04-18 20:59:35.095 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-5] binding parameter [1] as [VARCHAR] - [administrator] 
+2022-04-18 20:59:35.096 DEBUG [org.hibernate.SQL@http-nio-8080-exec-5] select roles0_.user_account_id as user_acc1_20_0_, roles0_.id as id1_20_0_, roles0_.id as id1_0_1_, roles0_.version as version2_0_1_, roles0_.user_account_id as user_acc1_20_1_, roles0_.company as company1_8_1_, roles0_.sector as sector2_8_1_, roles0_.company as company1_10_1_, roles0_.info as info2_10_1_, roles0_.statement as statemen3_10_1_, roles0_.company as company1_11_1_, roles0_.info as info2_11_1_, roles0_.statement as statemen3_11_1_, roles0_.company as company1_14_1_, roles0_.sector as sector2_14_1_, roles0_.clazz_ as clazz_1_ from ( select id, version, user_account_id, company, sector, null as info, null as statement, 12 as clazz_ from consumer union all select id, version, user_account_id, company, null as sector, info, statement, 13 as clazz_ from inventor union all select id, version, user_account_id, company, null as sector, info, statement, 14 as clazz_ from patron union all select id, version, user_account_id, company, sector, null as info, null as statement, 15 as clazz_ from provider union all select id, version, user_account_id, null as company, null as sector, null as info, null as statement, 17 as clazz_ from administrator union all select id, version, user_account_id, null as company, null as sector, null as info, null as statement, 18 as clazz_ from anonymous union all select id, version, user_account_id, null as company, null as sector, null as info, null as statement, 19 as clazz_ from any union all select id, version, user_account_id, null as company, null as sector, null as info, null as statement, 20 as clazz_ from authenticated ) roles0_ where roles0_.user_account_id=? 
+2022-04-18 20:59:35.097 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-5] binding parameter [1] as [INTEGER] - [2] 
+2022-04-18 20:59:35.099 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-5] SERVING POST /acme-toolkits-e3.08-1.0/authenticated/consumer/create 
+2022-04-18 20:59:35.099 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-5] Result: ModelAndView [view="redirect:/master/referrer"; model={command=create, principal=acme.framework.entities.Principal@49969f16}] 
+2022-04-18 20:59:35.103 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-2] View name 'master/referrer', model {} 
+2022-04-18 20:59:35.104 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 20:59:35.105 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 20:59:35.105 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] PathInfo: null 
+2022-04-18 20:59:35.106 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 20:59:35.107 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 20:59:35.107 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] QueryString: command=create 
+2022-04-18 20:59:35.224 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] JspEngine --> /WEB-INF/views/master/referrer.jsp 
+2022-04-18 20:59:35.224 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 20:59:35.224 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] PathInfo: null 
+2022-04-18 20:59:35.225 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\referrer.jsp 
+2022-04-18 20:59:35.225 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 20:59:35.226 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] QueryString: command=create 
+2022-04-18 20:59:35.425 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-1] View name 'fragments/welcome', model {} 
+2022-04-18 20:59:35.426 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 20:59:35.427 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 20:59:35.427 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] PathInfo: null 
+2022-04-18 20:59:35.429 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 20:59:35.429 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 20:59:35.429 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] QueryString: null 
+2022-04-18 20:59:35.565 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] JspEngine --> /WEB-INF/views/fragments/welcome.jsp 
+2022-04-18 20:59:35.566 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 20:59:35.566 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] PathInfo: null 
+2022-04-18 20:59:35.567 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\fragments\welcome.jsp 
+2022-04-18 20:59:35.567 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 20:59:35.568 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] QueryString: null 
+2022-04-18 21:00:03.769 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-9] DISPATCHING GET /acme-toolkits-e3.08-1.0/authenticated/consumer/create 
+2022-04-18 21:00:03.769 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-9] Command: create 
+2022-04-18 21:00:03.769 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-9] Model:   {} 
+2022-04-18 21:00:03.769 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-9] Locale:  en 
+2022-04-18 21:00:03.774 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-9] SERVING GET /acme-toolkits-e3.08-1.0/authenticated/consumer/create 
+2022-04-18 21:00:03.774 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-9] Result: ModelAndView [view="master/panic"; model={oops=java.lang.IllegalStateException: Access is not authorised}] 
+2022-04-18 21:00:03.775 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-9] View name 'master/panic', model {oops=java.lang.IllegalStateException: Access is not authorised, org.springframework.validation.BindingResult.oops=org.springframework.validation.BeanPropertyBindingResult: 0 errors} 
+2022-04-18 21:00:03.775 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-9] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:03.776 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-9] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:03.776 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-9] PathInfo: null 
+2022-04-18 21:00:03.777 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-9] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 21:00:03.777 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-9] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:03.777 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-9] QueryString: null 
+2022-04-18 21:00:03.882 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-9] JspEngine --> /WEB-INF/views/master/panic.jsp 
+2022-04-18 21:00:03.882 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-9] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:03.883 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-9] PathInfo: null 
+2022-04-18 21:00:03.883 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-9] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\panic.jsp 
+2022-04-18 21:00:03.883 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-9] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:03.884 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-9] QueryString: null 
+2022-04-18 21:00:03.884 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-9] HTTP GET /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp HTTP/1.1 
+2022-04-18 21:00:03.884 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-9] Status: 500 
+2022-04-18 21:00:03.885 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-9] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised 
+2022-04-18 21:00:12.934 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-7] View name 'fragments/welcome', model {} 
+2022-04-18 21:00:12.935 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:12.935 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:12.935 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] PathInfo: null 
+2022-04-18 21:00:12.937 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 21:00:12.937 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:12.937 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] QueryString: null 
+2022-04-18 21:00:13.050 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] JspEngine --> /WEB-INF/views/fragments/welcome.jsp 
+2022-04-18 21:00:13.050 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:13.051 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] PathInfo: null 
+2022-04-18 21:00:13.052 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\fragments\welcome.jsp 
+2022-04-18 21:00:13.052 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:13.052 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] QueryString: null 
+2022-04-18 21:00:13.854 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-2] DISPATCHING GET /acme-toolkits-e3.08-1.0/authenticated/consumer/create 
+2022-04-18 21:00:13.854 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-2] Command: create 
+2022-04-18 21:00:13.854 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-2] Model:   {} 
+2022-04-18 21:00:13.854 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-2] Locale:  en 
+2022-04-18 21:00:13.855 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-2] SERVING GET /acme-toolkits-e3.08-1.0/authenticated/consumer/create 
+2022-04-18 21:00:13.855 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-2] Result: ModelAndView [view="master/panic"; model={oops=java.lang.IllegalStateException: Access is not authorised}] 
+2022-04-18 21:00:13.856 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-2] View name 'master/panic', model {oops=java.lang.IllegalStateException: Access is not authorised, org.springframework.validation.BindingResult.oops=org.springframework.validation.BeanPropertyBindingResult: 0 errors} 
+2022-04-18 21:00:13.856 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:13.857 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:13.857 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] PathInfo: null 
+2022-04-18 21:00:13.857 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 21:00:13.857 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:13.858 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] QueryString: null 
+2022-04-18 21:00:13.975 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] JspEngine --> /WEB-INF/views/master/panic.jsp 
+2022-04-18 21:00:13.975 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:13.976 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] PathInfo: null 
+2022-04-18 21:00:13.976 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\panic.jsp 
+2022-04-18 21:00:13.976 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:13.977 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] QueryString: null 
+2022-04-18 21:00:13.977 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-2] HTTP GET /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp HTTP/1.1 
+2022-04-18 21:00:13.977 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-2] Status: 500 
+2022-04-18 21:00:13.977 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-2] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised 
+2022-04-18 21:00:15.662 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-3] DISPATCHING GET /acme-toolkits-e3.08-1.0/authenticated/consumer/create 
+2022-04-18 21:00:15.662 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-3] Command: create 
+2022-04-18 21:00:15.662 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-3] Model:   {} 
+2022-04-18 21:00:15.662 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-3] Locale:  en 
+2022-04-18 21:00:15.664 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-3] SERVING GET /acme-toolkits-e3.08-1.0/authenticated/consumer/create 
+2022-04-18 21:00:15.664 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-3] Result: ModelAndView [view="master/panic"; model={oops=java.lang.IllegalStateException: Access is not authorised}] 
+2022-04-18 21:00:15.664 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-3] View name 'master/panic', model {oops=java.lang.IllegalStateException: Access is not authorised, org.springframework.validation.BindingResult.oops=org.springframework.validation.BeanPropertyBindingResult: 0 errors} 
+2022-04-18 21:00:15.664 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:15.665 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:15.665 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] PathInfo: null 
+2022-04-18 21:00:15.665 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 21:00:15.665 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:15.665 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] QueryString: null 
+2022-04-18 21:00:15.767 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] JspEngine --> /WEB-INF/views/master/panic.jsp 
+2022-04-18 21:00:15.767 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:15.767 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] PathInfo: null 
+2022-04-18 21:00:15.767 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\panic.jsp 
+2022-04-18 21:00:15.767 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:15.768 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] QueryString: null 
+2022-04-18 21:00:15.768 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-3] HTTP GET /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp HTTP/1.1 
+2022-04-18 21:00:15.768 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-3] Status: 500 
+2022-04-18 21:00:15.768 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-3] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised 
+2022-04-18 21:00:17.795 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-8] DISPATCHING GET /acme-toolkits-e3.08-1.0/authenticated/consumer/create 
+2022-04-18 21:00:17.795 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-8] Command: create 
+2022-04-18 21:00:17.795 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-8] Model:   {} 
+2022-04-18 21:00:17.795 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-8] Locale:  en 
+2022-04-18 21:00:17.797 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-8] SERVING GET /acme-toolkits-e3.08-1.0/authenticated/consumer/create 
+2022-04-18 21:00:17.797 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-8] Result: ModelAndView [view="master/panic"; model={oops=java.lang.IllegalStateException: Access is not authorised}] 
+2022-04-18 21:00:17.797 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-8] View name 'master/panic', model {oops=java.lang.IllegalStateException: Access is not authorised, org.springframework.validation.BindingResult.oops=org.springframework.validation.BeanPropertyBindingResult: 0 errors} 
+2022-04-18 21:00:17.798 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:17.799 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:17.799 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] PathInfo: null 
+2022-04-18 21:00:17.799 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 21:00:17.799 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:17.799 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] QueryString: null 
+2022-04-18 21:00:17.894 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] JspEngine --> /WEB-INF/views/master/panic.jsp 
+2022-04-18 21:00:17.894 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:17.894 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] PathInfo: null 
+2022-04-18 21:00:17.895 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\panic.jsp 
+2022-04-18 21:00:17.895 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:17.895 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] QueryString: null 
+2022-04-18 21:00:17.895 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-8] HTTP GET /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp HTTP/1.1 
+2022-04-18 21:00:17.895 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-8] Status: 500 
+2022-04-18 21:00:17.896 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-8] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised 
+2022-04-18 21:00:31.893 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-6] DISPATCHING GET /acme-toolkits-e3.08-1.0/authenticated/consumer/show 
+2022-04-18 21:00:31.893 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-6] Command: show 
+2022-04-18 21:00:31.893 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-6] Model:   {} 
+2022-04-18 21:00:31.893 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-6] Locale:  en 
+2022-04-18 21:00:31.894 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-6] SERVING GET /acme-toolkits-e3.08-1.0/authenticated/consumer/show 
+2022-04-18 21:00:31.894 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-6] Result: ModelAndView [view="master/panic"; model={oops=java.lang.IllegalStateException: End-point not available}] 
+2022-04-18 21:00:31.894 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-6] View name 'master/panic', model {oops=java.lang.IllegalStateException: End-point not available, org.springframework.validation.BindingResult.oops=org.springframework.validation.BeanPropertyBindingResult: 0 errors} 
+2022-04-18 21:00:31.895 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:31.895 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:31.895 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] PathInfo: null 
+2022-04-18 21:00:31.896 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 21:00:31.896 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:31.896 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] QueryString: null 
+2022-04-18 21:00:31.996 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] JspEngine --> /WEB-INF/views/master/panic.jsp 
+2022-04-18 21:00:31.996 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:31.996 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] PathInfo: null 
+2022-04-18 21:00:31.997 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\panic.jsp 
+2022-04-18 21:00:31.997 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:31.997 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] QueryString: null 
+2022-04-18 21:00:31.997 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-6] HTTP GET /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp HTTP/1.1 
+2022-04-18 21:00:31.997 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-6] Status: 500 
+2022-04-18 21:00:31.997 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-6] Exception: acme.framework.helpers.Assert.state(Assert.java:45): End-point not available 
+2022-04-18 21:00:36.659 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-5] DISPATCHING GET /acme-toolkits-e3.08-1.0/authenticated/provider/create 
+2022-04-18 21:00:36.659 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-5] Command: create 
+2022-04-18 21:00:36.659 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-5] Model:   {} 
+2022-04-18 21:00:36.659 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-5] Locale:  en 
+2022-04-18 21:00:36.665 DEBUG [org.hibernate.SQL@http-nio-8080-exec-5] select useraccoun0_.id as id1_0_, useraccoun0_.version as version2_0_, useraccoun0_.enabled as enabled1_19_, useraccoun0_.identity as identity2_19_, useraccoun0_.password as password3_19_, useraccoun0_.username as username4_19_ from user_account useraccoun0_ where useraccoun0_.id=? 
+2022-04-18 21:00:36.666 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-5] binding parameter [1] as [INTEGER] - [2] 
+2022-04-18 21:00:36.676 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-5] SERVING GET /acme-toolkits-e3.08-1.0/authenticated/provider/create 
+2022-04-18 21:00:36.676 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-5] Result: ModelAndView [view="authenticated/provider/form"; model={company=null, id=0, sector=null, version=0, command=create, principal=acme.framework.entities.Principal@5f2710d9}] 
+2022-04-18 21:00:36.676 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-5] View name 'authenticated/provider/form', model {company=null, id=0, sector=null, version=0, command=create, principal=acme.framework.entities.Principal@5f2710d9, org.springframework.validation.BindingResult.principal=org.springframework.validation.BeanPropertyBindingResult: 0 errors} 
+2022-04-18 21:00:36.677 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-5] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:36.677 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-5] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:36.677 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-5] PathInfo: null 
+2022-04-18 21:00:36.678 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-5] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 21:00:36.678 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-5] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:36.678 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-5] QueryString: null 
+2022-04-18 21:00:36.774 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-5] JspEngine --> /WEB-INF/views/authenticated/provider/form.jsp 
+2022-04-18 21:00:36.774 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-5] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:36.775 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-5] PathInfo: null 
+2022-04-18 21:00:36.776 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-5] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\authenticated\provider\form.jsp 
+2022-04-18 21:00:36.776 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-5] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:36.776 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-5] QueryString: null 
+2022-04-18 21:00:38.921 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-3] DISPATCHING GET /acme-toolkits-e3.08-1.0/authenticated/user-account/update 
+2022-04-18 21:00:38.921 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-3] Command: update 
+2022-04-18 21:00:38.921 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-3] Model:   {} 
+2022-04-18 21:00:38.921 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-3] Locale:  en 
+2022-04-18 21:00:38.928 DEBUG [org.hibernate.SQL@http-nio-8080-exec-3] select useraccoun0_.id as id1_0_, useraccoun0_.version as version2_0_, useraccoun0_.enabled as enabled1_19_, useraccoun0_.identity as identity2_19_, useraccoun0_.password as password3_19_, useraccoun0_.username as username4_19_ from user_account useraccoun0_ where useraccoun0_.id=? 
+2022-04-18 21:00:38.928 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-3] binding parameter [1] as [INTEGER] - [2] 
+2022-04-18 21:00:38.930 DEBUG [org.hibernate.SQL@http-nio-8080-exec-3] select roles0_.user_account_id as user_acc1_20_0_, roles0_.id as id1_20_0_, roles0_.id as id1_0_1_, roles0_.version as version2_0_1_, roles0_.user_account_id as user_acc1_20_1_, roles0_.company as company1_8_1_, roles0_.sector as sector2_8_1_, roles0_.company as company1_10_1_, roles0_.info as info2_10_1_, roles0_.statement as statemen3_10_1_, roles0_.company as company1_11_1_, roles0_.info as info2_11_1_, roles0_.statement as statemen3_11_1_, roles0_.company as company1_14_1_, roles0_.sector as sector2_14_1_, roles0_.clazz_ as clazz_1_ from ( select id, version, user_account_id, company, sector, null as info, null as statement, 12 as clazz_ from consumer union all select id, version, user_account_id, company, null as sector, info, statement, 13 as clazz_ from inventor union all select id, version, user_account_id, company, null as sector, info, statement, 14 as clazz_ from patron union all select id, version, user_account_id, company, sector, null as info, null as statement, 15 as clazz_ from provider union all select id, version, user_account_id, null as company, null as sector, null as info, null as statement, 17 as clazz_ from administrator union all select id, version, user_account_id, null as company, null as sector, null as info, null as statement, 18 as clazz_ from anonymous union all select id, version, user_account_id, null as company, null as sector, null as info, null as statement, 19 as clazz_ from any union all select id, version, user_account_id, null as company, null as sector, null as info, null as statement, 20 as clazz_ from authenticated ) roles0_ where roles0_.user_account_id=? 
+2022-04-18 21:00:38.931 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-3] binding parameter [1] as [INTEGER] - [2] 
+2022-04-18 21:00:38.952 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-3] SERVING GET /acme-toolkits-e3.08-1.0/authenticated/user-account/update 
+2022-04-18 21:00:38.952 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-3] Result: ModelAndView [view="authenticated/user-account/form"; model={password=[MASKED-PASWORD], identity.name=Administrator, identity.email=administrator@acme.com, id=2, confirmation=[MASKED-PASWORD], identity.surname=Acme, version=0, username=administrator, command=update, principal=acme.framework.entities.Principal@5f2710d9}] 
+2022-04-18 21:00:38.953 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-3] View name 'authenticated/user-account/form', model {password=[MASKED-PASWORD], identity.name=Administrator, identity.email=administrator@acme.com, id=2, confirmation=[MASKED-PASWORD], identity.surname=Acme, version=0, username=administrator, command=update, principal=acme.framework.entities.Principal@5f2710d9, org.springframework.validation.BindingResult.principal=org.springframework.validation.BeanPropertyBindingResult: 0 errors} 
+2022-04-18 21:00:38.954 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:38.954 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:38.954 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] PathInfo: null 
+2022-04-18 21:00:38.955 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 21:00:38.956 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:38.956 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] QueryString: null 
+2022-04-18 21:00:39.072 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] JspEngine --> /WEB-INF/views/authenticated/user-account/form.jsp 
+2022-04-18 21:00:39.072 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:39.072 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] PathInfo: null 
+2022-04-18 21:00:39.075 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\authenticated\user-account\form.jsp 
+2022-04-18 21:00:39.075 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:39.075 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] QueryString: null 
+2022-04-18 21:00:39.078 ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/acme-toolkits-e3.08-1.0].[jsp]@http-nio-8080-exec-3] Servlet.service() for servlet [jsp] threw exception at org.apache.jasper.servlet.JspServlet.handleMissingResource(JspServlet.java:406): JSP file [/WEB-INF/views/authenticated/user-account/form.jsp] not found
+2022-04-18 21:00:39.079 ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/acme-toolkits-e3.08-1.0].[jsp]@http-nio-8080-exec-3] Servlet.service() for servlet [jsp] threw exception at org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:63): JSPException including path '/WEB-INF/views/authenticated/user-account/form.jsp'.\nat org.apache.jasper.servlet.JspServlet.handleMissingResource(JspServlet.java:406): JSP file [/WEB-INF/views/authenticated/user-account/form.jsp] not found
+2022-04-18 21:00:39.082 ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/acme-toolkits-e3.08-1.0].[dispatcherServlet]@http-nio-8080-exec-3] Servlet.service() for servlet [dispatcherServlet] in context with path [/acme-toolkits-e3.08-1.0] threw exception [Request processing failed; nested exception is org.apache.tiles.request.render.CannotRenderException: JSPException including path '/WEB-INF/views/authenticated/user-account/form.jsp'.] with root cause at org.apache.jasper.servlet.JspServlet.handleMissingResource(JspServlet.java:406): JSP file [/WEB-INF/views/authenticated/user-account/form.jsp] not found
+2022-04-18 21:00:39.082 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-3] View name 'master/panic', model {} 
+2022-04-18 21:00:39.083 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:39.083 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] ServletPath: /master/panic 
+2022-04-18 21:00:39.083 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] PathInfo: null 
+2022-04-18 21:00:39.083 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 21:00:39.083 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] RequestURI: /acme-toolkits-e3.08-1.0/master/panic 
+2022-04-18 21:00:39.084 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] QueryString: null 
+2022-04-18 21:00:39.196 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] JspEngine --> /WEB-INF/views/master/panic.jsp 
+2022-04-18 21:00:39.196 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] ServletPath: /master/panic 
+2022-04-18 21:00:39.196 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] PathInfo: null 
+2022-04-18 21:00:39.197 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\panic.jsp 
+2022-04-18 21:00:39.197 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] RequestURI: /acme-toolkits-e3.08-1.0/master/panic 
+2022-04-18 21:00:39.197 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] QueryString: null 
+2022-04-18 21:00:39.197 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-3] HTTP GET /acme-toolkits-e3.08-1.0/master/panic HTTP/1.1 
+2022-04-18 21:00:39.197 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-3] Status: 500 
+2022-04-18 21:00:39.198 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-3] Exception: org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014): Request processing failed; nested exception is org.apache.tiles.request.render.CannotRenderException: JSPException including path '/WEB-INF/views/authenticated/user-account/form.jsp'.\norg.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:399): JSPException including path '/WEB-INF/views/authenticated/user-account/form.jsp'.\norg.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:63): JSPException including path '/WEB-INF/views/authenticated/user-account/form.jsp'.\norg.apache.jasper.servlet.JspServlet.handleMissingResource(JspServlet.java:406): JSP file [/WEB-INF/views/authenticated/user-account/form.jsp] not found 
+2022-04-18 21:00:44.042 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-1] DISPATCHING GET /acme-toolkits-e3.08-1.0/authenticated/consumer/update 
+2022-04-18 21:00:44.042 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-1] Command: update 
+2022-04-18 21:00:44.042 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-1] Model:   {} 
+2022-04-18 21:00:44.042 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-1] Locale:  en 
+2022-04-18 21:00:44.046 DEBUG [org.hibernate.SQL@http-nio-8080-exec-1] select consumer0_.id as id1_0_, consumer0_.version as version2_0_, consumer0_.user_account_id as user_acc1_20_, consumer0_.company as company1_8_, consumer0_.sector as sector2_8_ from consumer consumer0_ where consumer0_.user_account_id=? 
+2022-04-18 21:00:44.047 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-1] binding parameter [1] as [INTEGER] - [2] 
+2022-04-18 21:00:44.047 DEBUG [org.hibernate.SQL@http-nio-8080-exec-1] select useraccoun0_.id as id1_0_0_, useraccoun0_.version as version2_0_0_, useraccoun0_.enabled as enabled1_19_0_, useraccoun0_.identity as identity2_19_0_, useraccoun0_.password as password3_19_0_, useraccoun0_.username as username4_19_0_ from user_account useraccoun0_ where useraccoun0_.id=? 
+2022-04-18 21:00:44.048 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-1] binding parameter [1] as [INTEGER] - [2] 
+2022-04-18 21:00:44.051 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-1] SERVING GET /acme-toolkits-e3.08-1.0/authenticated/consumer/update 
+2022-04-18 21:00:44.051 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-1] Result: ModelAndView [view="authenticated/consumer/form"; model={company=PSG-2_G%-52, id=23, sector=Telecommunicationsc, version=0, command=update, principal=acme.framework.entities.Principal@5f2710d9}] 
+2022-04-18 21:00:44.051 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-1] View name 'authenticated/consumer/form', model {company=PSG-2_G%-52, id=23, sector=Telecommunicationsc, version=0, command=update, principal=acme.framework.entities.Principal@5f2710d9, org.springframework.validation.BindingResult.principal=org.springframework.validation.BeanPropertyBindingResult: 0 errors} 
+2022-04-18 21:00:44.051 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:44.052 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:44.052 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] PathInfo: null 
+2022-04-18 21:00:44.052 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 21:00:44.052 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:44.053 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] QueryString: null 
+2022-04-18 21:00:44.142 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] JspEngine --> /WEB-INF/views/authenticated/consumer/form.jsp 
+2022-04-18 21:00:44.142 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:44.142 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] PathInfo: null 
+2022-04-18 21:00:44.143 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\authenticated\consumer\form.jsp 
+2022-04-18 21:00:44.143 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:44.144 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] QueryString: null 
+2022-04-18 21:00:46.338 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-2] DISPATCHING GET /acme-toolkits-e3.08-1.0/authenticated/provider/create 
+2022-04-18 21:00:46.338 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-2] Command: create 
+2022-04-18 21:00:46.338 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-2] Model:   {} 
+2022-04-18 21:00:46.338 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-2] Locale:  en 
+2022-04-18 21:00:46.339 DEBUG [org.hibernate.SQL@http-nio-8080-exec-2] select useraccoun0_.id as id1_0_, useraccoun0_.version as version2_0_, useraccoun0_.enabled as enabled1_19_, useraccoun0_.identity as identity2_19_, useraccoun0_.password as password3_19_, useraccoun0_.username as username4_19_ from user_account useraccoun0_ where useraccoun0_.id=? 
+2022-04-18 21:00:46.339 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-2] binding parameter [1] as [INTEGER] - [2] 
+2022-04-18 21:00:46.342 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-2] SERVING GET /acme-toolkits-e3.08-1.0/authenticated/provider/create 
+2022-04-18 21:00:46.342 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-2] Result: ModelAndView [view="authenticated/provider/form"; model={company=null, id=0, sector=null, version=0, command=create, principal=acme.framework.entities.Principal@5f2710d9}] 
+2022-04-18 21:00:46.342 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-2] View name 'authenticated/provider/form', model {company=null, id=0, sector=null, version=0, command=create, principal=acme.framework.entities.Principal@5f2710d9, org.springframework.validation.BindingResult.principal=org.springframework.validation.BeanPropertyBindingResult: 0 errors} 
+2022-04-18 21:00:46.343 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:46.343 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:46.343 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] PathInfo: null 
+2022-04-18 21:00:46.343 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 21:00:46.343 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:46.343 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] QueryString: null 
+2022-04-18 21:00:46.444 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] JspEngine --> /WEB-INF/views/authenticated/provider/form.jsp 
+2022-04-18 21:00:46.444 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:46.444 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] PathInfo: null 
+2022-04-18 21:00:46.445 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\authenticated\provider\form.jsp 
+2022-04-18 21:00:46.446 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:46.446 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-2] QueryString: null 
+2022-04-18 21:00:52.272 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-10] DISPATCHING GET /acme-toolkits-e3.08-1.0/authenticated/consumer/create 
+2022-04-18 21:00:52.272 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-10] Command: create 
+2022-04-18 21:00:52.272 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-10] Model:   {} 
+2022-04-18 21:00:52.272 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-10] Locale:  en 
+2022-04-18 21:00:52.273 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-10] SERVING GET /acme-toolkits-e3.08-1.0/authenticated/consumer/create 
+2022-04-18 21:00:52.273 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-10] Result: ModelAndView [view="master/panic"; model={oops=java.lang.IllegalStateException: Access is not authorised}] 
+2022-04-18 21:00:52.273 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-10] View name 'master/panic', model {oops=java.lang.IllegalStateException: Access is not authorised, org.springframework.validation.BindingResult.oops=org.springframework.validation.BeanPropertyBindingResult: 0 errors} 
+2022-04-18 21:00:52.274 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:52.274 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:52.274 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] PathInfo: null 
+2022-04-18 21:00:52.275 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 21:00:52.275 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:52.275 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] QueryString: null 
+2022-04-18 21:00:52.373 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] JspEngine --> /WEB-INF/views/master/panic.jsp 
+2022-04-18 21:00:52.374 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:52.374 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] PathInfo: null 
+2022-04-18 21:00:52.374 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\panic.jsp 
+2022-04-18 21:00:52.375 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:52.375 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] QueryString: null 
+2022-04-18 21:00:52.375 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-10] HTTP GET /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp HTTP/1.1 
+2022-04-18 21:00:52.375 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-10] Status: 500 
+2022-04-18 21:00:52.375 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-10] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised 
+2022-04-18 21:00:55.769 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-1] DISPATCHING GET /acme-toolkits-e3.08-1.0/authenticated/provider/create 
+2022-04-18 21:00:55.769 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-1] Command: create 
+2022-04-18 21:00:55.769 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-1] Model:   {} 
+2022-04-18 21:00:55.769 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-1] Locale:  en 
+2022-04-18 21:00:55.770 DEBUG [org.hibernate.SQL@http-nio-8080-exec-1] select useraccoun0_.id as id1_0_, useraccoun0_.version as version2_0_, useraccoun0_.enabled as enabled1_19_, useraccoun0_.identity as identity2_19_, useraccoun0_.password as password3_19_, useraccoun0_.username as username4_19_ from user_account useraccoun0_ where useraccoun0_.id=? 
+2022-04-18 21:00:55.771 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-1] binding parameter [1] as [INTEGER] - [2] 
+2022-04-18 21:00:55.774 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-1] SERVING GET /acme-toolkits-e3.08-1.0/authenticated/provider/create 
+2022-04-18 21:00:55.775 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-1] Result: ModelAndView [view="authenticated/provider/form"; model={company=null, id=0, sector=null, version=0, command=create, principal=acme.framework.entities.Principal@5f2710d9}] 
+2022-04-18 21:00:55.775 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-1] View name 'authenticated/provider/form', model {company=null, id=0, sector=null, version=0, command=create, principal=acme.framework.entities.Principal@5f2710d9, org.springframework.validation.BindingResult.principal=org.springframework.validation.BeanPropertyBindingResult: 0 errors} 
+2022-04-18 21:00:55.775 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:55.776 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:55.776 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] PathInfo: null 
+2022-04-18 21:00:55.776 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 21:00:55.776 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:55.776 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] QueryString: null 
+2022-04-18 21:00:55.864 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] JspEngine --> /WEB-INF/views/authenticated/provider/form.jsp 
+2022-04-18 21:00:55.864 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:55.864 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] PathInfo: null 
+2022-04-18 21:00:55.865 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\authenticated\provider\form.jsp 
+2022-04-18 21:00:55.865 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:00:55.865 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-1] QueryString: null 
+2022-04-18 21:01:12.667 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-7] DISPATCHING GET /acme-toolkits-e3.08-1.0/authenticated/provider/update 
+2022-04-18 21:01:12.667 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-7] Command: update 
+2022-04-18 21:01:12.667 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-7] Model:   {} 
+2022-04-18 21:01:12.667 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-7] Locale:  en 
+2022-04-18 21:01:12.670 DEBUG [org.hibernate.SQL@http-nio-8080-exec-7] select provider0_.id as id1_0_, provider0_.version as version2_0_, provider0_.user_account_id as user_acc1_20_, provider0_.company as company1_14_, provider0_.sector as sector2_14_ from provider provider0_ where provider0_.user_account_id=? 
+2022-04-18 21:01:12.671 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-7] binding parameter [1] as [INTEGER] - [2] 
+2022-04-18 21:01:12.676 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-7] SERVING GET /acme-toolkits-e3.08-1.0/authenticated/provider/update 
+2022-04-18 21:01:12.676 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-7] Result: ModelAndView [view="master/panic"; model={oops=java.lang.AssertionError}] 
+2022-04-18 21:01:12.676 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-7] View name 'master/panic', model {oops=java.lang.AssertionError, org.springframework.validation.BindingResult.oops=org.springframework.validation.BeanPropertyBindingResult: 0 errors} 
+2022-04-18 21:01:12.677 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 21:01:12.677 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:01:12.677 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] PathInfo: null 
+2022-04-18 21:01:12.678 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 21:01:12.679 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:01:12.679 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] QueryString: null 
+2022-04-18 21:01:12.787 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] JspEngine --> /WEB-INF/views/master/panic.jsp 
+2022-04-18 21:01:12.787 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:01:12.787 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] PathInfo: null 
+2022-04-18 21:01:12.788 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\panic.jsp 
+2022-04-18 21:01:12.788 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:01:12.788 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] QueryString: null 
+2022-04-18 21:01:12.789 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-7] HTTP GET /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp HTTP/1.1 
+2022-04-18 21:01:12.789 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-7] Status: 500 
+2022-04-18 21:01:12.789 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-7] Exception: acme.framework.services.ServiceWrapper.findOne(ServiceWrapper.java:116): java.lang.AssertionError 
+2022-04-18 21:01:17.837 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-10] DISPATCHING GET /acme-toolkits-e3.08-1.0/authenticated/consumer/update 
+2022-04-18 21:01:17.837 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-10] Command: update 
+2022-04-18 21:01:17.837 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-10] Model:   {} 
+2022-04-18 21:01:17.837 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-10] Locale:  en 
+2022-04-18 21:01:17.838 DEBUG [org.hibernate.SQL@http-nio-8080-exec-10] select consumer0_.id as id1_0_, consumer0_.version as version2_0_, consumer0_.user_account_id as user_acc1_20_, consumer0_.company as company1_8_, consumer0_.sector as sector2_8_ from consumer consumer0_ where consumer0_.user_account_id=? 
+2022-04-18 21:01:17.838 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-10] binding parameter [1] as [INTEGER] - [2] 
+2022-04-18 21:01:17.839 DEBUG [org.hibernate.SQL@http-nio-8080-exec-10] select useraccoun0_.id as id1_0_0_, useraccoun0_.version as version2_0_0_, useraccoun0_.enabled as enabled1_19_0_, useraccoun0_.identity as identity2_19_0_, useraccoun0_.password as password3_19_0_, useraccoun0_.username as username4_19_0_ from user_account useraccoun0_ where useraccoun0_.id=? 
+2022-04-18 21:01:17.839 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-10] binding parameter [1] as [INTEGER] - [2] 
+2022-04-18 21:01:17.841 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-10] SERVING GET /acme-toolkits-e3.08-1.0/authenticated/consumer/update 
+2022-04-18 21:01:17.841 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-10] Result: ModelAndView [view="authenticated/consumer/form"; model={company=PSG-2_G%-52, id=23, sector=Telecommunicationsc, version=0, command=update, principal=acme.framework.entities.Principal@5f2710d9}] 
+2022-04-18 21:01:17.841 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-10] View name 'authenticated/consumer/form', model {company=PSG-2_G%-52, id=23, sector=Telecommunicationsc, version=0, command=update, principal=acme.framework.entities.Principal@5f2710d9, org.springframework.validation.BindingResult.principal=org.springframework.validation.BeanPropertyBindingResult: 0 errors} 
+2022-04-18 21:01:17.842 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 21:01:17.842 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:01:17.842 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] PathInfo: null 
+2022-04-18 21:01:17.843 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 21:01:17.843 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:01:17.843 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] QueryString: null 
+2022-04-18 21:01:17.939 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] JspEngine --> /WEB-INF/views/authenticated/consumer/form.jsp 
+2022-04-18 21:01:17.939 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:01:17.940 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] PathInfo: null 
+2022-04-18 21:01:17.941 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\authenticated\consumer\form.jsp 
+2022-04-18 21:01:17.941 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:01:17.942 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] QueryString: null 
+2022-04-18 21:01:23.816 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-3] DISPATCHING GET /acme-toolkits-e3.08-1.0/authenticated/consumer/create 
+2022-04-18 21:01:23.816 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-3] Command: create 
+2022-04-18 21:01:23.816 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-3] Model:   {} 
+2022-04-18 21:01:23.816 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-3] Locale:  en 
+2022-04-18 21:01:23.817 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-3] SERVING GET /acme-toolkits-e3.08-1.0/authenticated/consumer/create 
+2022-04-18 21:01:23.817 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-3] Result: ModelAndView [view="master/panic"; model={oops=java.lang.IllegalStateException: Access is not authorised}] 
+2022-04-18 21:01:23.817 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-3] View name 'master/panic', model {oops=java.lang.IllegalStateException: Access is not authorised, org.springframework.validation.BindingResult.oops=org.springframework.validation.BeanPropertyBindingResult: 0 errors} 
+2022-04-18 21:01:23.818 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 21:01:23.818 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:01:23.819 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] PathInfo: null 
+2022-04-18 21:01:23.819 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 21:01:23.819 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:01:23.819 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] QueryString: null 
+2022-04-18 21:01:23.910 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] JspEngine --> /WEB-INF/views/master/panic.jsp 
+2022-04-18 21:01:23.910 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:01:23.910 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] PathInfo: null 
+2022-04-18 21:01:23.911 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\panic.jsp 
+2022-04-18 21:01:23.911 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:01:23.911 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] QueryString: null 
+2022-04-18 21:01:23.911 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-3] HTTP GET /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp HTTP/1.1 
+2022-04-18 21:01:23.911 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-3] Status: 500 
+2022-04-18 21:01:23.912 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-3] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised 
+2022-04-18 21:01:31.585 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-7] DISPATCHING GET /acme-toolkits-e3.08-1.0/authenticated/consumer/create 
+2022-04-18 21:01:31.585 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-7] Command: create 
+2022-04-18 21:01:31.585 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-7] Model:   {} 
+2022-04-18 21:01:31.585 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-7] Locale:  en 
+2022-04-18 21:01:31.586 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-7] SERVING GET /acme-toolkits-e3.08-1.0/authenticated/consumer/create 
+2022-04-18 21:01:31.586 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-7] Result: ModelAndView [view="master/panic"; model={oops=java.lang.IllegalStateException: Access is not authorised}] 
+2022-04-18 21:01:31.587 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-7] View name 'master/panic', model {oops=java.lang.IllegalStateException: Access is not authorised, org.springframework.validation.BindingResult.oops=org.springframework.validation.BeanPropertyBindingResult: 0 errors} 
+2022-04-18 21:01:31.587 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 21:01:31.587 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:01:31.588 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] PathInfo: null 
+2022-04-18 21:01:31.588 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 21:01:31.588 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:01:31.588 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] QueryString: null 
+2022-04-18 21:01:31.684 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] JspEngine --> /WEB-INF/views/master/panic.jsp 
+2022-04-18 21:01:31.685 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:01:31.685 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] PathInfo: null 
+2022-04-18 21:01:31.685 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\panic.jsp 
+2022-04-18 21:01:31.686 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:01:31.686 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] QueryString: null 
+2022-04-18 21:01:31.686 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-7] HTTP GET /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp HTTP/1.1 
+2022-04-18 21:01:31.686 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-7] Status: 500 
+2022-04-18 21:01:31.686 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-7] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised 
+2022-04-18 21:01:32.703 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-10] DISPATCHING GET /acme-toolkits-e3.08-1.0/any/chirp/list 
+2022-04-18 21:01:32.703 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-10] Command: list 
+2022-04-18 21:01:32.703 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-10] Model:   {} 
+2022-04-18 21:01:32.703 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-10] Locale:  en 
+2022-04-18 21:01:32.709 DEBUG [org.hibernate.SQL@http-nio-8080-exec-10] select chirp0_.id as id1_0_, chirp0_.version as version2_0_, chirp0_.author as author1_6_, chirp0_.body as body2_6_, chirp0_.creation_moment as creation3_6_, chirp0_.email as email4_6_, chirp0_.title as title5_6_ from chirp chirp0_ where chirp0_.creation_moment>=? 
+2022-04-18 21:01:32.709 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-10] binding parameter [1] as [TIMESTAMP] - [Fri Mar 18 21:01:32 CET 2022] 
+2022-04-18 21:01:32.716 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-10] SERVING GET /acme-toolkits-e3.08-1.0/any/chirp/list 
+2022-04-18 21:01:32.716 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-10] Result: ModelAndView [view="any/chirp/list"; model={list$size=0, command=list, principal=acme.framework.entities.Principal@5f2710d9}] 
+2022-04-18 21:01:32.716 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-10] View name 'any/chirp/list', model {list$size=0, command=list, principal=acme.framework.entities.Principal@5f2710d9, org.springframework.validation.BindingResult.principal=org.springframework.validation.BeanPropertyBindingResult: 0 errors} 
+2022-04-18 21:01:32.717 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 21:01:32.717 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:01:32.717 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] PathInfo: null 
+2022-04-18 21:01:32.718 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 21:01:32.718 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:01:32.718 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] QueryString: null 
+2022-04-18 21:01:32.810 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] JspEngine --> /WEB-INF/views/any/chirp/list.jsp 
+2022-04-18 21:01:32.811 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:01:32.811 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] PathInfo: null 
+2022-04-18 21:01:32.812 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\any\chirp\list.jsp 
+2022-04-18 21:01:32.812 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:01:32.812 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] QueryString: null 
+2022-04-18 21:02:14.474 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-3] DISPATCHING GET /acme-toolkits-e3.08-1.0/authenticated/inventor/create 
+2022-04-18 21:02:14.474 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-3] Command: create 
+2022-04-18 21:02:14.474 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-3] Model:   {} 
+2022-04-18 21:02:14.474 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-3] Locale:  en 
+2022-04-18 21:02:14.479 DEBUG [org.hibernate.SQL@http-nio-8080-exec-3] select useraccoun0_.id as id1_0_, useraccoun0_.version as version2_0_, useraccoun0_.enabled as enabled1_19_, useraccoun0_.identity as identity2_19_, useraccoun0_.password as password3_19_, useraccoun0_.username as username4_19_ from user_account useraccoun0_ where useraccoun0_.id=? 
+2022-04-18 21:02:14.480 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-3] binding parameter [1] as [INTEGER] - [2] 
+2022-04-18 21:02:14.489 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-3] SERVING GET /acme-toolkits-e3.08-1.0/authenticated/inventor/create 
+2022-04-18 21:02:14.489 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-3] Result: ModelAndView [view="authenticated/inventor/form"; model={statement=null, company=null, id=0, version=0, info=null, command=create, principal=acme.framework.entities.Principal@5f2710d9}] 
+2022-04-18 21:02:14.490 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-3] View name 'authenticated/inventor/form', model {statement=null, company=null, id=0, version=0, info=null, command=create, principal=acme.framework.entities.Principal@5f2710d9, org.springframework.validation.BindingResult.principal=org.springframework.validation.BeanPropertyBindingResult: 0 errors} 
+2022-04-18 21:02:14.490 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:14.490 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:14.490 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] PathInfo: null 
+2022-04-18 21:02:14.491 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 21:02:14.492 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:14.492 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] QueryString: null 
+2022-04-18 21:02:14.602 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] JspEngine --> /WEB-INF/views/authenticated/inventor/form.jsp 
+2022-04-18 21:02:14.602 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:14.603 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] PathInfo: null 
+2022-04-18 21:02:14.604 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\authenticated\inventor\form.jsp 
+2022-04-18 21:02:14.604 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:14.604 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-3] QueryString: null 
+2022-04-18 21:02:28.343 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-7] View name 'master/panic', model {} 
+2022-04-18 21:02:28.344 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:28.344 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:28.344 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] PathInfo: null 
+2022-04-18 21:02:28.345 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 21:02:28.346 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:28.346 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] QueryString: null 
+2022-04-18 21:02:28.456 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] JspEngine --> /WEB-INF/views/master/panic.jsp 
+2022-04-18 21:02:28.456 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:28.457 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] PathInfo: null 
+2022-04-18 21:02:28.457 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\panic.jsp 
+2022-04-18 21:02:28.457 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:28.457 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] QueryString: null 
+2022-04-18 21:02:28.458 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-7] HTTP GET /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp HTTP/1.1 
+2022-04-18 21:02:28.458 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-7] Status: 404 
+2022-04-18 21:02:33.200 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-10] View name 'master/panic', model {} 
+2022-04-18 21:02:33.201 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:33.201 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:33.201 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] PathInfo: null 
+2022-04-18 21:02:33.201 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 21:02:33.201 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:33.202 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] QueryString: null 
+2022-04-18 21:02:33.297 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] JspEngine --> /WEB-INF/views/master/panic.jsp 
+2022-04-18 21:02:33.297 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:33.297 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] PathInfo: null 
+2022-04-18 21:02:33.298 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\panic.jsp 
+2022-04-18 21:02:33.298 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:33.298 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-10] QueryString: null 
+2022-04-18 21:02:33.298 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-10] HTTP GET /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp HTTP/1.1 
+2022-04-18 21:02:33.298 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-10] Status: 404 
+2022-04-18 21:02:37.497 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-8] View name 'master/panic', model {} 
+2022-04-18 21:02:37.498 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:37.498 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:37.499 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] PathInfo: null 
+2022-04-18 21:02:37.499 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 21:02:37.500 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:37.500 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] QueryString: null 
+2022-04-18 21:02:37.622 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] JspEngine --> /WEB-INF/views/master/panic.jsp 
+2022-04-18 21:02:37.623 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:37.623 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] PathInfo: null 
+2022-04-18 21:02:37.623 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\panic.jsp 
+2022-04-18 21:02:37.624 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:37.624 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] QueryString: null 
+2022-04-18 21:02:37.624 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-8] HTTP GET /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp HTTP/1.1 
+2022-04-18 21:02:37.624 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-8] Status: 404 
+2022-04-18 21:02:50.145 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-6] View name 'master/panic', model {} 
+2022-04-18 21:02:50.146 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:50.146 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:50.146 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] PathInfo: null 
+2022-04-18 21:02:50.147 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 21:02:50.147 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:50.147 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] QueryString: null 
+2022-04-18 21:02:50.249 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] JspEngine --> /WEB-INF/views/master/panic.jsp 
+2022-04-18 21:02:50.249 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:50.249 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] PathInfo: null 
+2022-04-18 21:02:50.250 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\panic.jsp 
+2022-04-18 21:02:50.250 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:50.250 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-6] QueryString: null 
+2022-04-18 21:02:50.250 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-6] HTTP GET /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp HTTP/1.1 
+2022-04-18 21:02:50.251 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-6] Status: 404 
+2022-04-18 21:02:55.563 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-4] View name 'master/panic', model {} 
+2022-04-18 21:02:55.564 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-4] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:55.564 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-4] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:55.564 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-4] PathInfo: null 
+2022-04-18 21:02:55.565 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-4] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 21:02:55.565 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-4] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:55.565 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-4] QueryString: null 
+2022-04-18 21:02:55.662 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-4] JspEngine --> /WEB-INF/views/master/panic.jsp 
+2022-04-18 21:02:55.662 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-4] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:55.662 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-4] PathInfo: null 
+2022-04-18 21:02:55.663 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-4] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\panic.jsp 
+2022-04-18 21:02:55.663 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-4] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:02:55.663 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-4] QueryString: null 
+2022-04-18 21:02:55.663 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-4] HTTP GET /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp HTTP/1.1 
+2022-04-18 21:02:55.663 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-4] Status: 404 
+2022-04-18 21:03:02.819 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-8] DISPATCHING GET /acme-toolkits-e3.08-1.0/any/chirp/list 
+2022-04-18 21:03:02.819 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-8] Command: list 
+2022-04-18 21:03:02.819 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-8] Model:   {} 
+2022-04-18 21:03:02.819 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-8] Locale:  en 
+2022-04-18 21:03:02.820 DEBUG [org.hibernate.SQL@http-nio-8080-exec-8] select chirp0_.id as id1_0_, chirp0_.version as version2_0_, chirp0_.author as author1_6_, chirp0_.body as body2_6_, chirp0_.creation_moment as creation3_6_, chirp0_.email as email4_6_, chirp0_.title as title5_6_ from chirp chirp0_ where chirp0_.creation_moment>=? 
+2022-04-18 21:03:02.820 TRACE [org.hibernate.type.descriptor.sql.BasicBinder@http-nio-8080-exec-8] binding parameter [1] as [TIMESTAMP] - [Fri Mar 18 21:03:02 CET 2022] 
+2022-04-18 21:03:02.821 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-8] SERVING GET /acme-toolkits-e3.08-1.0/any/chirp/list 
+2022-04-18 21:03:02.821 DEBUG [acme.framework.controllers.AbstractController@http-nio-8080-exec-8] Result: ModelAndView [view="any/chirp/list"; model={list$size=0, command=list, principal=acme.framework.entities.Principal@5f2710d9}] 
+2022-04-18 21:03:02.822 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-8] View name 'any/chirp/list', model {list$size=0, command=list, principal=acme.framework.entities.Principal@5f2710d9, org.springframework.validation.BindingResult.principal=org.springframework.validation.BeanPropertyBindingResult: 0 errors} 
+2022-04-18 21:03:02.822 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 21:03:02.822 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:03:02.823 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] PathInfo: null 
+2022-04-18 21:03:02.824 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 21:03:02.824 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:03:02.824 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] QueryString: null 
+2022-04-18 21:03:02.937 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] JspEngine --> /WEB-INF/views/any/chirp/list.jsp 
+2022-04-18 21:03:02.937 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:03:02.937 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] PathInfo: null 
+2022-04-18 21:03:02.939 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\any\chirp\list.jsp 
+2022-04-18 21:03:02.939 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:03:02.939 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-8] QueryString: null 
+2022-04-18 21:03:05.302 DEBUG [acme.framework.components.tiles.DynamicTilesView@http-nio-8080-exec-7] View name 'master/panic', model {} 
+2022-04-18 21:03:05.303 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] JspEngine --> /WEB-INF/views/master/page.jsp 
+2022-04-18 21:03:05.303 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:03:05.303 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] PathInfo: null 
+2022-04-18 21:03:05.303 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\page.jsp 
+2022-04-18 21:03:05.303 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:03:05.303 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] QueryString: null 
+2022-04-18 21:03:05.405 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] JspEngine --> /WEB-INF/views/master/panic.jsp 
+2022-04-18 21:03:05.405 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] ServletPath: /WEB-INF/views/master/page.jsp 
+2022-04-18 21:03:05.406 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] PathInfo: null 
+2022-04-18 21:03:05.406 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] RealPath: C:\Users\Joserrita\Desktop\UNI\TERCERO\SEGUNDO CUATRI\MVG\Workspace-22.0\Projects\Acme-Toolkits-E3.08\target\classes\WEB-INF\views\master\panic.jsp 
+2022-04-18 21:03:05.406 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] RequestURI: /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp 
+2022-04-18 21:03:05.407 DEBUG [org.apache.jasper.servlet.JspServlet@http-nio-8080-exec-7] QueryString: null 
+2022-04-18 21:03:05.407 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-7] HTTP GET /acme-toolkits-e3.08-1.0/WEB-INF/views/master/page.jsp HTTP/1.1 
+2022-04-18 21:03:05.407 ERROR [org.apache.jsp.WEB_002dINF.views.master.panic_jsp@http-nio-8080-exec-7] Status: 404 

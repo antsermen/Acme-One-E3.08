@@ -1,4 +1,4 @@
-package acme.features.any.chirp;
+package acme.features.authenticated.chirp;
 
 
 import javax.annotation.PostConstruct;
@@ -8,15 +8,14 @@ import org.springframework.stereotype.Controller;
 
 import acme.entities.Chirp;
 import acme.framework.controllers.AbstractController;
-import acme.framework.roles.Any;
-
+import acme.framework.roles.Authenticated;
 
 @Controller
-public class AnyChirpController extends AbstractController<Any, Chirp>{
+public class AuthenticatedChirpController extends AbstractController<Authenticated, Chirp>{
 	@Autowired
-	protected AnyChirpListService	listService;
+	protected AuthenticatedChirpListService	listService;
 	
-	// Constructors -------------------------------------------------------------
+	// Constructors -----------------------------------------------------------
 
 
 	@PostConstruct

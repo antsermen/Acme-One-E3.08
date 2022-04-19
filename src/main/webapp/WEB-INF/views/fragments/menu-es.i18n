@@ -15,11 +15,16 @@ master.menu.sign-up = Registrarse
 master.menu.sign-in = Entrar
 master.menu.sign-out = Salir
 
+# master.menu.any #######################################################
+
+master.menu.any = Cualquiera
+
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.anonymous.chirp.list = Lista de Chirp
+master.menu.anonymous.userAccount.list = Lista de Cuentas de Usuario
 
 # master.menu.administrator ###################################################
 

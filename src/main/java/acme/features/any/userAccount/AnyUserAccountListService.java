@@ -38,7 +38,8 @@ public class AnyUserAccountListService implements AbstractListService<Any, UserA
 		for(final UserAccount ua : aux) {
 			Boolean isListable = true;
 			for(final UserRole ur : ua.getRoles()) {
-				if("administrator".equals(ur.getAuthorityName()) || ua.isAnonymous()) {
+//				System.out.println(ur.getAuthorityName());
+				if(ur.getAuthorityName().equals("Administrator") || ua.isAnonymous()) {
 					isListable = false;
 				}
 			}
@@ -55,8 +56,8 @@ public class AnyUserAccountListService implements AbstractListService<Any, UserA
 		assert entity != null;
 		assert model != null;
 		model.setAttribute("roles", entity.getAuthorityString());
-		System.out.println(entity.getAuthorityString());
-		System.out.println(entity.getRoles());
+//		System.out.println(entity.getAuthorityString());
+//		System.out.println(entity.getRoles());
 		request.unbind(entity, model, "username");
 	}
 }

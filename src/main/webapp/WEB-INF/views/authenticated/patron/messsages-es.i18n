@@ -8,9 +8,6 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-authenticated.patron.form.title.create = Hazte trabajador
-authenticated.patron.form.title.update = Actualiza tus datos de trabajador
-
 authenticated.patron.form.label.company = Compañía
 authenticated.patron.form.label.statement = Declaración
 authenticated.patron.form.label.info = Información

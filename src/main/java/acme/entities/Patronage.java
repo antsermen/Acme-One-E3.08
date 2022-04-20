@@ -44,7 +44,9 @@ public class Patronage extends AbstractEntity{
 		@NotBlank
 		@Length(min = 5, max = 255)
 		protected String legalStuff;
-	
+		
+		@Valid
+		@NotNull
 		protected Money budget;
 	
 		@Temporal(TemporalType.TIMESTAMP)

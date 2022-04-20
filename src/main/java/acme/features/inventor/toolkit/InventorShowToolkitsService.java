@@ -44,7 +44,14 @@ public class InventorShowToolkitsService implements AbstractShowService<Inventor
 				assert entity != null;
 				assert model != null;
 					
-				request.unbind(entity, model, "code", "title", "description", "notes", "link", "retailPrice");
+				int id;
+				Double toolkitPrice;
+				
+				id = request.getModel().getInteger("id");
+				toolkitPrice = this.repository.calculateToolkitPrice(id);
+				
+				model.setAttribute("toolkitPrice", toolkitPrice);
+				request.unbind(entity, model, "title", "description", "notes", "link");
 				model.setAttribute("confirmation", false);
 				model.setAttribute("readonly", true);
 			}

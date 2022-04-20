@@ -18,6 +18,7 @@
 
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
+		
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
 
@@ -32,11 +33,14 @@
 			<acme:menu-suboption code="List Toolkit" action="/any/toolkit/list"/>
 			<acme:menu-suboption code="List Tool" action="/any/tool/list"/>
 			<acme:menu-suboption code="List Component" action="/any/component/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.userAccount.list" action="/any/user-account/list"/>
+		
       
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated">
 			<acme:menu-suboption code="master.menu.authenticated.chirp.list" action="/any/chirp/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.userAccount.list" action="/any/user-account/list"/>
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated">
@@ -53,16 +57,25 @@
 			<acme:menu-suboption code="master.menu.administrator.chirp.list" action="/any/chirp/list"/>
 			<acme:menu-suboption code="master.menu.administrator.toolkit.list" action="/any/toolit/list"/>
 			<acme:menu-suboption code="master.menu.administrator.tool.list" action="/any/tool/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.userAccount.list" action="/any/user-account/list"/>
+		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.patron" access="hasRole('Patron')">
+			<acme:menu-suboption code="master.menu.patron.patronage.list" action="/patron/patronage/list"/>
+			<acme:menu-suboption code="master.menu.provider.chirp.list" action="/any/chirp/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.userAccount.list" action="/any/user-account/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">
 			<acme:menu-suboption code="master.menu.provider.favourite-link" action="http://www.example.com/"/>
 			<acme:menu-suboption code="master.menu.provider.chirp.list" action="/any/chirp/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.userAccount.list" action="/any/user-account/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.consumer" access="hasRole('Consumer')">
 			<acme:menu-suboption code="master.menu.consumer.favourite-link" action="http://www.example.com/"/>
 			<acme:menu-suboption code="master.menu.consumer.chirp.list" action="/any/chirp/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.userAccount.list" action="/any/user-account/list"/>
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.consumer" access="hasRole('Consumer')">

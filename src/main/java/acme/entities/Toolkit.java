@@ -49,6 +49,7 @@ public class Toolkit extends AbstractEntity{
 	
 	// Derived attributes -----------------------------------------------------
 	
+
 	public Money retailPrice() {
 		Money result;
 		
@@ -57,6 +58,8 @@ public class Toolkit extends AbstractEntity{
 		return result;
 	}
 	
+
+
 	// Relationships ----------------------------------------------------------
 	
 	@NotNull

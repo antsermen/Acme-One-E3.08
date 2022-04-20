@@ -11,6 +11,7 @@ import javax.validation.constraints.Pattern;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
+import acme.framework.datatypes.Money;
 import acme.framework.entities.AbstractEntity;
 import acme.roles.Inventor;
 import lombok.Getter;
@@ -48,6 +49,17 @@ public class Toolkit extends AbstractEntity{
 	
 	// Derived attributes -----------------------------------------------------
 	
+
+	public Money retailPrice() {
+		Money result;
+		
+		result = null;
+		
+		return result;
+	}
+	
+
+
 	// Relationships ----------------------------------------------------------
 	
 	@NotNull

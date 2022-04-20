@@ -1,2 +1,6 @@
 key,item-type,code,description,link,name,retail-price,technology,key:inventor
-item-01,TOOL,ASD-123,dshjhds,https://www.leroymerlin.es/fp/81968467/maceta-3-8-cm,Martillo,12EUR,hchchc,inventor-01
+item-01,TOOL,ASD-123,dshjhds,https://www.leroymerlin.es/fp/81968467/maceta-3-8-cm,Martillo,EUR 12.00,hchchc,inventor-01
+item-02,TOOL,JAY-715,Sierra circular con cable DEWALT de 1350 w y 5.332 kg de peso,https://www.leroymerlin.es/fp/80145657/sierra-circular-con-cable-dewalt-de-1350-w-y-5-332-kg-de-peso,Sierra Electrica,EUR 163.00,Electrico,inventor-01
+item-03,COMPONENT,NAI-112,40 clavo STANDERS de acero de 55 mm,https://www.leroymerlin.es/fp/15673406/40-clavo-standers-de-acero-de-55-mm,Clavos STANDERS 55mm,EUR 1.89, technology,inventor-01
+item-04,COMPONENT,OAK-013,Madera impresa Inspire Happy Place. Ideal para decorar cualquier estancia de tu casa gracias a su mensaje inspirador. La madera cuenta con certificado FSC que asegura su procedencia de bosques sostenibles. Medidas: 30 x 30 cm (ancho x alto).,https://www.leroymerlin.es/fp/84867736/madera-impresa-happy-place-30-x-30-cm-inspire,Madera impresa 30x30 cm,EUR 12.29,madera,inventor-01
+item-05,TOOL,PAI-432,Escalera de madera extensible indicada para mantenimiento industrial y telecomunicaciones fabricada en pino y peldaño de haya., https://www.leroymerlin.es/fp/83611937/escalera-madera-extensible-villar,Escalera madera extensible VILLAR,EUR 309.00,pintura,inventor-01

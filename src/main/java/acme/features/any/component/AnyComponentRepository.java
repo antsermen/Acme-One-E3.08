@@ -14,6 +14,9 @@ public interface AnyComponentRepository extends AbstractRepository{
 	@Query("select a from Component a")
 	Collection<Component> findAllComponent();
 	
+	@Query("select c from Component c where c.id=:id")
+	Component findComponentById(int id);
+	
 	
 
 }

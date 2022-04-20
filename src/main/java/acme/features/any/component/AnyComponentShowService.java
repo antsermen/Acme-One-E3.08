@@ -10,36 +10,36 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.any.tool;
+package acme.features.any.component;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.Tool;
+import acme.entities.Component;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
 import acme.framework.roles.Any;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class AnyToolShowService implements AbstractShowService<Any, Tool> {
+public class AnyComponentShowService implements AbstractShowService<Any, Component> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	protected AnyToolRepository repository;
+	protected AnyComponentRepository repository;
 
 	// AbstractShowService<Anonymous, Job> interface --------------------------
 
 	@Override
-	public boolean authorise(final Request<Tool> request) {
+	public boolean authorise(final Request<Component> request) {
 		assert request != null;
 
 		return true;
 	}
 
 	@Override
-	public void unbind(final Request<Tool> request, final Tool entity, final Model model) {
+	public void unbind(final Request<Component> request, final Component entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -48,14 +48,14 @@ public class AnyToolShowService implements AbstractShowService<Any, Tool> {
 	}
 
 	@Override
-	public Tool findOne(final Request<Tool> request) {
+	public Component findOne(final Request<Component> request) {
 		assert request != null;
 
-		Tool result;
+		Component result;
 		int id;
 
 		id = request.getModel().getInteger("id");
-		result = this.repository.findToolById(id);
+		result = this.repository.findComponentById(id);
 
 		return result;
 	}

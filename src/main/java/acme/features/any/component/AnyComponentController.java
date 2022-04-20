@@ -13,6 +13,8 @@ import acme.framework.roles.Any;
 public class AnyComponentController extends AbstractController<Any, Component>{
 	@Autowired
 	protected AnyComponentListService	listService;
+	@Autowired
+	protected AnyComponentShowService showService;
 	
 	// Constructors -----------------------------------------------------------
 
@@ -20,6 +22,7 @@ public class AnyComponentController extends AbstractController<Any, Component>{
 	@PostConstruct
 	protected void initialise() {
 		super.addCommand("list", this.listService);
+		super.addCommand("show", this.showService);
 	}
 
 }

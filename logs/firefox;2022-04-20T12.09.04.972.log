@@ -1,0 +1,5 @@
+1650448870792	geckodriver	INFO	Listening on 127.0.0.1:2318
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\USUARIO\\AppData\\Local\\Temp\\rust_mozprofilekvueOi\\search.json.mozlz4", (void 0)))
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DestroyBrowsingContextGroup) Channel closing: too late to send/recv, messages will be lost
+

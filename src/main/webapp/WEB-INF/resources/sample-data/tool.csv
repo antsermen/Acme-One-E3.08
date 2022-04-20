@@ -1,2 +1,4 @@
-key,code,description,link,name,retail-price,technology,key:inventor
-tool-01,ASD-123,dshjhds,https://www.leroymerlin.es/fp/81968467/maceta-3-8-cm,Martillo,12,hchchc,inventor-01
+key,name,code,technology,description,retailPrice,link,key:inventor
+tool-01,Martillo,MHA-237,Maquina simple,"Herramienta formada por una cabeza, generalmente de metal, y un mango",12.00,https://www.aquazon.es/martillos-y-sierras-manuales/943-stht0-54159.html,inventor-01
+tool-02,Remachadora,RDR-195,Tecnología de remachado,Herramienta utilizada para la creación de uniones fijas mediante remaches,147.03,https://es.rs-online.com/web/p/remachadoras/7839962,inventor-01
+tool-03,Sierra de Arco,SDS-985,Maquina simple,Sierra formada por una estructura metálica en la cual se coloca una hoja dentada con dientes pequeños,12.00,https://www.ducatillon.es/poda-de-la-lena/17763-product.html?gclid=Cj0KCQjw3v6SBhCsARIsACyrRAnAHrCD56m1vE-pVZhIg4UcpWpXPk6s-cZa2O9zT7tVGlCMhUECixUaAolLEALw_wcB,inventor-01

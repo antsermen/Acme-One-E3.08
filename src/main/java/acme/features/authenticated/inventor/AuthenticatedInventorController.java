@@ -33,6 +33,7 @@ public class AuthenticatedInventorController extends AbstractController<Authenti
 
 	@Autowired
 	protected AuthenticatedInventorUpdateService	updateService;
+	
 
 	// Constructors -----------------------------------------------------------
 

@@ -8,6 +8,8 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-announcement.creationMoment = Fecha de creación
-announcement.title = Título
-announcement.critical = Crítico
+authenticated.consumer.consumer.form.label.company = Compañía
+authenticated.consumer.consumer.form.label.sector = Sector
+
+authenticated.consumer.consumer.form.button.create = Registrar
+authenticated.consumer.consumer.form.button.update = Actualizar

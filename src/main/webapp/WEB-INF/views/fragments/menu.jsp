@@ -45,8 +45,8 @@
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.inventor" access="hasRole('Inventor')">
-			<acme:menu-suboption code="master.menu.inventor.mine-tools.list" action="/inventor/item/list-mine-tools"/>	
-			<acme:menu-suboption code="master.menu.inventor.mine-components.list" action="/inventor/item/list-mine-components"/>	
+			<acme:menu-suboption code="master.menu.inventor.mine-tools.list" action="/inventor/item/my-tools"/>	
+			<acme:menu-suboption code="master.menu.inventor.mine-components.list" action="/inventor/item/my-components"/>	
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">

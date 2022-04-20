@@ -1,2 +1,4 @@
 key,key:user-account,company,sector
 consumer-01,user-account-administrator-01,"Macarena, Inc.",Telecommunications
+consumer-02,user-account-consumer1,"Betis, Inc.",Telecommunications
+consumer-03,user-account-consumer2,"Google, Inc.",Telecommunications

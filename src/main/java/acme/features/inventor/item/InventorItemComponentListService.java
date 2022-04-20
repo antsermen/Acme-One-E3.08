@@ -1,44 +1,49 @@
 package acme.features.inventor.item;
 
+import java.util.Collection;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.Item;
+import acme.entities.ItemType;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
-import acme.framework.services.AbstractShowService;
+import acme.framework.services.AbstractListService;
 import acme.roles.Inventor;
 
 @Service
-public class InventorItemShowService implements AbstractShowService<Inventor, Item>{
-
-	//Internal State------------------------------------------------------------
+public class InventorItemComponentListService implements AbstractListService<Inventor, Item>{
+	
+	//Internal state----------------------------------------------------------
 	
 	@Autowired
-	protected InventorItemRepository InventorItemRepository;
+	protected InventorItemRepository inventorItemRepository;
 	
-	//AbstractShow Interface
-	
+	//AbstractListService------------------------------------------------------
+
 	@Override
 	public boolean authorise(final Request<Item> request) {
 		assert request != null;
-		return request.getPrincipal().getActiveRoleId() == this.InventorItemRepository.findItemById(request.getModel().getInteger("id")).getInventor().getId();
+		return true;
 	}
 
 	@Override
-	public Item findOne(final Request<Item> request) {
+	public Collection<Item> findMany(final Request<Item> request) {
 		assert request != null;
-		return this.InventorItemRepository.findItemById(request.getModel().getInteger("id"));
+		return this.inventorItemRepository.findItemsByTypeAndInventor(ItemType.COMPONENT, request.getPrincipal().getActiveRoleId());
 	}
 
 	@Override
 	public void unbind(final Request<Item> request, final Item entity, final Model model) {
-		assert request != null; 
+		assert request != null;
 		assert entity != null;
 		assert model != null;
 		
 		request.unbind(entity, model, "itemType", "name", "code", "technology", "description", "retailPrice", "link");
 	}
 	
+	
+		
 
 }

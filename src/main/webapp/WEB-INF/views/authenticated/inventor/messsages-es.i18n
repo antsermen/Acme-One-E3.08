@@ -8,12 +8,9 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-authenticated.inventor.form.title.create = Hazte trabajador
-authenticated.inventor.form.title.update = Actualiza tus datos de trabajador
-
 authenticated.inventor.form.label.company = Compañía
-authenticated.inventor.form.label.declaración = Declaración
-authenticated.inventor.form.label.información = Información
+authenticated.inventor.form.label.statement = Declaración
+authenticated.inventor.form.label.info = Información
 
 authenticated.inventor.form.button.create = Registrar
 authenticated.inventor.form.button.update = Actualizar

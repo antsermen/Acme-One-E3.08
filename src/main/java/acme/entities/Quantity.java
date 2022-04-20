@@ -21,7 +21,7 @@ public class Quantity extends AbstractEntity{
 	// Attributes -------------------------------------------------------------
 	
 	@Min(1)
-	protected Integer componentsNumber;
+	protected Integer itemsNumber;
 	
 	// Derived attributes -----------------------------------------------------
 	
@@ -30,7 +30,7 @@ public class Quantity extends AbstractEntity{
 
 	@Valid
 	@ManyToOne(optional = false)
-	protected Component component;
+	protected Item item;
 	
 	@Valid
 	@ManyToOne(optional = false)

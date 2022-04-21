@@ -1,0 +1,19 @@
+timestamp,simple-path,time
+"2022-04-21 19:47:43.589","/master/welcome",5982
+"2022-04-21 19:47:44.268","/master/welcome",603
+"2022-04-21 19:47:47.751","/master/sign-in",3219
+"2022-04-21 19:47:48.993","/master/welcome",552
+"2022-04-21 19:47:50.342","/authenticated/announcement/list-recent",1091
+"2022-04-21 19:47:52.887","/authenticated/announcement/show",1076
+"2022-04-21 19:47:53.633","/master/welcome",404
+"2022-04-21 19:47:54.341","/master/welcome",552
+"2022-04-21 19:47:56.817","/master/welcome",379
+"2022-04-21 19:47:57.247","/master/welcome",395
+"2022-04-21 19:47:57.953","/master/sign-in",553
+"2022-04-21 19:47:59.185","/master/welcome",561
+"2022-04-21 19:48:00.005","/authenticated/announcement/list-recent",551
+"2022-04-21 19:48:00.666","/master/welcome",363
+"2022-04-21 19:48:01.06","/master/welcome",362
+"2022-04-21 19:48:01.772","/master/sign-in",562
+"2022-04-21 19:48:02.999","/master/welcome",550
+"2022-04-21 19:48:03.815","/authenticated/announcement/list-recent",565

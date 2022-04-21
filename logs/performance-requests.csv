@@ -1,4 +1,28 @@
 timestamp,simple-path,time
+"2022-04-21 19:59:16.64","/master/welcome",4894
+"2022-04-21 19:59:17.157","/master/welcome",458
+"2022-04-21 19:59:20.0","/master/sign-in",2649
+"2022-04-21 19:59:21.242","/master/welcome",555
+"2022-04-21 19:59:22.585","/authenticated/announcement/list-recent",1093
+"2022-04-21 19:59:25.544","/authenticated/announcement/show",1099
+"2022-04-21 19:59:26.24","/master/welcome",348
+"2022-04-21 19:59:26.961","/master/welcome",567
+"2022-04-21 19:59:29.413","/master/welcome",344
+"2022-04-21 19:59:29.808","/master/welcome",363
+"2022-04-21 19:59:30.511","/master/sign-in",551
+"2022-04-21 19:59:31.753","/master/welcome",553
+"2022-04-21 19:59:32.57","/authenticated/announcement/list-recent",567
+"2022-04-21 19:59:34.519","/authenticated/announcement/show",555
+"2022-04-21 19:59:35.174","/master/welcome",315
+"2022-04-21 19:59:35.912","/master/welcome",560
+"2022-04-21 19:59:38.332","/master/welcome",337
+"2022-04-21 19:59:38.692","/master/welcome",332
+"2022-04-21 19:59:39.409","/master/sign-in",560
+"2022-04-21 19:59:40.641","/master/welcome",562
+"2022-04-21 19:59:41.447","/authenticated/announcement/list-recent",554
+"2022-04-21 19:59:43.401","/authenticated/announcement/show",552
+"2022-04-21 19:59:44.045","/master/welcome",298
+"2022-04-21 19:59:44.749","/master/welcome",553
 "2022-04-20 21:39:20.248","/master/welcome",10881
 "2022-04-20 21:39:24.697","/any/item/components",3536
 "2022-04-20 21:39:28.72","/master/welcome",646
@@ -29,4 +53,3 @@ timestamp,simple-path,time
 "2022-04-20 21:37:03.03","/master/welcome",314
 "2022-04-20 21:37:03.819","/any/user-account/list",568
 "2022-04-20 21:37:05.121","/any/user-account/show",564
-

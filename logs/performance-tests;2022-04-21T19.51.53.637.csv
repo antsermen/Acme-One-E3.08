@@ -1,0 +1,4 @@
+timestamp,test-class,test-method,time,description,result
+"2022-04-21 19:50:32.013","acme.testing.any.chirp.AnyChirpListTest","positiveTest",5672,""[1] recordIndex=0, creationMoment=2022/04/04 20:35, title=Saludo, author=Pablo Santos Pérez, body=Solamente quiero saludar, email=pabsanper3@alum.us.es"","OK"
+"2022-04-21 19:50:35.808","acme.testing.any.chirp.AnyChirpListTest","positiveTest",3355,""[2] recordIndex=1, creationMoment=2022/04/05 17:40, title=Saludo, author=Antonio Roberto Serrano Mena, body=Quiero mandar un saludo, email=antsermen@alum.us.es"","OK"
+"2022-04-21 19:50:39.586","acme.testing.any.chirp.AnyChirpListTest","positiveTest",3318,""[3] recordIndex=2, creationMoment=2022/04/06 16:45, title=Respuesta, author=Pablo Santos Pérez, body=Todo genial, email=pabsanper3@alum.us.es"","OK"

@@ -38,6 +38,12 @@ master.menu.administrator.shut-down = Parar el sistema
 master.menu.administrator.chirp.list = Lista de chirps recientes
 master.menu.administrator.administrator.dashboard = Dashboard
 
+# master.menu.inventor ########################################################
+
+master.menu.inventor = Inventor
+master.menu.inventor.mine-tools.list = Mis Herramientas
+master.menu.inventor.mine-components.list = Mis Componentes
+
 # master.menu.provider ########################################################
 
 master.menu.provider = Proveedor

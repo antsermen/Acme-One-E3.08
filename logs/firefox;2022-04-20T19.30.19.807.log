@@ -1,0 +1,24 @@
+1650475646426	geckodriver	INFO	Listening on 127.0.0.1:48279
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JOSERR~1\\AppData\\Local\\Temp\\rust_mozprofileeZIJkn\\search.json.mozlz4", (void 0)))
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager iconsole.warn: Logis null
+nRecipesJavaScript: error : r"esource:g/e/gret/modules/LoRecipesgin: faManagerParent.ljsm, lilne 136: ing back to a sTynchryonous message fopr:" "htetp://Elocalhosrrotr:: gRec8ipeM081"
+anager is null
+console.warn: LoginRecipes: "getRecipes: fallingJavaScript err back to a synor: resource://grce/modules/LoginManagerParhronous message for:" "http://localhost:8081"
+ent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling bJavaScript error: resource://agre/moduleck to a syns/LoginManagerParent.cjsm, hronous meline 13ssage for:" "h6: TypeError: ttp:gRecipeManager is null
+//localhost:8081"
+console.warn: LoginRecipes: "getRecipes: fallJavaScript error: resource://gre/moduleis/LoginMng back to a synchronoanagerParent.jsm, line us 136mess: TypeError: gRecipeManaage forger i:" "s nulhttp://localhost:8081"
+l
+console.warn: LoginRecipes: "getRecipes: falling back to a syJavncaScript error: resource://gre/mhronous mesosadules/LoginManagerParent.jsm, line 136: TypeError: ge gRecipeManager is nullfor:
+" "http://localhost:8081"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous messaJage for:" "http://locvaScript error: resalhost:8081"ource://gre/modules/LoginMa
+nagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getReciJavaScrippes: t efrror: resalling bource:ack//g re/to amodules/LoginMa nagsyncerParenth.jsm, lronous message for:" i"hnttp://locae 136lhos: t:8081"
+TypeError: gRecipeManager is null
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+

@@ -5,6 +5,7 @@ import java.util.Collection;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import acme.entities.Item;
 import acme.entities.Toolkit;
 import acme.framework.repositories.AbstractRepository;
 
@@ -19,5 +20,8 @@ public interface InventorToolkitRepository extends AbstractRepository{
 	
 	@Query("select sum(q.item.retailPrice.amount * q.itemsNumber) from Quantity q where q.toolkit.id =:id")
 	Double calculateToolkitPrice(int id);
+	
+	@Query("select q.item from Quantity q where q.toolkit.id = :id")
+	Collection<Item> findItemsFromToolkitId(int id);
 	
 }

@@ -13,7 +13,11 @@ inventor.toolkit.form.label.description = Description
 inventor.toolkit.form.label.notes = Notes
 inventor.toolkit.form.label.link = Link
 inventor.toolkit.form.label.toolkitPrice = Price
+inventor.toolkit.form.label.itemName = Item name
+inventor.toolkit.form.label.itemType = Item type
+inventor.toolkit.form.label.itemDescription = Item description
+inventor.toolkit.form.label.itemRetailPrice = Item retail price
 
-toolkit.title = Title
-toolkit.description = Description
-toolkit.link = Link
+inventor.toolkit.list.label.title = Title
+inventor.toolkit.list.label.description = Description
+inventor.toolkit.list.label.link = Link

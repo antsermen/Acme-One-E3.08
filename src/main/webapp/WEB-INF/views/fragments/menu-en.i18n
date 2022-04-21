@@ -45,6 +45,8 @@ master.menu.administrator.administrator.dashboard = Dashboard
 master.menu.inventor = Inventor
 master.menu.inventor.mine-tools.list = My Tools List
 master.menu.inventor.mine-components.list = My Components List
+master.menu.inventor.mine-patronages.list = My Patronages List
+master.menu.inventor.mine-toolkits.list = My Toolkits List
 
 
 # master.menu.provider ########################################################
@@ -73,6 +75,7 @@ master.menu.user-account.become-consumer = Become a consumer
 
 master.menu.authenticated = Authenticated
 master.menu.authenticated.chirp.list = Chirp Recent List
+master.menu.authenticated.announcement.list = Announcement Recent List
 
 # master.menu.patron ##########################################################
 

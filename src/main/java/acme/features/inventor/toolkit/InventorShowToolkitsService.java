@@ -1,8 +1,11 @@
 package acme.features.inventor.toolkit;
 
+import java.util.Collection;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.entities.Item;
 import acme.entities.Toolkit;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
@@ -11,6 +14,7 @@ import acme.roles.Inventor;
 
 @Service
 public class InventorShowToolkitsService implements AbstractShowService<Inventor, Toolkit>{
+	
 			// Internal state ======================================================
 	
 			@Autowired
@@ -49,8 +53,16 @@ public class InventorShowToolkitsService implements AbstractShowService<Inventor
 				
 				id = request.getModel().getInteger("id");
 				toolkitPrice = this.repository.calculateToolkitPrice(id);
+				final Collection<Item> items = this.repository.findItemsFromToolkitId(id);
 				
 				model.setAttribute("toolkitPrice", toolkitPrice);
+				model.setAttribute("items", items);
+				for (final Item i: items) {
+					model.setAttribute("itemName", i.getName());
+					model.setAttribute("itemType", i.getItemType());
+					model.setAttribute("itemDescription", i.getDescription());
+					model.setAttribute("itemRetailPrice", i.getRetailPrice());
+				}
 				request.unbind(entity, model, "title", "description", "notes", "link");
 				model.setAttribute("confirmation", false);
 				model.setAttribute("readonly", true);

@@ -41,12 +41,15 @@
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated">
 			<acme:menu-suboption code="master.menu.authenticated.chirp.list" action="/any/chirp/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.userAccount.list" action="/any/user-account/list"/>
-			<acme:menu-suboption code="master.menu.authenticated.toolkit.list" action="/any/toolkit/list"/>			
+			<acme:menu-suboption code="master.menu.authenticated.toolkit.list" action="/any/toolkit/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.announcement.list" action="/authenticated/announcement/list-recent" />			
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.inventor" access="hasRole('Inventor')">
-			<acme:menu-suboption code="master.menu.inventor.mine-tools.list" action="/inventor/item/my-tools"/>	
+      <acme:menu-suboption code="master.menu.inventor.mine-tools.list" action="/inventor/item/my-tools"/>	
 			<acme:menu-suboption code="master.menu.inventor.mine-components.list" action="/inventor/item/my-components"/>	
+			<acme:menu-suboption code="master.menu.inventor.mine-patronages.list" action="/inventor/patronage/list"/>
+			<acme:menu-suboption code="master.menu.inventor.mine-toolkits.list"	action="/inventor/toolkit/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">

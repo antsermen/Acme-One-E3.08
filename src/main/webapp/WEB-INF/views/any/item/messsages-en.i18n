@@ -24,3 +24,10 @@ any.item.list.label.technology = Technology:
 any.item.list.label.description= Description:
 any.item.list.label.retailPrice = Retail Price:
 any.item.list.label.link = Link:
+
+any.form.list.label.name = Name:
+any.form.list.label.code = Code:
+any.form.list.label.technology = Technology:
+any.form.list.label.description= Description:
+any.form.list.label.retailPrice = Retail Price:
+any.form.list.label.link = Link:

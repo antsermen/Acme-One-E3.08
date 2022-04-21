@@ -30,7 +30,7 @@
 			<acme:menu-suboption code="44068800H: Moreno Perez, Juan Carlos" action="http://www.netflix.com/"/>
 			<acme:menu-suboption code="75917728H: Sabugueiro Troya, David" action="http://www.twitter.com/"/>
 			<acme:menu-suboption code="master.menu.anonymous.chirp.list" action="/any/chirp/list"/>
-			<acme:menu-suboption code="List Toolkit" action="/any/toolkit/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.toolkit.list" action="/any/toolkit/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.item.tool.list" action="/any/item/tools"/>
 			<acme:menu-suboption code="master.menu.anonymous.item.component.list" action="/any/item/components"/>
 			<acme:menu-suboption code="master.menu.anonymous.userAccount.list" action="/any/user-account/list"/>

@@ -14,3 +14,11 @@ any.item.list.label.technology = Tecnología:
 any.item.list.label.description = Descripción:
 any.item.list.label.retailPrice = Precio al por menor:
 any.item.list.label.link = Link:
+
+
+any.item.form.label.name = Nombre:
+any.item.form.label.code = Código:
+any.item.form.label.technology = Tecnología:
+any.item.form.label.description = Descripción:
+any.item.form.label.retailPrice = Precio al por menor:
+any.item.form.label.link = Link:

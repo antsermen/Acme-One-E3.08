@@ -8,6 +8,13 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-announcement.creationMoment = Fecha de creación
-announcement.title = Título
-announcement.critical = Crítico
+authenticated.announcement.form.label.creationMoment = Fecha de creación
+authenticated.announcement.form.label.title = Título
+authenticated.announcement.form.label.body = Cuerpo
+authenticated.announcement.form.label.critical = Crítico
+authenticated.announcement.form.label.link = Enlace
+
+
+authenticated.announcement.list.creationMoment = Fecha de creación
+authenticated.announcement.list.title = Título
+authenticated.announcement.list.critical = Crítico

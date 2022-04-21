@@ -15,20 +15,20 @@ public class InventorItemShowService implements AbstractShowService<Inventor, It
 	//Internal State------------------------------------------------------------
 	
 	@Autowired
-	protected InventorItemRepository InventorItemRepository;
+	protected InventorItemRepository inventorItemRepository;
 	
 	//AbstractShow Interface
 	
 	@Override
 	public boolean authorise(final Request<Item> request) {
 		assert request != null;
-		return request.getPrincipal().getActiveRoleId() == this.InventorItemRepository.findItemById(request.getModel().getInteger("id")).getInventor().getId();
+		return request.getPrincipal().getActiveRoleId() == this.inventorItemRepository.findItemById(request.getModel().getInteger("id")).getInventor().getId();
 	}
 
 	@Override
 	public Item findOne(final Request<Item> request) {
 		assert request != null;
-		return this.InventorItemRepository.findItemById(request.getModel().getInteger("id"));
+		return this.inventorItemRepository.findItemById(request.getModel().getInteger("id"));
 	}
 
 	@Override

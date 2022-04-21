@@ -19,6 +19,12 @@
 	<acme:input-textbox code="inventor.toolkit.form.label.title" path="title"/>
 	<acme:input-textbox code="inventor.toolkit.form.label.description" path="description"/>
 	<acme:input-textbox code="inventor.toolkit.form.label.notes" path="notes"/>
-	<acme:input-textbox code="inventor.toolkit.form.label.link" path="link"/>
+	<acme:input-url code="inventor.toolkit.form.label.link" path="link"/>
 	<acme:input-textbox code="inventor.toolkit.form.label.toolkitPrice" path="toolkitPrice" placeholder="${toolkitPrice}"/>
+	<jstl:forEach var="item" items="${items}">
+		<acme:input-textbox code="inventor.toolkit.form.label.itemName" path="itemName" placeholder="${item.name}"/>
+		<acme:input-textbox code="inventor.toolkit.form.label.itemType" path="itemType" placeholder="${item.itemType}"/>
+		<acme:input-textarea code="inventor.toolkit.form.label.itemDescription" path="itemDescription" placeholder="${item.description}"/>
+		<acme:input-textbox code="inventor.toolkit.form.label.itemRetailPrice" path="itemRetailPrice" placeholder="${item.retailPrice}"/>
+	</jstl:forEach>
 </acme:form>

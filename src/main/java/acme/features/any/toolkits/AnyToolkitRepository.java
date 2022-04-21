@@ -9,13 +9,16 @@ import acme.entities.Toolkit;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
-public interface AnyToolkitsRepository extends AbstractRepository{
+public interface AnyToolkitRepository extends AbstractRepository{
 	
 	@Query("select t from Toolkit t")
 	Collection<Toolkit> findAllToolkit();
 	
-	//@Query("select t from Tool where t.toolkit.id=:masterID")
-	//Collection<Toolkit> findManyToolkitByTool(int masterID);
+	@Query("select t from Toolkit t where t.id=:id")
+	Toolkit findToolkit(int id);
+	
+	//@Query("select q.item.id from Quantity q where q.toolkit.id:=id")
+	//Collection<Item> findItemsByToolkit(int id);
 	
 	
 

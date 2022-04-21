@@ -60,6 +60,7 @@
 			<acme:menu-suboption code="master.menu.administrator.toolkit.list" action="/any/toolit/list"/>
 			<acme:menu-suboption code="master.menu.administrator.tool.list" action="/any/tool/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.userAccount.list" action="/any/user-account/list"/>
+			<acme:menu-suboption code="master.menu.administrator.system-configuration" action="/administrator/system-configuration/show"/>
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.patron" access="hasRole('Patron')">

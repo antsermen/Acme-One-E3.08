@@ -42,6 +42,16 @@ master.menu.administrator.populate-initial = Populate DB (initial)
 master.menu.administrator.populate-sample = Populate DB (samples)
 master.menu.administrator.shut-down = Shut down
 master.menu.administrator.chirp.list = Chirp Recent List
+master.menu.administrator.administrator.dashboard = Dashboard
+
+
+# master.menu.inventor ########################################################
+
+master.menu.inventor = Inventor
+master.menu.inventor.mine-tools.list = My Tools List
+master.menu.inventor.mine-components.list = My Components List
+master.menu.inventor.mine-patronages.list = My Patronages List
+master.menu.inventor.mine-toolkits.list = My Toolkits List
 
 
 # master.menu.provider ########################################################
@@ -70,6 +80,7 @@ master.menu.user-account.become-consumer = Become a consumer
 
 master.menu.authenticated = Authenticated
 master.menu.authenticated.chirp.list = Chirp Recent List
+master.menu.authenticated.announcement.list = Announcement Recent List
 
 # master.menu.patron ##########################################################
 

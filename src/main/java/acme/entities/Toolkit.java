@@ -47,7 +47,7 @@ public class Toolkit extends AbstractEntity{
 	protected String link;
 	
 	// Derived attributes -----------------------------------------------------
-	
+
 	// Relationships ----------------------------------------------------------
 	
 	@NotNull

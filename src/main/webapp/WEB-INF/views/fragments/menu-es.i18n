@@ -36,6 +36,7 @@ master.menu.administrator.populate-initial = Poblar BD (inicial)
 master.menu.administrator.populate-sample = Poblar BD (ejemplos)
 master.menu.administrator.shut-down = Parar el sistema
 master.menu.administrator.chirp.list = Lista de chirps recientes
+master.menu.administrator.administrator.dashboard = Dashboard
 
 # master.menu.provider ########################################################
 

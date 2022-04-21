@@ -27,6 +27,10 @@ master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.anonymous.chirp.list = Lista de chirps recientes
 master.menu.anonymous.userAccount.list = Lista de Cuentas de Usuario
 
+master.menu.anonymous.item.tool.list= Lista de herramientas
+master.menu.anonymous.item.component.list= Lista de componentes
+master.menu.anonymous.toolkit.list= Lista de Cajas de herramientas
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador

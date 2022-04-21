@@ -1,0 +1,4 @@
+record-index,name,code,technology,description,retail-price,link,key:inventor
+0,Martillo,MHA-237,Maquina simple,"Herramienta formada por una cabeza, generalmente de metal, y un mango",EUR 12.00,https://www.aquazon.es/martillos-y-sierras-manuales/943-stht0-54159.html,inventor-01
+1,Remachadora,RDR-195,Tecnología de remachado,Herramienta utilizada para la creación de uniones fijas mediante remaches,EUR 147.03,https://es.rs-online.com/web/p/remachadoras/7839962,inventor-01
+2,Sierra de Arco,SDS-985,Maquina simple,Sierra formada por una estructura metálica en la cual se coloca una hoja dentada con dientes pequeños,EUR 12.00,https://www.ducatillon.es/poda-de-la-lena/17763-product.html?gclid=Cj0KCQjw3v6SBhCsARIsACyrRAnAHrCD56m1vE-pVZhIg4UcpWpXPk6s-cZa2O9zT7tVGlCMhUECixUaAolLEALw_wcB,inventor-01

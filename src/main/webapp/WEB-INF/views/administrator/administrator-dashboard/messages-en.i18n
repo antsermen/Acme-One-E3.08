@@ -1,0 +1,20 @@
+administrator.administrator-dashboard.form.title.components = Components
+administrator.administrator-dashboard.form.label.totalNumberOfComponents =  Total number of components
+administrator.administrator-dashboard.form.label.averageRetailPriceOfComponents =  Average retail price of components
+administrator.administrator-dashboard.form.label.deviationRetailPriceOfComponents = Desviation retail price of components
+administrator.administrator-dashboard.form.label.minimumRetailPriceOfComponents = Minimum retail price of components
+administrator.administrator-dashboard.form.label.maximumRetailPriceOfComponents = Maximum retail price of components
+
+administrator.administrator-dashboard.form.title.tools = Tools
+administrator.administrator-dashboard.form.label.totalNumberOfTools =  Total number of tools
+administrator.administrator-dashboard.form.label.averageRetailPriceOfTools =  Average retail price of tools
+administrator.administrator-dashboard.form.label.deviationRetailPriceOfTools = Desviation retail price of tools
+administrator.administrator-dashboard.form.label.minimumRetailPriceOfTools = Minimum retail price of tools
+administrator.administrator-dashboard.form.label.maximumRetailPriceOfTools = Maximum retail price of tools
+
+administrator.administrator-dashboard.form.title.patronages = Patronage
+administrator.administrator-dashboard.form.label.totalNumberOfPatronagesByStatus =  Total number of patronage
+administrator.administrator-dashboard.form.label.averageBudgetOfPatronagesByStatus =  Average budget of patronage
+administrator.administrator-dashboard.form.label.deviationBudgetOfPatronagesByStatus = Desviation budget of patronage
+administrator.administrator-dashboard.form.label.minimumBudgetOfPatronagesByStatus = Minimum budget of patronage
+administrator.administrator-dashboard.form.label.maximumBudgetOfPatronagesByStatus = Maximum budget of patronage

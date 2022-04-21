@@ -1,0 +1,20 @@
+administrator.administrator-dashboard.form.title.components = Componentes
+administrator.administrator-dashboard.form.label.totalNumberOfComponents =  Número total de componentes
+administrator.administrator-dashboard.form.label.averageRetailPriceOfComponents =  Precio al por menor medio de los componentes
+administrator.administrator-dashboard.form.label.deviationRetailPriceOfComponents = Desviación del precio al por menor de los componentes
+administrator.administrator-dashboard.form.label.minimumRetailPriceOfComponents = Mínimo precio al por menor de los componentes
+administrator.administrator-dashboard.form.label.maximumRetailPriceOfComponents = Máximo precio al por menor de los componentes
+
+administrator.administrator-dashboard.form.title.tools = Herramientas
+administrator.administrator-dashboard.form.label.totalNumberOfTools =  Número total de herramientas
+administrator.administrator-dashboard.form.label.averageRetailPriceOfTools =  Precio al por menor medio de las herramientas
+administrator.administrator-dashboard.form.label.deviationRetailPriceOfTools = Desviación del precio al por menor de las herramientas
+administrator.administrator-dashboard.form.label.minimumRetailPriceOfTools = Mínimo precio al por menor de las herramientas
+administrator.administrator-dashboard.form.label.maximumRetailPriceOfTools = Máximo precio al por menor de las herramientas
+
+administrator.administrator-dashboard.form.title.patronages = Patrocinios
+administrator.administrator-dashboard.form.label.totalNumberOfPatronagesByStatus =  Número total de patrocinios
+administrator.administrator-dashboard.form.label.averageBudgetOfPatronagesByStatus =  Presupuesto medio de los patrocinios
+administrator.administrator-dashboard.form.label.deviationBudgetOfPatronagesByStatus = Desviación del presupuesto de los patrocinios
+administrator.administrator-dashboard.form.label.minimumBudgetOfPatronagesByStatus = Mínimo presupuesto de los patrocinios
+administrator.administrator-dashboard.form.label.maximumBudgetOfPatronagesByStatus = Máximo presupuesto de los patrocinios

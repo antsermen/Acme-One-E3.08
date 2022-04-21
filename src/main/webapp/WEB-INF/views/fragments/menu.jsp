@@ -46,8 +46,8 @@
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.inventor" access="hasRole('Inventor')">
-			<acme:menu-suboption code="master.menu.inventor.mine-tools.list" action="/inventor/item/list-mine-tools"/>	
-			<acme:menu-suboption code="master.menu.inventor.mine-components.list" action="/inventor/item/list-mine-components"/>
+      <acme:menu-suboption code="master.menu.inventor.mine-tools.list" action="/inventor/item/my-tools"/>	
+			<acme:menu-suboption code="master.menu.inventor.mine-components.list" action="/inventor/item/my-components"/>	
 			<acme:menu-suboption code="master.menu.inventor.mine-patronages.list" action="/inventor/patronage/list"/>
 			<acme:menu-suboption code="master.menu.inventor.mine-toolkits.list"	action="/inventor/toolkit/list"/>
 		</acme:menu-option>
@@ -59,6 +59,9 @@
 			<acme:menu-suboption code="master.menu.administrator.populate-sample" action="/administrator/populate-sample"/>			
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shut-down" action="/administrator/shut-down"/>
+			
+			<acme:menu-suboption code="master.menu.administrator.administrator.dashboard" action="/administrator/administrator-dashboard/show"/>
+			
 			<acme:menu-suboption code="master.menu.administrator.chirp.list" action="/any/chirp/list"/>
 			<acme:menu-suboption code="master.menu.administrator.toolkit.list" action="/any/toolit/list"/>
 			<acme:menu-suboption code="master.menu.administrator.tool.list" action="/any/tool/list"/>

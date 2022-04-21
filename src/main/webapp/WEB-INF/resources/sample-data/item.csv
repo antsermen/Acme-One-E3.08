@@ -1,2 +1,7 @@
-key,item-type,code,description,link,name,retail-price,technology,key:inventor
-item-01,TOOL,ASD-123,dshjhds,https://www.leroymerlin.es/fp/81968467/maceta-3-8-cm,Martillo,12EUR,hchchc,inventor-01
+key,item-type,name,code,technology,description,retail-price,link,key:inventor
+item-01,TOOL,Martillo,MHA-237,Maquina simple,"Herramienta formada por una cabeza, generalmente de metal, y un mango",EUR 12.00,https://www.aquazon.es/martillos-y-sierras-manuales/943-stht0-54159.html,inventor-01
+item-02,TOOL,Remachadora,RDR-195,Tecnología de remachado,Herramienta utilizada para la creación de uniones fijas mediante remaches,EUR 147.03,https://es.rs-online.com/web/p/remachadoras/7839962,inventor-01
+item-03,TOOL,Sierra de Arco,SDS-985,Maquina simple,Sierra formada por una estructura metálica en la cual se coloca una hoja dentada con dientes pequeños,EUR 12.00,https://www.ducatillon.es/poda-de-la-lena/17763-product.html?gclid=Cj0KCQjw3v6SBhCsARIsACyrRAnAHrCD56m1vE-pVZhIg4UcpWpXPk6s-cZa2O9zT7tVGlCMhUECixUaAolLEALw_wcB,inventor-01
+item-04,COMPONENT,Tornillo,TOR-973,Mecanismo de transformación de circular a lineal,Tuerca alojada en un eje roscado (tornillo),EUR 0.03,https://entaban.es/allen/145-tornillo-allen-iso-7380-inoxidable.html,inventor-01
+item-05,COMPONENT,Tornillo,TOR-873,Mecanismo de transformación de circular a lineal,Tornillo simple hueco 18 cabeza hembra,EUR 1.42,https://adajusa.es/es/tornillos-para-racores-neumaticos/3723-tornillo-simple-hueco-18-cabeza-hembra-8435532837237.html,inventor-01
+item-06,COMPONENT,Tornillo,TOR-373,Mecanismo de transformación de circular a lineal,Tornillo Taco,EUR 1.19,https://www.leroymerlin.es/fp/81929691/tornillo-taco,inventor-01

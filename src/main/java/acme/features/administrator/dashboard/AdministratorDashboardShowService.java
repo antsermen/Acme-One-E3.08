@@ -3,6 +3,8 @@ package acme.features.administrator.dashboard;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.persistence.Tuple;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.util.Pair;
 import org.springframework.stereotype.Service;
@@ -32,7 +34,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		assert request != null;
 		final AdministratorDashboard result;	
 		
-		final Integer	totalNumberOfComponents;
+		final int	totalNumberOfComponents;
 		final Map<Pair<String, String>, Double> averageRetailPriceOfComponents;
 		final Map<Pair<String, String>, Double> deviationRetailPriceOfComponents;
 		final Map<Pair<String, String>, Double> minimumRetailPriceOfComponents;
@@ -41,138 +43,72 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		totalNumberOfComponents = this.repository.totalNumberOfComponents();
 		
 		averageRetailPriceOfComponents = new HashMap<Pair<String, String>, Double>();	
-		this.repository.averageRetailPriceOfComponents("EUR").stream()
-		.forEach(x->averageRetailPriceOfComponents.put(Pair.of("EUR", x.get(0).toString()),
-			Double.parseDouble(x.get(1).toString())));
-		this.repository.averageRetailPriceOfComponents("GBP").stream()
-		.forEach(x->averageRetailPriceOfComponents.put(Pair.of("GBP", x.get(0).toString()),
-			Double.parseDouble(x.get(1).toString())));
-		this.repository.averageRetailPriceOfComponents("USD").stream()
-		.forEach(x->averageRetailPriceOfComponents.put(Pair.of("USD", x.get(0).toString()),
-			Double.parseDouble(x.get(1).toString())));
-		
 		deviationRetailPriceOfComponents = new HashMap<Pair<String, String>, Double>();	
-		this.repository.deviationRetailPriceOfComponents("EUR").stream()
-		.forEach(x->deviationRetailPriceOfComponents.put(Pair.of("EUR", x.get(0).toString()),
-			Double.parseDouble(x.get(1).toString())));
-		this.repository.deviationRetailPriceOfComponents("GBP").stream()
-		.forEach(x->deviationRetailPriceOfComponents.put(Pair.of("GBP", x.get(0).toString()),
-			Double.parseDouble(x.get(1).toString())));
-		this.repository.deviationRetailPriceOfComponents("USD").stream()
-		.forEach(x->deviationRetailPriceOfComponents.put(Pair.of("USD", x.get(0).toString()),
-			Double.parseDouble(x.get(1).toString())));
-		
 		minimumRetailPriceOfComponents = new HashMap<Pair<String, String>, Double>();	
-		this.repository.minimumRetailPriceOfComponents("EUR").stream()
-		.forEach(x->minimumRetailPriceOfComponents.put(Pair.of("EUR", x.get(0).toString()),
-			Double.parseDouble(x.get(1).toString())));
-		this.repository.minimumRetailPriceOfComponents("GBP").stream()
-		.forEach(x->minimumRetailPriceOfComponents.put(Pair.of("GBP", x.get(0).toString()),
-			Double.parseDouble(x.get(1).toString())));
-		this.repository.minimumRetailPriceOfComponents("USD").stream()
-		.forEach(x->minimumRetailPriceOfComponents.put(Pair.of("USD", x.get(0).toString()),
-			Double.parseDouble(x.get(1).toString())));
+		maximumRetailPriceOfComponents = new HashMap<Pair<String, String>, Double>();
 		
-		maximumRetailPriceOfComponents = new HashMap<Pair<String, String>, Double>();	
-		this.repository.maximumRetailPriceOfComponents("EUR").stream()
-		.forEach(x->maximumRetailPriceOfComponents.put(Pair.of("EUR", x.get(0).toString()),
-			Double.parseDouble(x.get(1).toString())));
-		this.repository.maximumRetailPriceOfComponents("GBP").stream()
-		.forEach(x->maximumRetailPriceOfComponents.put(Pair.of("GBP", x.get(0).toString()),
-			Double.parseDouble(x.get(1).toString())));
-		this.repository.maximumRetailPriceOfComponents("USD").stream()
-		.forEach(x->maximumRetailPriceOfComponents.put(Pair.of("USD", x.get(0).toString()),
-			Double.parseDouble(x.get(1).toString())));
-		
-		final Integer totalNumberOfTools;
+		for (final Tuple x: this.repository.indicatorsRetailPriceOfComponents()){
+			averageRetailPriceOfComponents.put(Pair.of(x.get(0).toString(), x.get(1).toString()), Double.parseDouble(x.get(2).toString()));
+			deviationRetailPriceOfComponents.put(Pair.of(x.get(0).toString(), x.get(1).toString()), Double.parseDouble(x.get(3).toString()));
+			minimumRetailPriceOfComponents.put(Pair.of(x.get(0).toString(), x.get(1).toString()), Double.parseDouble(x.get(4).toString()));
+			maximumRetailPriceOfComponents.put(Pair.of(x.get(0).toString(), x.get(1).toString()), Double.parseDouble(x.get(5).toString()));
+			
+		}
+			
+		final int totalNumberOfTools;
 		final Map<String, Double> averageRetailPriceOfTools;
 		final Map<String, Double> deviationRetailPriceOfTools;
 		final Map<String, Double> minimumRetailPriceOfTools;
 		final Map<String, Double> maximumRetailPriceOfTools;
 		
-		totalNumberOfTools = this.repository.totalNumberOfTools();
-		
+		totalNumberOfTools = this.repository.totalNumberOfTools();	
 		averageRetailPriceOfTools = new HashMap<String, Double>();
-		final Double averageEURRetailPriceOfTools =  this.repository.averageRetailPriceOfTools("EUR");
-		final Double averageGBPRetailPriceOfTools = this.repository.averageRetailPriceOfTools("GBP");
-		final Double averagUSDRetailPriceOfTools = this.repository.averageRetailPriceOfTools("USD");
-		averageRetailPriceOfTools.put("EUR", averageEURRetailPriceOfTools);
-		averageRetailPriceOfTools.put("GBP", averageGBPRetailPriceOfTools);
-		averageRetailPriceOfTools.put("USD", averagUSDRetailPriceOfTools);
-		
 		deviationRetailPriceOfTools = new HashMap<String, Double>();
-		final Double deviationEURRetailPriceOfTools = this.repository.deviationRetailPriceOfTools("EUR");
-		final Double deviationGBPRetailPriceOfTools = this.repository.deviationRetailPriceOfTools("GBP");
-		final Double deviationUSDRetailPriceOfTools = this.repository.deviationRetailPriceOfTools("USD");
-		deviationRetailPriceOfTools.put("EUR", deviationEURRetailPriceOfTools);
-		deviationRetailPriceOfTools.put("GBP", deviationGBPRetailPriceOfTools);
-		deviationRetailPriceOfTools.put("USD", deviationUSDRetailPriceOfTools);
-		
 		minimumRetailPriceOfTools = new HashMap<String, Double>();
-		final Double minimumEURRetailPriceOfTools = this.repository.minimumRetailPriceOfTools("EUR");
-		final Double minimumGBPRetailPriceOfTools = this.repository.minimumRetailPriceOfTools("GBP");
-		final Double minimumUSDRetailPriceOfTools = this.repository.minimumRetailPriceOfTools("USD");
-		minimumRetailPriceOfTools.put("EUR", minimumEURRetailPriceOfTools);
-		minimumRetailPriceOfTools.put("GBP", minimumGBPRetailPriceOfTools);
-		minimumRetailPriceOfTools.put("USD", minimumUSDRetailPriceOfTools);
-		
 		maximumRetailPriceOfTools = new HashMap<String, Double>();
-		final Double maximumEURRetailPriceOfTools = this.repository.maximumRetailPriceOfTools("EUR");
-		final Double maximumGBPRetailPriceOfTools = this.repository.maximumRetailPriceOfTools("GBP");
-		final Double maximumUSDRetailPriceOfTools = this.repository.maximumRetailPriceOfTools("USD");
-		maximumRetailPriceOfTools.put("EUR", maximumEURRetailPriceOfTools);
-		maximumRetailPriceOfTools.put("GBP", maximumGBPRetailPriceOfTools);
-		maximumRetailPriceOfTools.put("USD", maximumUSDRetailPriceOfTools);
-		
-		Map<Status, Integer> totalNumberOfPatronagesByStatus;
-		Map<Status, Double> averageBudgetOfPatronagesByStatus;
-		Map<Status, Double> deviationBudgetOfPatronagesByStatus;
-		Map<Status, Double> minimumBudgetOfPatronagesByStatus;
-		Map<Status, Double> maximumBudgetOfPatronagesByStatus;
+		for (final Tuple x: this.repository.indicatorsRetailPriceOfTools()){
+			averageRetailPriceOfTools.put(x.get(0).toString(), Double.parseDouble(x.get(1).toString()));
+			deviationRetailPriceOfTools.put(x.get(0).toString(), Double.parseDouble(x.get(2).toString()));
+			minimumRetailPriceOfTools.put(x.get(0).toString(), Double.parseDouble(x.get(3).toString()));
+			maximumRetailPriceOfTools.put(x.get(0).toString(), Double.parseDouble(x.get(4).toString()));		
+		}
 		
 		
-		totalNumberOfPatronagesByStatus = new HashMap<Status, Integer>();
-		final Integer totalNumberOfProposedPatronages = this.repository.totalNumberOfPatronagesByStatus(Status.PROPOSED);
-		final Integer totalNumberOfAcceptedPatronages = this.repository.totalNumberOfPatronagesByStatus(Status.ACCEPTED);
-		final Integer totalNumberOfDeniedPatronages = this.repository.totalNumberOfPatronagesByStatus(Status.DENIED);
-		totalNumberOfPatronagesByStatus.put(Status.PROPOSED, totalNumberOfProposedPatronages);
-		totalNumberOfPatronagesByStatus.put(Status.ACCEPTED, totalNumberOfAcceptedPatronages);
-		totalNumberOfPatronagesByStatus.put(Status.DENIED, totalNumberOfDeniedPatronages);
+		Map<Status, Integer> totalNumberOfPatronages;
+		Map<Pair<String,Status>,Double> averageBudgetOfPatronages;
+		Map<Pair<String,Status>,Double> deviationBudgetOfPatronages;
+		Map<Pair<String,Status>,Double> minimumBudgetOfPatronages;
+		Map<Pair<String,Status>,Double> maximumBudgetOfPatronages;
 		
-		averageBudgetOfPatronagesByStatus = new HashMap<Status, Double>();
-		final Double averageBudgetOfProposedPatronages = this.repository.averageBudgetOfPatronagesByStatus(Status.PROPOSED);
-		final Double averageBudgetOfAcceptedPatronages = this.repository.averageBudgetOfPatronagesByStatus(Status.ACCEPTED);
-		final Double averageBudgetOfDeniedPatronages = this.repository.averageBudgetOfPatronagesByStatus(Status.DENIED);
-		averageBudgetOfPatronagesByStatus.put(Status.PROPOSED, averageBudgetOfProposedPatronages);
-		averageBudgetOfPatronagesByStatus.put(Status.ACCEPTED, averageBudgetOfAcceptedPatronages);
-		averageBudgetOfPatronagesByStatus.put(Status.DENIED, averageBudgetOfDeniedPatronages);
+		totalNumberOfPatronages = new HashMap<Status, Integer>();
+		averageBudgetOfPatronages = new HashMap<Pair<String,Status>,Double>();
+		deviationBudgetOfPatronages = new HashMap<Pair<String,Status>,Double>();
+		minimumBudgetOfPatronages = new HashMap<Pair<String,Status>,Double>();
+		maximumBudgetOfPatronages = new HashMap<Pair<String,Status>,Double>();
+				
+		totalNumberOfPatronages.put(Status.ACCEPTED, this.repository.totalNumberOfAcceptedPatronages());
+		totalNumberOfPatronages.put(Status.PROPOSED, this.repository.totalNumberOfProposedPatronages());
+		totalNumberOfPatronages.put(Status.DENIED, this.repository.totalNumberOfDeniedPatronages());
 		
-		deviationBudgetOfPatronagesByStatus = new HashMap<Status, Double>();
-		final Double deviationBudgetOfProposedPatronages = this.repository.deviationBudgetOfPatronagesByStatus(Status.PROPOSED);
-		final Double deviationBudgetOfAcceptedPatronages = this.repository.deviationBudgetOfPatronagesByStatus(Status.ACCEPTED);
-		final Double deviationBudgetOfDeniedPatronages = this.repository.deviationBudgetOfPatronagesByStatus(Status.DENIED);
-		deviationBudgetOfPatronagesByStatus.put(Status.PROPOSED, deviationBudgetOfProposedPatronages);
-		deviationBudgetOfPatronagesByStatus.put(Status.ACCEPTED, deviationBudgetOfAcceptedPatronages);
-		deviationBudgetOfPatronagesByStatus.put(Status.DENIED, deviationBudgetOfDeniedPatronages);
-		
-		minimumBudgetOfPatronagesByStatus = new HashMap<Status, Double>();
-		final Double minimumBudgetOfProposedPatronages = this.repository.minimumBudgetOfPatronagesByStatus(Status.PROPOSED);
-		final Double minimumBudgetOfAcceptedPatronages = this.repository.minimumBudgetOfPatronagesByStatus(Status.ACCEPTED);
-		final Double minimumBudgetOfDeniedPatronages = this.repository.minimumBudgetOfPatronagesByStatus(Status.DENIED);
-		minimumBudgetOfPatronagesByStatus.put(Status.PROPOSED, minimumBudgetOfProposedPatronages);
-		minimumBudgetOfPatronagesByStatus.put(Status.ACCEPTED, minimumBudgetOfAcceptedPatronages);
-		minimumBudgetOfPatronagesByStatus.put(Status.DENIED, minimumBudgetOfDeniedPatronages);
-		
-		maximumBudgetOfPatronagesByStatus = new HashMap<Status, Double>();
-		final Double maximumBudgetOfProposedPatronages = this.repository.maximumBudgetOfPatronagesByStatus(Status.PROPOSED);
-		final Double maximumBudgetOfAcceptedPatronages = this.repository.maximumBudgetOfPatronagesByStatus(Status.ACCEPTED);
-		final Double maximumBudgetOfDeniedPatronages = this.repository.maximumBudgetOfPatronagesByStatus(Status.DENIED);
-		maximumBudgetOfPatronagesByStatus.put(Status.PROPOSED, maximumBudgetOfProposedPatronages);
-		maximumBudgetOfPatronagesByStatus.put(Status.ACCEPTED, maximumBudgetOfAcceptedPatronages);
-		maximumBudgetOfPatronagesByStatus.put(Status.DENIED, maximumBudgetOfDeniedPatronages);
-		
-		
-		
+		for(final Tuple x: this.repository.indicatorsBudgetOfAcceptedPatronages()) {
+			averageBudgetOfPatronages.put(Pair.of(x.get(0).toString(), Status.ACCEPTED), Double.parseDouble(x.get(1).toString()));
+			deviationBudgetOfPatronages.put(Pair.of(x.get(0).toString(), Status.ACCEPTED), Double.parseDouble(x.get(2).toString()));
+			minimumBudgetOfPatronages.put(Pair.of(x.get(0).toString(), Status.ACCEPTED), Double.parseDouble(x.get(3).toString()));
+			maximumBudgetOfPatronages.put(Pair.of(x.get(0).toString(), Status.ACCEPTED), Double.parseDouble(x.get(4).toString()));
+		}
+		for(final Tuple x: this.repository.indicatorsBudgetOfProposedPatronages()) {
+			averageBudgetOfPatronages.put(Pair.of(x.get(0).toString(), Status.PROPOSED), Double.parseDouble(x.get(1).toString()));
+			deviationBudgetOfPatronages.put(Pair.of(x.get(0).toString(), Status.PROPOSED), Double.parseDouble(x.get(2).toString()));
+			minimumBudgetOfPatronages.put(Pair.of(x.get(0).toString(), Status.PROPOSED), Double.parseDouble(x.get(3).toString()));
+			maximumBudgetOfPatronages.put(Pair.of(x.get(0).toString(), Status.PROPOSED), Double.parseDouble(x.get(4).toString()));
+		}
+		for(final Tuple x: this.repository.indicatorsBudgetOfDeniedPatronages()) {
+			averageBudgetOfPatronages.put(Pair.of(x.get(0).toString(), Status.DENIED), Double.parseDouble(x.get(1).toString()));
+			deviationBudgetOfPatronages.put(Pair.of(x.get(0).toString(), Status.DENIED), Double.parseDouble(x.get(2).toString()));
+			minimumBudgetOfPatronages.put(Pair.of(x.get(0).toString(), Status.DENIED), Double.parseDouble(x.get(3).toString()));
+			maximumBudgetOfPatronages.put(Pair.of(x.get(0).toString(), Status.DENIED), Double.parseDouble(x.get(4).toString()));
+		}
+				
 		result = new AdministratorDashboard();
 		
 		result.setTotalNumberOfComponents(totalNumberOfComponents);
@@ -187,11 +123,11 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		result.setMinimumRetailPriceOfTools(minimumRetailPriceOfTools);
 		result.setMaximumRetailPriceOfTools(maximumRetailPriceOfTools);
 		
-		result.setTotalNumberOfPatronagesByStatus(totalNumberOfPatronagesByStatus);
-		result.setAverageBudgetOfPatronagesByStatus(averageBudgetOfPatronagesByStatus);
-		result.setDeviationBudgetOfPatronagesByStatus(deviationBudgetOfPatronagesByStatus);
-		result.setMinimumBudgetOfPatronagesByStatus(minimumBudgetOfPatronagesByStatus);
-		result.setMaximumBudgetOfPatronagesByStatus(maximumBudgetOfPatronagesByStatus);
+		result.setTotalNumberOfPatronages(totalNumberOfPatronages);
+		result.setAverageBudgetOfPatronages(averageBudgetOfPatronages);
+		result.setDeviationBudgetOfPatronages(deviationBudgetOfPatronages);
+		result.setMinimumBudgetOfPatronages(minimumBudgetOfPatronages);
+		result.setMaximumBudgetOfPatronages(maximumBudgetOfPatronages);
 		
 		
 		return result;
@@ -205,10 +141,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		
 		request.unbind(entity, model,"totalNumberOfComponents","averageRetailPriceOfComponents","deviationRetailPriceOfComponents","minimumRetailPriceOfComponents","maximumRetailPriceOfComponents",
 									"totalNumberOfTools","averageRetailPriceOfTools","deviationRetailPriceOfTools","minimumRetailPriceOfTools","maximumRetailPriceOfTools",
-									"totalNumberOfPatronagesByStatus","averageBudgetOfPatronagesByStatus","deviationBudgetOfPatronagesByStatus","minimumBudgetOfPatronagesByStatus","maximumBudgetOfPatronagesByStatus");
-		
-		
-		
+									"totalNumberOfPatronages","averageBudgetOfPatronages","deviationBudgetOfPatronages","minimumBudgetOfPatronages","maximumBudgetOfPatronages");	
 		
 	}
 

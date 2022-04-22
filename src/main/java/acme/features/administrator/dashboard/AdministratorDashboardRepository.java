@@ -7,59 +7,39 @@ import javax.persistence.Tuple;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import acme.entities.Status;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
 public interface AdministratorDashboardRepository extends AbstractRepository {
 
 	@Query("select count(i) from Item i where i.itemType = acme.entities.ItemType.COMPONENT")
-	Integer totalNumberOfComponents();
+	int totalNumberOfComponents();
 	
-	@Query("select i.technology, avg(i.retailPrice.amount) from Item i where i.retailPrice.currency = :currency and i.itemType = acme.entities.ItemType.COMPONENT group by i.technology")
-	Collection<Tuple> averageRetailPriceOfComponents(String currency);
-	
-	@Query("select i.technology, stddev(i.retailPrice.amount) from Item i where i.retailPrice.currency = :currency and i.itemType = acme.entities.ItemType.COMPONENT group by i.technology")
-	Collection<Tuple> deviationRetailPriceOfComponents(String currency);
-	
-	@Query("select i.technology, min(i.retailPrice.amount) from Item i where i.retailPrice.currency = :currency and i.itemType = acme.entities.ItemType.COMPONENT group by i.technology")
-	Collection<Tuple> minimumRetailPriceOfComponents(String currency);
-	
-	@Query("select i.technology, max(i.retailPrice.amount) from Item i where i.retailPrice.currency = :currency and i.itemType = acme.entities.ItemType.COMPONENT group by i.technology")
-	Collection<Tuple> maximumRetailPriceOfComponents(String currency);
-	
-	
+	@Query("select i.technology, i.retailPrice.currency, avg(i.retailPrice.amount), stddev(i.retailPrice.amount), min(i.retailPrice.amount), max(i.retailPrice.amount) from Item i where i.itemType = acme.entities.ItemType.COMPONENT group by i.technology, i.retailPrice.currency")
+	Collection<Tuple> indicatorsRetailPriceOfComponents();
 	
 	@Query("select count(i) from Item i where i.itemType = acme.entities.ItemType.TOOL")
-	Integer totalNumberOfTools();
+	int totalNumberOfTools();
 	
-	@Query("select avg(i.retailPrice.amount) from Item i where i.retailPrice.currency = :currency and i.itemType = acme.entities.ItemType.TOOL")
-	Double averageRetailPriceOfTools(String currency);
+	@Query("select i.retailPrice.currency, avg(i.retailPrice.amount), stddev(i.retailPrice.amount), min(i.retailPrice.amount), max(i.retailPrice.amount) from Item i where i.itemType = acme.entities.ItemType.TOOL group by i.retailPrice.currency")
+	Collection<Tuple> indicatorsRetailPriceOfTools();
 	
-	@Query("select stddev(i.retailPrice.amount) from Item i where i.retailPrice.currency = :currency and i.itemType = acme.entities.ItemType.TOOL")
-	Double deviationRetailPriceOfTools(String currency);
+	@Query("select count(p) from Patronage p where p.status = acme.entities.Status.ACCEPTED group by p.status")
+	Integer totalNumberOfAcceptedPatronages();
 	
-	@Query("select min(i.retailPrice.amount) from Item i where i.retailPrice.currency = :currency and i.itemType = acme.entities.ItemType.TOOL")
-	Double minimumRetailPriceOfTools(String currency);
+	@Query("select count(p) from Patronage p where p.status = acme.entities.Status.PROPOSED group by p.status")
+	Integer totalNumberOfProposedPatronages();
 	
-	@Query("select max(i.retailPrice.amount) from Item i where i.retailPrice.currency = :currency and i.itemType = acme.entities.ItemType.TOOL")
-	Double maximumRetailPriceOfTools(String currency);
+	@Query("select count(p) from Patronage p where p.status = acme.entities.Status.DENIED group by p.status")
+	Integer totalNumberOfDeniedPatronages();
 	
+	@Query("select p.budget.currency, avg(p.budget.amount), stddev(p.budget.amount), min(p.budget.amount), max(p.budget.amount) from Patronage p where p.status = acme.entities.Status.ACCEPTED group by p.budget.currency")
+	Collection<Tuple> indicatorsBudgetOfAcceptedPatronages();
 	
+	@Query("select p.budget.currency, avg(p.budget.amount), stddev(p.budget.amount), min(p.budget.amount), max(p.budget.amount) from Patronage p where p.status = acme.entities.Status.PROPOSED group by p.budget.currency")
+	Collection<Tuple> indicatorsBudgetOfProposedPatronages();
 	
-	@Query("select count(p) from Patronage p where p.status = :status")
-	Integer totalNumberOfPatronagesByStatus(Status status);
-	
-	@Query("select avg(p.budget.amount) from Patronage p where p.status = :status")
-	Double averageBudgetOfPatronagesByStatus(Status status);
-	
-	@Query("select stddev(p.budget.amount) from Patronage p where p.status = :status")
-	Double deviationBudgetOfPatronagesByStatus(Status status);
-	
-	@Query("select min(p.budget.amount) from Patronage p where p.status = :status")
-	Double minimumBudgetOfPatronagesByStatus(Status status);
-	
-	@Query("select max(p.budget.amount) from Patronage p where p.status = :status")
-	Double maximumBudgetOfPatronagesByStatus(Status status);
+	@Query("select p.budget.currency, avg(p.budget.amount), stddev(p.budget.amount), min(p.budget.amount), max(p.budget.amount) from Patronage p where p.status = acme.entities.Status.DENIED group by p.budget.currency")
+	Collection<Tuple> indicatorsBudgetOfDeniedPatronages();
 
 }

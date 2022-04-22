@@ -1,0 +1,3 @@
+2022-04-22 20:56:06.907 INFO  [acme.Launcher@main] Starting Launcher using Java 1.8.0_281 on DESKTOP-B7M6F9V with PID 1988 (P:\Workspace-22.0\Frameworks\Acme-Framework-22.3\target\classes started by pabli in P:\Workspace-22.0\Projects\Acme-Toolkits-E3.08) 
+2022-04-22 20:56:06.909 DEBUG [acme.Launcher@main] Running with Spring Boot v2.4.2, Spring v5.3.3 
+2022-04-22 20:56:06.910 INFO  [acme.Launcher@main] The following profiles are active: development,default 

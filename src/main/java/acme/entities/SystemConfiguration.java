@@ -10,23 +10,28 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class CurrencyConfiguration extends AbstractEntity {
+public class SystemConfiguration extends AbstractEntity{
 	
 	// Serialisation identifier -----------------------------------------------
-
-	protected static final long		serialVersionUID	= 1L;
-
+	
+	protected static final long	serialVersionUID	= 1L;
+	
 	// Attributes -------------------------------------------------------------
-		
+	
 	@NotBlank
-	protected String defaultCurrency;
+	protected String systemCurrency;
 	
 	@NotBlank
 	protected String acceptedCurrencies;
 	
-	// Derived attributes -----------------------------------------------------
+	@NotBlank
+	protected String strongSpamTerms;
 	
-	// Relationships ----------------------------------------------------------
+	protected double strongSpamThreshold;
 	
+	@NotBlank
+	protected String weakSpamTerms;
 	
+	protected double weakSpamThreshold;
+
 }

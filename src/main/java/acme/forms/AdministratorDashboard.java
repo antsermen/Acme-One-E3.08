@@ -20,23 +20,23 @@ public class AdministratorDashboard implements Serializable {
 	
 	// Attributes -------------------------------------------------------------	
 	
-	Integer totalNumberOfComponents;
+	int totalNumberOfComponents;
 	Map<Pair<String,String>,Double> averageRetailPriceOfComponents;
 	Map<Pair<String,String>,Double> deviationRetailPriceOfComponents;
 	Map<Pair<String,String>,Double> minimumRetailPriceOfComponents;
 	Map<Pair<String,String>,Double> maximumRetailPriceOfComponents;
 	
-	Integer totalNumberOfTools;
+	int totalNumberOfTools;
 	Map<String,Double> averageRetailPriceOfTools;
 	Map<String,Double> deviationRetailPriceOfTools;
 	Map<String,Double> minimumRetailPriceOfTools;
 	Map<String,Double> maximumRetailPriceOfTools;
 	
-	Map<Status, Integer> totalNumberOfPatronagesByStatus;
-	Map<Status,Double> averageBudgetOfPatronagesByStatus;
-	Map<Status,Double> deviationBudgetOfPatronagesByStatus;
-	Map<Status,Double> minimumBudgetOfPatronagesByStatus;
-	Map<Status,Double> maximumBudgetOfPatronagesByStatus;
+	Map<Status, Integer> totalNumberOfPatronages;
+	Map<Pair<String,Status>,Double> averageBudgetOfPatronages;
+	Map<Pair<String,Status>,Double> deviationBudgetOfPatronages;
+	Map<Pair<String,Status>,Double> minimumBudgetOfPatronages;
+	Map<Pair<String,Status>,Double> maximumBudgetOfPatronages;
 	
 	
 

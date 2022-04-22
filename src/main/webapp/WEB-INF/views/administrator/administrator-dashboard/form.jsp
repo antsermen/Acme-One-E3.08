@@ -118,58 +118,58 @@
 <table class="table table-sm">
 	<tr>
 		<th scope="row">
-			<acme:message code="administrator.administrator-dashboard.form.label.totalNumberOfPatronagesByStatus"/>
+			<acme:message code="administrator.administrator-dashboard.form.label.totalNumberOfPatronages"/>
 		</th>
 		<td>
 			<div>
-				<canvas id="totalNumberOfPatronagesByStatus"></canvas>
+				<canvas id="totalNumberOfPatronages"></canvas>
 			</div>
 		</td>
 	</tr>
 	<tr>
 		<th scope="row">
-			<acme:message code="administrator.administrator-dashboard.form.label.averageBudgetOfPatronagesByStatus"/>
+			<acme:message code="administrator.administrator-dashboard.form.label.averageBudgetOfPatronages"/>
 		</th>
 		<td>
 			<div>
-				<canvas id="averageBudgetOfPatronagesByStatus"></canvas>
+				<canvas id="averageBudgetOfPatronages"></canvas>
 			</div>
 		</td>
 	</tr>
 	<tr>
 		<th scope="row">
-			<acme:message code="administrator.administrator-dashboard.form.label.deviationBudgetOfPatronagesByStatus"/>
+			<acme:message code="administrator.administrator-dashboard.form.label.deviationBudgetOfPatronages"/>
 		</th>
 		<td>
 			<div>
-				<canvas id="deviationBudgetOfPatronagesByStatus"></canvas>
+				<canvas id="deviationBudgetOfPatronages"></canvas>
 			</div>
 		</td>
 	</tr>
 	<tr>
 		<th scope="row">
-			<acme:message code="administrator.administrator-dashboard.form.label.minimumBudgetOfPatronagesByStatus"/>
+			<acme:message code="administrator.administrator-dashboard.form.label.minimumBudgetOfPatronages"/>
 		</th>
 		<td>
 			<div>
-				<canvas id="minimumBudgetOfPatronagesByStatus"></canvas>
+				<canvas id="minimumBudgetOfPatronages"></canvas>
 			</div>
 		</td>
 	</tr>
 	<tr>
 		<th scope="row">
-			<acme:message code="administrator.administrator-dashboard.form.label.maximumBudgetOfPatronagesByStatus"/>
+			<acme:message code="administrator.administrator-dashboard.form.label.maximumBudgetOfPatronages"/>
 		</th>
 		<td>
 			<div>
-				<canvas id="maximumBudgetOfPatronagesByStatus"></canvas>
+				<canvas id="maximumBudgetOfPatronages"></canvas>
 			</div>
 		</td>
 	</tr>	
 </table>
 <script type="text/javascript">
 	$(document).ready(function() {
-		function createChart(labels_list, datas_list, id, chartType){
+		function newChart(labels_list, datas_list, id, chartType){
 			var data = {
 				
 				labels : labels_list,
@@ -212,230 +212,182 @@
 			});
 			   
 		}
-		let EURtechnology = "EURtechnology";
-		let EURmadera = "EURmadera";
 		
 		let labels_averageRetailPriceOfComponents = [
 			<jstl:forEach items="${averageRetailPriceOfComponents.keySet()}" var="x">
-			<acme:print value="${x.getFirst()}"/><acme:print value="${x.getSecond()}"/>,
-
-		</jstl:forEach>
+				"<acme:print value="${x.getFirst()}"/>-<acme:print value="${x.getSecond()}"/>",
+			</jstl:forEach>
 			]
 		let data_averageRetailPriceOfComponents = [
 			<jstl:forEach items="${averageRetailPriceOfComponents.entrySet()}" var="x">
-			<jstl:out value="${x.getValue()}"/>,
-		</jstl:forEach>
+				<jstl:out value="${x.getValue()}"/>,
+			</jstl:forEach>
 		]
-		createChart(labels_averageRetailPriceOfComponents, data_averageRetailPriceOfComponents, "averageRetailPriceOfComponents","line");
+		newChart(labels_averageRetailPriceOfComponents, data_averageRetailPriceOfComponents, "averageRetailPriceOfComponents","line");
 		
 		
 		
 		let labels_deviationRetailPriceOfComponents = [
 			<jstl:forEach items="${deviationRetailPriceOfComponents.keySet()}" var="x">
-			<acme:print value="${x.getFirst()}"/><acme:print value="${x.getSecond()}"/>,
-
-		</jstl:forEach>
+				"<acme:print value="${x.getFirst()}"/>-<acme:print value="${x.getSecond()}"/>",
+			</jstl:forEach>
 			]
 		let data_deviationRetailPriceOfComponents = [
 			<jstl:forEach items="${deviationRetailPriceOfComponents.entrySet()}" var="x">
-			<jstl:out value="${x.getValue()}"/>,
-		</jstl:forEach>
+				<jstl:out value="${x.getValue()}"/>,
+			</jstl:forEach>
 		]
-		createChart(labels_deviationRetailPriceOfComponents, data_deviationRetailPriceOfComponents, "deviationRetailPriceOfComponents","line");
+		newChart(labels_deviationRetailPriceOfComponents, data_deviationRetailPriceOfComponents, "deviationRetailPriceOfComponents","line");
 		
-				let labels_minimumRetailPriceOfComponents = [
-					<jstl:forEach items="${minimumRetailPriceOfComponents.keySet()}" var="x">
-					<acme:print value="${x.getFirst()}"/><acme:print value="${x.getSecond()}"/>,
-
-				</jstl:forEach>
-					]
-				let data_minimumRetailPriceOfComponents = [
-					<jstl:forEach items="${minimumRetailPriceOfComponents.entrySet()}" var="x">
-					<jstl:out value="${x.getValue()}"/>,
-				</jstl:forEach>
-				]
-				createChart(labels_minimumRetailPriceOfComponents, data_minimumRetailPriceOfComponents, "minimumRetailPriceOfComponents","bar");
-				
+		let labels_minimumRetailPriceOfComponents = [
+			<jstl:forEach items="${minimumRetailPriceOfComponents.keySet()}" var="x">
+				"<acme:print value="${x.getFirst()}"/>-<acme:print value="${x.getSecond()}"/>",
+			</jstl:forEach>
+			]
+		let data_minimumRetailPriceOfComponents = [
+			<jstl:forEach items="${minimumRetailPriceOfComponents.entrySet()}" var="x">
+				<jstl:out value="${x.getValue()}"/>,
+			</jstl:forEach>
+		]
+		newChart(labels_minimumRetailPriceOfComponents, data_minimumRetailPriceOfComponents, "minimumRetailPriceOfComponents","bar");
+		
 		
 		let labels_maximumRetailPriceOfComponents = [
 			<jstl:forEach items="${maximumRetailPriceOfComponents.keySet()}" var="x">
-			<acme:print value="${x.getFirst()}"/><acme:print value="${x.getSecond()}"/>,
-
-		</jstl:forEach>
+				"<acme:print value="${x.getFirst()}"/>-<acme:print value="${x.getSecond()}"/>",
+			</jstl:forEach>
 			]	
 		let data_maximumRetailPriceOfComponents = [
 			<jstl:forEach items="${maximumRetailPriceOfComponents.entrySet()}" var="x">
-			<jstl:out value="${x.getValue()}"/>,
-		</jstl:forEach>
+				<jstl:out value="${x.getValue()}"/>,
+			</jstl:forEach>
 		]
-		createChart(labels_maximumRetailPriceOfComponents, data_maximumRetailPriceOfComponents, "maximumRetailPriceOfComponents","bar");
-
+		newChart(labels_maximumRetailPriceOfComponents, data_maximumRetailPriceOfComponents, "maximumRetailPriceOfComponents","bar");
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		let EUR = "EUR";
-		let GBP = "GBP";
-		let USD = "USD";
 		
 		let labels_averageRetailPriceOfTools = [
 			<jstl:forEach items="${averageRetailPriceOfTools.keySet()}" var="x">
-			<acme:print value="${x.toString()}"/>,
-
-		</jstl:forEach>
+				"<acme:print value="${x}"/>",
+			</jstl:forEach>
 			]
 		let data_averageRetailPriceOfTools = [
 			<jstl:forEach items="${averageRetailPriceOfTools.entrySet()}" var="x">
-			<jstl:out value="${x.getValue()}"/>,
-		</jstl:forEach>
+				<jstl:out value="${x.getValue()}"/>,
+			</jstl:forEach>
 		]
-		createChart(labels_averageRetailPriceOfTools, data_averageRetailPriceOfTools, "averageRetailPriceOfTools","line");
+		newChart(labels_averageRetailPriceOfTools, data_averageRetailPriceOfTools, "averageRetailPriceOfTools","line");
 		
 		
 		
 		let labels_deviationRetailPriceOfTools = [
 			<jstl:forEach items="${deviationRetailPriceOfTools.keySet()}" var="x">
-			<acme:print value="${x.toString()}"/>,
-		</jstl:forEach>
+				"<acme:print value="${x}"/>",
+			</jstl:forEach>
 			]
 		let data_deviationRetailPriceOfTools = [
 			<jstl:forEach items="${deviationRetailPriceOfTools.entrySet()}" var="x">
-			<jstl:out value="${x.getValue()}"/>,
-		</jstl:forEach>
+				<jstl:out value="${x.getValue()}"/>,
+			</jstl:forEach>
 		]
-		createChart(labels_deviationRetailPriceOfTools, data_deviationRetailPriceOfTools, "deviationRetailPriceOfTools","line");
+		newChart(labels_deviationRetailPriceOfTools, data_deviationRetailPriceOfTools, "deviationRetailPriceOfTools","line");
 		
 
-				let labels_maximumRetailPriceOfTools = [
-					<jstl:forEach items="${maximumRetailPriceOfTools.keySet()}" var="x">
-					<acme:print value="${x.toString()}"/>,
-
-				</jstl:forEach>
-					]		
-				let data_maximumRetailPriceOfTools = [
-					<jstl:forEach items="${maximumRetailPriceOfTools.entrySet()}" var="x">
-					<jstl:out value="${x.getValue()}"/>,
-				</jstl:forEach>
-				]
-				createChart(labels_maximumRetailPriceOfTools, data_maximumRetailPriceOfTools, "maximumRetailPriceOfTools","bar");
-
-				
-			
-		
-		let ACCEPTED = "ACCEPTED";
-		let PROPOSED = "PROPOSED";
-		let DENIED = "DENIED";
-		
-		
-		let labels_totalNumberOfPatronagesByStatus = [
-			<jstl:forEach items="${totalNumberOfPatronagesByStatus.keySet()}" var="x">
-			<acme:print value="${x.toString()}"/>,
-
-		</jstl:forEach>
-			]
-		let data_totalNumberOfPatronagesByStatus = [
-			<jstl:forEach items="${totalNumberOfPatronagesByStatus.entrySet()}" var="x">
-			<jstl:out value="${x.getValue()}"/>,
-		</jstl:forEach>
-		]	
-		createChart(labels_totalNumberOfPatronagesByStatus, data_totalNumberOfPatronagesByStatus, "totalNumberOfPatronagesByStatus","pie");
-		
-		
-		
-		let labels_averageBudgetOfPatronagesByStatus = [
-			<jstl:forEach items="${averageBudgetOfPatronagesByStatus.keySet()}" var="x">
-			<acme:print value="${x.toString()}"/>,
-
-		</jstl:forEach>
-			]
-		let data_averageBudgetOfPatronagesByStatus = [
-			<jstl:forEach items="${averageBudgetOfPatronagesByStatus.entrySet()}" var="x">
-			<jstl:out value="${x.getValue()}"/>,
-		</jstl:forEach>
-		]
-		createChart(labels_averageBudgetOfPatronagesByStatus, data_averageBudgetOfPatronagesByStatus, "averageBudgetOfPatronagesByStatus", "line");
-		
-		
-		
-		
-		let labels_deviationBudgetOfPatronagesByStatus = [
-			<jstl:forEach items="${deviationBudgetOfPatronagesByStatus.keySet()}" var="x">
-			<acme:print value="${x.toString()}"/>,
-
-		</jstl:forEach>
-			]
-		let data_deviationBudgetOfPatronagesByStatus = [
-			<jstl:forEach items="${deviationBudgetOfPatronagesByStatus.entrySet()}" var="x">
-			<jstl:out value="${x.getValue()}"/>,
-		</jstl:forEach>
-		]
-		createChart(labels_deviationBudgetOfPatronagesByStatus, data_deviationBudgetOfPatronagesByStatus, "deviationBudgetOfPatronagesByStatus","line");
-		
-		
-		
-		
-		
-		let labels_minimumBudgetOfPatronagesByStatus = [
-			<jstl:forEach items="${minimumBudgetOfPatronagesByStatus.keySet()}" var="x">
-			<acme:print value="${x.toString()}"/>,
-
-		</jstl:forEach>
-			]	
-		let data_minimumBudgetOfPatronagesByStatus = [
-			<jstl:forEach items="${minimumBudgetOfPatronagesByStatus.entrySet()}" var="x">
-			<jstl:out value="${x.getValue()}"/>,
-		</jstl:forEach>
-		]
-		createChart(labels_minimumBudgetOfPatronagesByStatus, data_minimumBudgetOfPatronagesByStatus, "minimumBudgetOfPatronagesByStatus","bar");
-		
-		
-		
-		
-		
-		let labels_maximumBudgetOfPatronagesByStatus = [
-			<jstl:forEach items="${maximumBudgetOfPatronagesByStatus.keySet()}" var="x">
-			<acme:print value="${x.toString()}"/>,
-
-		</jstl:forEach>
-			]	
-		let data_maximumBudgetOfPatronagesByStatus = [
-			<jstl:forEach items="${maximumBudgetOfPatronagesByStatus.entrySet()}" var="x">
-			<jstl:out value="${x.getValue()}"/>,
-		</jstl:forEach>
-		]
-		createChart(labels_maximumBudgetOfPatronagesByStatus, data_maximumBudgetOfPatronagesByStatus, "maximumBudgetOfPatronagesByStatus","bar");
-		
-		
-		
-		
-		
-		
 		let labels_minimumRetailPriceOfTools = [
 			<jstl:forEach items="${minimumRetailPriceOfTools.keySet()}" var="x">
-			<acme:print value="${x.toString()}"/>,
-
-		</jstl:forEach>
+				"<acme:print value="${x}"/>",
+			</jstl:forEach>
 			]		
 		let data_minimumRetailPriceOfTools = [
 			<jstl:forEach items="${minimumRetailPriceOfTools.entrySet()}" var="x">
-			<jstl:out value="${x.getValue()}"/>,
-		</jstl:forEach>
+				<jstl:out value="${x.getValue()}"/>,
+			</jstl:forEach>
 		]
-		createChart(labels_minimumRetailPriceOfTools, data_minimumRetailPriceOfTools, "minimumRetailPriceOfTools","bar");
+		newChart(labels_minimumRetailPriceOfTools, data_minimumRetailPriceOfTools, "minimumRetailPriceOfTools","bar");
 		
 		
+		let labels_maximumRetailPriceOfTools = [
+			<jstl:forEach items="${maximumRetailPriceOfTools.keySet()}" var="x">
+				"<acme:print value="${x}"/>",
+			</jstl:forEach>
+			]		
+		let data_maximumRetailPriceOfTools = [
+			<jstl:forEach items="${maximumRetailPriceOfTools.entrySet()}" var="x">
+				<jstl:out value="${x.getValue()}"/>,
+			</jstl:forEach>
+		]
+		newChart(labels_maximumRetailPriceOfTools, data_maximumRetailPriceOfTools, "maximumRetailPriceOfTools","bar");
+		
+		
+		
+		
+				
+		let labels_totalNumberOfPatronages = [
+			<jstl:forEach items="${totalNumberOfPatronages.keySet()}" var="x">
+				"<acme:print value="${x}"/>",
+			</jstl:forEach>
+			]
+		let data_totalNumberOfPatronages = [
+			<jstl:forEach items="${totalNumberOfPatronages.entrySet()}" var="x">
+				<jstl:out value="${x.getValue()}"/>,
+			</jstl:forEach>
+		]	
+		newChart(labels_totalNumberOfPatronages, data_totalNumberOfPatronages, "totalNumberOfPatronages","pie");
+		
+
+		let labels_averageBudgetOfPatronages = [
+			<jstl:forEach items="${averageBudgetOfPatronages.keySet()}" var="x">
+				"<acme:print value="${x.getFirst()}"/>-<acme:print value="${x.getSecond()}"/>",
+			</jstl:forEach>
+			]
+		let data_averageBudgetOfPatronages = [
+			<jstl:forEach items="${averageBudgetOfPatronages.entrySet()}" var="x">
+				<jstl:out value="${x.getValue()}"/>,
+			</jstl:forEach>
+		]
+		newChart(labels_averageBudgetOfPatronages, data_averageBudgetOfPatronages, "averageBudgetOfPatronages", "line");
+		
+		let labels_deviationBudgetOfPatronages = [
+			<jstl:forEach items="${deviationBudgetOfPatronages.keySet()}" var="x">
+				"<acme:print value="${x.getFirst()}"/>-<acme:print value="${x.getSecond()}"/>",
+			</jstl:forEach>
+			]
+		let data_deviationBudgetOfPatronages = [
+			<jstl:forEach items="${deviationBudgetOfPatronages.entrySet()}" var="x">
+				<jstl:out value="${x.getValue()}"/>,
+			</jstl:forEach>
+		]
+		newChart(labels_deviationBudgetOfPatronages, data_deviationBudgetOfPatronages, "deviationBudgetOfPatronages","line");
+			
+		let labels_minimumBudgetOfPatronages = [
+			<jstl:forEach items="${minimumBudgetOfPatronages.keySet()}" var="x">
+				"<acme:print value="${x.getFirst()}"/>-<acme:print value="${x.getSecond()}"/>",
+			</jstl:forEach>
+			]	
+		let data_minimumBudgetOfPatronages = [
+			<jstl:forEach items="${minimumBudgetOfPatronages.entrySet()}" var="x">
+				<jstl:out value="${x.getValue()}"/>,
+			</jstl:forEach>
+		]
+		newChart(labels_minimumBudgetOfPatronages, data_minimumBudgetOfPatronages, "minimumBudgetOfPatronages","bar");
+		
+		let labels_maximumBudgetOfPatronages = [
+			<jstl:forEach items="${maximumBudgetOfPatronages.keySet()}" var="x">
+				"<acme:print value="${x.getFirst()}"/>-<acme:print value="${x.getSecond()}"/>",
+			</jstl:forEach>
+			]	
+		let data_maximumBudgetOfPatronages = [
+			<jstl:forEach items="${maximumBudgetOfPatronages.entrySet()}" var="x">
+				<jstl:out value="${x.getValue()}"/>,
+			</jstl:forEach>
+		]
+		newChart(labels_maximumBudgetOfPatronages, data_maximumBudgetOfPatronages, "maximumBudgetOfPatronages","bar");
 		
 	});
+	
+	
+	
 </script>
 
 

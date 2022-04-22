@@ -1,0 +1,9 @@
+recordIndex,username,roles,name,surname,email
+2,inventor1,Inventor,Inventor,One,inventor1@mail.com
+3,inventor2,Inventor,Inventor,Two,inventor2@mail.com
+4,patron1,,Patron,One,patron1@mail.com
+5,patron2,Patron,Patron,Two,patron2@mail.com
+0,consumer1,Consumer,Consumer,One,consumer1@mail.com
+1,consumer2,Consumer,Consumer,Two,consumer2@mail.com
+6,provider1,Provider,Provider,One,provider1@mail.com
+7,provider2,Provider,Provider,Two,provider2@mail.com

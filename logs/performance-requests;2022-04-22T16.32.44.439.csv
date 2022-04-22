@@ -1,0 +1,23 @@
+timestamp,simple-path,time
+"2022-04-22 16:30:01.602","/master/welcome",4524
+"2022-04-22 16:30:04.092","/any/user-account/list",1711
+"2022-04-22 16:30:06.443","/any/user-account/show",1091
+"2022-04-22 16:30:07.346","/master/welcome",593
+"2022-04-22 16:30:08.636","/any/user-account/list",550
+"2022-04-22 16:30:10.453","/any/user-account/show",553
+"2022-04-22 16:30:11.324","/master/welcome",560
+"2022-04-22 16:30:12.637","/any/user-account/list",564
+"2022-04-22 16:30:14.466","/any/user-account/show",554
+"2022-04-22 16:30:15.321","/master/welcome",549
+"2022-04-22 16:30:16.623","/any/user-account/list",550
+"2022-04-22 16:30:17.707","/master/welcome",535
+"2022-04-22 16:30:19.014","/any/user-account/list",555
+"2022-04-22 16:30:20.819","/any/user-account/show",563
+"2022-04-22 16:30:21.664","/master/welcome",532
+"2022-04-22 16:30:23.004","/any/user-account/list",563
+"2022-04-22 16:30:24.082","/master/welcome",529
+"2022-04-22 16:30:25.382","/any/user-account/list",561
+"2022-04-22 16:30:26.68","/any/user-account/show",561
+"2022-04-22 16:30:27.288","/master/welcome",297
+"2022-04-22 16:30:28.067","/any/user-account/list",563
+"2022-04-22 16:30:29.34","/any/user-account/show",558

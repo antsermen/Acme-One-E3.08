@@ -27,6 +27,10 @@ master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.anonymous.chirp.list = Lista de chirps recientes
 master.menu.anonymous.userAccount.list = Lista de Cuentas de Usuario
 
+master.menu.anonymous.item.tool.list= Lista de herramientas
+master.menu.anonymous.item.component.list= Lista de componentes
+master.menu.anonymous.toolkit.list= Lista de Cajas de herramientas
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
@@ -37,11 +41,18 @@ master.menu.administrator.populate-sample = Poblar BD (ejemplos)
 master.menu.administrator.shut-down = Parar el sistema
 master.menu.administrator.chirp.list = Lista de chirps recientes
 
+master.menu.administrator.system-configuration= Configuracion del sistema
+
+master.menu.administrator.administrator.dashboard = Dashboard
+
+
 # master.menu.inventor ########################################################
 
 master.menu.inventor = Inventor
 master.menu.inventor.mine-tools.list = Mis Herramientas
 master.menu.inventor.mine-components.list = Mis Componentes
+master.menu.inventor.mine-patronages.list = Mis Patrocinios
+master.menu.inventor.mine-toolkits.list = Mis Cajas de herramientas
 
 # master.menu.provider ########################################################
 
@@ -68,6 +79,7 @@ master.menu.user-account.become-consumer = Hazte consumidor
 
 master.menu.authenticated = Autentificado
 master.menu.authenticated.chirp.list = Lista de chirps recientes
+master.menu.authenticated.announcement.list = Lista de anuncios recientes
 
 # master.menu.patron ##########################################################
 

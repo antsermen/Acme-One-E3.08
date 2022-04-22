@@ -20,6 +20,7 @@ master.menu.sign-out = Sign out
 master.menu.any = Any
 
 
+
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anonymous
@@ -27,6 +28,10 @@ master.menu.anonymous.favourite-link = Favourite link
 
 master.menu.anonymous.chirp.list = Chirp Recent List
 master.menu.anonymous.userAccount.list = User Accounts List
+
+master.menu.anonymous.item.tool.list= Tool List
+master.menu.anonymous.item.component.list= Component List
+master.menu.anonymous.toolkit.list= Toolkit List
 
 # master.menu.administrator ###################################################
 
@@ -38,11 +43,20 @@ master.menu.administrator.populate-sample = Populate DB (samples)
 master.menu.administrator.shut-down = Shut down
 master.menu.administrator.chirp.list = Chirp Recent List
 
+master.menu.administrator.system-configuration = System Configuration
+
+master.menu.administrator.administrator.dashboard = Dashboard
+
+
+
 # master.menu.inventor ########################################################
 
 master.menu.inventor = Inventor
 master.menu.inventor.mine-tools.list = My Tools List
 master.menu.inventor.mine-components.list = My Components List
+master.menu.inventor.mine-patronages.list = My Patronages List
+master.menu.inventor.mine-toolkits.list = My Toolkits List
+
 
 # master.menu.provider ########################################################
 
@@ -70,6 +84,7 @@ master.menu.user-account.become-consumer = Become a consumer
 
 master.menu.authenticated = Authenticated
 master.menu.authenticated.chirp.list = Chirp Recent List
+master.menu.authenticated.announcement.list = Announcement Recent List
 
 # master.menu.patron ##########################################################
 

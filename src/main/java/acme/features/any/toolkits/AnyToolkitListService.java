@@ -15,7 +15,7 @@ import acme.framework.services.AbstractListService;
 public class AnyToolkitListService implements AbstractListService<Any, Toolkit>{
 	
 	@Autowired
-	protected AnyToolkitsRepository repository;
+	protected AnyToolkitRepository repository;
 	
 	@Override
 	public boolean authorise(final Request<Toolkit> request) {

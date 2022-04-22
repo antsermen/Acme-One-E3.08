@@ -8,7 +8,13 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-announcement.creationMoment = Creation moment
-announcement.title = Title
-announcement.critical = Critical
+authenticated.announcement.form.label.creationMoment = Creation moment
+authenticated.announcement.form.label.title = Title
+authenticated.announcement.form.label.body = Body
+authenticated.announcement.form.label.critical = Critical
+authenticated.announcement.form.label.link = Link
+
+authenticated.announcement.list.creationMoment = Creation moment
+authenticated.announcement.list.title = Title
+authenticated.announcement.list.critical = Critical
 

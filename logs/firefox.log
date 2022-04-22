@@ -1,3 +1,7 @@
+
+1650638113519	geckodriver	INFO	Listening on 127.0.0.1:46402
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JOSERR~1\\AppData\\Local\\Temp\\rust_mozprofile5hS7QW\\search.json.mozlz4", (void 0)))
+
 1650563945198	geckodriver	INFO	Listening on 127.0.0.1:29907
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\rober\\AppData\\Local\\Temp\\rust_mozprofileUqP3w5\\search.json.mozlz4", (void 0)))
 console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"

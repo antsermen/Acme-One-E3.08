@@ -76,6 +76,7 @@ master.menu.user-account.become-consumer = Hazte consumidor
 
 master.menu.authenticated = Autentificado
 master.menu.authenticated.chirp.list = Lista de chirps recientes
+master.menu.authenticated.toolkit.list = Lista de todas las cajas de herramientas
 master.menu.authenticated.announcement.list = Lista de anuncios recientes
 
 # master.menu.patron ##########################################################

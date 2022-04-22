@@ -83,8 +83,9 @@ master.menu.user-account.become-consumer = Become a consumer
 # master.menu.authenticated #######################################################
 
 master.menu.authenticated = Authenticated
-master.menu.authenticated.chirp.list = Chirp Recent List
-master.menu.authenticated.announcement.list = Announcement Recent List
+master.menu.authenticated.chirp.list = Chirp recent list
+master.menu.authenticated.toolkit.list = All toolkits list
+master.menu.authenticated.announcement.list = Announcement recent list
 
 # master.menu.patron ##########################################################
 

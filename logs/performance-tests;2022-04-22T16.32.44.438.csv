@@ -1,0 +1,9 @@
+timestamp,test-class,test-method,time,description,result
+"2022-04-22 16:30:06.71","acme.testing.any.userAccount.AnyUserAccountListShowTest","positiveTest",5107,""[1] recordIndex=2, username=inventor1, roles=Inventor, name=Inventor, surname=One, email=inventor1@mail.com"","OK"
+"2022-04-22 16:30:10.716","acme.testing.any.userAccount.AnyUserAccountListShowTest","positiveTest",3369,""[2] recordIndex=3, username=inventor2, roles=Inventor, name=Inventor, surname=Two, email=inventor2@mail.com"","OK"
+"2022-04-22 16:30:14.726","acme.testing.any.userAccount.AnyUserAccountListShowTest","positiveTest",3401,""[3] recordIndex=4, username=patron1, roles=null, name=Patron, surname=One, email=patron1@mail.com"","OK"
+"2022-04-22 16:30:17.123","acme.testing.any.userAccount.AnyUserAccountListShowTest","positiveTest",1801,""[4] recordIndex=5, username=patron2, roles=null, name=null, surname=Two, email=patron2@mail.com"","Expected value '' in attribute 1 of record 5, but found 'Patron'"
+"2022-04-22 16:30:21.085","acme.testing.any.userAccount.AnyUserAccountListShowTest","positiveTest",3376,""[5] recordIndex=0, username=consumer1, roles=Consumer, name=Consumer, surname=One, email=consumer1@mail.com"","OK"
+"2022-04-22 16:30:23.499","acme.testing.any.userAccount.AnyUserAccountListShowTest","positiveTest",1834,""[6] recordIndex=1, username=consumer2, roles=null, name=null, surname=Two, email=consumer2@mail.com"","Expected value '' in attribute 1 of record 1, but found 'Consumer'"
+"2022-04-22 16:30:26.942","acme.testing.any.userAccount.AnyUserAccountListShowTest","positiveTest",2859,""[7] recordIndex=6, username=provider1, roles=Provider, name=Provider, surname=One, email=provider1@mail.com"","OK"
+"2022-04-22 16:30:29.608","acme.testing.any.userAccount.AnyUserAccountListShowTest","positiveTest",2319,""[8] recordIndex=7, username=provider2, roles=Provider, name=Provider, surname=Two, email=provider2@mail.com"","OK"

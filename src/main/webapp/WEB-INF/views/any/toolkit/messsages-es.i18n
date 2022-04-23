@@ -13,3 +13,14 @@ any.toolkit.list.label.code = Código:
 any.toolkit.list.label.description = Descripción:
 any.toolkit.list.label.notes = Anotaciones:
 any.toolkit.list.label.url = URL:
+
+any.toolkit.form.label.title = Título:
+any.toolkit.form.label.code = Código:
+any.toolkit.form.label.description = Descripción:
+any.toolkit.form.label.notes = Anotaciones:
+any.toolkit.form.label.link = Link:
+any.toolkit.form.label.toolkitPrice = Precio
+any.toolkit.form.label.itemName = Nombre del objeto
+any.toolkit.form.label.itemType = Tipo del objeto
+any.toolkit.form.label.itemDescription = Descripción del objeto
+any.toolkit.form.label.itemRetailPrice = Precio del objeto

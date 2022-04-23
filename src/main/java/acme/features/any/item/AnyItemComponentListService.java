@@ -31,7 +31,7 @@ public class AnyItemComponentListService implements AbstractListService<Any,Item
 
 		Collection<Item> result;
 
-		result = this.repository.findAllItemType(ItemType.COMPONENT);
+		result = this.repository.findAllItemType(ItemType.COMPONENT, true);
 
 		return result;
 	}

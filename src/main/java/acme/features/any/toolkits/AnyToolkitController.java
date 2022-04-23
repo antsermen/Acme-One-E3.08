@@ -13,6 +13,8 @@ import acme.framework.roles.Any;
 public class AnyToolkitController extends AbstractController<Any, Toolkit>{
 	@Autowired
 	protected AnyToolkitListService	listService;
+	@Autowired
+	protected AnyToolkitShowService showService;
 	
 	// Constructors -----------------------------------------------------------
 
@@ -20,6 +22,7 @@ public class AnyToolkitController extends AbstractController<Any, Toolkit>{
 	@PostConstruct
 	protected void initialise() {
 		super.addCommand("list", this.listService);
+		super.addCommand("show", this.showService);
 	}
 
 }

@@ -20,6 +20,5 @@
 	<acme:list-column code="any.toolkit.list.label.code" path="code" width="20%"/>
 	<acme:list-column code="any.toolkit.list.label.description" path="description" width="20%"/>
 	<acme:list-column code="any.toolkit.list.label.notes" path="notes" width="20%"/>
-	<acme:list-column code="any.toolkit.list.label.url" path="url" width="200%"/>
-	
+	<acme:list-column code="any.toolkit.list.label.link" path="link" width="200%"/>
 </acme:list>

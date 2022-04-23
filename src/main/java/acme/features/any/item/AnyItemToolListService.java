@@ -31,7 +31,7 @@ public class AnyItemToolListService implements AbstractListService<Any,Item>{
 
 		Collection<Item> result;
 
-		result = this.repository.findAllItemType(ItemType.TOOL);
+		result = this.repository.findAllItemType(ItemType.TOOL, true);
 
 		return result;
 	}

@@ -9,12 +9,12 @@ import acme.testing.TestHarness;
 public class AnyToolListTest extends TestHarness{
 	
 	@ParameterizedTest
-	@CsvFileSource(resources = "/any/tool/toolList.csv", encoding = "utf-8", numLinesToSkip = 1)
+	@CsvFileSource(resources = "/any/item/toolList.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
 	public void positiveTest(final int recordIndex,final String name, final String code, final String technology, final String description, final String retailPrice, final String link) {
 		
 
-		super.clickOnMenu("Anonymous", "List Tool");
+		super.clickOnMenu("Anonymous", "Tool List");
 		super.checkListingExists();
 		super.sortListing(0, "asc");
 		

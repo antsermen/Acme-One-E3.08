@@ -1,5 +1,5 @@
-1650710114572	geckodriver	INFO	Listening on 127.0.0.1:43221
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\USUARIO\\AppData\\Local\\Temp\\rust_mozprofileSVOfN2\\search.json.mozlz4", (void 0)))
+1650709787590	geckodriver	INFO	Listening on 127.0.0.1:46214
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\USUARIO\\AppData\\Local\\Temp\\rust_mozprofileCOB3oz\\search.json.mozlz4", (void 0)))
 
 ###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
 

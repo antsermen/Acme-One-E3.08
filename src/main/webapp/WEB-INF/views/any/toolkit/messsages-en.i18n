@@ -23,6 +23,7 @@ any.toolkit.list.label.code = Code:
 any.toolkit.list.label.description = Description:
 any.toolkit.list.label.notes= Notes:
 any.toolkit.list.label.url = URL:
+any.toolkit.list.label.link = Link:
 
 any.toolkit.form.label.title = Title:
 any.toolkit.form.label.code = Code:

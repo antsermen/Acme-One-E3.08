@@ -61,7 +61,7 @@ public class AnyToolkitShowService implements AbstractShowService<Any,Toolkit>{
 			model.setAttribute("itemDescription", i.getDescription());
 			model.setAttribute("itemRetailPrice", i.getRetailPrice());
 		}
-		request.unbind(entity, model, "title", "description", "notes", "link");
+		request.unbind(entity, model, "title", "description", "notes", "link", "code");
 		model.setAttribute("confirmation", false);
 		model.setAttribute("readonly", true);
 	}

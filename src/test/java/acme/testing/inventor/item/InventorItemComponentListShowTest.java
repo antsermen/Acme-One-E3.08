@@ -20,13 +20,9 @@ public class InventorItemComponentListShowTest extends TestHarness {
 		super.checkListingExists();
 		super.sortListing(0, "asc");
 
-		super.checkColumnHasValue(recordIndex, 0, type);
-		super.checkColumnHasValue(recordIndex, 1, name);
-		super.checkColumnHasValue(recordIndex, 2, code);
-		super.checkColumnHasValue(recordIndex, 3, technology);
-		super.checkColumnHasValue(recordIndex, 4, description);
-		super.checkColumnHasValue(recordIndex, 5, retailPrice);
-		super.checkColumnHasValue(recordIndex, 6, link);
+		super.checkColumnHasValue(recordIndex, 0, name);
+		super.checkColumnHasValue(recordIndex, 1, technology);
+		super.checkColumnHasValue(recordIndex, 2, retailPrice);
 		
 		//Show--------------------------------------------------------------
 		super.clickOnListingRecord(recordIndex);

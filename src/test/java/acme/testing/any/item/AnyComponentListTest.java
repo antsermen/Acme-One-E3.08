@@ -19,11 +19,8 @@ public class AnyComponentListTest extends TestHarness{
 		super.sortListing(0, "asc");
 		
 		super.checkColumnHasValue(recordIndex, 0, name);
-		super.checkColumnHasValue(recordIndex, 1, code);
-		super.checkColumnHasValue(recordIndex, 2, technology);
-		super.checkColumnHasValue(recordIndex, 3, description);
-		super.checkColumnHasValue(recordIndex, 4, retailPrice);
-		super.checkColumnHasValue(recordIndex, 5, link);
+		super.checkColumnHasValue(recordIndex, 1, technology);
+		super.checkColumnHasValue(recordIndex, 2, retailPrice);
 
 	}
 

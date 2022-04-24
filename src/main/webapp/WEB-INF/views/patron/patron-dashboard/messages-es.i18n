@@ -1,0 +1,8 @@
+
+
+patron.patron-dashboard.form.title.patronages = Patrocinios
+patron.patron-dashboard.form.label.totalNumberOfPatronages =  Número total de patrocinios
+patron.patron-dashboard.form.label.averageBudgetOfPatronages =  Presupuesto medio de los patrocinios
+patron.patron-dashboard.form.label.deviationBudgetOfPatronages = Desviación del presupuesto de los patrocinios
+patron.patron-dashboard.form.label.minimumBudgetOfPatronages = Mínimo presupuesto de los patrocinios
+patron.patron-dashboard.form.label.maximumBudgetOfPatronages = Máximo presupuesto de los patrocinios

@@ -4,11 +4,14 @@ import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.ui.Model;
 
+import acme.entities.Patronage;
 import acme.entities.PatronageReport;
+import acme.framework.components.models.Model;
+import acme.framework.controllers.Request;
 import acme.framework.services.AbstractListService;
 import acme.roles.Inventor;
+
 
 @Service
 public class InventorPatronageReportListService implements AbstractListService<Inventor, PatronageReport> {

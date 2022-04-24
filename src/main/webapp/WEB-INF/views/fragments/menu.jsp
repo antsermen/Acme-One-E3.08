@@ -49,6 +49,7 @@
 			<acme:menu-suboption code="master.menu.inventor.mine-components.list" action="/inventor/item/my-components"/>	
 			<acme:menu-suboption code="master.menu.inventor.mine-patronages.list" action="/inventor/patronage/list"/>
 			<acme:menu-suboption code="master.menu.inventor.mine-toolkits.list"	action="/inventor/toolkit/list"/>
+			<acme:menu-suboption code="master.menu.inventor.patronageReport.list" action="/inventor/patronage-report/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">

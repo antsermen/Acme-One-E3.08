@@ -52,6 +52,7 @@ master.menu.inventor.mine-tools.list = Mis Herramientas
 master.menu.inventor.mine-components.list = Mis Componentes
 master.menu.inventor.mine-patronages.list = Mis Patrocinios
 master.menu.inventor.mine-toolkits.list = Mis Cajas de herramientas
+master.menu.inventor.patronageReport.list = Listar mis informes de patrocinios
 
 # master.menu.provider ########################################################
 

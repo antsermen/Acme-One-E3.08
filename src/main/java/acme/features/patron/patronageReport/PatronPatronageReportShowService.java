@@ -42,8 +42,9 @@ public class PatronPatronageReportShowService implements AbstractShowService<Pat
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model,"memorandum","creationMoment", "link");
-	}
+ final String name = entity.getPatronage().getPatron().getIdentity().getFullName();
+			model.setAttribute("name", name);
+		request.unbind(entity, model,"memorandum","creationMoment", "link");	}
 	
 	
 }

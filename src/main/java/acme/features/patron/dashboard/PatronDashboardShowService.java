@@ -13,6 +13,7 @@ import acme.entities.Status;
 import acme.forms.PatronDashboard;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
+import acme.framework.entities.Principal;
 import acme.framework.services.AbstractShowService;
 import acme.roles.Patron;
 
@@ -32,11 +33,13 @@ public class PatronDashboardShowService implements AbstractShowService<Patron, P
 	@Override
 	public PatronDashboard findOne(final Request<PatronDashboard> request) {	
 		assert request != null;
-		final PatronDashboard result;	
-		final int Pid = request.getPrincipal().getAccountId();
-		final Patron patron = this.repository.findOnePatronByUserAccountId(Pid);
-		final int id = patron.getId();
+		final PatronDashboard result;
+		Principal principal;
 
+		principal = request.getPrincipal();
+		
+		final int id = principal.getActiveRoleId();
+		
 		Map<Status, Integer> totalNumberOfPatronages;
 		Map<Pair<String,Status>,Double> averageBudgetOfPatronages;
 		Map<Pair<String,Status>,Double> deviationBudgetOfPatronages;

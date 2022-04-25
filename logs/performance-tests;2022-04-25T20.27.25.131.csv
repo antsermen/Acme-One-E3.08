@@ -1,0 +1,2 @@
+timestamp,test-class,test-method,time,description,result
+"2022-04-25 20:25:22.263","acme.testing.patron.patronage.patronageReport.PatronPatronageReportListTest","positiveTest",6105,""[1] recordIndex=0, memorandum=2022/01/15 10:00, link=ejemplo, creationMoment=https://www.google.es/, name=Acme, Administrator"","Column 2 in record 0 is out of range"

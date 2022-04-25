@@ -1,0 +1,2 @@
+timestamp,test-class,test-method,time,description,result
+"2022-04-25 20:23:19.303","acme.testing.patron.patronage.patronageReport.PatronPatronageReportListTest","positiveTest",6358,""[1] recordIndex=0, memorandum=2022/01/15 10:00, link=ejemplo, creationMoment=https://www.google.es/, name=Acme, Administrator"","Cannot find 'By.xpath: //div[@id='mainMenu']/ul/li[a[normalize-space()='Patron']]/div[contains(@class, 'dropdown-menu')]/a[normalize-space()='Patronage Report List']'"

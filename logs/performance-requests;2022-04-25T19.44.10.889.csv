@@ -1,0 +1,13 @@
+timestamp,simple-path,time
+"2022-04-25 19:42:09.973","/master/welcome",4369
+"2022-04-25 19:42:10.383","/master/welcome",363
+"2022-04-25 19:42:12.706","/master/sign-in",2152
+"2022-04-25 19:42:13.968","/master/welcome",576
+"2022-04-25 19:42:15.332","/patron/patronage/list",1113
+"2022-04-25 19:42:18.574","/patron/patronage/show",1601
+"2022-04-25 19:42:19.553","/master/welcome",341
+"2022-04-25 19:42:19.93","/master/welcome",347
+"2022-04-25 19:42:20.635","/master/sign-in",550
+"2022-04-25 19:42:21.884","/master/welcome",565
+"2022-04-25 19:42:22.715","/patron/patronage/list",576
+"2022-04-25 19:42:24.889","/patron/patronage/show",565

@@ -24,12 +24,12 @@ master.menu.any = Cualquiera
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
 
-master.menu.anonymous.chirp.list = Lista de chirps recientes
-master.menu.anonymous.userAccount.list = Lista de Cuentas de Usuario
 
+master.menu.anonymous.chirp.list = Lista de chirps recientes
+master.menu.anonymous.userAccount.list = Lista de cuentas de usuario
 master.menu.anonymous.item.tool.list= Lista de herramientas
 master.menu.anonymous.item.component.list= Lista de componentes
-master.menu.anonymous.toolkit.list= Lista de Cajas de herramientas
+master.menu.anonymous.toolkit.list= Lista de cajas de herramientas
 
 # master.menu.administrator ###################################################
 
@@ -48,11 +48,11 @@ master.menu.administrator.administrator.dashboard = Dashboard
 # master.menu.inventor ########################################################
 
 master.menu.inventor = Inventor
-master.menu.inventor.mine-tools.list = Mis Herramientas
-master.menu.inventor.mine-components.list = Mis Componentes
-master.menu.inventor.mine-patronages.list = Mis Patrocinios
-master.menu.inventor.mine-toolkits.list = Mis Cajas de herramientas
-master.menu.inventor.patronageReport.list = Listar mis informes de patrocinios
+master.menu.inventor.mine-tools.list = Mis herramientas
+master.menu.inventor.mine-components.list = Mis componentes
+master.menu.inventor.mine-patronages.list = Mis patrocinios
+master.menu.inventor.mine-toolkits.list = Mis cajas de herramientas
+master.menu.inventor.patronageReport.list = Mis informes de patrocinio
 
 # master.menu.provider ########################################################
 
@@ -69,7 +69,6 @@ master.menu.consumer.favourite-link = Enlace favorito
 master.menu.user-account = Cuenta
 master.menu.user-account.general-data = Datos generales
 master.menu.user-account.provider = Datos de proveedor
-master.menu.user-account.systemConfiguration = Configuración del sistema
 master.menu.user-account.become-provider = Hazte proveedor
 master.menu.user-account.consumer = Datos de consumidor
 master.menu.user-account.become-consumer = Hazte consumidor
@@ -78,10 +77,16 @@ master.menu.user-account.become-consumer = Hazte consumidor
 
 master.menu.authenticated = Autentificado
 master.menu.authenticated.chirp.list = Lista de chirps recientes
-master.menu.authenticated.toolkit.list = Lista de todas las cajas de herramientas
+master.menu.authenticated.userAccount.list = Lista de cuentas de usuario
+master.menu.authenticated.item.tool.list= Lista de herramientas
+master.menu.authenticated.item.component.list= Lista de componentes
+master.menu.authenticated.toolkit.list= Lista de cajas de herramientas
 master.menu.authenticated.announcement.list = Lista de anuncios recientes
+master.menu.authenticated.system-configuration = Configuracion del sistema
 
 # master.menu.patron ##########################################################
 
 master.menu.patron = Patrono
-master.menu.patron.patronage.list = Lista de patrocinios
+master.menu.patron.patronage.list = Mis patrocinios
+master.menu.patron.patron.dashboard = Dashboard
+master.menu.patron.patronage-report = Mis informes de patrocinio

@@ -8,7 +8,5 @@
 	<acme:list-column code="patron.patronageReport.list.label.memorandum" path="memorandum" width="20%"/>
 		<acme:list-column code="patron.patronageReport.list.label.link" path="link" width="20%"/>
 	
-	<acme:list-column code="patron.patronageReport.list.label.creationMoment" path="creationMoment" width="20%"/>	
-	<acme:list-column code="patron.patronageReport.list.label.name" path="name" />
 	
 </acme:list>

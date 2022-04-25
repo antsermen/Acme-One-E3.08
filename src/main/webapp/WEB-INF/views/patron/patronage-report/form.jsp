@@ -7,7 +7,7 @@
 	
 <acme:input-textarea code="patron.patronageReport.list.label.memorandum" path="memorandum" />
 		<acme:input-url code="patron.patronageReport.list.label.link" path="link" />
-	
-	<acme:input-moment code="patron.patronageReport.list.label.creationMoment" path="creationMoment"/>	
+		<acme:input-textarea code="patron.patronageReport.list.label.name" path="name" />
+	<acme:input-moment code="patron.patronageReport.list.label.creationMoment" path="creationMoment"/>		
 	
 </acme:form>

@@ -33,9 +33,10 @@ public class PatronDashboardShowService implements AbstractShowService<Patron, P
 	public PatronDashboard findOne(final Request<PatronDashboard> request) {	
 		assert request != null;
 		final PatronDashboard result;	
-		
-		
-		
+		final int Pid = request.getPrincipal().getAccountId();
+		final Patron patron = this.repository.findOnePatronByUserAccountId(Pid);
+		final int id = patron.getId();
+
 		Map<Status, Integer> totalNumberOfPatronages;
 		Map<Pair<String,Status>,Double> averageBudgetOfPatronages;
 		Map<Pair<String,Status>,Double> deviationBudgetOfPatronages;
@@ -48,29 +49,28 @@ public class PatronDashboardShowService implements AbstractShowService<Patron, P
 		minimumBudgetOfPatronages = new HashMap<Pair<String,Status>,Double>();
 		maximumBudgetOfPatronages = new HashMap<Pair<String,Status>,Double>();
 				
-		totalNumberOfPatronages.put(Status.ACCEPTED, this.repository.totalNumberOfAcceptedPatronages());
-		totalNumberOfPatronages.put(Status.PROPOSED, this.repository.totalNumberOfProposedPatronages());
-		totalNumberOfPatronages.put(Status.DENIED, this.repository.totalNumberOfDeniedPatronages());
+		totalNumberOfPatronages.put(Status.ACCEPTED, this.repository.totalNumberOfAcceptedPatronages(id));
+		totalNumberOfPatronages.put(Status.PROPOSED, this.repository.totalNumberOfProposedPatronages(id));
+		totalNumberOfPatronages.put(Status.DENIED, this.repository.totalNumberOfDeniedPatronages(id));
 		
-		for(final Tuple x: this.repository.indicatorsBudgetOfAcceptedPatronages()) {
+		for(final Tuple x: this.repository.indicatorsBudgetOfAcceptedPatronages(id)) {
 			averageBudgetOfPatronages.put(Pair.of(x.get(0).toString(), Status.ACCEPTED), Double.parseDouble(x.get(1).toString()));
 			deviationBudgetOfPatronages.put(Pair.of(x.get(0).toString(), Status.ACCEPTED), Double.parseDouble(x.get(2).toString()));
 			minimumBudgetOfPatronages.put(Pair.of(x.get(0).toString(), Status.ACCEPTED), Double.parseDouble(x.get(3).toString()));
 			maximumBudgetOfPatronages.put(Pair.of(x.get(0).toString(), Status.ACCEPTED), Double.parseDouble(x.get(4).toString()));
 		}
-		for(final Tuple x: this.repository.indicatorsBudgetOfProposedPatronages()) {
+		for(final Tuple x: this.repository.indicatorsBudgetOfProposedPatronages(id)) {
 			averageBudgetOfPatronages.put(Pair.of(x.get(0).toString(), Status.PROPOSED), Double.parseDouble(x.get(1).toString()));
 			deviationBudgetOfPatronages.put(Pair.of(x.get(0).toString(), Status.PROPOSED), Double.parseDouble(x.get(2).toString()));
 			minimumBudgetOfPatronages.put(Pair.of(x.get(0).toString(), Status.PROPOSED), Double.parseDouble(x.get(3).toString()));
 			maximumBudgetOfPatronages.put(Pair.of(x.get(0).toString(), Status.PROPOSED), Double.parseDouble(x.get(4).toString()));
 		}
-		for(final Tuple x: this.repository.indicatorsBudgetOfDeniedPatronages()) {
+		for(final Tuple x: this.repository.indicatorsBudgetOfDeniedPatronages(id)) {
 			averageBudgetOfPatronages.put(Pair.of(x.get(0).toString(), Status.DENIED), Double.parseDouble(x.get(1).toString()));
 			deviationBudgetOfPatronages.put(Pair.of(x.get(0).toString(), Status.DENIED), Double.parseDouble(x.get(2).toString()));
 			minimumBudgetOfPatronages.put(Pair.of(x.get(0).toString(), Status.DENIED), Double.parseDouble(x.get(3).toString()));
 			maximumBudgetOfPatronages.put(Pair.of(x.get(0).toString(), Status.DENIED), Double.parseDouble(x.get(4).toString()));
 		}
-				
 		result = new PatronDashboard();
 		
 		

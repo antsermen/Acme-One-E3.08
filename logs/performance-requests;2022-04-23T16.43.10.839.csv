@@ -1,0 +1,26 @@
+timestamp,simple-path,time
+"2022-04-23 16:42:14.645","/master/welcome",4322
+"2022-04-23 16:42:15.188","/master/welcome",495
+"2022-04-23 16:42:17.004","/master/sign-in",1621
+"2022-04-23 16:42:18.246","/master/welcome",571
+"2022-04-23 16:42:19.57","/inventor/item/my-components",1076
+"2022-04-23 16:42:20.268","/master/welcome",353
+"2022-04-23 16:42:20.663","/master/welcome",364
+"2022-04-23 16:42:21.38","/master/sign-in",561
+"2022-04-23 16:42:22.617","/master/welcome",562
+"2022-04-23 16:42:23.444","/inventor/item/my-components",557
+"2022-04-23 16:42:24.9","/master/welcome",304
+"2022-04-23 16:42:25.234","/master/welcome",302
+"2022-04-23 16:42:25.944","/master/sign-in",553
+"2022-04-23 16:42:27.157","/master/welcome",555
+"2022-04-23 16:42:27.976","/inventor/item/my-tools",554
+"2022-04-23 16:42:28.639","/master/welcome",328
+"2022-04-23 16:42:29.003","/master/welcome",334
+"2022-04-23 16:42:29.726","/master/sign-in",565
+"2022-04-23 16:42:30.936","/master/welcome",551
+"2022-04-23 16:42:31.747","/inventor/item/my-tools",555
+"2022-04-23 16:42:32.373","/master/welcome",300
+"2022-04-23 16:42:32.726","/master/welcome",319
+"2022-04-23 16:42:33.45","/master/sign-in",555
+"2022-04-23 16:42:34.661","/master/welcome",552
+"2022-04-23 16:42:35.481","/inventor/item/my-tools",565

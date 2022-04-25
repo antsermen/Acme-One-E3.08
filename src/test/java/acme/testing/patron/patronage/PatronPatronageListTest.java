@@ -27,7 +27,7 @@ public class PatronPatronageListTest extends TestHarness {
 		final String budget, final String creationDate, final String startDate, final String deadline, final String info,
 		final String inventorProfile) {
 		super.signIn("administrator", "administrator");
-		super.clickOnMenu("Patron", "Patronage List");
+		super.clickOnMenu("Patron", "My Patronages List");
 		super.checkListingExists();
 		super.sortListing(0, "asc");
 		

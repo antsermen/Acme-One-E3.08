@@ -1,0 +1,25 @@
+1650725224328	geckodriver	INFO	Listening on 127.0.0.1:46893
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JOSERR~1\\AppData\\Local\\Temp\\rust_mozprofilexrR7La\\search.json.mozlz4", (void 0)))
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous messJage for:" "http://localhost:80avaScript er8ror: resour1"
+ce://gre/modules/LogconsinManagerParent.jsmole., line 13warn: 6: TypeErroLoginRecipesr: gR: "getRecipes: falliecipeManang bger is null
+aJavaScripck t error: resouto a rce://gre/msynchronousodules/ messLogiage for:" "http:nManagerParent.js//localhost:808m, l1"
+ine 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous messageJava for:" "http://localScrhost:8081"ipt error: resource://gr
+e/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message fJavaScript erroror:: " "hresource://gre/modultes/LoginMtp://localhost:8081ana"
+gerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchrJavaScript eronous messagre for:" "http://localhost:8081"
+or: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling bacJak vaScript terror: resource://go a synchronre/moduleous messages/L for:" "oginManagerParent.jsm, line 1h36: ttpTypeError: gRecipeMa://localhosnt:8081age"
+r is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling backJavaScr to a isynchrpt eonous messagerror: for:" "http://localhost:808 resource://gre/mo1dule"
+s/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+[Parent 10416, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+

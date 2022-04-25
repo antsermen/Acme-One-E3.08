@@ -1,0 +1,14 @@
+1650725879087	geckodriver	INFO	Listening on 127.0.0.1:17966
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JOSERR~1\\AppData\\Local\\Temp\\rust_mozprofileKEeEhA\\search.json.mozlz4", (void 0)))
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+JavaScriconsole.warn: Lopt errorginR: resourecipes: "getRecipes: falling back to a synchronouce://gre/modules message fors:/LoginManagerParent.jsm, line " "136: Thttp://localhoypeError: gRecipeManager is null
+sJavaScript error:t:80 re81"
+source://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back toJavaScript  ea srynchronous message for:" "htrortp:/: resou/localhosrce:t:8081//gre/"
+modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronJous message for:" "avaScriphtt etp:/rror: re/locsalhource://gre/most:8081odules/LoginManagerPa"
+rent.jsm, line 136: TypeError: gRecipeManager is null
+[Parent 2100, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167

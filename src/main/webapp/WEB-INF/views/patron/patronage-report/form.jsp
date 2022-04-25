@@ -5,7 +5,9 @@
 
 <acme:form readonly="${readonly}">
 	
-	<acme:list-column code="patron.patronageReport.list.label.sequenceNumber" path="sequenceNumber" width="20%"/>
-	<acme:list-column code="patron.patronageReport.list.label.creationMoment" path="creationMoment" width="20%"/>	
+<acme:input-textarea code="patron.patronageReport.list.label.memorandum" path="memorandum" />
+		<acme:input-url code="patron.patronageReport.list.label.link" path="link" />
+	
+	<acme:input-moment code="patron.patronageReport.list.label.creationMoment" path="creationMoment"/>	
 	
 </acme:form>

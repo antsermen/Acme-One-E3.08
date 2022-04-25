@@ -1,7 +1,8 @@
-inventor.patronageReport.form.label.seqNumber = Número de Secuencia:
 inventor.patronageReport.form.label.creationMoment = Momento de Creación:
 inventor.patronageReport.form.label.memorandum = Memorandum:
 inventor.patronageReport.form.label.link = Link:
+inventor.patronageReport.form.label.serialNumber = Número de Serie:
+inventor.patronageReport.form.label.sequenceNumber = Número de Secuencia:
 
-inventor.patronageReport.list.label.seqNumber = Número de Secuencia:
 inventor.patronageReport.list.label.creationMoment = Momento de Creación:
+inventor.patronageReport.list.label.memorandum = Memorandum:

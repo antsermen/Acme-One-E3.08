@@ -1,14 +1,14 @@
-package acme.features.inventor.patronagereport;
+package acme.features.inventor.patronageReport;
 
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.Patronage;
 import acme.entities.PatronageReport;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
+import acme.framework.entities.Principal;
 import acme.framework.services.AbstractListService;
 import acme.roles.Inventor;
 
@@ -37,8 +37,7 @@ public class InventorPatronageReportListService implements AbstractListService<I
 
 		final Collection<PatronageReport> result;
 		final Principal principal = request.getPrincipal();
-
-		result = this.repository.findPatronageReportsByInventorId(principal.getActiveRoleId());
+		result = this.repository.findManyPatronageReportByInventorId(principal.getActiveRoleId());
 
 
 		return result;

@@ -28,7 +28,6 @@ master.menu.anonymous.favourite-link = Favourite link
 
 master.menu.anonymous.chirp.list = Chirp Recent List
 master.menu.anonymous.userAccount.list = User Accounts List
-
 master.menu.anonymous.item.tool.list= Tool List
 master.menu.anonymous.item.component.list= Component List
 master.menu.anonymous.toolkit.list= Toolkit List
@@ -56,7 +55,7 @@ master.menu.inventor.mine-tools.list = My Tools List
 master.menu.inventor.mine-components.list = My Components List
 master.menu.inventor.mine-patronages.list = My Patronages List
 master.menu.inventor.mine-toolkits.list = My Toolkits List
-master.menu.inventor.patronageReport.list = List My Patronage Reports
+master.menu.inventor.patronageReport.list = My Patronage Reports
 
 
 # master.menu.provider ########################################################
@@ -76,7 +75,6 @@ master.menu.consumer.chirp.list = Chirp Recent List
 master.menu.user-account = Account
 master.menu.user-account.general-data = General data
 master.menu.user-account.provider = Provider data
-master.menu.user-account.systemConfiguration = System Configuration 
 master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.consumer = Consumer data
 master.menu.user-account.become-consumer = Become a consumer
@@ -85,11 +83,17 @@ master.menu.user-account.become-consumer = Become a consumer
 # master.menu.authenticated #######################################################
 
 master.menu.authenticated = Authenticated
-master.menu.authenticated.chirp.list = Chirp recent list
-master.menu.authenticated.toolkit.list = All toolkits list
-master.menu.authenticated.announcement.list = Announcement recent list
+master.menu.authenticated.chirp.list = Chirp Recent List
+master.menu.authenticated.userAccount.list = User Accounts List
+master.menu.authenticated.item.tool.list= Tool List
+master.menu.authenticated.item.component.list= Component List
+master.menu.authenticated.toolkit.list= Toolkit List
+master.menu.authenticated.announcement.list = Announcement Recent List
+master.menu.authenticated.system-configuration = System Configuration
 
 # master.menu.patron ##########################################################
 
 master.menu.patron = Patron
-master.menu.patron.patronage.list = Patronage List
+master.menu.patron.patronage.list = My Patronages List
+master.menu.patron.patron.dashboard = Dashboard
+master.menu.patron.patronage-report = My Patronage Report

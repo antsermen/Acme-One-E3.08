@@ -50,7 +50,7 @@ public class Toolkit extends AbstractEntity{
 	
 	// Derived attributes -----------------------------------------------------
 	
-	protected double retailPrice;
+	protected Double retailPrice;
 
 	// Relationships ----------------------------------------------------------
 	

@@ -10,7 +10,7 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.testing.patron.patronageReport;
+package acme.testing.patron.patronage.patronageReport;
 
 import java.util.Date;
 

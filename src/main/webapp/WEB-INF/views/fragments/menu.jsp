@@ -44,7 +44,7 @@
 			<acme:menu-suboption code="master.menu.authenticated.item.tool.list" action="/any/item/tools"/>
 			<acme:menu-suboption code="master.menu.authenticated.item.component.list" action="/any/item/components"/>
 			<acme:menu-suboption code="master.menu.authenticated.userAccount.list" action="/any/user-account/list"/>
-			<acme:menu-suboption code="master.menu.authenticated.announcement.list" action="/authenticated/announcement/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.announcement.list" action="/authenticated/announcement/list-recent"/>
 			<acme:menu-suboption code="master.menu.administrator.system-configuration" action="/authenticated/system-configuration/show"/>
 			
 		</acme:menu-option>

@@ -20,5 +20,5 @@ any.item.form.label.name = Nombre:
 any.item.form.label.code = Código:
 any.item.form.label.technology = Tecnología:
 any.item.form.label.description = Descripción:
-any.item.form.label.retailPrice = Precio al por menor:
+any.item.form.label.retailPrice = Precio de venta al público:
 any.item.form.label.link = Link:

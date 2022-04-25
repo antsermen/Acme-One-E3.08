@@ -21,6 +21,7 @@
 	<acme:input-textbox code="any.toolkit.form.label.description" path="description"/>
 	<acme:input-textbox code="any.toolkit.form.label.notes" path="notes"/>
 	<acme:input-url code="any.toolkit.form.label.link" path="link"/>
+	<acme:input-textbox code="inventor.toolkit.form.label.toolkitPrice" path="toolkitPrice" placeholder="${toolkitPrice}"/>
 	<jstl:forEach var="item" items="${items}">
 		<acme:input-textbox code="any.toolkit.form.label.itemName" path="itemName" placeholder="${item.name}"/>
 		<acme:input-textbox code="any.toolkit.form.label.itemType" path="itemType" placeholder="${item.itemType}"/>

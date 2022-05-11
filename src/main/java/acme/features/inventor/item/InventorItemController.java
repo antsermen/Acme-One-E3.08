@@ -16,8 +16,8 @@ public class InventorItemController extends AbstractController<Inventor, Item>{
 	
 	 @Autowired InventorItemToolListService inventorItemListService;
 	 @Autowired InventorItemComponentListService inventorComponentListService;
-	 
 	 @Autowired InventorItemShowService inventorItemShowService;
+	 @Autowired InventorItemUpdateService inventorItemUpdateService;
 	 
 	 //Constructor-------------------------------------------------------------------------------
 	 

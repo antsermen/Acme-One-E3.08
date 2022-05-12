@@ -1,5 +1,6 @@
 package acme.features.inventor.item;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.Item;
@@ -11,8 +12,9 @@ import acme.roles.Inventor;
 
 @Service
 public class InventorItemUpdateService implements AbstractUpdateService<Inventor, Item> {
-
-	private InventorItemRepository inventorItemRepository;
+	
+	@Autowired
+	protected InventorItemRepository inventorItemRepository;
 
 	@Override
 	public boolean authorise(final Request<Item> request) {
@@ -41,7 +43,6 @@ public class InventorItemUpdateService implements AbstractUpdateService<Inventor
 		assert model != null;
 
 		request.unbind(entity, model, "itemType", "name", "code", "technology", "description", "retailPrice", "link");
-		model.setAttribute(null, model);
 
 	}
 
@@ -59,7 +60,7 @@ public class InventorItemUpdateService implements AbstractUpdateService<Inventor
 		
 		if(!errors.hasErrors("code")) {
 			final Item i = this.inventorItemRepository.findItemByCode(entity.getCode());
-			errors.state(request, i.getCode()==entity.getCode(),"code", "inventor.item.form.error.code.duplicated");
+			errors.state(request, i == null || i.getId()==entity.getId(),"code", "inventor.item.form.error.code.duplicated");
 		}
 
 	}

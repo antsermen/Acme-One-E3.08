@@ -20,5 +20,5 @@
 	<acme:list-column code="inventor.item.list.label.technology" path="technology"/>
 	<acme:list-column code="inventor.item.list.label.retailPrice" path="retailPrice" />
 	
-	
 </acme:list>
+<acme:button code="inventor.item.list.button.create" action="/inventor/item/create"/>

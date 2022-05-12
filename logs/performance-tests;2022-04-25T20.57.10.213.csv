@@ -1,0 +1,2 @@
+timestamp,test-class,test-method,time,description,result
+"2022-04-25 20:31:56.627","acme.testing.patron.patronage.patronageReport.PatronPatronageReportListTest","positiveTest",10655,""[1] recordIndex=0, memorandum=ejemplo, link=https://www.google.es/, creationMoment=2022/01/15 10:00, name=Acme, Administrator"","OK"

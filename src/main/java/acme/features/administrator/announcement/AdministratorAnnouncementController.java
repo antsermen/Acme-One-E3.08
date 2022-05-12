@@ -1,26 +1,20 @@
-package acme.features.authenticated.patron;
+package acme.features.administrator.announcement;
 
 import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
 
+import acme.entities.Announcement;
 import acme.framework.controllers.AbstractController;
-import acme.framework.roles.Authenticated;
-import acme.roles.Patron;
+import acme.framework.roles.Administrator;
 
 @Controller
-@RequestMapping("/authenticated/patron/")
-public class AuthenticatedPatronController extends AbstractController<Authenticated, Patron> {
+public class AdministratorAnnouncementController extends AbstractController<Administrator, Announcement> {
 
 	// Internal state ---------------------------------------------------------
-
 	@Autowired
-	protected AuthenticatedPatronCreateService	createService;
-
-	@Autowired
-	protected AuthenticatedPatronUpdateService	updateService;
+	protected AdministratorAnnouncementCreateService		createService;
 
 	// Constructors -----------------------------------------------------------
 
@@ -28,7 +22,6 @@ public class AuthenticatedPatronController extends AbstractController<Authentica
 	@PostConstruct
 	protected void initialise() {
 		super.addCommand("create", this.createService);
-		super.addCommand("update", this.updateService);
 	}
 
 }

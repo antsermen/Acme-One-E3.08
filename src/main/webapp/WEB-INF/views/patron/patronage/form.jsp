@@ -4,6 +4,7 @@
 <%@taglib prefix="acme" uri="urn:jsptagdir:/WEB-INF/tags"%>
 
 <acme:form readonly="${readonly}">
+	<acme:input-checkbox code="patron.patronage.form.label.published" path="published" readonly="true"/>
 	<acme:input-select code="patron.patronage.form.label.status" path="status">
 		<acme:input-option code="PROPOSED" value="PROPOSED" selected="${status == 'PROPOSED'}"/>
 		<acme:input-option code="ACCEPTED" value="ACCEPTED" selected="${status == 'ACCEPTED'}"/>
@@ -16,6 +17,18 @@
 	<acme:input-moment code="patron.patronage.form.label.startDate" path="startDate"/>
 	<acme:input-moment code="patron.patronage.form.label.deadline" path="deadline"/>
 	<acme:input-url code="patron.patronage.form.label.info" path="info"/>
-	<acme:input-textbox code="patron.patronage.form.label.inventorProfile" path="inventorProfile"/>
+	<acme:input-textbox code="patron.patronage.form.label.inventorProfile" path="inventorProfile" readonly="true"/>
+	
+	<jstl:choose>
+		<jstl:when test="${(command == 'show' || command == 'update' || command == 'delete' || command == 'publish')
+							 && published == false }">
+			<acme:submit code="patron.patronage.form.button.update" action="/patron/patronage/update"/>
+			<acme:submit code="patron.patronage.form.button.delete" action="/patron/patronage/delete"/>
+			<acme:submit code="patron.patronage.form.button.publish" action="/patron/patronage/publish"/>
+		</jstl:when>
+		<jstl:when test="${command == 'create' }">
+			<acme:submit code="patron.patronage.form.button.create" action="/patron/patronage/create"/>
+		</jstl:when>
+	</jstl:choose>
 	
 </acme:form>

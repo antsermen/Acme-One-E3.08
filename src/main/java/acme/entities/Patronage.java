@@ -60,6 +60,8 @@ public class Patronage extends AbstractEntity{
 	
 		@URL
 		protected String info;
+		
+		protected boolean published;
 	
 		// Derived attributes -----------------------------------------------------
 		

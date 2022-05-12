@@ -2,7 +2,10 @@ patron.patronage.list.label.status = Estado
 patron.patronage.list.label.code = Código
 patron.patronage.list.label.budget = Presupuesto
 patron.patronage.list.label.creationDate = Fecha de creación
+patron.patronage.list.button.create = Create
+patron.patronage.list.label.published = Publicado
 
+patron.patronage.form.label.published = Publicado
 patron.patronage.form.label.status = Estado:
 patron.patronage.form.label.code = Código:
 patron.patronage.form.label.legalStuff = Términos legales:
@@ -12,3 +15,8 @@ patron.patronage.form.label.startDate = Fecha de inicio:
 patron.patronage.form.label.deadline = Fecha límite:
 patron.patronage.form.label.info = Info:
 patron.patronage.form.label.inventorProfile = Perfil del inventor:
+
+patron.patronage.form.button.update = Actualizar
+patron.patronage.form.button.delete = Eliminar
+patron.patronage.form.button.publish = Publicar
+patron.patronage.form.button.create = Crear

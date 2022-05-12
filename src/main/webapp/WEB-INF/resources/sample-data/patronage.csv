@@ -1,4 +1,4 @@
-key,status,code,legal-stuff,budget,creationDate,startDate,deadline,info,key:inventor,key:patron
-patronage-01,PROPOSED,PSP-234-P,No tiene términos legales,"EUR 32,563.00",2022/01/15 10:00,2022/02/01 09:00,2022/09/01 20:00,https://www.us.es/,inventor-01,patron-01
-patronage-02,DENIED,AGR-101-C,No tiene términos legales,"EUR 47,765.00",2022/03/15 10:00,2022/04/01 10:30,2022/11/01 20:30,https://www.us.es/,inventor-01,patron-01
-patronage-03,PROPOSED,XDP-121-E,No tiene términos legales,"EUR 47,765.00",2022/03/15 10:00,2022/04/01 10:30,2022/11/01 20:30,https://www.google.es/,inventor-01,patron-02
+key,status,code,legal-stuff,budget,creationDate,startDate,deadline,info,key:inventor,key:patron,published
+patronage-01,PROPOSED,PSP-234-P,No tiene términos legales,"EUR 32,563.00",2022/01/15 10:00,2022/02/01 09:00,2022/09/01 20:00,https://www.us.es/,inventor-01,patron-01,true
+patronage-02,DENIED,AGR-101-C,No tiene términos legales,"EUR 47,765.00",2022/03/15 10:00,2022/04/01 10:30,2022/11/01 20:30,https://www.us.es/,inventor-01,patron-01,false
+patronage-03,PROPOSED,XDP-121-E,No tiene términos legales,"EUR 47,765.00",2022/03/15 10:00,2022/04/01 10:30,2022/11/01 20:30,https://www.google.es/,inventor-01,patron-02,false

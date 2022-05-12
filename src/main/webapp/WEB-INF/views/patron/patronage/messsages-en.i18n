@@ -1,8 +1,11 @@
 patron.patronage.list.label.status = Status
 patron.patronage.list.label.code = Code
 patron.patronage.list.label.budget = Budget
-patron.patronage.list.label.creationDate = creationDate
+patron.patronage.list.label.creationDate = Creation Date
+patron.patronage.list.button.create = Crear
+patron.patronage.list.label.published = Published
 
+patron.patronage.form.label.published = Published
 patron.patronage.form.label.status = Status:
 patron.patronage.form.label.code = Code:
 patron.patronage.form.label.legalStuff = Legal Stuff:
@@ -12,3 +15,8 @@ patron.patronage.form.label.startDate = Start Date:
 patron.patronage.form.label.deadline = Deadline:
 patron.patronage.form.label.info = Info:
 patron.patronage.form.label.inventorProfile = Inventor Profile:
+
+patron.patronage.form.button.update = Update
+patron.patronage.form.button.delete = Delete
+patron.patronage.form.button.publish = Publish
+patron.patronage.form.button.create = Create

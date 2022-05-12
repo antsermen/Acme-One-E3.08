@@ -52,9 +52,8 @@ public class PatronPatronageShowService implements AbstractShowService<Patron, P
 		
 		model.setAttribute("inventorProfile", entity.getInventor().getUserAccount().getUsername());
 		
-		request.unbind(entity, model, "status", "code", "legalStuff", "budget", "creationDate", "startDate", "deadline", "info");
+		request.unbind(entity, model, "status", "code", "legalStuff", "budget", "creationDate", "startDate", "deadline", "info", "published");
 		model.setAttribute("confirmation", false);
-		model.setAttribute("readonly", true);
 	}
 	
 	

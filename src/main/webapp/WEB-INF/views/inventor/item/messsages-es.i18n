@@ -12,6 +12,7 @@ inventor.item.list.label.name = Nombre
 inventor.item.list.label.technology = Tecnología
 inventor.item.list.label.retailPrice = Precio de Venta al Público
 inventor.item.list.button.create = Crear
+inventor.item.list.label.published = Publicado	
 
 inventor.item.form.label.published = Publicado	
 inventor.item.form.label.itemType = Tipo	
@@ -26,4 +27,4 @@ inventor.item.form.button.delete = Eliminar
 inventor.item.form.button.publish = Publicar
 inventor.item.form.button.create = Crear
 
-inventor.item.form.error.code.duplicated = Ya hay un Item con este código asociado.
+inventor.item.form.error.code.duplicated = Ya hay un Item con este código asociado

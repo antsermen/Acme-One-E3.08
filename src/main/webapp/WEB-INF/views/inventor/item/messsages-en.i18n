@@ -12,6 +12,7 @@ inventor.item.list.label.name = Name
 inventor.item.list.label.technology = Technology
 inventor.item.list.label.retailPrice = Retail Price
 inventor.item.list.button.create = Create
+inventor.item.list.label.published = Published	
 
 inventor.item.form.label.published = Published	
 inventor.item.form.label.itemType = Type	
@@ -26,4 +27,4 @@ inventor.item.form.button.delete = Delete
 inventor.item.form.button.publish = Publish
 inventor.item.form.button.create = Create
 
-inventor.item.form.error.code.duplicated = This code is already assigned to an Item.
+inventor.item.form.error.code.duplicated = This code is already assigned to an Item

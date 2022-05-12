@@ -46,6 +46,8 @@ master.menu.administrator.system-configuration = System Configuration
 
 master.menu.administrator.administrator.dashboard = Dashboard
 
+master.menu.administrator.announcement.create = Create announcement
+
 
 
 # master.menu.inventor ########################################################

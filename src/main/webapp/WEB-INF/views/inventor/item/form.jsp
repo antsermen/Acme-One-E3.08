@@ -31,8 +31,8 @@
 
 	
 	<jstl:choose>
-		<jstl:when test="${(command == 'show' || command == 'update' || command == 'delete' || command == 'publish')
-							 && published == false }">
+			<jstl:when test="${acme:anyOf(command, 'show, update, delete, publish') && published == false }">
+							 
 			<acme:submit code="inventor.item.form.button.update" action="/inventor/item/update"/>
 			<acme:submit code="inventor.item.form.button.delete" action="/inventor/item/delete"/>
 			<acme:submit code="inventor.item.form.button.publish" action="/inventor/item/publish"/>

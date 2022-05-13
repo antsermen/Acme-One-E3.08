@@ -4,7 +4,7 @@
 <%@taglib prefix="acme" uri="urn:jsptagdir:/WEB-INF/tags"%>
 
 <acme:form readonly="${readonly}">
-	<acme:input-checkbox code="patron.patronage.form.label.published" path="published" readonly="true"/>
+<%-- 	<acme:input-checkbox code="published" path="published"/> --%>
 	<acme:input-select code="patron.patronage.form.label.status" path="status">
 		<acme:input-option code="PROPOSED" value="PROPOSED" selected="${status == 'PROPOSED'}"/>
 		<acme:input-option code="ACCEPTED" value="ACCEPTED" selected="${status == 'ACCEPTED'}"/>
@@ -17,7 +17,12 @@
 	<acme:input-moment code="patron.patronage.form.label.startDate" path="startDate"/>
 	<acme:input-moment code="patron.patronage.form.label.deadline" path="deadline"/>
 	<acme:input-url code="patron.patronage.form.label.info" path="info"/>
-	<acme:input-textbox code="patron.patronage.form.label.inventorProfile" path="inventorProfile" readonly="true"/>
+ 	<acme:input-email code="patron.patronage.form.label.inventorProfile" path="inventor.userAccount.userIdentity.email"/>
+<%-- 	<acme:input-select code="patron.patronage.form.label.inventorProfile" path="inventor">
+		<jstl:forEach items="${inventors}" var="inv">
+			<acme:input-option code="${inv.userAccount.username}" value="${inv.userAccount.username}"/>
+		</jstl:forEach>
+	</acme:input-select> --%>
 	
 	<jstl:choose>
 		<jstl:when test="${(command == 'show' || command == 'update' || command == 'delete' || command == 'publish')

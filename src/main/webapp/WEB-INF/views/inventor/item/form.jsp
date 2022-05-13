@@ -16,7 +16,6 @@
 <%@taglib prefix="acme" uri="urn:jsptagdir:/WEB-INF/tags"%>
 
 <acme:form readonly="${readonly}">
-	<acme:input-checkbox code="inventor.item.form.label.published" path="published" readonly="true"/>
 	<acme:input-select code="inventor.item.form.label.itemType" path="itemType">
 		<acme:input-option code="Component" value="COMPONENT" selected="${itemType == 'COMPONENT'}"/>
 		<acme:input-option code="Tool" value="TOOL" selected="${itemType == 'TOOL'}"/>

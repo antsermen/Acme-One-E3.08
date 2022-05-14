@@ -28,5 +28,6 @@ inventor.item.form.button.update = Update
 inventor.item.form.button.delete = Delete
 inventor.item.form.button.publish = Publish
 inventor.item.form.button.create = Create
+any.item.form.label.systemRetailPrice = System Retail Price:
 
 inventor.item.form.error.code.duplicated = This code is already assigned to an Item

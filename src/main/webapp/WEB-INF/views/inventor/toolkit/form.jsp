@@ -28,10 +28,10 @@
 		<acme:input-textbox code="inventor.toolkit.form.label.itemRetailPrice" path="itemRetailPrice" placeholder="${item.retailPrice}"/>
 	</jstl:forEach>
 	<jstl:choose>	 
-		<jstl:when test="${command == 'show' && draftMode == false}">
+		<jstl:when test="${command == 'show' && published == false}">
 			<acme:button code="inventor.toolkit.form.button.item" action="/inventor/item/list?masterId=${id}"/>			
 		</jstl:when>
-		<jstl:when test="${acme:anyOf(command, 'show, update, delete, publish') && draftMode == true}">
+		<jstl:when test="${acme:anyOf(command, 'show, update, delete, publish') && published == true}">
 			<acme:button code="inventor.toolkit.form.button.item" action="/employer/duty/list?masterId=${id}"/>
 			<acme:submit code="inventor.toolkit.form.button.update" action="/inventor/toolkit/update"/>
 			<acme:submit code="inventor.toolkit.form.button.delete" action="/inventor/toolkit/delete"/>

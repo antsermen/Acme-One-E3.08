@@ -18,8 +18,8 @@
 <acme:form readonly="${readonly}">
 	<acme:input-checkbox code="inventor.item.form.label.published" path="published" readonly="true"/>
 	<acme:input-select code="inventor.item.form.label.itemType" path="itemType">
-		<acme:input-option code="Component" value="COMPONENT" selected="${itemType == 'COMPONENT'}"/>
-		<acme:input-option code="Tool" value="TOOL" selected="${itemType == 'TOOL'}"/>
+		<acme:input-option code="inventor.item.form.label.component" value="COMPONENT" selected="${itemType == 'COMPONENT'}"/>
+		<acme:input-option code="inventor.item.form.label.tool" value="TOOL" selected="${itemType == 'TOOL'}"/>
 	</acme:input-select>
 	<acme:input-textbox code="inventor.item.form.label.name" path="name"/>	
 	<acme:input-textbox placeholder="ABC-1234-D" code="inventor.item.form.label.code" path="code"/>

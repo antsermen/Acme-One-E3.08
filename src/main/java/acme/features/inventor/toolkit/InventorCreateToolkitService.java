@@ -32,8 +32,13 @@ public class InventorCreateToolkitService implements AbstractCreateService<Inven
 
 		inventor = this.repository.findOneEmployerById(request.getPrincipal().getActiveRoleId());
 		result = new Toolkit();
-		result.setPublished(true);;
 		result.setInventor(inventor);
+		result.setPublished(false);
+		result.setCode("");
+		result.setDescription("");
+		result.setLink("");
+		result.setTitle("");
+		result.setNotes("");
 
 		return result;
 	}
@@ -44,7 +49,7 @@ public class InventorCreateToolkitService implements AbstractCreateService<Inven
 		assert entity != null;
 		assert errors != null;
 		
-		request.bind(entity, errors, "reference", "title", "deadline", "salary", "score", "moreInfo", "description");
+		request.bind(entity, errors, "code", "title", "description", "notes", "link","published");
 	}
 	
 	@Override
@@ -67,7 +72,7 @@ public class InventorCreateToolkitService implements AbstractCreateService<Inven
 		assert entity != null;
 		assert model != null;
 		
-		request.unbind(entity, model, "code", "title", "description", "notes", "link", "isPublished");
+		request.unbind(entity, model, "code", "title", "description", "notes", "link","published");
 	}
 	
 	@Override

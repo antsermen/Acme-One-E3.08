@@ -16,6 +16,8 @@ inventor.item.list.label.published = Published
 
 inventor.item.form.label.published = Published	
 inventor.item.form.label.itemType = Type	
+inventor.item.form.label.component = Component
+inventor.item.form.label.tool = Tool
 inventor.item.form.label.name = Name
 inventor.item.form.label.code = Code
 inventor.item.form.label.technology = Technology

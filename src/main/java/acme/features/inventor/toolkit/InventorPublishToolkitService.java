@@ -28,7 +28,7 @@ public class InventorPublishToolkitService implements AbstractUpdateService<Inve
 		toolkitId= request.getModel().getInteger("id");
 		toolkit= this.toolkitRepository.findOneToolkitById(toolkitId);
 		inventor= toolkit.getInventor();
-		result= toolkit.isPublished() && request.isPrincipal(inventor);
+		result= !toolkit.isPublished() && request.isPrincipal(inventor);
 		
 		return result;
 	}
@@ -52,7 +52,7 @@ public class InventorPublishToolkitService implements AbstractUpdateService<Inve
 		assert entity != null;
 		assert errors != null;
 		
-		request.bind(entity, errors, "code", "title", "description", "notes", "link");
+		request.bind(entity, errors, "code", "title", "description", "notes", "link","published");
 
 	}
 	
@@ -76,7 +76,7 @@ public class InventorPublishToolkitService implements AbstractUpdateService<Inve
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "code", "title", "description", "notes", "link", "isPublished");
+		request.unbind(entity, model, "code", "title", "description", "notes", "link", "published");
 	}
 	
 	@Override

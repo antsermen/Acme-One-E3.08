@@ -21,30 +21,12 @@ public class InventorUpdateToolkitService implements AbstractUpdateService<Inven
 	public boolean authorise(final Request<Toolkit> request) {
 		assert request != null;
 
-		boolean result;
-		int masterId;
-		Toolkit toolkit;
-		Inventor inventor;
-
-		masterId = request.getModel().getInteger("id");
-		toolkit = this.repository.findOneToolkitById(masterId);
-		inventor = toolkit.getInventor();
-		result = toolkit.isPublished() && request.isPrincipal(inventor);
-
-		return result;
-	}
-
-	@Override
-	public void validate(final Request<Toolkit> request, final Toolkit entity, final Errors errors) {
-		assert request != null;
-		assert entity != null;
-		assert errors != null;
-		if (!errors.hasErrors("reference")) {
-			Toolkit existing;
-
-			existing = this.repository.findOneToolkitByCode(entity.getCode());
-			errors.state(request, existing == null || existing.getId() == entity.getId(), "code", "employer.job.form.error.duplicated");
-			}
+		final Toolkit toolkit = this.repository.findOneToolkitById(request.getModel().getInteger("id"));
+		final boolean published = toolkit.isPublished();
+		final Integer inventor_id = toolkit.getInventor().getId();
+		
+		return request.getPrincipal().getActiveRoleId() == inventor_id && !published;
+		
 	}
 
 	@Override
@@ -52,8 +34,8 @@ public class InventorUpdateToolkitService implements AbstractUpdateService<Inven
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-
-		request.bind(entity, errors, "code", "title", "description", "notes", "link","published");
+		
+		request.bind(entity, errors, "itemType", "name", "code", "technology", "description", "retailPrice", "link", "published");
 	}
 
 	@Override
@@ -62,20 +44,27 @@ public class InventorUpdateToolkitService implements AbstractUpdateService<Inven
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "code", "title", "description", "notes", "link", "published");
+		request.unbind(entity, model, "itemType", "name", "code", "technology", "description", "retailPrice", "link", "published");
+
 	}
 
 	@Override
 	public Toolkit findOne(final Request<Toolkit> request) {
 		assert request != null;
+		return this.repository.findOneToolkitById(request.getModel().getInteger("id"));
+	}
 
-		Toolkit result;
-		int id;
+	@Override
+	public void validate(final Request<Toolkit> request, final Toolkit entity, final Errors errors) {
+		assert request != null;
+		assert entity != null;
+		assert errors != null;
+		
+		if(!errors.hasErrors("code")) {
+			final Toolkit i = this.repository.findOneToolkitByCode(entity.getCode());
+			errors.state(request, i == null || i.getId()==entity.getId(),"code", "inventor.item.form.error.code.duplicated");
+		}
 
-		id = request.getModel().getInteger("id");
-		result = this.repository.findOneToolkitById(id);
-
-		return result;
 	}
 
 	@Override

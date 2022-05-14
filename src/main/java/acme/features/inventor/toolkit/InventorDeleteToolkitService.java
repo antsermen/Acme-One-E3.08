@@ -31,7 +31,7 @@ public class InventorDeleteToolkitService implements AbstractDeleteService<Inven
 		masterId = request.getModel().getInteger("id");
 		toolkit = this.repository.findOneToolkitById(masterId);
 		inventor = toolkit.getInventor();
-		result = toolkit.isPublished() && request.isPrincipal(inventor);
+		result = !toolkit.isPublished() && request.isPrincipal(inventor);
 
 		return result;
 	}
@@ -42,7 +42,7 @@ public class InventorDeleteToolkitService implements AbstractDeleteService<Inven
 		assert entity != null;
 		assert errors != null;
 
-		request.bind(entity, errors, "code", "title", "description", "notes", "link");
+		request.bind(entity, errors, "code", "title", "description", "notes", "link","published");
 	}
 
 	@Override
@@ -51,7 +51,7 @@ public class InventorDeleteToolkitService implements AbstractDeleteService<Inven
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model,"code", "title", "description", "notes", "link", "isPublished");
+		request.unbind(entity, model,"code", "title", "description", "notes", "link", "published");
 	}
 
 	@Override

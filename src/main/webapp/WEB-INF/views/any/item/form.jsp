@@ -21,6 +21,7 @@
 	<acme:input-textbox code="any.item.form.label.technology" path="technology"/>
 	<acme:input-textbox code="any.item.form.label.description" path="description"/>
 	<acme:input-textbox code="any.item.form.label.retailPrice" path="retailPrice"/>
+	<acme:input-textbox code="any.item.form.label.systemRetailPrice" path="moneyExchange"/>
 	<acme:input-url code="any.item.form.label.link" path="link"/>
 	
 	

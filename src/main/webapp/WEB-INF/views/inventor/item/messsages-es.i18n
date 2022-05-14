@@ -26,5 +26,6 @@ inventor.item.form.button.update = Actualizar
 inventor.item.form.button.delete = Eliminar
 inventor.item.form.button.publish = Publicar
 inventor.item.form.button.create = Crear
+any.item.form.label.retailPrice = Precio de venta al público:
 
 inventor.item.form.error.code.duplicated = Ya hay un Item con este código asociado

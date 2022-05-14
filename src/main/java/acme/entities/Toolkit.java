@@ -48,10 +48,6 @@ public class Toolkit extends AbstractEntity{
 	
 	protected boolean published;
 	
-	// Derived attributes -----------------------------------------------------
-	
-	protected Double retailPrice;
-
 	// Relationships ----------------------------------------------------------
 	
 	@NotNull

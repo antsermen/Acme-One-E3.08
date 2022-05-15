@@ -37,7 +37,7 @@
 			<acme:submit code="inventor.toolkit.form.button.delete" action="/inventor/toolkit/delete"/>
 			<acme:submit code="inventor.toolkit.form.button.publish" action="/inventor/toolkit/publish"/>
 		</jstl:when>
-		<jstl:when test="${command == 'create' }">
+		<jstl:when test="${command == 'create'}">
 			<acme:submit code="inventor.toolkit.form.button.create" action="/inventor/toolkit/create"/>
 		</jstl:when>	
 	</jstl:choose>

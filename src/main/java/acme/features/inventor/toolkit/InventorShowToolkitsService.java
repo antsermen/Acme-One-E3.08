@@ -63,7 +63,7 @@ public class InventorShowToolkitsService implements AbstractShowService<Inventor
 					model.setAttribute("itemDescription", i.getDescription());
 					model.setAttribute("itemRetailPrice", i.getRetailPrice());
 				}
-				request.unbind(entity, model, "title", "description", "notes", "link");
+				request.unbind(entity, model,"code","title", "description", "notes", "link","published");
 				model.setAttribute("confirmation", false);
 				model.setAttribute("readonly", true);
 			}

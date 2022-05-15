@@ -79,7 +79,8 @@ public class InventorCreateToolkitService implements AbstractCreateService<Inven
 	public void create(final Request<Toolkit> request, final Toolkit entity) {
 		assert request != null;
 		assert entity != null;
-
+		
+		entity.setPublished(false);
 		this.repository.save(entity);
 	}
 

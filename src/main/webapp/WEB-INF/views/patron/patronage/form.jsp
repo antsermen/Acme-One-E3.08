@@ -17,12 +17,12 @@
 	<acme:input-moment code="patron.patronage.form.label.startDate" path="startDate"/>
 	<acme:input-moment code="patron.patronage.form.label.deadline" path="deadline"/>
 	<acme:input-url code="patron.patronage.form.label.info" path="info"/>
- 	<acme:input-email code="patron.patronage.form.label.inventorProfile" path="inventor.userAccount.userIdentity.email"/>
-<%-- 	<acme:input-select code="patron.patronage.form.label.inventorProfile" path="inventor">
+	<acme:input-textbox code="patron.patronage.form.label.patronProfile" path="patron" readonly="true"/>	
+ 	<acme:input-select code="patron.patronage.form.label.inventorProfile" path="inventor">
 		<jstl:forEach items="${inventors}" var="inv">
-			<acme:input-option code="${inv.userAccount.username}" value="${inv.userAccount.username}"/>
+			<acme:input-option code="${inv.userAccount.username}" value="${inv.userAccount.username}" selected="${inv.userAccount.username == inventor}"/>			
 		</jstl:forEach>
-	</acme:input-select> --%>
+	</acme:input-select>
 	
 	<jstl:choose>
 		<jstl:when test="${(command == 'show' || command == 'update' || command == 'delete' || command == 'publish')

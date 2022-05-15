@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.Patronage;
+import acme.features.inventor.item.InventorItemRepository;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Errors;
 import acme.framework.controllers.Request;
@@ -15,6 +16,8 @@ public class PatronPatronageUpdateService implements AbstractUpdateService<Patro
 
 	@Autowired
 	protected PatronPatronageRepository patronPatronageRepository;
+	@Autowired
+	protected InventorItemRepository inventorItemRepository;
 	
 	@Override
 	public boolean authorise(final Request<Patronage> request) {
@@ -31,8 +34,8 @@ public class PatronPatronageUpdateService implements AbstractUpdateService<Patro
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-		
-		request.bind(entity, errors, "status", "code", "legalStuff", "budget", "creationDate", "startDate", "deadline", "info", "published");
+			
+		request.bind(entity, errors, "status", "code", "legalStuff", "budget", "creationDate", "startDate", "deadline", "info", "inventor");
 	}
 
 	@Override
@@ -41,7 +44,11 @@ public class PatronPatronageUpdateService implements AbstractUpdateService<Patro
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "status", "code", "legalStuff", "budget", "creationDate", "startDate", "deadline", "info", "published");
+		request.unbind(entity, model, "status", "code", "legalStuff", "budget", "creationDate", "startDate", "deadline", "info", "inventor", "published");
+		model.setAttribute("inventor", entity.getInventor().getUserAccount().getUsername());
+		model.setAttribute("patron", entity.getPatron().getUserAccount().getUsername());
+		model.setAttribute("inventors", this.inventorItemRepository.findAllInventors());
+
 	}
 
 	@Override
@@ -65,8 +72,7 @@ public class PatronPatronageUpdateService implements AbstractUpdateService<Patro
 	@Override
 	public void update(final Request<Patronage> request, final Patronage entity) {
 		assert request != null;
-		assert entity != null;
-		
+		assert entity != null;	
 		this.patronPatronageRepository.save(entity);
 	}
 

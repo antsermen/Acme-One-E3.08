@@ -15,6 +15,7 @@ patron.patronage.form.label.startDate = Fecha de inicio:
 patron.patronage.form.label.deadline = Fecha límite:
 patron.patronage.form.label.info = Info:
 patron.patronage.form.label.inventorProfile = Perfil del inventor:
+patron.patronage.form.label.patronProfile = Perfil del patrono:
 
 patron.patronage.form.button.update = Actualizar
 patron.patronage.form.button.delete = Eliminar

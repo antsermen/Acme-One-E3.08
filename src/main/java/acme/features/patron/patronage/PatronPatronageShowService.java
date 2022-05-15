@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.Patronage;
+import acme.features.inventor.item.InventorItemRepository;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
 import acme.framework.services.AbstractShowService;
@@ -15,6 +16,8 @@ public class PatronPatronageShowService implements AbstractShowService<Patron, P
 	
 	@Autowired
 	protected PatronPatronageRepository repository;
+	@Autowired
+	protected InventorItemRepository inventorItemRepository;
 
 	@Override
 	public boolean authorise(final Request<Patronage> request) {
@@ -49,10 +52,11 @@ public class PatronPatronageShowService implements AbstractShowService<Patron, P
 		assert request != null;
 		assert entity != null;
 		assert model != null;
+		model.setAttribute("inventor", entity.getInventor().getUserAccount().getUsername());
+		model.setAttribute("patron", entity.getPatron().getUserAccount().getUsername());
+		model.setAttribute("inventors", this.inventorItemRepository.findAllInventors());
 		
-		model.setAttribute("inventorProfile", entity.getInventor().getUserAccount().getUsername());
-		
-		request.unbind(entity, model, "status", "code", "legalStuff", "budget", "creationDate", "startDate", "deadline", "info", "published", "patron", "inventor");
+		request.unbind(entity, model, "status", "code", "legalStuff", "budget", "creationDate", "startDate", "deadline", "info", "published");
 		model.setAttribute("confirmation", false);
 	}
 	

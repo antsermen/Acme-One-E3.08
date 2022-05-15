@@ -25,7 +25,7 @@ public class InventorUpdateToolkitService implements AbstractUpdateService<Inven
 		final boolean published = toolkit.isPublished();
 		final Integer inventor_id = toolkit.getInventor().getId();
 		
-		return request.getPrincipal().getActiveRoleId() == inventor_id && !published;
+		return (request.getPrincipal().getActiveRoleId() == inventor_id) && !published;
 		
 	}
 
@@ -35,7 +35,7 @@ public class InventorUpdateToolkitService implements AbstractUpdateService<Inven
 		assert entity != null;
 		assert errors != null;
 		
-		request.bind(entity, errors, "code", "technology", "description", "retailPrice", "link", "published");
+		request.bind(entity, errors, "code","title", "description", "notes", "link");
 	}
 
 	@Override
@@ -43,8 +43,9 @@ public class InventorUpdateToolkitService implements AbstractUpdateService<Inven
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-
-		request.unbind(entity, model, "code", "technology", "description", "retailPrice", "link", "published");
+		
+		
+		request.unbind(entity, model, "code","title", "description", "notes", "link");
 
 	}
 
@@ -64,6 +65,7 @@ public class InventorUpdateToolkitService implements AbstractUpdateService<Inven
 			final Toolkit i = this.repository.findOneToolkitByCode(entity.getCode());
 			errors.state(request, i == null || i.getId()==entity.getId(),"code", "inventor.item.form.error.code.duplicated");
 		}
+		
 
 	}
 

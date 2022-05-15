@@ -11,7 +11,7 @@ import acme.framework.services.AbstractUpdateService;
 import acme.roles.Inventor;
 
 @Service
-public class InventorPublishToolkitService implements AbstractUpdateService<Inventor,Toolkit>{
+public class InventorToolkitPublishService implements AbstractUpdateService<Inventor,Toolkit>{
 	
 	@Autowired
 	InventorToolkitRepository repository;
@@ -28,40 +28,12 @@ public class InventorPublishToolkitService implements AbstractUpdateService<Inve
 	}
 	
 	@Override
-	public Toolkit findOne(final Request<Toolkit> request) {
-		assert request != null;
-		
-		Toolkit result;
-		int id;
-		
-		id=request.getModel().getInteger("id");
-		result= this.repository.findOneToolkitById(id);
-		
-		return result;
-	}
-	
-	@Override
-	public void bind(final Request<Toolkit> request,final Toolkit entity,final Errors errors) {
+	public void bind(final Request<Toolkit> request, final Toolkit entity, final Errors errors) {
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
 		
-		request.bind(entity, errors, "code", "title", "description", "notes", "link","published");
-
-	}
-	
-	@Override
-	public void validate(final Request<Toolkit> request, final Toolkit entity, final Errors errors) {
-		assert request != null;
-		assert entity != null;
-		assert errors != null;
-
-		if (!errors.hasErrors("code")) {
-			Toolkit existing;
-
-			existing = this.repository.findOneToolkitByCode(entity.getCode());
-			errors.state(request, existing == null || existing.getId() == entity.getId(), "code", "employer.job.form.error.duplicated");
-		}
+		request.bind(entity, errors,"code","title", "description", "notes", "link","published");
 	}
 	
 	@Override
@@ -70,7 +42,21 @@ public class InventorPublishToolkitService implements AbstractUpdateService<Inve
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "code", "title", "description", "notes", "link", "published");
+		request.unbind(entity, model, "code","title", "description", "notes", "link","published");
+
+	}
+	
+	@Override
+	public Toolkit findOne(final Request<Toolkit> request) {
+		assert request != null;
+		return this.repository.findOneToolkitById(request.getModel().getInteger("id"));
+	}
+	
+	@Override
+	public void validate(final Request<Toolkit> request, final Toolkit entity, final Errors errors) {
+		assert request != null;
+		assert entity != null;
+		assert errors != null;
 	}
 	
 	@Override
@@ -78,7 +64,7 @@ public class InventorPublishToolkitService implements AbstractUpdateService<Inve
 		assert request != null;
 		assert entity != null;
 
-		entity.setPublished(false);
+		entity.setPublished(true);
 		this.repository.save(entity);
 	}
 

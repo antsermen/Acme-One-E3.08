@@ -25,8 +25,7 @@ public class InventorShowToolkitsService implements AbstractShowService<Inventor
 			@Override
 			public boolean authorise(final Request<Toolkit> request) {
 				assert request != null;
-					
-				return true;
+				return request.getPrincipal().getActiveRoleId() == this.repository.findOneToolkitById(request.getModel().getInteger("id")).getInventor().getId();
 			}
 				
 			@Override
@@ -64,7 +63,5 @@ public class InventorShowToolkitsService implements AbstractShowService<Inventor
 					model.setAttribute("itemRetailPrice", i.getRetailPrice());
 				}
 				request.unbind(entity, model,"code","title", "description", "notes", "link","published");
-				model.setAttribute("confirmation", false);
-				model.setAttribute("readonly", true);
 			}
 }

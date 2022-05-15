@@ -49,6 +49,6 @@ public class InventorListToolkitsService implements AbstractListService<Inventor
 				assert entity != null;
 				assert model != null;
 				
-				request.unbind(entity, model, "title", "description", "link");
+				request.unbind(entity, model,"title", "description", "link");
 			}
 }

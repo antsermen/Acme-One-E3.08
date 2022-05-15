@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 import acme.entities.Item;
 import acme.entities.Toolkit;
 import acme.framework.repositories.AbstractRepository;
+import acme.roles.Inventor;
 
 @Repository
 public interface InventorToolkitRepository extends AbstractRepository{
@@ -23,5 +24,11 @@ public interface InventorToolkitRepository extends AbstractRepository{
 	
 	@Query("select q.item from Quantity q where q.toolkit.id = :id")
 	Collection<Item> findItemsFromToolkitId(int id);
+	
+	@Query("select t from Toolkit t where t.code = :code")
+	Toolkit findOneToolkitByCode(String code);
+	
+	@Query("select i from Inventor i where i.id = :id")
+	Inventor findOneEmployerById(int id);
 	
 }

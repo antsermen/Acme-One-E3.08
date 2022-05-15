@@ -7,8 +7,10 @@ import org.springframework.stereotype.Service;
 
 import acme.entities.Item;
 import acme.entities.Toolkit;
+import acme.features.authenticated.systemConfiguration.AuthenticatedSystemConfigurationRepository;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
+import acme.framework.datatypes.Money;
 import acme.framework.services.AbstractShowService;
 import acme.roles.Inventor;
 
@@ -19,6 +21,9 @@ public class InventorShowToolkitsService implements AbstractShowService<Inventor
 	
 			@Autowired
 			protected InventorToolkitRepository repository;
+			
+			@Autowired
+			protected AuthenticatedSystemConfigurationRepository systemConfigurationRepository;
 				
 			// AbstractShowService<Inventor, Toolkit> interface ==========
 				
@@ -48,10 +53,11 @@ public class InventorShowToolkitsService implements AbstractShowService<Inventor
 				assert model != null;
 					
 				int id;
-				Double toolkitPrice;
+				final Money toolkitPrice = new Money();	
 				
 				id = request.getModel().getInteger("id");
-				toolkitPrice = this.repository.calculateToolkitPrice(id);
+				toolkitPrice.setAmount(this.repository.calculateToolkitPrice(id));
+				toolkitPrice.setCurrency(this.systemConfigurationRepository.findSystemConfiguration().getSystemCurrency());
 				final Collection<Item> items = this.repository.findItemsFromToolkitId(id);
 				
 				model.setAttribute("toolkitPrice", toolkitPrice);

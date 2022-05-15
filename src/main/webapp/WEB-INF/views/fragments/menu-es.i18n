@@ -44,6 +44,8 @@ master.menu.administrator.system-configuration= Configuracion del sistema
 
 master.menu.administrator.administrator.dashboard = Dashboard
 
+master.menu.administrator.announcement.create = Crea un anuncio
+
 
 # master.menu.inventor ########################################################
 

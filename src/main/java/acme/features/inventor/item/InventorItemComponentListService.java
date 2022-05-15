@@ -40,7 +40,7 @@ public class InventorItemComponentListService implements AbstractListService<Inv
 		assert entity != null;
 		assert model != null;
 		
-		request.unbind(entity, model, "itemType", "name", "code", "technology", "description", "retailPrice", "link");
+		request.unbind(entity, model, "itemType", "name", "code", "technology", "description", "retailPrice", "link", "published");
 	}
 	
 	

@@ -15,8 +15,8 @@
 <%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="acme" uri="urn:jsptagdir:/WEB-INF/tags"%>
 
-<acme:form readonly="${readonly}">
-	<acme:input-textbox code="inventor.patronage.form.label.status" path="status"/>	
+<acme:form >
+
 	<acme:input-textarea code="inventor.patronage.form.label.legalStuff" path="legalStuff"/>	
 	<acme:input-textbox code="inventor.patronage.form.label.budget" path="budget"/>
 	<acme:input-textbox code="inventor.patronage.form.label.deadline" path="deadline"/>
@@ -26,5 +26,11 @@
 	<acme:input-textbox code="inventor.patronage.form.label.patronCompany" path="patronCompany" placeholder="${patron.company}" />
 	<acme:input-textbox code="inventor.patronage.form.label.patronStatement" path="patronStatement" placeholder="${patron.statement}"/>
 	<acme:input-url code="inventor.patronage.form.label.patronInfo" path="patronInfo" placeholder="${patron.info}"/>
+			<acme:input-textbox code="inventor.patronage.form.label.status" path="status" readonly="true"/>
 	
+			
+	<acme:submit test="${acme:anyOf(command, 'show, update') && status == 'PROPOSED'}" code="inventor.patronage.form.button.accept" action="/inventor/patronage/accept"/>
+		<acme:submit test="${acme:anyOf(command, 'show, update') && status == 'PROPOSED'}" code="inventor.patronage.form.button.denied" action="/inventor/patronage/denied"/>
+	
+			
 </acme:form>

@@ -23,5 +23,6 @@
 	<acme:input-textbox code="administrator.system-configuration.form.label.weakSpamTerms" path="weakSpamTerms"/>
 	<acme:input-textbox code="administrator.system-configuration.form.label.weakSpamThreshold" path="weakSpamThreshold"/>
 	
-	
+		<acme:submit code="administrator.systemConfiguration.update" action="/administrator/system-configuration/update"/>
+
 </acme:form>

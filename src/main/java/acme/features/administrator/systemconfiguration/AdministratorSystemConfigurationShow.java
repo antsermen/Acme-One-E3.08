@@ -34,7 +34,7 @@ public class AdministratorSystemConfigurationShow implements AbstractShowService
 
 			request.unbind(entity, model,"systemCurrency", "acceptedCurrencies", "strongSpamTerms", "strongSpamThreshold", "weakSpamTerms","weakSpamThreshold");
 			model.setAttribute("confirmation", false);
-			model.setAttribute("readonly", true);
+			//model.setAttribute("readonly", true);
 		
 		}
 

@@ -1,0 +1,6 @@
+recordIndex,title,author,body,email,confirmation
+0,Ejemplo1,anónimo,Este es un ejemplo de prueba negativo sin la confirmación,,false
+1,Ejemplo2,Pedro,Este es otro ejemplo de prueba negativo ahora con un correo inválido,pedro,true
+2,,Pedro,Este es otro ejemplo de prueba negativo sin título,pedro@gmail.com,true
+3,Ejemplo4,,Este es otro ejemplo de prueba negativo sin autor,pedro@gmail.com,true
+4,Ejemplo5,Pedro,,pedro@gmail.com,true

@@ -24,3 +24,5 @@ inventor.patronage.form.label.patronSurname = Apellidos del patrón
 inventor.patronage.form.label.patronCompany = Compañía del patrón
 inventor.patronage.form.label.patronStatement = Declaración del patrón
 inventor.patronage.form.label.patronInfo = Enlace del patrón
+inventor.patronage.form.button.accept = Aceptar
+inventor.patronage.form.button.denied = Rechazar

@@ -14,3 +14,4 @@ administrator.system-configuration.form.label.strongSpamTerms = Terminos de spam
 administrator.system-configuration.form.label.strongSpamThreshold = Limite grave de spam:
 administrator.system-configuration.form.label.weakSpamTerms = Terminod de spam leves:
 administrator.system-configuration.form.label.weakSpamThreshold =Limite leve de spam:
+administrator.systemConfiguration.update = Actualizar

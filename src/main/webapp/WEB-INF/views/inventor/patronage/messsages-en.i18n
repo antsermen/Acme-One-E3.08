@@ -24,3 +24,5 @@ inventor.patronage.form.label.patronSurname = Patrons surname
 inventor.patronage.form.label.patronCompany = Patrons company
 inventor.patronage.form.label.patronStatement = Patrons statement
 inventor.patronage.form.label.patronInfo = Patrons link
+inventor.patronage.form.button.accept = Accept
+inventor.patronage.form.button.denied = Deny

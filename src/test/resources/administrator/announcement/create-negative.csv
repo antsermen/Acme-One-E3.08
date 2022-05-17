@@ -1,0 +1,5 @@
+recordIndex,title,body,link,critical,confirmation
+0,new announcement,this is an example of announcement for test purposes,https://example.com,false,false
+1,,this is an example of announcement for test purposes,https://example.com,false,true
+2,new announcement,,https://example.com,false,true
+3,new announcement,this is an example of announcement for test purposes,url error,false,true

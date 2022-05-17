@@ -1,0 +1,14 @@
+1652631223636	geckodriver	INFO	Listening on 127.0.0.1:28066
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\pabli\\AppData\\Local\\Temp\\rust_mozprofile7Vc4us\\search.json.mozlz4", (void 0)))
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "JavaScript errhotrt:p :r/e/slocalhoousrtc:e8:0/8/1g"re
+/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "gJeatvRaeScipes: falling back to a synchronous message for:" "hctript error: resotp://localhuorsct:8081"
+e://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falliJang back to a synchronovaScript error: resource://grus mees/modules/LoginManagerParent.jssage m, lforine 13:" "ht6: TypetEpr://localror: gReciphoeManast:8ger is n08ull
+1"
+console.warn: LoginRecipes: "getRecipes: falliJng back atvaScript error: resource://gre/modou a synchlronous meesss/age for:" "http://localhostLogi:808nMan1"
+agerParent.jsm, line 136: TypeError: gRecipeManager is null
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+

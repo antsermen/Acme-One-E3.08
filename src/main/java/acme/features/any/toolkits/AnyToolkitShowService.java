@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 
 import acme.entities.Item;
 import acme.entities.Toolkit;
-import acme.features.authenticated.systemConfiguration.AuthenticatedSystemConfigurationRepository;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
 import acme.framework.datatypes.Money;
@@ -19,9 +18,6 @@ public class AnyToolkitShowService implements AbstractShowService<Any,Toolkit>{
 	
 	@Autowired
 	protected AnyToolkitRepository repository;
-	
-	@Autowired
-	protected AuthenticatedSystemConfigurationRepository systemConfigurationRepository;
 
 	// AbstractShowService<Anonymous, Job> interface --------------------------
 
@@ -55,7 +51,7 @@ public class AnyToolkitShowService implements AbstractShowService<Any,Toolkit>{
 		final Money toolkitPrice = new Money();	
 		id = request.getModel().getInteger("id");
 		toolkitPrice.setAmount(this.repository.calculateToolkitPrice(id));
-		toolkitPrice.setCurrency(this.systemConfigurationRepository.findSystemConfiguration().getSystemCurrency());
+		toolkitPrice.setCurrency(this.repository.findSystemConfiguration().getSystemCurrency());
 		final Collection<Item> items = this.repository.findItemsFromToolkitId(id);
 		
 		model.setAttribute("toolkitPrice", toolkitPrice);
@@ -65,6 +61,7 @@ public class AnyToolkitShowService implements AbstractShowService<Any,Toolkit>{
 			model.setAttribute("itemType", i.getItemType());
 			model.setAttribute("itemDescription", i.getDescription());
 			model.setAttribute("itemRetailPrice", i.getRetailPrice());
+			model.setAttribute("itemSystemRetailPrice", i.getSystemRetailPrice());
 		}
 		request.unbind(entity, model, "title", "description", "notes", "link", "code");
 		model.setAttribute("confirmation", false);

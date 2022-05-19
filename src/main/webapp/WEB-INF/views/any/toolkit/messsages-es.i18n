@@ -25,3 +25,4 @@ any.toolkit.form.label.itemName = Nombre del objeto:
 any.toolkit.form.label.itemType = Tipo del objeto:
 any.toolkit.form.label.itemDescription = Descripción del objeto:
 any.toolkit.form.label.itemRetailPrice = Precio del objeto:
+any.toolkit.form.label.itemRetailPrice = Precio del objeto en el sistema:

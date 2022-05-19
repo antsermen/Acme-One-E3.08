@@ -4,10 +4,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.Item;
+import acme.forms.MoneyExchange;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Errors;
 import acme.framework.controllers.Request;
+import acme.framework.datatypes.Money;
 import acme.framework.services.AbstractCreateService;
+import acme.functions.MoneyExchangeFunction;
 import acme.roles.Inventor;
 
 @Service
@@ -71,6 +74,14 @@ public class InventorItemCreateService implements AbstractCreateService<Inventor
 	public void create(final Request<Item> request, final Item entity) {
 		assert request != null;
 		assert entity != null;
+		Money source, target;
+		String targetCurrency;
+		MoneyExchange exchange;
+		source = entity.getRetailPrice();
+		targetCurrency = this.inventorItemRepository.findSystemConfiguration().getSystemCurrency();
+		exchange=MoneyExchangeFunction.computeMoneyExchange(source, targetCurrency);
+		target=exchange.target;
+		entity.setSystemRetailPrice(target);
 
 		this.inventorItemRepository.save(entity);
 		

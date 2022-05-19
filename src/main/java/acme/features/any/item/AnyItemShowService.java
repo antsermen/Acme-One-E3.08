@@ -4,22 +4,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.Item;
-import acme.features.authenticated.systemConfiguration.AuthenticatedSystemConfigurationRepository;
-import acme.forms.MoneyExchange;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
-import acme.framework.datatypes.Money;
 import acme.framework.roles.Any;
 import acme.framework.services.AbstractShowService;
-import acme.functions.MoneyExchangeFunction;
 
 @Service
 public class AnyItemShowService implements AbstractShowService<Any,Item>{
 	
 	@Autowired
 	protected AnyItemRepository repository;
-	@Autowired
-	protected AuthenticatedSystemConfigurationRepository systemConfigurationRepository;
 
 	// AbstractShowService<Anonymous, Job> interface --------------------------
 
@@ -35,20 +29,8 @@ public class AnyItemShowService implements AbstractShowService<Any,Item>{
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-		Money source, target;
-		String targetCurrency;
-		MoneyExchange exchange;
-		
-		source = entity.getRetailPrice();
-		targetCurrency = this.systemConfigurationRepository.findSystemConfiguration().getSystemCurrency();
-		exchange=MoneyExchangeFunction.computeMoneyExchange(source, targetCurrency);
-		if (exchange == null) {
-			model.setAttribute("moneyExchange", null);
-		} else {
-			target = exchange.getTarget();
-			model.setAttribute("moneyExchange", target);
-		}
-		request.unbind(entity, model, "name", "code", "technology", "description", "retailPrice","link");
+
+		request.unbind(entity, model, "name", "code", "technology", "description", "retailPrice", "systemRetailPrice","link");
 	}
 
 	@Override

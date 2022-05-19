@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import acme.entities.Item;
+import acme.entities.SystemConfiguration;
 import acme.entities.Toolkit;
 import acme.framework.repositories.AbstractRepository;
 import acme.roles.Inventor;
@@ -19,7 +20,7 @@ public interface InventorToolkitRepository extends AbstractRepository{
 	@Query("select t from Toolkit t where t.id = :id")
 	Toolkit findOneToolkitById(int id);
 	
-	@Query("select sum(q.item.retailPrice.amount * q.itemsNumber) from Quantity q where q.toolkit.id =:id")
+	@Query("select sum(q.item.systemRetailPrice.amount * q.itemsNumber) from Quantity q where q.toolkit.id =:id")
 	Double calculateToolkitPrice(int id);
 	
 	@Query("select q.item from Quantity q where q.toolkit.id = :id")
@@ -30,5 +31,8 @@ public interface InventorToolkitRepository extends AbstractRepository{
 	
 	@Query("select i from Inventor i where i.id = :id")
 	Inventor findOneEmployerById(int id);
+	
+	@Query("select s from SystemConfiguration s")
+	SystemConfiguration findSystemConfiguration();
 	
 }

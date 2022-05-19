@@ -19,6 +19,7 @@ inventor.toolkit.form.label.itemName = Item name
 inventor.toolkit.form.label.itemType = Item type
 inventor.toolkit.form.label.itemDescription = Item description
 inventor.toolkit.form.label.itemRetailPrice = Item retail price
+inventor.toolkit.form.label.itemSystemRetailPrice = Item system retail price
 
 inventor.toolkit.form.button.update = Update
 inventor.toolkit.form.button.delete = Delete

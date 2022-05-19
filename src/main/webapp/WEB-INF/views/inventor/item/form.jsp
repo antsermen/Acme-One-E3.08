@@ -26,7 +26,9 @@
 	<acme:input-textbox code="inventor.item.form.label.technology" path="technology"/>
 	<acme:input-textarea code="inventor.item.form.label.description" path="description"/>
 	<acme:input-money code="inventor.item.form.label.retailPrice" path="retailPrice"/>
-	<acme:input-textbox code="any.item.form.label.systemRetailPrice" path="moneyExchange" readonly="true"/>
+	<jstl:if test="${command == 'show'}">
+		<acme:input-textbox code="any.item.form.label.systemRetailPrice" path="systemRetailPrice" readonly="true"/>	
+	</jstl:if>	
 	<acme:input-url code="inventor.item.form.label.link" path="link"/>
 
 

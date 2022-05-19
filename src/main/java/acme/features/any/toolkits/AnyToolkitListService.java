@@ -5,6 +5,7 @@ import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.entities.Item;
 import acme.entities.Toolkit;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
@@ -42,6 +43,22 @@ public class AnyToolkitListService implements AbstractListService<Any, Toolkit>{
 		assert model != null;
 
 		request.unbind(entity, model,"title", "code", "description", "notes","link");
+		
+		final Collection<Item> items= this.repository.findItemsFromToolkitId(entity.getId());
+		String payload="";
+		int counter=0;
+		for(final Item item: items) {
+			if(counter==items.size()-1) {
+				payload+= item.getCode()+"; "+item.getName();
+			}else {
+				payload+= item.getCode()+"; "+item.getName()+";";
+			}
+			counter ++;
+
+		
+		}
+	
+		model.setAttribute("payload", payload);	
 		
 	}
 

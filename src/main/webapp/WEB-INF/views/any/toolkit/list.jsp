@@ -21,4 +21,5 @@
 	<acme:list-column code="any.toolkit.list.label.description" path="description" width="20%"/>
 	<acme:list-column code="any.toolkit.list.label.notes" path="notes" width="20%"/>
 	<acme:list-column code="any.toolkit.list.label.link" path="link" width="200%"/>
+	<acme:list-payload  path="payload"/>
 </acme:list>

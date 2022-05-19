@@ -15,7 +15,7 @@ public class AdministratorSystemConfigurationController extends AbstractControll
 	@Autowired
 	protected AdministratorSystemConfigurationShow showService;
 	@Autowired
-	protected AuthenticatedSystemConfigurationUpdateService updateService;
+	protected AdministratorSystemConfigurationUpdateService updateService;
 	
 
 	// Constructors 

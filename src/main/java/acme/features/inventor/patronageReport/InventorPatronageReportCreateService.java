@@ -5,8 +5,8 @@ import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.patronage.Patronage;
-import acme.entities.patronage.PatronageReport;
+import acme.entities.Patronage;
+import acme.entities.PatronageReport;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Errors;
 import acme.framework.controllers.Request;
@@ -46,17 +46,17 @@ public class InventorPatronageReportCreateService implements AbstractCreateServi
 		int patronageId;
 		Patronage patronage;
 		Date date;
-		String numPatronageReports;		
+		//String numPatronageReports;		
 
 		patronageId = request.getModel().getInteger("patronageId");
 		patronage = this.repository.findPatronageById(patronageId);
 		date = new Date();
-		numPatronageReports = Integer.toString(this.repository.findPatronageReportByPatronageId(patronageId).size()+1);
+		//numPatronageReports = Integer.toString(this.repository.findPatronageReportByPatronageId(patronageId).size()+1);
 
 		result = new PatronageReport();
 		result.setPatronage(patronage);
 		result.setCreationMoment(date);
-		result.setSerialNumber("000"+ numPatronageReports);
+		//result.setSerialNumber("000"+ numPatronageReports);
 
 		return result;
 	}
@@ -89,7 +89,7 @@ public class InventorPatronageReportCreateService implements AbstractCreateServi
 
 		request.unbind(entity, model, "serialNumber","creationMoment","memorandum","link");
 		model.setAttribute("patronageId", request.getModel().getAttribute("patronageId"));
-		model.setAttribute("sequenceNumber", entity.getSequenceNumber());
+		//model.setAttribute("sequenceNumber", entity.getSequenceNumber());
 		model.setAttribute("confirm", "false");
 	}	
 

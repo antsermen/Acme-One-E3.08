@@ -2,6 +2,7 @@ package acme.features.patron.patronage;
 
 import java.util.Date;
 
+import org.apache.commons.lang3.time.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -35,7 +36,9 @@ public class PatronPatronageCreateService implements AbstractCreateService<Patro
 		assert errors != null;
 		
 		request.bind(entity, errors, "status", "code", "legalStuff", "budget", "creationDate", "startDate", "deadline", "info");
+		entity.setInventor(this.inventorItemRepository.findInventorByUsername(request.getModel().getAttribute("inventor").toString()));
 	}
+
 
 	@Override
 	public void unbind(final Request<Patronage> request, final Patronage entity, final Model model) {
@@ -68,27 +71,33 @@ public class PatronPatronageCreateService implements AbstractCreateService<Patro
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-		System.out.println("validate1");
 		if(!errors.hasErrors("code")) {
 			final Patronage i = this.patronPatronageRepository.findOnePatronageByCode((entity.getCode()));
-			System.out.println("asdasd");
 			errors.state(request, i == null || i.getId()==entity.getId(),"code", "inventor.item.form.error.code.duplicated");
 		}
-		System.out.println("validate2");
+		if(!errors.hasErrors("startDate")) {
+			final Date now = new Date();
+			final Date minStartDate = DateUtils.addMonths(now, 1);
+			errors.state(request, entity.getStartDate().after(minStartDate), "startDate", "patron.patronage.form.error.startDate");
+
+		}
+		if(!errors.hasErrors("deadline")) {
+			final Date minDeadline = DateUtils.addDays(entity.getStartDate(), 31);
+			errors.state(request, entity.getDeadline().after(minDeadline), "deadline", "patron.patronage.form.error.deadline");
+		}
+		if(!errors.hasErrors("budget")) {
+			errors.state(request, entity.getBudget().getAmount()>0, "budget", "patron.patronage.form.error.budget.negative");
+		}
 	}
 
 	@Override
 	public void create(final Request<Patronage> request, final Patronage entity) {
-		System.out.println("create0");
 		assert request != null;
 		assert entity != null;
 		
-		System.out.println("create1");
 		entity.setPublished(false);
-//		entity.setInventor(this.inventorItemRepository.findInventorById(8));
 		entity.setPatron(this.patronPatronageRepository.findOnePatronById(request.getPrincipal().getActiveRoleId()));
 		
-//		entity.setInventor(this.patronPatronageRepository);
 		
 		this.patronPatronageRepository.save(entity);
 	}

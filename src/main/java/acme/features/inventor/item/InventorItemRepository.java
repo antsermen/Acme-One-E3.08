@@ -27,6 +27,9 @@ public interface InventorItemRepository extends AbstractRepository {
 	
 	@Query("SELECT i FROM Inventor i")
 	List<Inventor> findAllInventors();
+
+	@Query("SELECT i FROM Inventor i WHERE i.userAccount.username = :username")
+	Inventor findInventorByUsername(String username);
 	
 	
 

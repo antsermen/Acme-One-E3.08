@@ -10,7 +10,7 @@
 		<acme:input-option code="ACCEPTED" value="ACCEPTED" selected="${status == 'ACCEPTED'}"/>
 		<acme:input-option code="DENIED" value="DENIED" selected="${status == 'DENIED'}"/>
 	</acme:input-select>
-	<acme:input-textbox code="patron.patronage.form.label.code" path="code"/>	
+	<acme:input-textbox code="patron.patronage.form.label.code" path="code" placeholder="ABC-123-D"/>	
 	<acme:input-textarea code="patron.patronage.form.label.legalStuff" path="legalStuff"/>
 	<acme:input-money code="patron.patronage.form.label.budget" path="budget"/>
 	<acme:input-moment code="patron.patronage.form.label.creationDate" path="creationDate"/>

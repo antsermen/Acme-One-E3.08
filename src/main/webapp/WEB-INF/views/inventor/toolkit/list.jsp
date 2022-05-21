@@ -21,3 +21,4 @@
 	<acme:list-column code="inventor.toolkit.list.label.description" path="description"/>
 	<acme:list-column code="inventor.toolkit.list.label.link" path="link"/>	
 </acme:list>
+<acme:button code="inventor.toolkit.list.button.create" action="/inventor/toolkit/create"/>

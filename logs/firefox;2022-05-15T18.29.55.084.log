@@ -1,0 +1,10 @@
+1652631675556	geckodriver	INFO	Listening on 127.0.0.1:26873
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\pabli\\AppData\\Local\\Temp\\rust_mozprofileQQBQQp\\search.json.mozlz4", (void 0)))
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 3004: TypeError: event.target.closest is not a function
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+consJole.waarvna: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "hStctrpi://localhost:8081"
+pt error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous messJaagvaSceript error: resource://gre/modules/LoginMan agerPafroern:t". j"shmt,t pl:i/n/el o1c3a6l: TypehEorsrto:r: gRecipeManager is null8
+081"

@@ -30,7 +30,7 @@ public class AnyItemShowService implements AbstractShowService<Any,Item>{
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "name", "code", "technology", "description", "retailPrice","link");
+		request.unbind(entity, model, "name", "code", "technology", "description", "retailPrice", "systemRetailPrice","link");
 	}
 
 	@Override
@@ -45,5 +45,4 @@ public class AnyItemShowService implements AbstractShowService<Any,Item>{
 
 		return result;
 	}
-
 }

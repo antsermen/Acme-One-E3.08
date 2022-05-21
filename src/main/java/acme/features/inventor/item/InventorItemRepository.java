@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import acme.entities.Item;
 import acme.entities.ItemType;
+import acme.entities.SystemConfiguration;
 import acme.framework.repositories.AbstractRepository;
 import acme.roles.Inventor;
 
@@ -31,6 +32,8 @@ public interface InventorItemRepository extends AbstractRepository {
 	@Query("SELECT i FROM Inventor i WHERE i.userAccount.username = :username")
 	Inventor findInventorByUsername(String username);
 	
+	@Query("select s from SystemConfiguration s")
+	SystemConfiguration findSystemConfiguration();
 	
 
 }

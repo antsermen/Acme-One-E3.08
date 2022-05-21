@@ -1,0 +1,2 @@
+timestamp,test-class,test-method,time,description,result
+"2022-05-15 18:16:18.55","acme.testing.administrator.announcement.AdministratorAnnouncementCreateTest","positiveTest",15816,""[1] recordIndex=0, title=new announcement, body=this is an example of announcement for test purposes, link=https://example.com, critical=false"","OK"

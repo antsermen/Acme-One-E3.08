@@ -1,0 +1,2 @@
+timestamp,test-class,test-method,time,description,result
+"2022-05-15 17:26:13.087","acme.testing.administrator.announcement.AdministratorAnnouncementCreateTest","positiveTest",10935,""[1] recordIndex=0, title=new announcement, body=this is an example of announcement for test purposes, info=false, critical=https://example.com"","Cannot find 'By.name: info'"

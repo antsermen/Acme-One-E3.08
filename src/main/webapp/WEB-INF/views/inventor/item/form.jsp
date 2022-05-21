@@ -25,13 +25,16 @@
 	<acme:input-textbox code="inventor.item.form.label.technology" path="technology"/>
 	<acme:input-textarea code="inventor.item.form.label.description" path="description"/>
 	<acme:input-money code="inventor.item.form.label.retailPrice" path="retailPrice"/>
+	<jstl:if test="${command == 'show'}">
+		<acme:input-textbox code="any.item.form.label.systemRetailPrice" path="systemRetailPrice" readonly="true"/>	
+	</jstl:if>	
 	<acme:input-url code="inventor.item.form.label.link" path="link"/>
 
 
 	
 	<jstl:choose>
-		<jstl:when test="${(command == 'show' || command == 'update' || command == 'delete' || command == 'publish')
-							 && published == false }">
+			<jstl:when test="${acme:anyOf(command, 'show, update, delete, publish') && published == false }">
+							 
 			<acme:submit code="inventor.item.form.button.update" action="/inventor/item/update"/>
 			<acme:submit code="inventor.item.form.button.delete" action="/inventor/item/delete"/>
 			<acme:submit code="inventor.item.form.button.publish" action="/inventor/item/publish"/>

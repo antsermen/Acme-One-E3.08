@@ -9,6 +9,7 @@ import acme.entities.Item;
 import acme.entities.Toolkit;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
+import acme.framework.datatypes.Money;
 import acme.framework.services.AbstractShowService;
 import acme.roles.Inventor;
 
@@ -25,8 +26,7 @@ public class InventorShowToolkitsService implements AbstractShowService<Inventor
 			@Override
 			public boolean authorise(final Request<Toolkit> request) {
 				assert request != null;
-					
-				return true;
+				return request.getPrincipal().getActiveRoleId() == this.repository.findOneToolkitById(request.getModel().getInteger("id")).getInventor().getId();
 			}
 				
 			@Override
@@ -48,11 +48,13 @@ public class InventorShowToolkitsService implements AbstractShowService<Inventor
 				assert entity != null;
 				assert model != null;
 					
-				int id;
-				Double toolkitPrice;
+				final int id;
+				final Money toolkitPrice = new Money();	
 				
 				id = request.getModel().getInteger("id");
-				toolkitPrice = this.repository.calculateToolkitPrice(id);
+				toolkitPrice.setAmount(this.repository.calculateToolkitPrice(id));
+				toolkitPrice.setCurrency(this.repository.findSystemConfiguration().getSystemCurrency());
+			
 				final Collection<Item> items = this.repository.findItemsFromToolkitId(id);
 				
 				model.setAttribute("toolkitPrice", toolkitPrice);
@@ -62,9 +64,8 @@ public class InventorShowToolkitsService implements AbstractShowService<Inventor
 					model.setAttribute("itemType", i.getItemType());
 					model.setAttribute("itemDescription", i.getDescription());
 					model.setAttribute("itemRetailPrice", i.getRetailPrice());
+					model.setAttribute("itemSystemRetailPrice", i.getSystemRetailPrice());
 				}
-				request.unbind(entity, model, "title", "description", "notes", "link");
-				model.setAttribute("confirmation", false);
-				model.setAttribute("readonly", true);
+				request.unbind(entity, model,"code","title", "description", "notes", "link","published");
 			}
 }

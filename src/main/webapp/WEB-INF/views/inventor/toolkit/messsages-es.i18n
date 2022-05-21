@@ -8,7 +8,9 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
+inventor.item.form.label.published = Publicado
 inventor.toolkit.form.label.title = Título
+inventor.toolkit.form.label.code = Código
 inventor.toolkit.form.label.description = Descripción
 inventor.toolkit.form.label.notes = Notas
 inventor.toolkit.form.label.link = Enlace
@@ -17,6 +19,12 @@ inventor.toolkit.form.label.itemName = Nombre del objeto
 inventor.toolkit.form.label.itemType = Tipo del objeto
 inventor.toolkit.form.label.itemDescription = Descripción del objeto
 inventor.toolkit.form.label.itemRetailPrice = Precio del objeto
+inventor.toolkit.form.label.itemSystemRetailPrice = Precio del objeto en el sistema
+
+inventor.toolkit.form.button.update = Actualizar
+inventor.toolkit.form.button.delete = Borrar
+inventor.toolkit.form.button.publish = Publicar
+inventor.toolkit.form.list.create = Crear
 
 inventor.toolkit.list.label.title = Título
 inventor.toolkit.list.label.description = Descripción

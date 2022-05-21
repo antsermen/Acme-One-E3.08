@@ -3,6 +3,11 @@ inventor.patronageReport.form.label.memorandum = Memorandum:
 inventor.patronageReport.form.label.link = Link:
 inventor.patronageReport.form.label.serialNumber = Serial Number:
 inventor.patronageReport.form.label.sequenceNumber = Sequence Number:
+inventor.patronageReport.form.label.info = Info
+inventor.patronageReport.form.button.create = Create
+inventor.patronageReport.form.label.confirm = Confirm creation of new patronage report
+inventor.patronageReport.form.error.must-confirm = Please confirm 
 
 inventor.patronageReport.list.label.creationMoment = Creation Moment: 
 inventor.patronageReport.list.label.memorandum = Memorandum:
+inventor.patronageReport.list.button.create = Create patronage report

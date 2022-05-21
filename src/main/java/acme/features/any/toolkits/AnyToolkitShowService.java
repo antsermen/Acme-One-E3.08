@@ -9,6 +9,7 @@ import acme.entities.Item;
 import acme.entities.Toolkit;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
+import acme.framework.datatypes.Money;
 import acme.framework.roles.Any;
 import acme.framework.services.AbstractShowService;
 
@@ -47,10 +48,10 @@ public class AnyToolkitShowService implements AbstractShowService<Any,Toolkit>{
 		assert model != null;
 			
 		int id;
-		Double toolkitPrice;
-		
+		final Money toolkitPrice = new Money();	
 		id = request.getModel().getInteger("id");
-		toolkitPrice = this.repository.calculateToolkitPrice(id);
+		toolkitPrice.setAmount(this.repository.calculateToolkitPrice(id));
+		toolkitPrice.setCurrency(this.repository.findSystemConfiguration().getSystemCurrency());
 		final Collection<Item> items = this.repository.findItemsFromToolkitId(id);
 		
 		model.setAttribute("toolkitPrice", toolkitPrice);
@@ -60,6 +61,7 @@ public class AnyToolkitShowService implements AbstractShowService<Any,Toolkit>{
 			model.setAttribute("itemType", i.getItemType());
 			model.setAttribute("itemDescription", i.getDescription());
 			model.setAttribute("itemRetailPrice", i.getRetailPrice());
+			model.setAttribute("itemSystemRetailPrice", i.getSystemRetailPrice());
 		}
 		request.unbind(entity, model, "title", "description", "notes", "link", "code");
 		model.setAttribute("confirmation", false);

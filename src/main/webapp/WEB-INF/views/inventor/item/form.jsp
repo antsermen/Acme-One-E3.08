@@ -16,11 +16,18 @@
 <%@taglib prefix="acme" uri="urn:jsptagdir:/WEB-INF/tags"%>
 
 <acme:form readonly="${readonly}">
-	<acme:input-checkbox code="inventor.item.form.label.published" path="published" readonly="true"/>
-	<acme:input-select code="inventor.item.form.label.itemType" path="itemType">
-		<acme:input-option code="inventor.item.form.label.component" value="COMPONENT" selected="${itemType == 'COMPONENT'}"/>
-		<acme:input-option code="inventor.item.form.label.tool" value="TOOL" selected="${itemType == 'TOOL'}"/>
-	</acme:input-select>
+
+	<jstl:choose>
+		<jstl:when test="${published == false || command == 'create'}">
+			<acme:input-select code="inventor.item.form.label.itemType" path="itemType">
+				<acme:input-option code="inventor.item.form.label.component" value="COMPONENT" selected="${itemType == 'COMPONENT'}"/>
+				<acme:input-option code="inventor.item.form.label.tool" value="TOOL" selected="${itemType == 'TOOL'}"/>
+			</acme:input-select>
+		</jstl:when>
+		<jstl:when test="${published == true }">
+			<acme:input-textbox code="inventor.item.form.label.itemType" path="itemType"/>	
+		</jstl:when>
+	</jstl:choose>
 	<acme:input-textbox code="inventor.item.form.label.name" path="name"/>	
 	<acme:input-textbox placeholder="ABC-1234-D" code="inventor.item.form.label.code" path="code"/>
 	<acme:input-textbox code="inventor.item.form.label.technology" path="technology"/>

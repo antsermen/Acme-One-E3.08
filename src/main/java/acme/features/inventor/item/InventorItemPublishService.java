@@ -32,7 +32,6 @@ public class InventorItemPublishService implements AbstractUpdateService<Invento
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-		
 		request.bind(entity, errors, "itemType", "name", "code", "technology", "description", "retailPrice", "link");
 	}
 

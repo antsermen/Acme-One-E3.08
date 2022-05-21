@@ -1,0 +1,2 @@
+timestamp,test-class,test-method,time,description,result
+"2022-05-17 20:10:14.278","acme.testing.inventor.item.InventorItemCreateTest","positiveTest",15463,""[1] recordIndex=0, type=Tool, code=ALE-172-C, description=El aspirador TC-VC 1812 S es un aspirador flexible, potente y versátil para una fácil limpieza en húmedo o en seco., link=https://www.leroymerlin.es/fp/17873030/aspirador-industrial-seco-humedo-1250w-12l-tc-vc-1812-s-einhell, name=Aspirador industrial EINHELL, retailPrice=EUR 48.99, technology=eléctrico, published=false"","OK"

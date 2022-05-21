@@ -79,7 +79,7 @@ public class PatronPatronageUpdateService implements AbstractUpdateService<Patro
 
 		}
 		if(!errors.hasErrors("deadline")) {
-			final Date minDeadline = DateUtils.addDays(entity.getStartDate(), 31);
+			final Date minDeadline = DateUtils.addMonths(entity.getStartDate(), 1);
 			errors.state(request, entity.getDeadline().after(minDeadline), "deadline", "patron.patronage.form.error.deadline");
 		}
 		if(!errors.hasErrors("budget")) {

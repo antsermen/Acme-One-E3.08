@@ -35,3 +35,4 @@ any.item.form.label.systemRetailPrice = System Retail Price:
 inventor.item.form.error.code.duplicated = This code is already assigned to an Item
 inventor.item.form.error.code.modified = You cannot modify a code when it is assigned
 inventor.item.form.error.retailPrice.negative = The retail price must be above 0
+inventor.item.form.error.retailPrice.acceptedCurrencies = The currency you are trying to enter is not accepted by the system

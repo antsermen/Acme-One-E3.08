@@ -64,6 +64,8 @@ public class Patronage extends AbstractEntity{
 		protected String info;
 		
 		protected boolean published;
+		
+		protected Money systemBudget;
 	
 		// Derived attributes -----------------------------------------------------
 		

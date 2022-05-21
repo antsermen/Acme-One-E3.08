@@ -1,5 +1,8 @@
 package acme.features.patron.patronage;
 
+import java.util.Date;
+
+import org.apache.commons.lang3.time.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -35,7 +38,8 @@ public class PatronPatronageUpdateService implements AbstractUpdateService<Patro
 		assert entity != null;
 		assert errors != null;
 			
-		request.bind(entity, errors, "status", "code", "legalStuff", "budget", "creationDate", "startDate", "deadline", "info", "inventor");
+		request.bind(entity, errors, "status", "code", "legalStuff", "budget", "creationDate", "startDate", "deadline", "info");
+		entity.setInventor(this.inventorItemRepository.findInventorByUsername(request.getModel().getAttribute("inventor").toString()));
 	}
 
 	@Override
@@ -64,8 +68,22 @@ public class PatronPatronageUpdateService implements AbstractUpdateService<Patro
 		assert errors != null;
 		
 		if(!errors.hasErrors("code")) {
-			final Patronage i = this.patronPatronageRepository.findOnePatronageByCode((entity.getCode()));
-			errors.state(request, i == null || i.getId()==entity.getId(),"code", "inventor.item.form.error.code.duplicated");
+			final Patronage duplicated = this.patronPatronageRepository.findOnePatronageByCode((entity.getCode()));
+			errors.state(request, duplicated == null || duplicated.getId()==entity.getId(),"code", "patron.patronage.form.error.code.duplicated");
+			final Patronage modified = this.patronPatronageRepository.findOnePatronageById((entity.getId()));
+			errors.state(request, modified.getCode()==entity.getCode(),"code", "patron.patronage.form.error.code.modified");
+		}
+		if(!errors.hasErrors("startDate")) {
+			final Date minStartDate = DateUtils.addMonths(entity.getCreationDate(), 1);
+			errors.state(request, entity.getStartDate().after(minStartDate), "startDate", "patron.patronage.form.error.startDate");
+
+		}
+		if(!errors.hasErrors("deadline")) {
+			final Date minDeadline = DateUtils.addDays(entity.getStartDate(), 31);
+			errors.state(request, entity.getDeadline().after(minDeadline), "deadline", "patron.patronage.form.error.deadline");
+		}
+		if(!errors.hasErrors("budget")) {
+			errors.state(request, entity.getBudget().getAmount()>0, "budget", "patron.patronage.form.error.budget.negative");
 		}
 	}
 

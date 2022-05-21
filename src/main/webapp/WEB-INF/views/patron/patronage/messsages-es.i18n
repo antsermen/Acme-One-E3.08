@@ -15,9 +15,15 @@ patron.patronage.form.label.startDate = Fecha de inicio:
 patron.patronage.form.label.deadline = Fecha límite:
 patron.patronage.form.label.info = Info:
 patron.patronage.form.label.inventorProfile = Perfil del inventor:
-patron.patronage.form.label.patronProfile = Perfil del patrono:
+patron.patronage.form.label.patronProfile = Perfil del patrocinador:
 
 patron.patronage.form.button.update = Actualizar
 patron.patronage.form.button.delete = Eliminar
 patron.patronage.form.button.publish = Publicar
 patron.patronage.form.button.create = Crear
+
+patron.patronage.form.error.code.duplicated = Este código ya está asignado a un patrocinio
+patron.patronage.form.error.startDate = La fecha de inicio debe ser como mínimo un mes después de la fecha de creación
+patron.patronage.form.error.deadline = La fecha límite debe ser como mínimo un mes después de la fehca de comienzo
+patron.patronage.form.error.budget.negative = El presupuesto debe ser mayor que 0
+patron.patronage.form.error.code.modified = No puedes cambiar un código asignado

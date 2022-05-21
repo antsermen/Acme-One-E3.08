@@ -67,6 +67,9 @@ public class InventorItemCreateService implements AbstractCreateService<Inventor
 			final Item i = this.inventorItemRepository.findItemByCode(entity.getCode());
 			errors.state(request,i == null ||  i.getCode()==entity.getCode(),"code", "inventor.item.form.error.code.duplicated");
 		}
+		if(!errors.hasErrors("retailPrice")) {
+			errors.state(request, entity.getRetailPrice().getAmount() > 0, "retailPrice", "inventor.item.form.error.retailPrice.negative");
+		}
 
 	}
 

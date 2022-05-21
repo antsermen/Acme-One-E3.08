@@ -13,6 +13,7 @@ inventor.patronage.list.label.legalStuff = Asuntos legales
 inventor.patronage.list.label.budget = Presupuesto
 inventor.patronage.list.label.deadline = Fecha límite
 inventor.patronage.list.label.info = Más información
+inventor.patronage.form.label.systemBudget = Presupuesto en el sistema
 
 inventor.patronage.form.label.status = Estado
 inventor.patronage.form.label.legalStuff = Asuntos legales

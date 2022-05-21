@@ -13,6 +13,7 @@ inventor.patronage.list.label.legalStuff = Legal stuff
 inventor.patronage.list.label.budget = Budget
 inventor.patronage.list.label.deadline = Deadline
 inventor.patronage.list.label.info = Further information
+inventor.patronage.form.label.systemBudget = System budget
 
 inventor.patronage.form.label.status = Status
 inventor.patronage.form.label.legalStuff = Legal stuff

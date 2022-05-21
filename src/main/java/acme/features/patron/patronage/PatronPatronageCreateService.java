@@ -37,6 +37,7 @@ public class PatronPatronageCreateService implements AbstractCreateService<Patro
 		
 		request.bind(entity, errors, "status", "code", "legalStuff", "budget", "creationDate", "startDate", "deadline", "info");
 		entity.setInventor(this.inventorItemRepository.findInventorByUsername(request.getModel().getAttribute("inventor").toString()));
+		entity.setStatus(Status.PROPOSED);
 	}
 
 

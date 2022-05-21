@@ -12,7 +12,7 @@ import acme.framework.services.AbstractUpdateService;
 import acme.roles.Inventor;
 
 @Service
-public class InventorPatronageAccpetService implements AbstractUpdateService<Inventor, Patronage>{
+public class InventorPatronageAcceptService implements AbstractUpdateService<Inventor, Patronage>{
 			
 			// Internal state ========================================================
 	
@@ -25,14 +25,11 @@ public class InventorPatronageAccpetService implements AbstractUpdateService<Inv
 			public boolean authorise(final Request<Patronage> request) {
 				assert request != null;
 
-				final boolean result=true;
-				final int masterId;
-				final Patronage job;
-				final Inventor employer;
+				final Patronage patronage = this.repository.findOnePatronageById(request.getModel().getInteger("id"));
+				final boolean proposed = patronage.getStatus()==Status.PROPOSED;
+				final Integer owner_id = patronage.getInventor().getId();
 
-				
-
-				return result;
+				return request.getPrincipal().getActiveRoleId() == owner_id && proposed;
 			}
 
 			@Override

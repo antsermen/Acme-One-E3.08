@@ -20,7 +20,7 @@ public class InventorPatronageController extends AbstractController<Inventor, Pa
 		@Autowired
 		protected InventorShowPatronageService showPatronageService;
 		@Autowired
-		protected InventorPatronageAccpetService acceptPatronageService;
+		protected InventorPatronageAcceptService acceptPatronageService;
 	
 		@Autowired
 		protected InventorPatronageDeniedService deniedPatronageService;
@@ -33,7 +33,6 @@ public class InventorPatronageController extends AbstractController<Inventor, Pa
 		protected void initialise() {
 			super.addCommand("list", this.listPatronageService);
 			super.addCommand("show", this.showPatronageService);
-			//super.addCommand("update", this.updatePatronageService);
 			super.addCommand("denied","update", this.deniedPatronageService);
 			super.addCommand("accept","update", this.acceptPatronageService);
 

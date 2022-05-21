@@ -24,7 +24,7 @@ public class InventorShowPatronageService implements AbstractShowService<Invento
 			public boolean authorise(final Request<Patronage> request) {
 				assert request != null;
 						
-				return true;
+				return request.getPrincipal().getActiveRoleId() == this.repository.findOnePatronageById(request.getModel().getInteger("id")).getInventor().getId();
 			}
 					
 			@Override

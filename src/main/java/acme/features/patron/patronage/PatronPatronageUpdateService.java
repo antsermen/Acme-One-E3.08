@@ -71,7 +71,7 @@ public class PatronPatronageUpdateService implements AbstractUpdateService<Patro
 			final Patronage duplicated = this.patronPatronageRepository.findOnePatronageByCode((entity.getCode()));
 			errors.state(request, duplicated == null || duplicated.getId()==entity.getId(),"code", "patron.patronage.form.error.code.duplicated");
 			final Patronage modified = this.patronPatronageRepository.findOnePatronageById((entity.getId()));
-			errors.state(request, modified.getCode()==entity.getCode(),"code", "patron.patronage.form.error.code.modified");
+			errors.state(request, modified.getCode().equals(entity.getCode()),"code", "patron.patronage.form.error.code.modified");
 		}
 		if(!errors.hasErrors("startDate")) {
 			final Date minStartDate = DateUtils.addMonths(entity.getCreationDate(), 1);

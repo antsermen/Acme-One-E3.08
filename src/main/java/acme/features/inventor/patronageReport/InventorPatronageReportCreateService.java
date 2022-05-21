@@ -31,7 +31,7 @@ public class InventorPatronageReportCreateService implements AbstractCreateServi
 		int patronageId;
 		Patronage patronage;
 
-		patronageId = request.getModel().getInteger("patronageId");
+		patronageId = request.getPrincipal().getActiveRoleId();
 		patronage = this.repository.findPatronageById(patronageId);
 		result = request.getPrincipal().getActiveRoleId() == patronage.getInventor().getId();
 

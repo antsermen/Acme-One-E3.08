@@ -35,8 +35,8 @@ AdministratorDashboard
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1116</x>
-      <y>528</y>
+      <x>1146</x>
+      <y>522</y>
       <w>258</w>
       <h>78</h>
     </coordinates>
@@ -360,15 +360,15 @@ Quantity
     <id>Relation</id>
     <coordinates>
       <x>924</x>
-      <y>462</y>
+      <y>474</y>
       <w>42</w>
-      <h>66</h>
+      <h>54</h>
     </coordinates>
     <panel_attributes>lt=&lt;-&gt;
 m1=0..*
 m2= 1
 &lt; Has</panel_attributes>
-    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -567,7 +567,7 @@ Owns &gt;</panel_attributes>
       <x>804</x>
       <y>360</y>
       <w>270</w>
-      <h>108</h>
+      <h>120</h>
     </coordinates>
     <panel_attributes>bg=green
 &lt;&lt;Entity&gt;&gt;
@@ -580,7 +580,8 @@ Item
 + description: String {NotBlank, Length(1, 255)}
 + retailPrice: Money {NotNull}
 + link: String {URL}
-+ published: boolean</panel_attributes>
++ published: boolean
++ / systemRetailPrice</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -779,16 +780,16 @@ SystemConfiguration
     <coordinates>
       <x>942</x>
       <y>732</y>
-      <w>18</w>
+      <w>24</w>
       <h>54</h>
     </coordinates>
     <panel_attributes>lt=..</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+    <additional_attributes>10.0;10.0;20.0;70.0</additional_attributes>
   </element>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>888</x>
+      <x>894</x>
       <y>774</y>
       <w>372</w>
       <h>36</h>

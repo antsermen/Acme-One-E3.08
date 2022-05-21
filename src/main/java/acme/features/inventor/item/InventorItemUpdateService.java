@@ -57,7 +57,6 @@ public class InventorItemUpdateService implements AbstractUpdateService<Inventor
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-		
 		if(!errors.hasErrors("code")) {
 			final Item duplicated = this.inventorItemRepository.findItemByCode(entity.getCode());
 			errors.state(request, duplicated == null || duplicated.getId()==entity.getId(),"code", "inventor.item.form.error.code.duplicated");

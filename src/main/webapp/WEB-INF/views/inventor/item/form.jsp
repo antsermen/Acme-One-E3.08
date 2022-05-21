@@ -28,7 +28,6 @@
 			<acme:input-textbox code="inventor.item.form.label.itemType" path="itemType"/>	
 		</jstl:when>
 	</jstl:choose>
-	
 	<acme:input-textbox code="inventor.item.form.label.name" path="name"/>	
 	<acme:input-textbox placeholder="ABC-1234-D" code="inventor.item.form.label.code" path="code"/>
 	<acme:input-textbox code="inventor.item.form.label.technology" path="technology"/>

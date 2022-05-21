@@ -1,0 +1,2 @@
+timestamp,test-class,test-method,time,description,result
+"2022-05-17 19:39:14.884","acme.testing.inventor.item.InventorItemCreateTest","positiveTest",9895,""[1] recordIndex=4, type=TOOL, code=SNW-163, description=Escalera de madera extensible indicada para mantenimiento industrial y telecomunicaciones fabricada en pino y peldaño de haya., link=https://www.leroymerlin.es/fp/83611937/escalera-madera-extensible-villar, name=Escalera madera extensible VILLAR, retailPrice=EUR 309.00, technology=pintura, published=false"","Record index 4 is out of range"

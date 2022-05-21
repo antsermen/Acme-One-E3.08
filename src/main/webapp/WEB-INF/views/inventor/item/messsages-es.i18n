@@ -15,7 +15,9 @@ inventor.item.list.button.create = Crear
 inventor.item.list.label.published = Publicado	
 
 inventor.item.form.label.published = Publicado	
-inventor.item.form.label.itemType = Tipo	
+inventor.item.form.label.itemType = Tipo
+inventor.item.form.label.component = Herramienta
+inventor.item.form.label.component = Componente	
 inventor.item.form.label.name = Nombre
 inventor.item.form.label.component = Componente
 inventor.item.form.label.tool = Herramienta

@@ -48,7 +48,6 @@ public class InventorItemCreateService implements AbstractCreateService<Inventor
 		final Item result = new Item();
 		
 		result.setInventor(this.inventorItemRepository.findInventorById(request.getPrincipal().getActiveRoleId()));
-		result.setPublished(false);
 		result.setCode("");
 		result.setDescription("");
 		result.setLink("");
@@ -86,6 +85,7 @@ public class InventorItemCreateService implements AbstractCreateService<Inventor
 		target=exchange.target;
 		entity.setSystemRetailPrice(target);
 
+		entity.setPublished(false);
 		this.inventorItemRepository.save(entity);
 		
 	}

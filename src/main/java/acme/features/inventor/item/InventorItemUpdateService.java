@@ -33,7 +33,7 @@ public class InventorItemUpdateService implements AbstractUpdateService<Inventor
 		assert entity != null;
 		assert errors != null;
 		
-		request.bind(entity, errors, "itemType", "name", "code", "technology", "description", "retailPrice", "link", "published");
+		request.bind(entity, errors, "itemType", "name", "code", "technology", "description", "retailPrice", "link");
 	}
 
 	@Override
@@ -58,8 +58,13 @@ public class InventorItemUpdateService implements AbstractUpdateService<Inventor
 		assert entity != null;
 		assert errors != null;
 		if(!errors.hasErrors("code")) {
-			final Item i = this.inventorItemRepository.findItemByCode(entity.getCode());
-			errors.state(request, i == null || i.getId()==entity.getId(),"code", "inventor.item.form.error.code.duplicated");
+			final Item duplicated = this.inventorItemRepository.findItemByCode(entity.getCode());
+			errors.state(request, duplicated == null || duplicated.getId()==entity.getId(),"code", "inventor.item.form.error.code.duplicated");
+			final Item modified = this.inventorItemRepository.findItemById(entity.getId());
+			errors.state(request, modified.getCode().equals(entity.getCode()), "code", "inventor.item.form.error.code.modified");
+		}
+		if(!errors.hasErrors("retailPrice")) {
+			errors.state(request, entity.getRetailPrice().getAmount() > 0, "retailPrice", "inventor.item.form.error.retailPrice.negative");
 		}
 
 	}

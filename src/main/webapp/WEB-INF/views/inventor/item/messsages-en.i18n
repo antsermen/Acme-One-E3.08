@@ -33,3 +33,5 @@ inventor.item.form.button.create = Create
 any.item.form.label.systemRetailPrice = System Retail Price:
 
 inventor.item.form.error.code.duplicated = This code is already assigned to an Item
+inventor.item.form.error.code.modified = You cannot modify a code when it is assigned
+inventor.item.form.error.retailPrice.negative = The retail price must be above 0

@@ -16,20 +16,22 @@
 <%@taglib prefix="acme" uri="urn:jsptagdir:/WEB-INF/tags"%>
 
 <acme:form readonly="${readonly}">
-	<acme:input-checkbox code="inventor.item.form.label.published" path="published" readonly="true"/>
 	<acme:input-textbox placeholder="ABC-1234-D" code="inventor.toolkit.form.label.code" path="code"/>
 	<acme:input-textbox code="inventor.toolkit.form.label.title" path="title"/>
 	<acme:input-textarea code="inventor.toolkit.form.label.description" path="description"/>
 	<acme:input-textbox code="inventor.toolkit.form.label.notes" path="notes"/>
 	<acme:input-url code="inventor.toolkit.form.label.link" path="link"/>
-	<acme:input-textbox code="inventor.toolkit.form.label.toolkitPrice" path="toolkitPrice" placeholder="${toolkitPrice}"/>
-	<jstl:forEach var="item" items="${items}">
-		<acme:input-textbox code="inventor.toolkit.form.label.itemName" path="itemName" placeholder="${item.name}"/>
-		<acme:input-textbox code="inventor.toolkit.form.label.itemType" path="itemType" placeholder="${item.itemType}"/>
-		<acme:input-textarea code="inventor.toolkit.form.label.itemDescription" path="itemDescription" placeholder="${item.description}"/>
-		<acme:input-textbox code="inventor.toolkit.form.label.itemRetailPrice" path="itemSystemRetailPrice" placeholder="${item.retailPrice}"/>
-		<acme:input-textbox code="inventor.toolkit.form.label.itemSystemRetailPrice" path="itemSystemRetailPrice" placeholder="${item.systemRetailPrice}"/>
-	</jstl:forEach>
+	<jstl:if test="${command == 'show'}">
+		<acme:input-textbox code="inventor.toolkit.form.label.toolkitPrice" path="toolkitPrice" placeholder="${toolkitPrice}"/>
+	</jstl:if>
+		<jstl:forEach var="item" items="${items}">
+			<acme:input-textbox code="inventor.toolkit.form.label.itemName" path="itemName" placeholder="${item.name}"/>
+			<acme:input-textbox code="inventor.toolkit.form.label.itemType" path="itemType" placeholder="${item.itemType}"/>
+			<acme:input-textarea code="inventor.toolkit.form.label.itemDescription" path="itemDescription" placeholder="${item.description}"/>
+			<acme:input-textbox code="inventor.toolkit.form.label.itemRetailPrice" path="itemSystemRetailPrice" placeholder="${item.retailPrice}"/>
+			<acme:input-textbox code="inventor.toolkit.form.label.itemSystemRetailPrice" path="itemSystemRetailPrice" placeholder="${item.systemRetailPrice}"/>
+		</jstl:forEach>
+	
 	
 	<jstl:choose>
 		<jstl:when test="${acme:anyOf(command, 'show, update, delete, publish') && published == false }">

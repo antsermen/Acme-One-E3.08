@@ -71,8 +71,6 @@ public class InventorItemCreateService implements AbstractCreateService<Inventor
 		}
 		if(!errors.hasErrors("retailPrice")) {
 			errors.state(request, entity.getRetailPrice().getAmount() > 0, "retailPrice", "inventor.item.form.error.retailPrice.negative");
-		}
-		if(!errors.hasErrors("retailPrice")) {
 			final String[] acceptedCurrencies = this.inventorItemRepository.findSystemConfiguration().getAcceptedCurrencies().split(",");
 			final List<String> acceptedCurrenciesList = new ArrayList<>();
 			for(final String ac : acceptedCurrencies) {

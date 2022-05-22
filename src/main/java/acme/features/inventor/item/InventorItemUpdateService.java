@@ -1,13 +1,19 @@
 package acme.features.inventor.item;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.Item;
+import acme.forms.MoneyExchange;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Errors;
 import acme.framework.controllers.Request;
+import acme.framework.datatypes.Money;
 import acme.framework.services.AbstractUpdateService;
+import acme.functions.MoneyExchangeFunction;
 import acme.roles.Inventor;
 
 @Service
@@ -64,8 +70,14 @@ public class InventorItemUpdateService implements AbstractUpdateService<Inventor
 			errors.state(request, modified.getCode().equals(entity.getCode()), "code", "inventor.item.form.error.code.modified");
 		}
 		if(!errors.hasErrors("retailPrice")) {
+			final String[] acceptedCurrencies = this.inventorItemRepository.findSystemConfiguration().getAcceptedCurrencies().split(",");
+			final List<String> acceptedCurrenciesList = new ArrayList<>();
+			for(final String ac : acceptedCurrencies) {
+				acceptedCurrenciesList.add(ac);
+			}
+			errors.state(request, acceptedCurrenciesList.contains(entity.getRetailPrice().getCurrency()), "retailPrice", "inventor.item.form.error.retailPrice.acceptedCurrencies");
 			errors.state(request, entity.getRetailPrice().getAmount() > 0, "retailPrice", "inventor.item.form.error.retailPrice.negative");
-		}
+}
 
 	}
 
@@ -73,6 +85,15 @@ public class InventorItemUpdateService implements AbstractUpdateService<Inventor
 	public void update(final Request<Item> request, final Item entity) {
 		assert request != null;
 		assert entity != null;
+
+		Money source, target;
+		String targetCurrency;
+		MoneyExchange exchange;
+		source = entity.getRetailPrice();
+		targetCurrency = this.inventorItemRepository.findSystemConfiguration().getSystemCurrency();
+		exchange=MoneyExchangeFunction.computeMoneyExchange(source, targetCurrency);
+		target=exchange.target;
+		entity.setSystemRetailPrice(target);
 
 		this.inventorItemRepository.save(entity);
 	}

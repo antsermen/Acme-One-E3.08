@@ -22,9 +22,11 @@ patron.patronage.form.button.delete = Eliminar
 patron.patronage.form.button.publish = Publicar
 patron.patronage.form.button.create = Crear
 
+patron.patronage.form.error.name.spam = El nombre es considerado spam, introduzca un nombre más apropiado por favor
 patron.patronage.form.error.code.duplicated = Este código ya está asignado a un patrocinio
+patron.patronage.form.error.code.modified = No puedes cambiar un código asignado
 patron.patronage.form.error.startDate = La fecha de inicio debe ser como mínimo un mes después de la fecha de creación
 patron.patronage.form.error.deadline = La fecha límite debe ser como mínimo un mes después de la fecha de comienzo
 patron.patronage.form.error.budget.negative = El presupuesto debe ser mayor que 0
 patron.patronage.form.error.budget.acceptedCurrencies = La divisa que intentas introducir no es aceptada por el sistema
-patron.patronage.form.error.code.modified = No puedes cambiar un código asignado
+patron.patronage.form.legalStuff.error.spam = Los términos legales son considerados spam, introduzca unos términos legañes más apropiados por favor

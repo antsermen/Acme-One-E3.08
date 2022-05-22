@@ -38,3 +38,5 @@ inventor.item.form.error.retailPrice.negative = El precio de venta al público d
 inventor.item.form.error.name.spam = El nombre es considerado spam, introduzca un nombre más apropiado por favor
 inventor.item.form.error.technology.spam = La tecnología es considerada spam, introduzca una tecnología más apropiada por favor
 inventor.item.form.error.description.spam = La descripción es considerada spam, introduzca una descripción más apropiada por favor
+inventor.item.form.error.retailPrice.acceptedCurrencies = La divisa que intentas introducir no es aceptada por el sistema
+

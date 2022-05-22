@@ -9,10 +9,13 @@ import org.springframework.stereotype.Service;
 import acme.entities.Patronage;
 import acme.entities.Status;
 import acme.features.inventor.item.InventorItemRepository;
+import acme.forms.MoneyExchange;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Errors;
 import acme.framework.controllers.Request;
+import acme.framework.datatypes.Money;
 import acme.framework.services.AbstractCreateService;
+import acme.functions.MoneyExchangeFunction;
 import acme.roles.Patron;
 
 @Service
@@ -35,7 +38,7 @@ public class PatronPatronageCreateService implements AbstractCreateService<Patro
 		assert entity != null;
 		assert errors != null;
 		
-		request.bind(entity, errors, "status", "code", "legalStuff", "budget", "creationDate", "startDate", "deadline", "info");
+		request.bind(entity, errors, "code", "legalStuff", "budget", "creationDate", "startDate", "deadline", "info");
 		entity.setInventor(this.inventorItemRepository.findInventorByUsername(request.getModel().getAttribute("inventor").toString()));
 		entity.setStatus(Status.PROPOSED);
 	}
@@ -47,7 +50,7 @@ public class PatronPatronageCreateService implements AbstractCreateService<Patro
 		assert entity != null;
 		assert model != null;
 		
-		request.unbind(entity, model, "status", "code", "legalStuff", "budget", "creationDate", "startDate", "deadline", "info");
+		request.unbind(entity, model, "code", "legalStuff", "budget", "creationDate", "startDate", "deadline", "info");
 		model.setAttribute("inventors", this.inventorItemRepository.findAllInventors());
 	}
 
@@ -83,7 +86,7 @@ public class PatronPatronageCreateService implements AbstractCreateService<Patro
 
 		}
 		if(!errors.hasErrors("deadline")) {
-			final Date minDeadline = DateUtils.addDays(entity.getStartDate(), 31);
+			final Date minDeadline = DateUtils.addMonths(entity.getStartDate(), 1);
 			errors.state(request, entity.getDeadline().after(minDeadline), "deadline", "patron.patronage.form.error.deadline");
 		}
 		if(!errors.hasErrors("budget")) {
@@ -98,7 +101,18 @@ public class PatronPatronageCreateService implements AbstractCreateService<Patro
 		
 		entity.setPublished(false);
 		entity.setPatron(this.patronPatronageRepository.findOnePatronById(request.getPrincipal().getActiveRoleId()));
+		Money source, target;
+		String targetCurrency;
+		MoneyExchange exchange;
+		source = entity.getBudget();
+		targetCurrency = this.inventorItemRepository.findSystemConfiguration().getSystemCurrency();
+		exchange=MoneyExchangeFunction.computeMoneyExchange(source, targetCurrency);
+		target=exchange.target;
+		entity.setSystemBudget(target);
+		entity.setPublished(false);
+		entity.setPatron(this.patronPatronageRepository.findOnePatronById(request.getPrincipal().getActiveRoleId()));
 		
+		entity.setStatus(Status.PROPOSED);
 		
 		this.patronPatronageRepository.save(entity);
 	}

@@ -1,5 +1,8 @@
 package acme.features.inventor.item;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -87,6 +90,14 @@ public class InventorItemCreateService implements AbstractCreateService<Inventor
 				this.inventorItemRepository.findSystemConfiguration().getStrongSpamTerms(), 
 				this.inventorItemRepository.findSystemConfiguration().getWeakSpamThreshold(),
 				this.inventorItemRepository.findSystemConfiguration().getStrongSpamThreshold()), "description", "inventor.item.form.error.description.spam");
+		}
+		if(!errors.hasErrors("retailPrice")) {
+			final String[] acceptedCurrencies = this.inventorItemRepository.findSystemConfiguration().getAcceptedCurrencies().split(",");
+			final List<String> acceptedCurrenciesList = new ArrayList<>();
+			for(final String ac : acceptedCurrencies) {
+				acceptedCurrenciesList.add(ac);
+			}
+			errors.state(request, acceptedCurrenciesList.contains(entity.getRetailPrice().getCurrency()), "retailPrice", "inventor.item.form.error.retailPrice.acceptedCurrencies");
 		}
 	}
 

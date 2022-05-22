@@ -1,5 +1,8 @@
 package acme.features.inventor.item;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -43,7 +46,7 @@ public class InventorItemPublishService implements AbstractUpdateService<Invento
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "itemType", "name", "code", "technology", "description", "retailPrice", "link");
+		request.unbind(entity, model, "itemType", "name", "code", "technology", "description", "retailPrice", "link", "published");
 
 	}
 
@@ -59,12 +62,24 @@ public class InventorItemPublishService implements AbstractUpdateService<Invento
 		assert entity != null;
 		assert errors != null;
 		
+		if(!errors.hasErrors("itemType")) {
+			final Item modified = this.inventorItemRepository.findItemById(entity.getId());
+			errors.state(request, modified.getItemType().equals(entity.getItemType()), "itemType", "inventor.item.form.error.itemType.modified");
+		}
+		
+		
 		if(!errors.hasErrors("code")) {
-			final Item i = this.inventorItemRepository.findItemByCode(entity.getCode());
-			errors.state(request,i == null ||  i.getCode()==entity.getCode(),"code", "inventor.item.form.error.code.duplicated");
+			final Item duplicated = this.inventorItemRepository.findItemByCode(entity.getCode());
+			errors.state(request, duplicated == null || duplicated.getId()==entity.getId(),"code", "inventor.item.form.error.code.duplicated");
 		}
 		if(!errors.hasErrors("retailPrice")) {
 			errors.state(request, entity.getRetailPrice().getAmount() > 0, "retailPrice", "inventor.item.form.error.retailPrice.negative");
+			final String[] acceptedCurrencies = this.inventorItemRepository.findSystemConfiguration().getAcceptedCurrencies().split(",");
+			final List<String> acceptedCurrenciesList = new ArrayList<>();
+			for(final String ac : acceptedCurrencies) {
+				acceptedCurrenciesList.add(ac);
+			}
+			errors.state(request, acceptedCurrenciesList.contains(entity.getRetailPrice().getCurrency()), "retailPrice", "inventor.item.form.error.retailPrice.acceptedCurrencies");
 		}
 		if(!errors.hasErrors("name")) {
 			errors.state(request, !SpamDetector.spamDetector(entity.getName(), this.inventorItemRepository.findSystemConfiguration().getWeakSpamTerms(), 

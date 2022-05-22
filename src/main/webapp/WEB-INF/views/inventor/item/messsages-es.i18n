@@ -32,6 +32,7 @@ inventor.item.form.button.publish = Publicar
 inventor.item.form.button.create = Crear
 any.item.form.label.retailPrice = Precio de venta al público:
 
+inventor.item.form.error.itemType.modified = No se puede modificar el tipo de un objeto creado
 inventor.item.form.error.code.duplicated = Ya hay un Item con este código asociado
 inventor.item.form.error.code.modified = No puedes modificar un código que ya ha sido asignado
 inventor.item.form.error.retailPrice.negative = El precio de venta al público debe estar por encima de 0

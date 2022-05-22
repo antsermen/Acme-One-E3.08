@@ -42,6 +42,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry combineaccessrules="false" kind="src" path="/Acme-Framework-22.5.1"/>
-	<classpathentry kind="lib" path="/Spam-Detector/target/SpamDetectorJARs/project.jar"/>
+	<classpathentry kind="lib" path="spam-detector/project.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

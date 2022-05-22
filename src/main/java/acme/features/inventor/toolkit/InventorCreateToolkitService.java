@@ -3,6 +3,7 @@ package acme.features.inventor.toolkit;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import SpamDetector.Spam_Detector.SpamDetector;
 import acme.entities.Toolkit;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Errors;
@@ -62,8 +63,27 @@ public class InventorCreateToolkitService implements AbstractCreateService<Inven
 			Toolkit existing;
 
 			existing = this.repository.findOneToolkitByCode(entity.getCode());
-			errors.state(request, existing == null || existing.getId() == entity.getId(), "code", "employer.job.form.error.duplicated");
+			errors.state(request, existing == null || existing.getId() == entity.getId(), "code", "inventor.toolkit.form.error.code.duplicated");
 		}
+		if(!errors.hasErrors("title")) {
+			errors.state(request, !SpamDetector.spamDetector(entity.getTitle(), this.repository.findSystemConfiguration().getWeakSpamTerms(), 
+				this.repository.findSystemConfiguration().getStrongSpamTerms(), 
+				this.repository.findSystemConfiguration().getWeakSpamThreshold(),
+				this.repository.findSystemConfiguration().getStrongSpamThreshold()), "title", "inventor.toolkit.form.error.title.spam");
+		}
+		if(!errors.hasErrors("description")) {
+			errors.state(request, !SpamDetector.spamDetector(entity.getDescription(), this.repository.findSystemConfiguration().getWeakSpamTerms(), 
+				this.repository.findSystemConfiguration().getStrongSpamTerms(), 
+				this.repository.findSystemConfiguration().getWeakSpamThreshold(),
+				this.repository.findSystemConfiguration().getStrongSpamThreshold()), "description", "inventor.toolkit.form.error.description.spam");
+		}
+		if(!errors.hasErrors("legalStuff")) {
+			errors.state(request, !SpamDetector.spamDetector(entity.getNotes(), this.repository.findSystemConfiguration().getWeakSpamTerms(), 
+				this.repository.findSystemConfiguration().getStrongSpamTerms(), 
+				this.repository.findSystemConfiguration().getWeakSpamThreshold(),
+				this.repository.findSystemConfiguration().getStrongSpamThreshold()), "notes", "inventor.toolkit.form.error.notes.spam");
+		}
+
 	}
 	
 	@Override

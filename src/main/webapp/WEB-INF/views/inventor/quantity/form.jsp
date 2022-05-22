@@ -15,20 +15,22 @@
 			<acme:input-textbox code="inventor.quantity.toolkit.form.label.code" path="toolkit.code" readonly="true"/>					
 		</jstl:if>
 				
-			<jstl:if test="${toolkitPublished == false}">
+		<jstl:if test="${toolkitPublished == false}">
 				<acme:submit code="inventor.quantity.form.button.update"
 					action="/inventor/quantity/update" />
 				<acme:submit code="inventor.quantity.form.button.delete"
 					action="/inventor/quantity/delete" />
-			</jstl:if>
+		</jstl:if>
 		
-		
+		<jstl:choose>
 		<jstl:when test="${command == 'create'}">		
-			<acme:input-select code="inventor.quantity.form.label.select.artifact" path="artifact.name">
-				<jstl:forEach items="${artifacts}" var="optionArtifact">
-					<acme:input-option code="${optionArtifact.name}" value="${optionArtifact.name}"/>
-				</jstl:forEach>
-			</acme:input-select>
+			<acme:input-integer code="inventor.item.form.label.number" path="number"/> 
+       		<acme:input-select code="inventor.item.form.label.item" path="itemId">
+            <jstl:forEach items="${items}" var="item">
+                <acme:input-option code="${item.getName()}" value="${item.getId()}" selected="${item.getId() == itemId }"/>
+            </jstl:forEach>
+        	</acme:input-select>
 			<acme:submit code="inventor.quantity.form.button.create" action="/inventor/quantity/create?toolkitId=${toolkitId}"/>			
-		</jstl:when>	
+		</jstl:when>
+		</jstl:choose>	
 </acme:form>

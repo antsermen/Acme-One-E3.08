@@ -51,7 +51,7 @@ public class InventorQuantityCreateService implements AbstractCreateService<Inve
 		String itemName;
 		Item item;
 		
-		itemName =  request.getModel().getAttribute("artifact.name").toString();
+		itemName =  request.getModel().getAttribute("item.name").toString();
 		item = this.itemRepository.findItemByName(itemName);
 		
 
@@ -123,7 +123,15 @@ public class InventorQuantityCreateService implements AbstractCreateService<Inve
 	public void create(final Request<Quantity> request, final Quantity entity) {
 		assert request != null;
 		assert entity != null;	
+		
+		String itemName;
+		Item item;
+		
+		itemName =  request.getModel().getAttribute("item.name").toString();
+		item = this.itemRepository.findItemByName(itemName);
+		
 
+		entity.setItem(item);
 		
 		this.toolkitRepository.save(entity);
 	}

@@ -7,7 +7,7 @@
 		
 		<jstl:if test="${acme:anyOf(command, 'show, update, delete')}">
 		
-			<acme:input-integer code="inventor.quantity.form.label.itemsNumber" path="number"/>
+			<acme:input-integer code="inventor.quantity.form.label.itemsNumber" path="itemsNumber"/>
 			<acme:input-textbox code="inventor.item.form.label.itemType" path="item.itemType" readonly="true"/>
 			<acme:input-textbox code="inventor.item.form.label.name" path="item.name" readonly="true"/>
 			<acme:input-textbox code="inventor.quantity.item.form.label.code" path="item.code" readonly="true"/>
@@ -24,7 +24,7 @@
 		
 		<jstl:choose>
 		<jstl:when test="${command == 'create'}">		
-			<acme:input-integer code="inventor.item.form.label.number" path="number"/> 
+			<acme:input-integer code="inventor.item.form.label.itemsNumber" path="itemsNumber"/> 
        		<acme:input-select code="inventor.item.form.label.item" path="itemId">
             <jstl:forEach items="${items}" var="item">
                 <acme:input-option code="${item.getName()}" value="${item.getId()}" selected="${item.getId() == itemId }"/>

@@ -1,11 +1,8 @@
 package acme.features.inventor.quantity;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.Item;
 import acme.entities.ItemType;
 import acme.entities.Quantity;
 import acme.entities.Toolkit;
@@ -48,15 +45,14 @@ public class InventorQuantityCreateService implements AbstractCreateService<Inve
 		assert entity != null;
 		assert errors != null;
 		
-		String itemName;
-		Item item;
-		
-		itemName =  request.getModel().getAttribute("item.name").toString();
-		item = this.itemRepository.findItemByName(itemName);
-		
-
-		entity.setItem(item);
-		request.bind(entity, errors, "itemsNumber", "item.name");
+		if(this.itemRepository.findAssignableItemsToToolkit(entity.getToolkit().getId()).isEmpty()) {
+			request.bind(entity, errors, "itemsNumber");
+		} else {
+			
+			entity.setItem(this.itemRepository.findItemById(Integer.valueOf(request.getModel().getAttribute("itemId").toString())));
+			request.bind(entity, errors, "itemsNumber","itemId");
+			
+		}
 		
 	}
 	
@@ -68,13 +64,10 @@ public class InventorQuantityCreateService implements AbstractCreateService<Inve
 		assert entity != null;
 		assert model != null;		
 		
-		List<Item> publishedItems;	
-		publishedItems = this.itemRepository.findPublishedItems();
-		
-		request.unbind(entity, model, "itemsNumber", "item.name");
-		model.setAttribute("masterId", request.getModel().getAttribute("masterId"));
-		model.setAttribute("items", publishedItems);
-		model.setAttribute("published", entity.getToolkit().isPublished());
+		final int masterId = Integer.parseInt((String) request.getModel().getAttribute("masterId"));
+		model.setAttribute("masterId", masterId);
+		model.setAttribute("items", this.itemRepository.findAssignableItemsToToolkit(masterId));
+		request.unbind(entity, model, "itemsNumber");
 		
 		
 	}
@@ -101,21 +94,16 @@ public class InventorQuantityCreateService implements AbstractCreateService<Inve
 		assert entity != null;
 		assert errors != null;
 		
-		if(entity.getItem()==null) {
-			
+		if(entity.getItemsNumber()==null) {
 			errors.state(request, entity.getItem()!=null, "itemId", "inventor.quantity.form.error.null-item");
-			
-		} else {
-			final Item selectedItem = this.itemRepository.findItemById(Integer.valueOf(request.getModel().getAttribute("itemId").toString()));
-			 if(selectedItem.getItemType().equals(ItemType.TOOL)) {
-				errors.state(request, entity.getItemsNumber() == 1, "number", "inventor.quantity.form.error.toolkit-one-quantity-tool");
-			}
-			
-			
+		}
+		if(entity.getItem().getItemType() == ItemType.TOOL) {
+			errors.state(request, entity.getItemsNumber()>=1, "*", "inventor.quantity.form.error.only-1-type-of-tool-allowed");
 		}
 		
-
+		
 	}
+	
 
 
 
@@ -123,15 +111,6 @@ public class InventorQuantityCreateService implements AbstractCreateService<Inve
 	public void create(final Request<Quantity> request, final Quantity entity) {
 		assert request != null;
 		assert entity != null;	
-		
-		String itemName;
-		Item item;
-		
-		itemName =  request.getModel().getAttribute("item.name").toString();
-		item = this.itemRepository.findItemByName(itemName);
-		
-
-		entity.setItem(item);
 		
 		this.toolkitRepository.save(entity);
 	}

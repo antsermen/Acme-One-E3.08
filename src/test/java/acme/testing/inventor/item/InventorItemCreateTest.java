@@ -14,7 +14,7 @@ public class InventorItemCreateTest extends TestHarness {
 
 	@ParameterizedTest
 	@CsvFileSource(resources = "/inventor/item/create-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
-	@Order(20)
+	@Order(10)
 	public void positiveTest(final int recordIndex, final String type, final String code, final String description, final String link, final String name, final String retailPrice,	 final String technology, final String published) {
 		super.signIn("inventor1", "inventor1");
 		
@@ -57,7 +57,7 @@ public class InventorItemCreateTest extends TestHarness {
 	
 	@ParameterizedTest
 	@CsvFileSource(resources = "/inventor/item/create-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
-	@Order(10)
+	@Order(20)
 	public void negativeTest(final int recordIndex, final String type, final String code, final String description, final String link, final String name, final String retailPrice,	 final String technology) {
 		super.signIn("inventor1", "inventor1");
 		

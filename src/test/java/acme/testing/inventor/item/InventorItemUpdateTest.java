@@ -14,7 +14,7 @@ public class InventorItemUpdateTest extends TestHarness{
 	@ParameterizedTest
 	@CsvFileSource(resources = "/inventor/item/update-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void positiveTest(final int recordIndex, final String type, final String code, final String description, final String link, final String name, final String retailPrice,	 final String technology, final String published) {
+	public void positiveTest(final int recordIndex, final String type, final String code, final String description, final String link, final String name, final String retailPrice,	 final String technology) {
 		super.signIn("inventor1", "inventor1");
 		
 		super.clickOnMenu("Inventor", "My Tools List");
@@ -23,10 +23,11 @@ public class InventorItemUpdateTest extends TestHarness{
 		super.sortListing(3, "asc");
 		super.clickOnListingRecord(0);
 		super.checkFormExists();
-		super.fillInputBoxIn(name, name);
-		super.fillInputBoxIn(technology, technology);
-		super.fillInputBoxIn(retailPrice, retailPrice);
-		super.fillInputBoxIn(link, link);
+		super.fillInputBoxIn("name", name);
+		super.fillInputBoxIn("technology", technology);
+		super.fillInputBoxIn("retailPrice", retailPrice);
+		super.fillInputBoxIn("description", description);
+		super.fillInputBoxIn("link", link);
 		super.clickOnSubmit("Update");
 		
 		super.clickOnMenu("Inventor", "My Tools List");
@@ -46,4 +47,28 @@ public class InventorItemUpdateTest extends TestHarness{
 		super.clickOnSubmit("Delete");
 		super.signOut();
 	}
+	
+	@ParameterizedTest
+	@CsvFileSource(resources = "/inventor/item/update-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
+	@Order(20)
+	public void negativeTest(final int recordIndex, final String type, final String code, final String description, final String link, final String name, final String retailPrice,	 final String technology) {
+		super.signIn("inventor1", "inventor1");
+		
+		super.clickOnMenu("Inventor", "My Tools List");
+		super.checkListingExists();
+		super.sortListing(3, "asc");
+		super.clickOnListingRecord(0);
+		super.checkFormExists();
+		super.fillInputBoxIn("code", code);
+		super.fillInputBoxIn("description", description);
+		super.fillInputBoxIn("link", link);
+		super.fillInputBoxIn("name", name);
+		super.fillInputBoxIn("technology", technology);
+		super.fillInputBoxIn("retailPrice", retailPrice);
+		super.clickOnSubmit("Update");
+		super.checkErrorsExist();
+	}
+	
+	
+	
 }

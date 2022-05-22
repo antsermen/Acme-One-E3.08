@@ -24,15 +24,9 @@ public class InventorPatronageAcceptService implements AbstractUpdateService<Inv
 			@Override
 			public boolean authorise(final Request<Patronage> request) {
 				assert request != null;
-
-				final boolean result=true;
-				final int masterId;
-				final Patronage job;
-				final Inventor employer;
-
 				
 
-				return result;
+				return true;
 			}
 
 			@Override

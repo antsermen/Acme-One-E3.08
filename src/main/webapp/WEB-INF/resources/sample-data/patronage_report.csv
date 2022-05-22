@@ -1,2 +1,2 @@
-key,creationMoment,memorandum,link,key:patronage
-patronageReport-01,2022/01/15 10:00,ejemplo,https://www.google.es/,patronage-01
+key,creationMoment,memorandum,link,key:patronage,serial-number,sequence-number
+patronageReport-01,2022/01/15 10:00,"Aqui va el memorandum","https://www.google.es/",patronage-01,0044,PSP-234-P:0044

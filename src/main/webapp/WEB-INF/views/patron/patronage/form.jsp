@@ -36,7 +36,7 @@
 			<acme:submit code="patron.patronage.form.button.publish" action="/patron/patronage/publish"/>
 		</jstl:when>
 		<jstl:when test="${command == 'create' }">
-			<acme:submit code="patron.patronage.form.button.create" action="/patron/patronage/create"/>
+			<acme:submit code="patron.patronage.form.button.create" action="/patron/patronage/creat"/>
 		</jstl:when>
 	</jstl:choose>
 	

@@ -35,7 +35,7 @@
 	
 	<jstl:choose>
 		<jstl:when test="${acme:anyOf(command, 'show, update, delete, publish') && published == false }">
-							 
+			<acme:button code="inventor.toolkit.form.button.quantity" action="/inventor/quantity/list?masterId=${id}"/>				 
 			<acme:submit code="inventor.toolkit.form.button.update" action="/inventor/toolkit/update"/>
 			<acme:submit code="inventor.toolkit.form.button.delete" action="/inventor/toolkit/delete"/>
 			<acme:submit code="inventor.toolkit.form.button.publish" action="/inventor/toolkit/publish"/>
@@ -45,8 +45,5 @@
 		</jstl:when>	
 	</jstl:choose>
 	
-	<jstl:if test="${command != 'create'}">
-	<acme:button code="inventor.toolkit.form.button.items" action="/inventor/quantity/list?masterId=${masterId}"/>
-	</jstl:if>
 	
 </acme:form>

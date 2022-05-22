@@ -52,7 +52,13 @@ public class InventorShowToolkitsService implements AbstractShowService<Inventor
 				final Money toolkitPrice = new Money();	
 				
 				id = request.getModel().getInteger("id");
-				toolkitPrice.setAmount(this.repository.calculateToolkitPrice(id));
+				/*toolkitPrice.setAmount(this.repository.calculateToolkitPrice(id));*/
+				final Double rp= this.repository.calculateToolkitPrice(id);
+				if(rp==null) {
+					toolkitPrice.setAmount(0.);
+				}else {
+					toolkitPrice.setAmount(rp);
+				}
 				toolkitPrice.setCurrency(this.repository.findSystemConfiguration().getSystemCurrency());
 			
 				final Collection<Item> items = this.repository.findItemsFromToolkitId(id);

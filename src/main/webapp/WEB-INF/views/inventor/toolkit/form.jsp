@@ -45,4 +45,8 @@
 		</jstl:when>	
 	</jstl:choose>
 	
+	<jstl:if test="${command != 'create'}">
+	<acme:button code="inventor.toolkit.form.button.items" action="/inventor/quantity/list?masterId=${masterId}"/>
+	</jstl:if>
+	
 </acme:form>

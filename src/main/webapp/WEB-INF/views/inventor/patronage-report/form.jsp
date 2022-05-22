@@ -7,16 +7,7 @@
 		
 	<acme:input-textarea code="inventor.patronageReport.form.label.memorandum" path="memorandum"/>
 	<acme:input-url code="inventor.patronageReport.form.label.link" path="link"/>
-	<acme:input-textbox code="${patronageId}" path="patronageCode" readonly="true"/>
-<%-- 	<acme:input-select code="inventor.patronageReport.form.label.patronage" path="patronage"> --%>
-	
-<%-- 		<jstl:forEach items="${patronages}" var="p"> --%>
-<%-- 			<acme:input-option code="${p.code}" value="${p.code}" selected="${p.code==patronage}"/>		 --%>
-<%-- 		</jstl:forEach> --%>
-<%-- 	</acme:input-select> --%>
-	
-	
-
+	<acme:input-textbox code="inventor.patronageReport.form.label.patronageCode" path="patronageCode" readonly="true"/>
 
 <jstl:choose>
 

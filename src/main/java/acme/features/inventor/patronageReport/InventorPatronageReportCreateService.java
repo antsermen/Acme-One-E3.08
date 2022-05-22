@@ -42,7 +42,7 @@ public class InventorPatronageReportCreateService implements AbstractCreateServi
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-		entity.setPatronage(this.repository.findPatronageById(request.getModel().getInteger("id")));
+		entity.setPatronage(this.repository.findPatronageByCode(request.getModel().getAttribute("patronageCode").toString()));
 		request.bind(entity, errors,"memorandum","link");
 	}
 

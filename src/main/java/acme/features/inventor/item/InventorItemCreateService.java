@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import SpamDetector.Spam_Detector.SpamDetector;
 import acme.entities.Item;
 import acme.forms.MoneyExchange;
 import acme.framework.components.models.Model;
@@ -64,13 +65,34 @@ public class InventorItemCreateService implements AbstractCreateService<Inventor
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-
+		
 		if(!errors.hasErrors("code")) {
 			final Item i = this.inventorItemRepository.findItemByCode(entity.getCode());
 			errors.state(request,i == null ||  i.getCode()==entity.getCode(),"code", "inventor.item.form.error.code.duplicated");
 		}
 		if(!errors.hasErrors("retailPrice")) {
 			errors.state(request, entity.getRetailPrice().getAmount() > 0, "retailPrice", "inventor.item.form.error.retailPrice.negative");
+
+		}
+		if(!errors.hasErrors("name")) {
+			errors.state(request, !SpamDetector.spamDetector(entity.getName(), this.inventorItemRepository.findSystemConfiguration().getWeakSpamTerms(), 
+				this.inventorItemRepository.findSystemConfiguration().getStrongSpamTerms(), 
+				this.inventorItemRepository.findSystemConfiguration().getWeakSpamThreshold(),
+				this.inventorItemRepository.findSystemConfiguration().getStrongSpamThreshold()), "name", "inventor.item.form.error.name.spam");
+		}
+		if(!errors.hasErrors("technology")) {
+			errors.state(request, !SpamDetector.spamDetector(entity.getTechnology(), this.inventorItemRepository.findSystemConfiguration().getWeakSpamTerms(), 
+				this.inventorItemRepository.findSystemConfiguration().getStrongSpamTerms(), 
+				this.inventorItemRepository.findSystemConfiguration().getWeakSpamThreshold(),
+				this.inventorItemRepository.findSystemConfiguration().getStrongSpamThreshold()), "technology", "inventor.item.form.error.technology.spam");
+		}
+		if(!errors.hasErrors("description")) {
+			errors.state(request, !SpamDetector.spamDetector(entity.getDescription(), this.inventorItemRepository.findSystemConfiguration().getWeakSpamTerms(), 
+				this.inventorItemRepository.findSystemConfiguration().getStrongSpamTerms(), 
+				this.inventorItemRepository.findSystemConfiguration().getWeakSpamThreshold(),
+				this.inventorItemRepository.findSystemConfiguration().getStrongSpamThreshold()), "description", "inventor.item.form.error.description.spam");
+		}
+		if(!errors.hasErrors("retailPrice")) {
 			final String[] acceptedCurrencies = this.inventorItemRepository.findSystemConfiguration().getAcceptedCurrencies().split(",");
 			final List<String> acceptedCurrenciesList = new ArrayList<>();
 			for(final String ac : acceptedCurrencies) {
@@ -78,7 +100,6 @@ public class InventorItemCreateService implements AbstractCreateService<Inventor
 			}
 			errors.state(request, acceptedCurrenciesList.contains(entity.getRetailPrice().getCurrency()), "retailPrice", "inventor.item.form.error.retailPrice.acceptedCurrencies");
 		}
-
 	}
 
 	@Override

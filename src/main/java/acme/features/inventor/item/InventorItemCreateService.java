@@ -72,6 +72,7 @@ public class InventorItemCreateService implements AbstractCreateService<Inventor
 		}
 		if(!errors.hasErrors("retailPrice")) {
 			errors.state(request, entity.getRetailPrice().getAmount() > 0, "retailPrice", "inventor.item.form.error.retailPrice.negative");
+
 		}
 		if(!errors.hasErrors("name")) {
 			errors.state(request, !SpamDetector.spamDetector(entity.getName(), this.inventorItemRepository.findSystemConfiguration().getWeakSpamTerms(), 

@@ -12,7 +12,7 @@ import acme.framework.services.AbstractUpdateService;
 import acme.roles.Inventor;
 
 @Service
-public class InventorPatronageAccpetService implements AbstractUpdateService<Inventor, Patronage>{
+public class InventorPatronageAcceptService implements AbstractUpdateService<Inventor, Patronage>{
 			
 			// Internal state ========================================================
 	

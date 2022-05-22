@@ -1,6 +1,7 @@
 package acme.features.inventor.quantity;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import acme.entities.Quantity;
 import acme.entities.Toolkit;
@@ -10,7 +11,7 @@ import acme.framework.controllers.Errors;
 import acme.framework.controllers.Request;
 import acme.framework.services.AbstractDeleteService;
 import acme.roles.Inventor;
-
+@Service
 public class InventorQuantityDeleteService implements AbstractDeleteService<Inventor,Quantity>{
 	
 	

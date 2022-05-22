@@ -3,6 +3,7 @@ package acme.features.inventor.quantity;
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import acme.entities.Quantity;
 import acme.entities.Toolkit;
@@ -14,6 +15,7 @@ import acme.framework.helpers.CollectionHelper;
 import acme.framework.services.AbstractListService;
 import acme.roles.Inventor;
 
+@Service
 public class InventorQuantityListService implements AbstractListService<Inventor,Quantity>{
 	
 	@Autowired

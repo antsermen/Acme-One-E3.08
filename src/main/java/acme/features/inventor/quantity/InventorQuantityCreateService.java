@@ -3,6 +3,7 @@ package acme.features.inventor.quantity;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import acme.entities.Item;
 import acme.entities.ItemType;
@@ -15,7 +16,7 @@ import acme.framework.controllers.Errors;
 import acme.framework.controllers.Request;
 import acme.framework.services.AbstractCreateService;
 import acme.roles.Inventor;
-
+@Service
 public class InventorQuantityCreateService implements AbstractCreateService<Inventor,Quantity>{
 	
 	@Autowired
@@ -70,8 +71,8 @@ public class InventorQuantityCreateService implements AbstractCreateService<Inve
 		List<Item> publishedItems;	
 		publishedItems = this.itemRepository.findPublishedItems();
 		
-		request.unbind(entity, model, "amount", "artifact.name");
-		model.setAttribute("toolkitId", request.getModel().getAttribute("toolkitId"));
+		request.unbind(entity, model, "itemsNumber", "item.name");
+		model.setAttribute("masterId", request.getModel().getAttribute("masterId"));
 		model.setAttribute("items", publishedItems);
 		model.setAttribute("published", entity.getToolkit().isPublished());
 		

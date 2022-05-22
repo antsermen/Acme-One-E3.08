@@ -1,6 +1,7 @@
 package acme.features.inventor.quantity;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import acme.entities.Item;
 import acme.entities.ItemType;
@@ -12,7 +13,7 @@ import acme.framework.controllers.Errors;
 import acme.framework.controllers.Request;
 import acme.framework.services.AbstractUpdateService;
 import acme.roles.Inventor;
-
+@Service
 public class InventorQuantityUpdateService implements AbstractUpdateService<Inventor,Quantity>{
 	
 	@Autowired

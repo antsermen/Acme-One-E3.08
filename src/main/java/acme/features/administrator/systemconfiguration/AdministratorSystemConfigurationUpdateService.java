@@ -1,5 +1,8 @@
 package acme.features.administrator.systemconfiguration;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -29,13 +32,8 @@ public class AdministratorSystemConfigurationUpdateService implements AbstractUp
 
 	@Override
 	public SystemConfiguration findOne(final Request<SystemConfiguration> request) {
-		assert request != null;
-		
-		SystemConfiguration result;
-
-		result = this.repository.findSystemConfiguration().stream().findFirst().get();
-
-		return result;
+		assert request != null; 
+		return this.repository.findSystemConfiguration();
 	}
 
 	@Override
@@ -63,11 +61,14 @@ public class AdministratorSystemConfigurationUpdateService implements AbstractUp
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-		
-		//if(!errors.hasErrors("code")) {
-			//final Item i = this.repository.findItemByCode(entity.);
-			//errors.state(request, i == null || i.getId()==entity.getId(),"code", "inventor.item.form.error.code.duplicated");
-		//}
+		if(!errors.hasErrors("systemCurrency")) {
+			final String[] acceptedCurrencies = this.repository.findSystemConfiguration().getAcceptedCurrencies().split(",");
+			final List<String> acceptedCurrenciesList = new ArrayList<>();
+			for(final String ac : acceptedCurrencies) {
+				acceptedCurrenciesList.add(ac);
+			}
+			errors.state(request, acceptedCurrenciesList.contains(entity.getSystemCurrency()), "systemCurrency", "administrator.systemConfiguration.form.error.systemCurrency.acceptedCurrencies");
+		}
 		
 	}
 

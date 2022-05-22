@@ -44,17 +44,10 @@ public class PatronageReport extends AbstractEntity{
 	// Derived attributes -----------------------------------------------------
 
 	@NotBlank
-	public String serialNumber() {
-		final String id = "0000" + this.id;
-		return id.substring(id.length()-4);
-	}
+	protected String serialNumber;
 	
 	@NotBlank
-	public String sequenceNumber() {
-		return this.patronage.getCode() + ":" + this.serialNumber();
-	}
-	
-	// Relationships ----------------------------------------------------------
+	protected String sequenceNumber;
 
 	@NotNull
 	@Valid

@@ -5,7 +5,6 @@ import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.Patronage;
 import acme.entities.PatronageReport;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Errors;
@@ -26,38 +25,15 @@ public class InventorPatronageReportCreateService implements AbstractCreateServi
 	@Override
 	public boolean authorise(final Request<PatronageReport> request) {
 		assert request != null;
-
-		boolean result;
-		int patronageId;
-		Patronage patronage;
-
-		patronageId = request.getPrincipal().getActiveRoleId();
-		patronage = this.repository.findPatronageById(patronageId);
-		result = request.getPrincipal().getActiveRoleId() == patronage.getInventor().getId();
-
-		return result;
+		return true;
 	}
 
 	@Override
 	public PatronageReport instantiate(final Request<PatronageReport> request) {
-		assert request != null;
-
-		PatronageReport result;
-		int patronageId;
-		Patronage patronage;
-		Date date;
-		//String numPatronageReports;		
-
-		patronageId = request.getModel().getInteger("patronageId");
-		patronage = this.repository.findPatronageById(patronageId);
-		date = new Date();
-		//numPatronageReports = Integer.toString(this.repository.findPatronageReportByPatronageId(patronageId).size()+1);
-
-		result = new PatronageReport();
-		result.setPatronage(patronage);
-		result.setCreationMoment(date);
-		//result.setSerialNumber("000"+ numPatronageReports);
-
+		final PatronageReport result = new PatronageReport();
+		result.setCreationMoment(new Date());
+		result.setMemorandum("");
+		result.setLink("");
 		return result;
 	}
 
@@ -66,9 +42,8 @@ public class InventorPatronageReportCreateService implements AbstractCreateServi
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-
+		entity.setPatronage(this.repository.findPatronageById(request.getModel().getInteger("id")));
 		request.bind(entity, errors,"memorandum","link");
-
 	}
 
 	@Override
@@ -76,9 +51,10 @@ public class InventorPatronageReportCreateService implements AbstractCreateServi
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-
-		final Boolean isConfirmed = request.getModel().getBoolean("confirm");
-		errors.state(request, isConfirmed, "confirm", "inventor.patronage-report.form.error.must-confirm");
+		if(!errors.hasErrors("confirm")) {
+			final Boolean isConfirmed = request.getModel().getBoolean("confirm");
+			errors.state(request, isConfirmed, "confirm", "javax.validation.constraints.AssertTrue.message");
+		}
 	}
 
 	@Override
@@ -86,18 +62,24 @@ public class InventorPatronageReportCreateService implements AbstractCreateServi
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-
-		request.unbind(entity, model, "serialNumber","creationMoment","memorandum","link");
-		model.setAttribute("patronageId", request.getModel().getAttribute("patronageId"));
-		//model.setAttribute("sequenceNumber", entity.getSequenceNumber());
+		
+		request.unbind(entity, model,"memorandum","link");
 		model.setAttribute("confirm", "false");
+		model.setAttribute("patronageCode", this.repository.findPatronageById(request.getModel().getInteger("id")).getCode());
+		model.setAttribute("patronageId", request.getModel().getInteger("id"));
 	}	
 
 	@Override
 	public void create(final Request<PatronageReport> request, final PatronageReport entity) {
 		assert request != null;
 		assert entity != null;
-
+		entity.setCreationMoment(new Date());
+		//final String sn = "0000" + entity.getId();
+		//entity.setSerialNumber(sn.substring(sn.length()-4));
+		//entity.setSequenceNumber(entity.getPatronage().getCode() + ":" + entity.getSerialNumber());	
+		entity.setSequenceNumber("sdfsf");
+		entity.setSerialNumber("sfs");
+		entity.setPatronage(this.repository.findPatronageById(request.getModel().getInteger("id")));
 		this.repository.save(entity);
 
 	}

@@ -25,3 +25,4 @@ administrator.system-configuration.form.label.strongSpamThreshold = Strong Spam 
 administrator.system-configuration.form.label.weakSpamTerms = Weak Spam Terms:
 administrator.system-configuration.form.label.weakSpamThreshold = Weak Spam Threshold:
 administrator.systemConfiguration.update = Update
+administrator.systemConfiguration.form.error.systemCurrency.acceptedCurrencies = You cannot set a currency in the system that is not accepted

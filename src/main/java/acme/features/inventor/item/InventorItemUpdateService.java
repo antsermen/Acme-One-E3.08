@@ -68,7 +68,6 @@ public class InventorItemUpdateService implements AbstractUpdateService<Inventor
 		if(!errors.hasErrors("itemType")) {
 			final Item modified = this.inventorItemRepository.findItemById(entity.getId());
 			errors.state(request, modified.getItemType().equals(entity.getItemType()), "itemType", "inventor.item.form.error.itemType.modified");
-
 		}
 		
 		if(!errors.hasErrors("code")) {

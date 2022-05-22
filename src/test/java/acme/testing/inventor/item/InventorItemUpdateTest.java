@@ -68,7 +68,6 @@ public class InventorItemUpdateTest extends TestHarness{
 		super.clickOnSubmit("Update");
 		super.checkErrorsExist();
 	}
-	
-	
+
 	
 }

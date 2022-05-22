@@ -8,31 +8,21 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-inventor.item.list.label.name = Nombre
-inventor.item.list.label.technology = Tecnología
-inventor.item.list.label.retailPrice = Precio de Venta al Público
-inventor.item.list.button.create = Crear
-inventor.item.list.label.published = Publicado	
+inventor.quantity.item.list.label.itemType = Tipo
+inventor.quantity.item.list.label.name = Nombre
+inventor.quantity.item.list.label.retail-price = Precio de Venta al Público
+inventor.quantity.item.list.label.itemsNumber = Cantidad
 
-inventor.item.form.label.published = Publicado	
-inventor.item.form.label.itemType = Tipo
-inventor.item.form.label.component = Herramienta
-inventor.item.form.label.component = Componente	
-inventor.item.form.label.name = Nombre
-inventor.item.form.label.component = Componente
-inventor.item.form.label.tool = Herramienta
-inventor.item.form.label.code = Código
-inventor.item.form.label.technology = Tecnología
-inventor.item.form.label.description = Descripción
-inventor.item.form.label.retailPrice = Precio de Venta al Público
-inventor.item.form.label.link = Enlace
-inventor.item.form.button.update = Actualizar
-inventor.item.form.button.delete = Eliminar
-inventor.item.form.button.publish = Publicar
-inventor.item.form.button.create = Crear
-any.item.form.label.retailPrice = Precio de venta al público:
+inventor.quantity.form.label.number = Cantidad:
+inventor.quantity.form.label.item = Selecciona un ítem:
 
-inventor.item.form.error.code.duplicated = Ya hay un Item con este código asociado
-inventor.item.form.error.code.modified = No puedes modificar un código que ya ha sido asignado
-inventor.item.form.error.retailPrice.negative = El precio de venta al público debe estar por encima de 0
-inventor.item.form.error.retailPrice.acceptedCurrencies = La divisa que intentas introducir no es aceptada por el sistema
+inventor.quantity.toolkit.form.label.code = Código del toolkit:
+inventor.quantity.item.form.label.code = Código del ítem:
+
+inventor.quantity.form.button.add = Añadir un nuevo ítem
+inventor.quantity.form.button.create = Añadir
+inventor.quantity.form.button.update = Actualizar
+inventor.quantity.form.button.delete = Borrar
+
+inventor.quantity.form.error.toolkit-one-quantity-tool = Solo puede seleccionar una unidad para una herramienta
+inventor.quantity.form.error.null-item = Por favor, selecciona un ítem

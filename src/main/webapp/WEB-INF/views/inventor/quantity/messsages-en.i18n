@@ -8,31 +8,21 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-inventor.item.list.label.name = Name
-inventor.item.list.label.technology = Technology
-inventor.item.list.label.retailPrice = Retail Price
-inventor.item.list.button.create = Create
-inventor.item.list.label.published = Published	
+inventor.quantity.item.list.label.itemType = Type
+inventor.quantity.item.list.label.name = Name
+inventor.quantity.item.list.label.retail-price = Retail price
+inventor.quantity.item.list.label.itemsNumber = Quantity
 
-inventor.item.form.label.published = Published	
-inventor.item.form.label.itemType = Type	
-inventor.item.form.label.component = Component
-inventor.item.form.label.tool = Tool
-inventor.item.form.label.name = Name
-inventor.item.form.label.component = Component
-inventor.item.form.label.tool = Tool
-inventor.item.form.label.code = Code
-inventor.item.form.label.technology = Technology
-inventor.item.form.label.description = Description
-inventor.item.form.label.retailPrice = Retail Price
-inventor.item.form.label.link = Link
-inventor.item.form.button.update = Update
-inventor.item.form.button.delete = Delete
-inventor.item.form.button.publish = Publish
-inventor.item.form.button.create = Create
-any.item.form.label.systemRetailPrice = System Retail Price:
+inventor.quantity.form.label.number = Quantity:
+inventor.quantity.form.label.item = Select an item:
 
-inventor.item.form.error.code.duplicated = This code is already assigned to an Item
-inventor.item.form.error.code.modified = You cannot modify a code when it is assigned
-inventor.item.form.error.retailPrice.negative = The retail price must be above 0
-inventor.item.form.error.retailPrice.acceptedCurrencies = The currency you are trying to enter is not accepted by the system
+inventor.quantity.toolkit.form.label.code = Toolkit code:
+inventor.quantity.item.form.label.code = Item code:
+
+inventor.quantity.form.button.add = Add new item
+inventor.quantity.form.button.create = Add
+inventor.quantity.form.button.update = Update
+inventor.quantity.form.button.delete = Delete
+
+inventor.quantity.form.error.toolkit-one-quantity-tool = You can only select one unit for a tool
+inventor.quantity.form.error.null-item = Please, select an item

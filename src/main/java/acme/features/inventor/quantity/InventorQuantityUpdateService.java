@@ -1,18 +1,19 @@
-package acme.feature.inventor.quantity;
+package acme.features.inventor.quantity;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
+import acme.entities.Item;
+import acme.entities.ItemType;
 import acme.entities.Quantity;
 import acme.entities.Toolkit;
 import acme.features.inventor.toolkit.InventorToolkitRepository;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Errors;
 import acme.framework.controllers.Request;
-import acme.framework.services.AbstractDeleteService;
+import acme.framework.services.AbstractUpdateService;
 import acme.roles.Inventor;
 
-public class InventorQuantityDeleteService implements AbstractDeleteService<Inventor,Quantity>{
-	
+public class InventorQuantityUpdateService implements AbstractUpdateService<Inventor,Quantity>{
 	
 	@Autowired
 	protected InventorToolkitRepository toolkitRepository;
@@ -30,14 +31,14 @@ public class InventorQuantityDeleteService implements AbstractDeleteService<Inve
 		result = (toolkit != null && !toolkit.isPublished() && request.isPrincipal(toolkit.getInventor()));
 		return result;
 	}
-	
+
 	@Override
 	public void bind(final Request<Quantity> request, final Quantity entity, final Errors errors) {
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
 
-		request.bind(entity, errors, "itemsNumber"); 
+		request.bind(entity, errors, "number"); 
 		
 	}
 
@@ -47,7 +48,10 @@ public class InventorQuantityDeleteService implements AbstractDeleteService<Inve
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "number", "item.itemType", "item.name", "item.code", "item.technology", "item.description", "item.retailPrice", "item.link","item.systemRetailPrice","item.published"); 
+		model.setAttribute("toolkitPublished", entity.getToolkit().isPublished());
+		
+		request.unbind(entity, model, "number", "item.itemType", "item.name", "item.code", "item.technology",
+			"item.description", "item.retailPrice","item.systemRetailPrice" ,"item.link","item.published");
 		
 	}
 
@@ -61,20 +65,32 @@ public class InventorQuantityDeleteService implements AbstractDeleteService<Inve
 		result = this.toolkitRepository.findOneQuantityById(id);
 		return result;
 	}
-	@Override
-	public void validate(final Request<Quantity> request, final Quantity entity, final Errors errors) {
-		assert request != null;
-		assert entity != null;
-		assert errors != null;
-	}
+
+ 
+	@Override 
+	public void validate(final Request<Quantity> request, final Quantity entity, final Errors errors) { 
+		assert request != null; 
+		assert entity != null; 
+		assert errors != null; 
+		
+		final Item selectedItem = entity.getItem();
+		
+		if(selectedItem.getItemType().equals(ItemType.TOOL)) {
+			errors.state(request, entity.getItemsNumber() == 1, "number", "inventor.quantity.form.error.toolkit-one-quantity-tool");
+		}
+		
+		
+		
+		
+	} 
 
 	@Override
-	public void delete(final Request<Quantity> request, final Quantity entity) {
+	public void update(final Request<Quantity> request, final Quantity entity) {
 		assert request != null;
 		assert entity != null;
 		
+		this.toolkitRepository.save(entity);
 		
-		this.toolkitRepository.delete(entity);
 	}
 
 }

@@ -35,5 +35,14 @@ public interface InventorItemRepository extends AbstractRepository {
 	@Query("select s from SystemConfiguration s")
 	SystemConfiguration findSystemConfiguration();
 	
+	@Query("select q.item from Quantity q where q.id=:id")
+	Item findItemByQuantityId(int id);
+	
+	@Query("select i from Item i where i.name=:itemName")
+	Item findItemByName(String itemName);
+	
+	@Query("select i from Item i where i.published=true")
+	List<Item> findPublishedItems();
+	
 
 }

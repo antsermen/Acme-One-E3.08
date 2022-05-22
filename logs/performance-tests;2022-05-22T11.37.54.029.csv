@@ -1,0 +1,2 @@
+timestamp,test-class,test-method,time,description,result
+"2022-05-22 10:47:53.01","acme.testing.inventor.item.InventorItemCreateTest","negativeTest",10027,""[1] recordIndex=11, type=Tool, code=NJN-111-N, description=description, link=null, name=name, retailPrice=50 ZSE, technology=tech"","OK"

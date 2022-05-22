@@ -1,0 +1,14 @@
+recordIndex,type,code,description,link,name,retailPrice,technology
+0,Tool,AKE-172-C,description,,,50 EUR,tech
+1,Tool,ZXZ-890-P,description,,This name has 101 charactersThis name has 101 charactersThis name has 101 charactersThis name has 101,50 EUR,tech
+2,Tool,,description,,name,50 EUR,tech
+3,Tool,JA2-s12,description,,name,50 EUR,tech
+4,Tool,JAY-715-C,description,,name,50 EUR,tech
+5,Tool,YST-111-E,description,,name,50 EUR,
+6,Tool,LOJ-088-O,description,,name,50 EUR,This technology has 101 characters.This technology has 101 characters.This technology has 101 charact
+7,Tool,ZAA-199-M,,,name,50 EUR,tech
+8,Tool,YGO-341-Q,This description has 256 characters.This description has 256 characters.This description has 256 characters.This description has 256 characters.This description has 256 characters.This description has 256 characters.This description has 256 characters.This,,name,50 EUR,tech
+9,Tool,IIX-555-L,description,,name,,tech
+10,Tool,ZDS-666-N,description,,name,-50 EUR,tech
+11,Tool,NJN-111-N,description,,name,50 ZSE,tech
+12,Tool,BHB-777-C,description,a,name,50 EUR,tech

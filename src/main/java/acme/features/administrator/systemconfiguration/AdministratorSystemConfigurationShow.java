@@ -41,11 +41,6 @@ public class AdministratorSystemConfigurationShow implements AbstractShowService
 		@Override
 		public SystemConfiguration findOne(final Request<SystemConfiguration> request) {
 			assert request != null;
-
-			SystemConfiguration result;
-
-			result = this.repository.findSystemConfiguration().stream().findFirst().get();
-
-			return result;
+			return this.repository.findSystemConfiguration();
 		}
 }

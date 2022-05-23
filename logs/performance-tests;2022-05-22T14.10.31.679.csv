@@ -1,0 +1,2 @@
+timestamp,test-class,test-method,time,description,result
+"2022-05-22 14:03:16.6","acme.testing.inventor.item.InventorItemPublishTest","positiveTest",8820,""positiveTest()"","OK"

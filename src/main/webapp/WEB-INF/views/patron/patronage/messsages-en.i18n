@@ -22,8 +22,11 @@ patron.patronage.form.button.delete = Delete
 patron.patronage.form.button.publish = Publish
 patron.patronage.form.button.create = Create
 
+patron.patronage.form.error.name.spam = The name is considered spam, choose a more appropiate name please
 patron.patronage.form.error.code.duplicated = This code is already assigned to a patronage
+patron.patronage.form.error.code.modified = You cannot change the code once you assigned it
 patron.patronage.form.error.startDate = Start date must be at least one month after its creation date
 patron.patronage.form.error.deadline = Deadline must be at least one month after its start date
 patron.patronage.form.error.budget.negative = Budget must be above 0
-patron.patronage.form.error.code.modified = You cannot change the code once you assigned it
+patron.patronage.form.error.budget.acceptedCurrencies = The currency you are trying to enter is not accepted by the system
+patron.patronage.form.legalStuff.error.spam = The legalStuff is considered spam, choose a more appropiate legalStuff please

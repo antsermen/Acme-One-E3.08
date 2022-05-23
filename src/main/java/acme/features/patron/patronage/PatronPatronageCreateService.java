@@ -1,11 +1,14 @@
 package acme.features.patron.patronage;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import org.apache.commons.lang3.time.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import SpamDetector.Spam_Detector.SpamDetector;
 import acme.entities.Patronage;
 import acme.entities.Status;
 import acme.features.inventor.item.InventorItemRepository;
@@ -77,8 +80,15 @@ public class PatronPatronageCreateService implements AbstractCreateService<Patro
 		assert errors != null;
 		if(!errors.hasErrors("code")) {
 			final Patronage i = this.patronPatronageRepository.findOnePatronageByCode((entity.getCode()));
-			errors.state(request, i == null || i.getId()==entity.getId(),"code", "inventor.item.form.error.code.duplicated");
+			errors.state(request, i == null || i.getId()==entity.getId(),"code", "patron.patronage.form.error.code.duplicated");
 		}
+		if(!errors.hasErrors("legalStuff")) {
+			errors.state(request, !SpamDetector.spamDetector(entity.getLegalStuff(), this.inventorItemRepository.findSystemConfiguration().getWeakSpamTerms(), 
+				this.inventorItemRepository.findSystemConfiguration().getStrongSpamTerms(), 
+				this.inventorItemRepository.findSystemConfiguration().getWeakSpamThreshold(),
+				this.inventorItemRepository.findSystemConfiguration().getStrongSpamThreshold()), "legalStuff", "patron.patronage.form.error.name.spam");
+		}
+
 		if(!errors.hasErrors("startDate")) {
 			final Date now = new Date();
 			final Date minStartDate = DateUtils.addMonths(now, 1);
@@ -91,6 +101,12 @@ public class PatronPatronageCreateService implements AbstractCreateService<Patro
 		}
 		if(!errors.hasErrors("budget")) {
 			errors.state(request, entity.getBudget().getAmount()>0, "budget", "patron.patronage.form.error.budget.negative");
+			final String[] acceptedCurrencies = this.inventorItemRepository.findSystemConfiguration().getAcceptedCurrencies().split(",");
+			final List<String> acceptedCurrenciesList = new ArrayList<>();
+			for(final String ac : acceptedCurrencies) {
+				acceptedCurrenciesList.add(ac);
+			}
+			errors.state(request, acceptedCurrenciesList.contains(entity.getBudget().getCurrency()), "budget", "patron.patronage.form.error.budget.acceptedCurrencies");
 		}
 	}
 

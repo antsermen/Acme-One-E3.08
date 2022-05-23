@@ -15,3 +15,4 @@ administrator.system-configuration.form.label.strongSpamThreshold = Limite grave
 administrator.system-configuration.form.label.weakSpamTerms = Terminod de spam leves:
 administrator.system-configuration.form.label.weakSpamThreshold =Limite leve de spam:
 administrator.systemConfiguration.update = Actualizar
+administrator.systemConfiguration.form.error.systemCurrency.acceptedCurrencies = No puedes establecer una divisa en el sistema que no este no esté aceptada

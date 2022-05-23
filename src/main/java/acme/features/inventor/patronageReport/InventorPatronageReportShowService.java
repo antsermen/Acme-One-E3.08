@@ -2,6 +2,7 @@ package acme.features.inventor.patronageReport;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import acme.entities.PatronageReport;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
@@ -21,8 +22,9 @@ public class InventorPatronageReportShowService implements AbstractShowService<I
 	@Override
 	public boolean authorise(final Request<PatronageReport> request) {
 		assert request != null;
-
-		return true;
+		final PatronageReport pr = this.repository.findOnePatronageReportById(request.getModel().getInteger("id"));
+		final int inventor_id = pr.getPatronage().getInventor().getId();
+		return request.getPrincipal().getActiveRoleId() == inventor_id;
 	}
 
 	@Override
@@ -43,7 +45,13 @@ public class InventorPatronageReportShowService implements AbstractShowService<I
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-
+		final PatronageReport pr = this.repository.findOnePatronageReportById(request.getModel().getInteger("id"));
+		model.setAttribute("patronage", entity.getPatronage().getCode());
+		model.setAttribute("patronageCode", pr.getPatronage().getCode());
+		model.setAttribute("patronages", this.repository.findManyPatronagesByInventorId(request.getPrincipal().getActiveRoleId(),true));
+		final String sn = "0000" + entity.getId();
+		entity.setSerialNumber(sn.substring(sn.length()-4));
+		entity.setSequenceNumber(entity.getPatronage().getCode() + ":" + entity.getSerialNumber());		
 		request.unbind(entity, model, "creationMoment", "memorandum", "link", "serialNumber", "sequenceNumber");
 
 	}

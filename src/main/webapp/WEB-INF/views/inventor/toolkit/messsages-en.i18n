@@ -31,3 +31,8 @@ inventor.toolkit.form.button.quantity = Quantities
 inventor.toolkit.list.label.title = Title
 inventor.toolkit.list.label.description = Description
 inventor.toolkit.list.label.link = Link
+
+inventor.toolkit.form.error.code.duplicated = This code is already assigned to an Item
+inventor.toolkit.form.error.title.spam = The title is considered spam, choose a more appropiate title please
+inventor.toolkit.form.error.description.spam = The description is considered spam, choose a more appropiate description please
+inventor.toolkit.form.error.notes.spam = The notes are considered spam, choose a more appropiate notes please

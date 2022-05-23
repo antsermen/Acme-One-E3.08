@@ -5,8 +5,9 @@ import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.Patronage;
+import SpamDetector.Spam_Detector.SpamDetector;
 import acme.entities.PatronageReport;
+import acme.features.inventor.item.InventorItemRepository;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Errors;
 import acme.framework.controllers.Request;
@@ -20,44 +21,22 @@ public class InventorPatronageReportCreateService implements AbstractCreateServi
 
 	@Autowired
 	protected InventorPatronageReportRepository repository;
+	@Autowired
+	protected InventorItemRepository inventorItemRepository;
 
 	// AbstractListService<Inventor, PatronageReport> interface ---------------------------
 
 	@Override
 	public boolean authorise(final Request<PatronageReport> request) {
 		assert request != null;
-
-		boolean result;
-		int patronageId;
-		Patronage patronage;
-
-		patronageId = request.getPrincipal().getActiveRoleId();
-		patronage = this.repository.findPatronageById(patronageId);
-		result = request.getPrincipal().getActiveRoleId() == patronage.getInventor().getId();
-
-		return result;
+		return true;
 	}
 
 	@Override
 	public PatronageReport instantiate(final Request<PatronageReport> request) {
-		assert request != null;
-
-		PatronageReport result;
-		int patronageId;
-		Patronage patronage;
-		Date date;
-		//String numPatronageReports;		
-
-		patronageId = request.getModel().getInteger("patronageId");
-		patronage = this.repository.findPatronageById(patronageId);
-		date = new Date();
-		//numPatronageReports = Integer.toString(this.repository.findPatronageReportByPatronageId(patronageId).size()+1);
-
-		result = new PatronageReport();
-		result.setPatronage(patronage);
-		result.setCreationMoment(date);
-		//result.setSerialNumber("000"+ numPatronageReports);
-
+		final PatronageReport result = new PatronageReport();
+		result.setMemorandum("");
+		result.setLink("");
 		return result;
 	}
 
@@ -66,9 +45,15 @@ public class InventorPatronageReportCreateService implements AbstractCreateServi
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+		entity.setPatronage(this.repository.findPatronageByCode(request.getModel().getAttribute("patronageCode").toString()));
+		entity.setVersion(0);
+		entity.setCreationMoment(new Date());
+		final String sn = "0000" + (this.repository.findAllPatronageReports().size()+1);		
+		entity.setSerialNumber(sn.substring(sn.length()-4));
+		entity.setSequenceNumber(entity.getPatronage().getCode() + ":" + entity.getSerialNumber());	
 
+		
 		request.bind(entity, errors,"memorandum","link");
-
 	}
 
 	@Override
@@ -76,9 +61,17 @@ public class InventorPatronageReportCreateService implements AbstractCreateServi
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+		if(!errors.hasErrors("confirm")) {
+			final Boolean isConfirmed = request.getModel().getBoolean("confirm");
+			errors.state(request, isConfirmed, "confirm", "javax.validation.constraints.AssertTrue.message");
+		}
+		if(!errors.hasErrors("memorandum")) {
+			errors.state(request, !SpamDetector.spamDetector(entity.getMemorandum(), this.inventorItemRepository.findSystemConfiguration().getWeakSpamTerms(), 
+				this.inventorItemRepository.findSystemConfiguration().getStrongSpamTerms(), 
+				this.inventorItemRepository.findSystemConfiguration().getWeakSpamThreshold(),
+				this.inventorItemRepository.findSystemConfiguration().getStrongSpamThreshold()), "memorandum", "inventor.patronage-report.form.error.memorandum.spam");
+		}
 
-		final Boolean isConfirmed = request.getModel().getBoolean("confirm");
-		errors.state(request, isConfirmed, "confirm", "inventor.patronage-report.form.error.must-confirm");
 	}
 
 	@Override
@@ -86,18 +79,20 @@ public class InventorPatronageReportCreateService implements AbstractCreateServi
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-
-		request.unbind(entity, model, "serialNumber","creationMoment","memorandum","link");
-		model.setAttribute("patronageId", request.getModel().getAttribute("patronageId"));
-		//model.setAttribute("sequenceNumber", entity.getSequenceNumber());
+		
+		request.unbind(entity, model,"memorandum","link", "version", "sequenceNumber", "serialNumber");
 		model.setAttribute("confirm", "false");
+		model.setAttribute("id", request.getModel().getInteger("id"));
+		model.setAttribute("patronageCode", this.repository.findPatronageById(request.getModel().getInteger("id")).getCode());
+		model.setAttribute("patronageId", request.getModel().getInteger("id"));
+
+
 	}	
 
 	@Override
 	public void create(final Request<PatronageReport> request, final PatronageReport entity) {
 		assert request != null;
 		assert entity != null;
-
 		this.repository.save(entity);
 
 	}

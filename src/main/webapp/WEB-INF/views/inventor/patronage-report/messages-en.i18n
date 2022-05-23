@@ -11,3 +11,6 @@ inventor.patronageReport.form.error.must-confirm = Please confirm
 inventor.patronageReport.list.label.creationMoment = Creation Moment: 
 inventor.patronageReport.list.label.memorandum = Memorandum:
 inventor.patronageReport.list.button.create = Create patronage report
+inventor.patronageReport.form.label.patronageCode = Patronage Code
+
+inventor.patronage-report.form.error.memorandum.spam = The memorandum is considered spam, choose a more appropiate memorandum please

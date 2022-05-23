@@ -4,10 +4,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.Toolkit;
+import acme.forms.MoneyExchange;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
 import acme.framework.datatypes.Money;
 import acme.framework.services.AbstractShowService;
+import acme.functions.MoneyExchangeFunction;
 import acme.roles.Inventor;
 
 @Service
@@ -49,6 +51,7 @@ public class InventorShowToolkitsService implements AbstractShowService<Inventor
 				final Money toolkitPrice = new Money();	
 				
 				id = request.getModel().getInteger("id");
+        
 				final Double rp= this.repository.calculateToolkitPrice(id);
 				if(rp==null) {
 					toolkitPrice.setAmount(0.);

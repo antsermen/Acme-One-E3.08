@@ -1,0 +1,4 @@
+recordIndex,memorandum,link,patronageCode,confirm
+0,nuevo reporte,https://google.es/,PSP-234-P,true
+1,reporte,https://google.es/,PSP-234-P,false
+2,segundo reporte,https://google.es/,false

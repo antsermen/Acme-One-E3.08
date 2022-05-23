@@ -34,7 +34,7 @@
 			
 	<acme:submit test="${acme:anyOf(command, 'show, update') && status == 'PROPOSED'}" code="inventor.patronage.form.button.accept" action="/inventor/patronage/accept"/>
 	<acme:submit test="${acme:anyOf(command, 'show, update') && status == 'PROPOSED'}" code="inventor.patronage.form.button.denied" action="/inventor/patronage/denied"/>
-	<acme:button test="${acme:anyOf(command, 'show') && status == 'DENIED'}" code="inventor.patronageReport.list.button.create" action="/inventor/patronage-report/create?id=${patronageId}"/> 	
+	<acme:button test="${acme:anyOf(command, 'show') && status != 'DENIED'}" code="inventor.patronageReport.list.button.create" action="/inventor/patronage-report/create?id=${patronageId}"/> 	
 	
 			
 </acme:form>

@@ -5,7 +5,9 @@ import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import SpamDetector.Spam_Detector.SpamDetector;
 import acme.entities.PatronageReport;
+import acme.features.inventor.item.InventorItemRepository;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Errors;
 import acme.framework.controllers.Request;
@@ -19,6 +21,8 @@ public class InventorPatronageReportCreateService implements AbstractCreateServi
 
 	@Autowired
 	protected InventorPatronageReportRepository repository;
+	@Autowired
+	protected InventorItemRepository inventorItemRepository;
 
 	// AbstractListService<Inventor, PatronageReport> interface ---------------------------
 
@@ -61,6 +65,13 @@ public class InventorPatronageReportCreateService implements AbstractCreateServi
 			final Boolean isConfirmed = request.getModel().getBoolean("confirm");
 			errors.state(request, isConfirmed, "confirm", "javax.validation.constraints.AssertTrue.message");
 		}
+		if(!errors.hasErrors("memorandum")) {
+			errors.state(request, !SpamDetector.spamDetector(entity.getMemorandum(), this.inventorItemRepository.findSystemConfiguration().getWeakSpamTerms(), 
+				this.inventorItemRepository.findSystemConfiguration().getStrongSpamTerms(), 
+				this.inventorItemRepository.findSystemConfiguration().getWeakSpamThreshold(),
+				this.inventorItemRepository.findSystemConfiguration().getStrongSpamThreshold()), "memorandum", "inventor.patronage-report.form.error.memorandum.spam");
+		}
+
 	}
 
 	@Override

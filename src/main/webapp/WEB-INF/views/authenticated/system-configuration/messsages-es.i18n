@@ -8,5 +8,9 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-authenticated.systemConfiguration.form.label.systemCurrency = Moneda del Sistema:
-authenticated.systemConfiguration.form.label.acceptedCurrencies = Monedas Aceptadas:
+authenticated.system-configuration.form.label.systemCurrency = Divisa del sistema:
+authenticated.system-configuration.form.label.acceptedCurrencies = Divisas aceptadas:
+authenticated.system-configuration.form.label.strongSpamTerms = Terminos de spam graves:
+authenticated.system-configuration.form.label.strongSpamThreshold = Limite grave de spam:
+authenticated.system-configuration.form.label.weakSpamTerms = Terminod de spam leves:
+authenticated.system-configuration.form.label.weakSpamThreshold =Limite leve de spam:

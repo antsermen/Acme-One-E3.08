@@ -2,6 +2,7 @@ package acme.features.authenticated.systemConfiguration;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import acme.entities.SystemConfiguration;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
@@ -41,7 +42,7 @@ public class AuthenticatedSystemConfigurationShowService implements AbstractShow
 		assert entity != null;
 		assert model != null;
 		
-		request.unbind(entity, model, "systemCurrency", "acceptedCurrencies");
+		request.unbind(entity, model, "systemCurrency", "acceptedCurrencies", "strongSpamTerms", "strongSpamThreshold", "weakSpamTerms","weakSpamThreshold");
 		model.setAttribute("confirmation", false);
 		model.setAttribute("readonly", true);
 	}

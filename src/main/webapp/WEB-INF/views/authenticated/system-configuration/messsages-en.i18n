@@ -18,5 +18,10 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-authenticated.systemConfiguration.form.label.systemCurrency = System Currency:
-authenticated.systemConfiguration.form.label.acceptedCurrencies = Accepted Currencies: 
+authenticated.system-configuration.form.label.systemCurrency = System Currency:
+authenticated.system-configuration.form.label.acceptedCurrencies = Accepted Currencies:
+authenticated.system-configuration.form.label.strongSpamTerms = Strong Spam Terms:
+authenticated.system-configuration.form.label.strongSpamThreshold = Strong Spam Threshold:
+authenticated.system-configuration.form.label.weakSpamTerms = Weak Spam Terms:
+authenticated.system-configuration.form.label.weakSpamThreshold = Weak Spam Threshold:
+

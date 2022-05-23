@@ -14,9 +14,9 @@ public class AdministratorSystemConfigurationUpdateTest extends TestHarness {
 	// Test cases -------------------------------------------------------------
 
 	@ParameterizedTest
-	@CsvFileSource(resources = "/administrator/system-configuration/update-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
+	@CsvFileSource(resources = "/administrator/system-configuration/update-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void positiveTest(final int recordIndex,final String systemCurrency, final String acceptedCurrencies, final String strongSpamTerms,
+	public void positiveTest(final int recordIndex, final String acceptedCurrencies, final String systemCurrency, final String strongSpamTerms,
 		final String strongSpamThreshold, final String weakSpamTerms,final String weakSpamThreshold) {
 
 
@@ -24,8 +24,8 @@ public class AdministratorSystemConfigurationUpdateTest extends TestHarness {
 
 		super.clickOnMenu("Administrator", "System Configuration");
 
-		super.fillInputBoxIn("systemCurrency", systemCurrency);
 		super.fillInputBoxIn("acceptedCurrencies", acceptedCurrencies);
+		super.fillInputBoxIn("systemCurrency", systemCurrency);
 		super.fillInputBoxIn("strongSpamTerms", strongSpamTerms);
 		super.fillInputBoxIn("strongSpamThreshold", strongSpamThreshold);
 		super.fillInputBoxIn("weakSpamTerms", weakSpamTerms);
@@ -33,12 +33,8 @@ public class AdministratorSystemConfigurationUpdateTest extends TestHarness {
 
 		super.clickOnSubmit("Update");
 
-		super.clickOnMenu("Administrator", "System Configuration");
-		super.checkListingExists();
-		super.sortListing(0, "desc");
-		super.checkColumnHasValue(recordIndex, 1, systemCurrency);
-		super.clickOnListingRecord(recordIndex);
-
+		super.clickOnMenu("Authenticated", "System Configuration");
+	
 		super.checkFormExists();
 		super.checkInputBoxHasValue("systemCurrency", systemCurrency);
 		super.checkInputBoxHasValue("acceptedCurrencies", acceptedCurrencies);

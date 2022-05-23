@@ -1,4 +1,23 @@
 timestamp,simple-path,time
+"2022-05-23 19:25:49.333","/master/welcome",4657
+"2022-05-23 19:25:49.77","/master/welcome",405
+"2022-05-23 19:25:51.969","/master/sign-in",2140
+"2022-05-23 19:25:53.215","/master/welcome",562
+"2022-05-23 19:25:54.026","/inventor/patronage-report/create",744
+"2022-05-23 19:25:54.524","/master/welcome",456
+"2022-05-23 19:25:55.139","/master/welcome",551
+"2022-05-23 19:25:57.556","/master/welcome",309
+"2022-05-23 19:25:58.178","/master/sign-in",564
+"2022-05-23 19:25:59.418","/master/welcome",552
+"2022-05-23 19:25:59.886","/inventor/patronage-report/create",408
+"2022-05-23 19:26:00.306","/master/welcome",373
+"2022-05-23 19:26:00.929","/master/welcome",560
+"2022-05-23 19:26:03.316","/master/welcome",319
+"2022-05-23 19:26:03.938","/master/sign-in",562
+"2022-05-23 19:26:05.195","/master/welcome",560
+"2022-05-23 19:26:05.645","/inventor/patronage-report/create",390
+"2022-05-23 19:26:06.062","/master/welcome",373
+"2022-05-23 19:26:06.684","/master/welcome",561
 "2022-05-23 17:52:47.72","/master/welcome",4533
 "2022-05-23 17:52:48.095","/master/welcome",328
 "2022-05-23 17:52:50.828","/master/sign-in",2152

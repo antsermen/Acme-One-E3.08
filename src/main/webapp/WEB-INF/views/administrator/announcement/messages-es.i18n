@@ -14,3 +14,6 @@ administrator.announcement.form.label.link = Link:
 administrator.announcement.form.label.critical = Crítico:
 administrator.announcement.form.label.confirmation = Confirme el anuncio
 administrator.announcement.form.button.create = Crear
+
+administrator.announcement.form.error.title.spam = El título es considerado spam, introduzca un título más apropiado por favor
+administrator.announcement.form.error.body.spam = El cuerpo es considerado spam, introduzca un cuerpo más apropiado por favor

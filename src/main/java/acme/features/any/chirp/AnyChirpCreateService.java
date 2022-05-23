@@ -5,7 +5,9 @@ import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import SpamDetector.Spam_Detector.SpamDetector;
 import acme.entities.Chirp;
+import acme.features.inventor.item.InventorItemRepository;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Errors;
 import acme.framework.controllers.Request;
@@ -19,6 +21,8 @@ public class AnyChirpCreateService implements AbstractCreateService<Any, Chirp>{
 	
 	@Autowired
 	protected AnyChirpRepository repository;
+	@Autowired
+	protected InventorItemRepository systemRepository;
 	
 	// AbstractCreateService<Any, Chirp> interface =========================
 	
@@ -63,6 +67,25 @@ public class AnyChirpCreateService implements AbstractCreateService<Any, Chirp>{
 
 		confirmation = request.getModel().getBoolean("confirmation");
 		errors.state(request, confirmation, "confirmation", "javax.validation.constraints.AssertTrue.message");
+		if(!errors.hasErrors("title")) {
+			errors.state(request, !SpamDetector.spamDetector(entity.getTitle(), this.systemRepository.findSystemConfiguration().getWeakSpamTerms(), 
+				this.systemRepository.findSystemConfiguration().getStrongSpamTerms(), 
+				this.systemRepository.findSystemConfiguration().getWeakSpamThreshold(),
+				this.systemRepository.findSystemConfiguration().getStrongSpamThreshold()), "title", "any.chirp.form.error.title.spam");
+		}
+		if(!errors.hasErrors("author")) {
+			errors.state(request, !SpamDetector.spamDetector(entity.getAuthor(), this.systemRepository.findSystemConfiguration().getWeakSpamTerms(), 
+				this.systemRepository.findSystemConfiguration().getStrongSpamTerms(), 
+				this.systemRepository.findSystemConfiguration().getWeakSpamThreshold(),
+				this.systemRepository.findSystemConfiguration().getStrongSpamThreshold()), "author", "any.chirp.form.error.author.spam");
+		}
+		if(!errors.hasErrors("body")) {
+			errors.state(request, !SpamDetector.spamDetector(entity.getBody(), this.systemRepository.findSystemConfiguration().getWeakSpamTerms(), 
+				this.systemRepository.findSystemConfiguration().getStrongSpamTerms(), 
+				this.systemRepository.findSystemConfiguration().getWeakSpamThreshold(),
+				this.systemRepository.findSystemConfiguration().getStrongSpamThreshold()), "body", "any.chirp.form.error.body.spam");
+		}
+
 	}
 	
 	@Override

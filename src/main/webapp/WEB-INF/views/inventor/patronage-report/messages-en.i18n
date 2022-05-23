@@ -11,4 +11,4 @@ inventor.patronageReport.form.error.must-confirm = Please confirm
 inventor.patronageReport.list.label.creationMoment = Creation Moment: 
 inventor.patronageReport.list.label.memorandum = Memorandum:
 inventor.patronageReport.list.button.create = Create patronage report
-inventor.patronageReport.form.label.patronageCode = Patron
+inventor.patronageReport.form.label.patronageCode = Patronage Code

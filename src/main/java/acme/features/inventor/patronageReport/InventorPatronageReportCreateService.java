@@ -31,7 +31,6 @@ public class InventorPatronageReportCreateService implements AbstractCreateServi
 	@Override
 	public PatronageReport instantiate(final Request<PatronageReport> request) {
 		final PatronageReport result = new PatronageReport();
-		result.setCreationMoment(new Date());
 		result.setMemorandum("");
 		result.setLink("");
 		return result;
@@ -43,6 +42,13 @@ public class InventorPatronageReportCreateService implements AbstractCreateServi
 		assert entity != null;
 		assert errors != null;
 		entity.setPatronage(this.repository.findPatronageByCode(request.getModel().getAttribute("patronageCode").toString()));
+		entity.setVersion(0);
+		entity.setCreationMoment(new Date());
+		final String sn = "0000" + String.valueOf(request.getModel().getInteger("id"));		
+		entity.setSerialNumber(sn.substring(sn.length()-4));
+		entity.setSequenceNumber(entity.getPatronage().getCode() + ":" + entity.getSerialNumber());	
+
+		
 		request.bind(entity, errors,"memorandum","link");
 	}
 
@@ -63,23 +69,19 @@ public class InventorPatronageReportCreateService implements AbstractCreateServi
 		assert entity != null;
 		assert model != null;
 		
-		request.unbind(entity, model,"memorandum","link");
+		request.unbind(entity, model,"memorandum","link", "version", "sequenceNumber", "serialNumber");
 		model.setAttribute("confirm", "false");
-//		model.setAttribute("patronageCode", this.repository.findPatronageById(request.getModel().getInteger("id")).getCode());
+		model.setAttribute("id", request.getModel().getInteger("id"));
+		model.setAttribute("patronageCode", this.repository.findPatronageById(request.getModel().getInteger("id")).getCode());
 		model.setAttribute("patronageId", request.getModel().getInteger("id"));
+
+
 	}	
 
 	@Override
 	public void create(final Request<PatronageReport> request, final PatronageReport entity) {
 		assert request != null;
 		assert entity != null;
-		entity.setCreationMoment(new Date());
-		//final String sn = "0000" + entity.getId();
-		//entity.setSerialNumber(sn.substring(sn.length()-4));
-		//entity.setSequenceNumber(entity.getPatronage().getCode() + ":" + entity.getSerialNumber());	
-		entity.setSequenceNumber("sdfsf");
-		entity.setSerialNumber("sfs");
-		entity.setPatronage(this.repository.findPatronageById(request.getModel().getInteger("id")));
 		this.repository.save(entity);
 
 	}

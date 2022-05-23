@@ -19,7 +19,7 @@
 	
 	<jstl:when test="${command == 'create' }">
 			<acme:input-checkbox code="inventor.patronageReport.form.label.confirm" path="confirm"/>
-			<acme:submit  code="inventor.patronageReport.form.button.create" action="/inventor/patronage-report/create"/> 
+			<acme:submit  code="inventor.patronageReport.form.button.create" action="/inventor/patronage-report/create?id=${id}"/> 
 	</jstl:when>
 	
 </jstl:choose>	

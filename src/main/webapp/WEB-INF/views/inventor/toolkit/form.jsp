@@ -22,7 +22,7 @@
 	<acme:input-textbox code="inventor.toolkit.form.label.notes" path="notes"/>
 	<acme:input-url code="inventor.toolkit.form.label.link" path="link"/>
 	<jstl:if test="${command == 'show'}">
-		<acme:input-textbox code="inventor.toolkit.form.label.toolkitPrice" path="toolkitPrice" placeholder="${toolkitPrice}"/>
+		<acme:input-textbox code="inventor.toolkit.form.label.toolkitPrice" path="toolkitPrice" readonly="true"/>
 	</jstl:if>
 	<jstl:choose>
 		<jstl:when test="${acme:anyOf(command, 'show, update, delete, publish') && published == false }">

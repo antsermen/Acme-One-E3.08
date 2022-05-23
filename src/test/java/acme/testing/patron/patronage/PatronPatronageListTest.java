@@ -24,12 +24,12 @@ public class PatronPatronageListTest extends TestHarness {
 	@CsvFileSource(resources = "/patron/patronage/list.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
 	public void positiveTest(final int recordIndex, final String status, final String code, final String legalStuff,
-		final String budget, final String creationDate, final String startDate, final String deadline, final String info,
-		final String inventorProfile) {
-		super.signIn("administrator", "administrator");
+		final String budget, final String creationDate, final String startDate, final String deadline, final String info, 
+		final String inventor, final String patron) {
+		super.signIn("patron2", "patron2");
 		super.clickOnMenu("Patron", "My Patronages List");
 		super.checkListingExists();
-		super.sortListing(0, "asc");
+		super.sortListing(1, "asc");
 		
 		super.checkColumnHasValue(recordIndex, 0, status);
 		super.checkColumnHasValue(recordIndex, 1, code);
@@ -46,7 +46,8 @@ public class PatronPatronageListTest extends TestHarness {
         super.checkInputBoxHasValue("startDate", startDate);
         super.checkInputBoxHasValue("deadline", deadline);
         super.checkInputBoxHasValue("info", info);
-        super.checkInputBoxHasValue("inventorProfile", inventorProfile);
+        super.checkInputBoxHasValue("inventor", inventor);
+        super.checkInputBoxHasValue("patron", patron);
 		
         super.signOut();
 

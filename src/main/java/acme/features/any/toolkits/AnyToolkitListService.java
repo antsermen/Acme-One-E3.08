@@ -45,13 +45,13 @@ public class AnyToolkitListService implements AbstractListService<Any, Toolkit>{
 		request.unbind(entity, model,"title", "code", "description", "notes","link");
 		
 		final Collection<Item> items= this.repository.findItemsFromToolkitId(entity.getId());
-		String payload="";
+		final StringBuilder payload= new StringBuilder();
 		int counter=0;
 		for(final Item item: items) {
 			if(counter==items.size()-1) {
-				payload+= item.getCode()+"; "+item.getName();
+				payload.append(item.getCode()+"; "+item.getName());
 			}else {
-				payload+= item.getCode()+"; "+item.getName()+";";
+				payload.append(item.getCode()+"; "+item.getName()+";");
 			}
 			counter ++;
 

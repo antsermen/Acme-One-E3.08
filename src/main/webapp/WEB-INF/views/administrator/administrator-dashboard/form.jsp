@@ -8,7 +8,7 @@
 	<acme:message code="administrator.administrator-dashboard.form.title.components"/>
 </h2>
 
-<table class="table table-sm">
+<table class="table table-sm"> 
 	<tr>
 		<th scope="row">
 			<acme:message code="administrator.administrator-dashboard.form.label.totalNumberOfComponents"/>

@@ -1,8 +1,6 @@
 package acme.features.inventor.item;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import org.assertj.core.util.Arrays;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -78,11 +76,7 @@ public class InventorItemUpdateService implements AbstractUpdateService<Inventor
 		}
 		if(!errors.hasErrors("retailPrice")) {
 			final String[] acceptedCurrencies = this.inventorItemRepository.findSystemConfiguration().getAcceptedCurrencies().split(",");
-			final List<String> acceptedCurrenciesList = new ArrayList<>();
-			for(final String ac : acceptedCurrencies) {
-				acceptedCurrenciesList.add(ac);
-			}
-			errors.state(request, acceptedCurrenciesList.contains(entity.getRetailPrice().getCurrency()), "retailPrice", "inventor.item.form.error.retailPrice.acceptedCurrencies");
+			errors.state(request, Arrays.asList(acceptedCurrencies).contains(entity.getRetailPrice().getCurrency()), "retailPrice", "inventor.item.form.error.retailPrice.acceptedCurrencies");
 			errors.state(request, entity.getRetailPrice().getAmount() > 0, "retailPrice", "inventor.item.form.error.retailPrice.negative");
 
 		}

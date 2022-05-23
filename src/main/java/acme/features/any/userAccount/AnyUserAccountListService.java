@@ -36,9 +36,8 @@ public class AnyUserAccountListService implements AbstractListService<Any, UserA
 		final Collection<UserAccount> result = new ArrayList<>();
 		final List<UserAccount> aux = new ArrayList<>(this.anyUserAccountRepository.findAllUserEnableds());
 		for(final UserAccount ua : aux) {
-			Boolean isListable = true;
+			boolean isListable = true;
 			for(final UserRole ur : ua.getRoles()) {
-//				System.out.println(ur.getAuthorityName());
 				if(ur.getAuthorityName().equals("Administrator") || ua.isAnonymous()) {
 					isListable = false;
 				}
@@ -56,8 +55,6 @@ public class AnyUserAccountListService implements AbstractListService<Any, UserA
 		assert entity != null;
 		assert model != null;
 		model.setAttribute("roles", entity.getAuthorityString());
-//		System.out.println(entity.getAuthorityString());
-//		System.out.println(entity.getRoles());
 		request.unbind(entity, model, "username");
 	}
 }

@@ -1,0 +1,17 @@
+timestamp,simple-path,time
+"2022-05-23 23:15:05.191","/master/welcome",4536
+"2022-05-23 23:15:05.676","/master/welcome",441
+"2022-05-23 23:15:07.887","/master/sign-in",2146
+"2022-05-23 23:15:09.137","/master/welcome",563
+"2022-05-23 23:15:10.454","/inventor/patronage/list",1144
+"2022-05-23 23:15:12.881","/inventor/patronage/show",2148
+"2022-05-23 23:15:14.052","/inventor/patronage-report/create",1107
+"2022-05-23 23:15:16.309","/inventor/patronage/show",565
+"2022-05-23 23:15:17.002","/inventor/patronage-report/list",564
+"2022-05-23 23:15:17.841","/inventor/patronage-report/show",561
+"2022-05-23 23:15:18.345","/master/welcome",363
+"2022-05-23 23:15:18.737","/master/welcome",358
+"2022-05-23 23:15:19.356","/master/sign-in",564
+"2022-05-23 23:15:20.605","/master/welcome",563
+"2022-05-23 23:15:21.323","/inventor/patronage/list",562
+"2022-05-23 23:15:22.674","/inventor/patronage/show",1073

@@ -1,0 +1,2 @@
+timestamp,test-class,test-method,time,description,result
+"2022-05-23 23:15:17.909","acme.testing.inventor.patronageReport.InventorPatronageReportCreateTest","positiveTest",12717,""[1] recordIndex=0, memorandum=nuevo reporte, link=https://google.es/, patronageCode=PSP-234-P, confirm=true"","Expected value 'nuevo reporte' in input box 'memorandum', but 'Aqui va el memorandum' was found"

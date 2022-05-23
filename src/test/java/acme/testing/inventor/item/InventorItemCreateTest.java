@@ -34,6 +34,7 @@ public class InventorItemCreateTest extends TestHarness {
 		
 		super.clickOnMenu("Inventor", "My Tools List");
 		super.checkListingExists();
+		super.sortListing(0, "asc");
 		super.checkColumnHasValue(recordIndex, 0, name);
 		super.checkColumnHasValue(recordIndex, 1, technology);
 		super.checkColumnHasValue(recordIndex, 2, retailPrice);

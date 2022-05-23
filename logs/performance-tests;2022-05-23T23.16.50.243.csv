@@ -1,0 +1,4 @@
+timestamp,test-class,test-method,time,description,result
+"2022-05-23 23:16:08.679","acme.testing.inventor.patronageReport.InventorPatronageReportCreateTest","positiveTest",15039,""[1] recordIndex=0, memorandum=nuevo reporte, link=https://google.es/, patronageCode=PSP-234-P, confirm=true"","OK"
+"2022-05-23 23:16:17.335","acme.testing.inventor.patronageReport.InventorPatronageReportCreateTest","negativeTest",8342,""[1] recordIndex=1, memorandum=reporte, link=https://google.es/, confirm=false"","OK"
+"2022-05-23 23:16:26.7","acme.testing.inventor.patronageReport.InventorPatronageReportCreateTest","negativeTest",9063,""[2] recordIndex=2, memorandum=segundo reporte, link=a, confirm=true"","OK"

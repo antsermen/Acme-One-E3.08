@@ -5,9 +5,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.Patronage;
+import acme.features.inventor.item.InventorItemRepository;
+import acme.forms.MoneyExchange;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
+import acme.framework.datatypes.Money;
 import acme.framework.services.AbstractShowService;
+import acme.functions.MoneyExchangeFunction;
 import acme.roles.Patron;
 
 @Service
@@ -15,6 +19,8 @@ public class PatronPatronageShowService implements AbstractShowService<Patron, P
 	
 	@Autowired
 	protected PatronPatronageRepository repository;
+	@Autowired
+	protected InventorItemRepository inventorItemRepository;
 
 	@Override
 	public boolean authorise(final Request<Patronage> request) {
@@ -26,7 +32,7 @@ public class PatronPatronageShowService implements AbstractShowService<Patron, P
 		
 		patronageId = request.getModel().getInteger("id");
 		patronage = this.repository.findOnePatronageById(patronageId);
-		result = patronage.getPatron().getId() == request.getPrincipal().getActiveRoleId();
+		result = patronage.getInventor().getId() == request.getPrincipal().getActiveRoleId();
 
 		return result;
 	}
@@ -49,12 +55,20 @@ public class PatronPatronageShowService implements AbstractShowService<Patron, P
 		assert request != null;
 		assert entity != null;
 		assert model != null;
+		model.setAttribute("inventor", entity.getInventor().getUserAccount().getUsername());
+		model.setAttribute("patron", entity.getPatron().getUserAccount().getUsername());
+		model.setAttribute("inventors", this.inventorItemRepository.findAllInventors());
+		Money source, target;
+		String targetCurrency;
+		MoneyExchange exchange;
+		source = entity.getBudget();
+		targetCurrency = this.repository.findSystemConfiguration().getSystemCurrency();
+		exchange=MoneyExchangeFunction.computeMoneyExchange(source, targetCurrency);
+		target=exchange.target;
+		entity.setSystemBudget(target);
 		
-		model.setAttribute("inventorProfile", entity.getInventor().getUserAccount().getUsername());
-		
-		request.unbind(entity, model, "status", "code", "legalStuff", "budget", "creationDate", "startDate", "deadline", "info");
+		request.unbind(entity, model, "status", "code", "legalStuff", "budget", "systemBudget", "creationDate", "startDate", "deadline", "info", "published");
 		model.setAttribute("confirmation", false);
-		model.setAttribute("readonly", true);
 	}
 	
 	

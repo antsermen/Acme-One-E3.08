@@ -21,21 +21,18 @@ public class AnyUserAccountShowService implements AbstractShowService<Any, UserA
 
 	@Override
 	public boolean authorise(final Request<UserAccount> request) {
-		// TODO Auto-generated method stub
 		assert request != null;
 		return true;
 	}
 
 	@Override
 	public UserAccount findOne(final Request<UserAccount> request) {
-		// TODO Auto-generated method stub
 		assert request != null;
 		return this.anyUserAccountRepository.findOneById(request.getModel().getInteger("id"));
 	}
 
 	@Override
 	public void unbind(final Request<UserAccount> request, final UserAccount entity, final Model model) {
-		// TODO Auto-generated method stub
 		assert request != null;
 		assert entity != null;
 		assert model != null;

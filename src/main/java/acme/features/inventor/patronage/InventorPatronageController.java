@@ -20,7 +20,7 @@ public class InventorPatronageController extends AbstractController<Inventor, Pa
 		@Autowired
 		protected InventorShowPatronageService showPatronageService;
 		@Autowired
-		protected InventorPatronageAccpetService acceptPatronageService;
+		protected InventorPatronageAcceptService acceptPatronageService;
 	
 		@Autowired
 		protected InventorPatronageDeniedService deniedPatronageService;

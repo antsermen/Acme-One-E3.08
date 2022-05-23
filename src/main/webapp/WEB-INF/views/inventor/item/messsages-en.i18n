@@ -16,6 +16,8 @@ inventor.item.list.label.published = Published
 
 inventor.item.form.label.published = Published	
 inventor.item.form.label.itemType = Type	
+inventor.item.form.label.component = Component
+inventor.item.form.label.tool = Tool
 inventor.item.form.label.name = Name
 inventor.item.form.label.component = Component
 inventor.item.form.label.tool = Tool
@@ -30,4 +32,12 @@ inventor.item.form.button.publish = Publish
 inventor.item.form.button.create = Create
 any.item.form.label.systemRetailPrice = System Retail Price:
 
+inventor.item.form.error.itemType.modified = You cannot change the type of a created Item
 inventor.item.form.error.code.duplicated = This code is already assigned to an Item
+inventor.item.form.error.code.modified = You cannot modify a code when it is assigned
+inventor.item.form.error.retailPrice.negative = The retail price must be above 0
+inventor.item.form.error.name.spam = The name is considered spam, choose a more appropiate name please
+inventor.item.form.error.technology.spam = The technology is considered spam, choose a more appropiate technology please
+inventor.item.form.error.description.spam = The description is considered spam, choose a more appropiate description please
+inventor.item.form.error.retailPrice.acceptedCurrencies = The currency you are trying to enter is not accepted by the system
+

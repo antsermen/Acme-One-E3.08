@@ -34,7 +34,6 @@ public class PatronPatronageReportListService implements AbstractListService<Pat
 		 final Principal principal = request.getPrincipal();
 		final int id = principal.getActiveRoleId();		
 		result = this.repository.findManyPatronagesReportByPatronId(id);
-		//Collection<PatronageReport> a = new ArrayList<>();
 		return result;
 	}
 

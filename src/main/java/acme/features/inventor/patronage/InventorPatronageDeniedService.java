@@ -26,9 +26,6 @@ public class InventorPatronageDeniedService implements AbstractUpdateService<Inv
 				assert request != null;
 
 				final boolean result=true;
-				final int masterId;
-				final Patronage job;
-				final Inventor employer;
 
 				
 

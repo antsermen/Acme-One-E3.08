@@ -12,7 +12,7 @@ import acme.framework.services.AbstractUpdateService;
 import acme.roles.Inventor;
 
 @Service
-public class InventorPatronageAccpetService implements AbstractUpdateService<Inventor, Patronage>{
+public class InventorPatronageAcceptService implements AbstractUpdateService<Inventor, Patronage>{
 			
 			// Internal state ========================================================
 	
@@ -24,15 +24,9 @@ public class InventorPatronageAccpetService implements AbstractUpdateService<Inv
 			@Override
 			public boolean authorise(final Request<Patronage> request) {
 				assert request != null;
-
-				final boolean result=true;
-				final int masterId;
-				final Patronage job;
-				final Inventor employer;
-
 				
 
-				return result;
+				return true;
 			}
 
 			@Override

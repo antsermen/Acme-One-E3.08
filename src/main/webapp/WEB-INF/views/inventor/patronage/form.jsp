@@ -19,6 +19,9 @@
 
 	<acme:input-textarea code="inventor.patronage.form.label.legalStuff" path="legalStuff"/>	
 	<acme:input-textbox code="inventor.patronage.form.label.budget" path="budget"/>
+	<jstl:if test="${command == 'show'}">
+		<acme:input-textbox code="inventor.patronage.form.label.systemBudget" path="systemBudget"/>
+	</jstl:if>
 	<acme:input-textbox code="inventor.patronage.form.label.deadline" path="deadline"/>
 	<acme:input-url code="inventor.patronage.form.label.info" path="info"/>
 	<acme:input-textbox code="inventor.patronage.form.label.patronName" path="patronName" placeholder="${patron.userAccount.identity.name}"/>
@@ -30,7 +33,8 @@
 	
 			
 	<acme:submit test="${acme:anyOf(command, 'show, update') && status == 'PROPOSED'}" code="inventor.patronage.form.button.accept" action="/inventor/patronage/accept"/>
-		<acme:submit test="${acme:anyOf(command, 'show, update') && status == 'PROPOSED'}" code="inventor.patronage.form.button.denied" action="/inventor/patronage/denied"/>
+	<acme:submit test="${acme:anyOf(command, 'show, update') && status == 'PROPOSED'}" code="inventor.patronage.form.button.denied" action="/inventor/patronage/denied"/>
+	<acme:button test="${acme:anyOf(command, 'show') && status != 'PROPOSED'}" code="inventor.patronageReport.list.button.create" action="/inventor/patronage-report/create?id=${patronageId}"/> 	
 	
 			
 </acme:form>

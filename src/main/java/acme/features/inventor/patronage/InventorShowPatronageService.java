@@ -4,9 +4,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.Patronage;
+import acme.forms.MoneyExchange;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Request;
+import acme.framework.datatypes.Money;
 import acme.framework.services.AbstractShowService;
+import acme.functions.MoneyExchangeFunction;
 import acme.roles.Inventor;
 import acme.roles.Patron;
 
@@ -23,8 +26,8 @@ public class InventorShowPatronageService implements AbstractShowService<Invento
 			@Override
 			public boolean authorise(final Request<Patronage> request) {
 				assert request != null;
-						
-				return true;
+				final Patronage patronage = this.repository.findOnePatronageById(request.getModel().getInteger("id"));
+				return request.getPrincipal().getActiveRoleId() == patronage.getInventor().getId() && patronage.isPublished()==true;
 			}
 					
 			@Override
@@ -45,18 +48,27 @@ public class InventorShowPatronageService implements AbstractShowService<Invento
 				assert request != null;
 				assert entity != null;
 				assert model != null;
+				Money source, target;
+				String targetCurrency;
+				MoneyExchange exchange;
+				source = entity.getBudget();
+				targetCurrency = this.repository.findSystemConfiguration().getSystemCurrency();
+				exchange=MoneyExchangeFunction.computeMoneyExchange(source, targetCurrency);
+				target=exchange.target;
+				entity.setSystemBudget(target);
 				
 				Patron patron;
 				patron = entity.getPatron();
-				
+				model.setAttribute("patronageId", request.getModel().getInteger("id"));
 				model.setAttribute("patronName", patron.getIdentity().getName());
 				model.setAttribute("patronSurname", patron.getIdentity().getSurname());
 				model.setAttribute("patronCompany", patron.getCompany());
 				model.setAttribute("patronStatement", patron.getStatement());
 				model.setAttribute("patronInfo", patron.getInfo());
-				request.unbind(entity, model, "status", "legalStuff", "budget", "deadline", "info");
+				request.unbind(entity, model, "status", "legalStuff", "budget", "systemBudget", "deadline", "info");
 				model.setAttribute("confirmation", false);
 				model.setAttribute("readonly", true);
 			}
+			
 			
 }

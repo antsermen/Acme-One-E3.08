@@ -18,21 +18,22 @@ public class InventorPatronageReportCreateTest extends TestHarness {
 	public void positiveTest(final int recordIndex, final String memorandum, final String link, final String patronageCode, final String confirm) {
 		super.signIn("inventor1", "inventor1");
 		
-		super.clickOnMenu("Inventor", "List Patronage Reports");
+		super.clickOnMenu("Inventor", "My Patronages List");
 		super.checkListingExists();
 		
-		super.clickOnButton("Create");
+		super.sortListing(0, "asc");
+		super.clickOnListingRecord(1);
+		super.clickOnButton("Create patronage report");
+
 		super.checkFormExists();
 		super.fillInputBoxIn("memorandum", memorandum);
 		super.fillInputBoxIn("link", link);
-		super.fillInputBoxIn("patronageCode", patronageCode);
 		super.fillInputBoxIn("confirm", confirm);
 		super.clickOnSubmit("Create");
 		
-		super.clickOnMenu("Inventor", "List Patronage Reports");
+		super.clickOnMenu("Inventor", "My Patronage Reports");
 		super.checkListingExists();
-		super.sortListing(0, "asc");
-		super.checkColumnHasValue(recordIndex, 1, memorandum);
+		super.sortListing(0, "desc");
 		super.clickOnListingRecord(recordIndex);
 		
 		super.checkFormExists();
@@ -48,17 +49,19 @@ public class InventorPatronageReportCreateTest extends TestHarness {
 	@ParameterizedTest
 	@CsvFileSource(resources = "/inventor/patronage-report/patronage-report-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(20)
-	public void negativeTest(final int recordIndex, final String memorandum, final String link, final String patronageCode, final String confirm) {
+	public void negativeTest(final int recordIndex, final String memorandum, final String link, final String confirm) {
 		super.signIn("inventor1", "inventor1");
 		
-		super.clickOnMenu("Inventor", "List Patronage Reports");
+		super.clickOnMenu("Inventor", "My Patronages List");
 		super.checkListingExists();
 		
-		super.clickOnButton("Create");
+		super.sortListing(0, "asc");
+		super.clickOnListingRecord(1);
+		super.clickOnButton("Create patronage report");
+
 		super.checkFormExists();
 		super.fillInputBoxIn("memorandum", memorandum);
 		super.fillInputBoxIn("link", link);
-		super.fillInputBoxIn("patronageCode", patronageCode);
 		super.fillInputBoxIn("confirm", confirm);
 		super.clickOnSubmit("Create");
 		
@@ -72,7 +75,15 @@ public class InventorPatronageReportCreateTest extends TestHarness {
 	public void hackingTest() {
 		
 		super.signIn("administrator", "administrator");
-		super.navigate("/inventor/patronageReport/create");
+		super.navigate("/inventor/patronage-report/create");
+		super.checkPanicExists();
+		super.signOut();
+		super.signIn("administrator", "administrator");
+		super.navigate("/inventor/patronage-report/create");
+		super.checkPanicExists();
+		super.signOut();
+		super.signIn("administrator", "administrator");
+		super.navigate("/inventor/patronage-report/create");
 		super.checkPanicExists();
 		super.signOut();
 		

@@ -1,4 +1,5 @@
-recordIndex,memorandum,link,patronageCode,confirm
-0,nuevo reporte,https://google.es/,PSP-234-P,true
-1,reporte,https://google.es/,PSP-234-P,false
-2,segundo reporte,https://google.es/,false
+recordIndex,memorandum,link,confirm
+1,reporte,https://google.es/,false
+2,segundo reporte,a,true
+3,,,true
+4,This memorandum has 256 charactersThis memorandum has 256 charactersThis memorandum has 256 charactersThis memorandum has 256 charactersThis memorandum has 256 charactersThis memorandum has 256 charactersThis memorandum has 256 charactersThis memorandum ha,,true

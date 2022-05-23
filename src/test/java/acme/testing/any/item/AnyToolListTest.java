@@ -11,7 +11,8 @@ public class AnyToolListTest extends TestHarness{
 	@ParameterizedTest
 	@CsvFileSource(resources = "/any/item/toolList.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void positiveTest(final int recordIndex,final String name, final String technology, final String retailPrice) {
+	public void positiveTest(final int recordIndex,final String itemType, final String code, final String description, final String link, 
+		final String name, final String retailPrice, final String systemRetailPrice, final String technology, final String published, final String inventor) {
 		
 
 		super.clickOnMenu("Anonymous", "Tool List");

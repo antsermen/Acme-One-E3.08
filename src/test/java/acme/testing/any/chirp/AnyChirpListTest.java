@@ -28,7 +28,6 @@ public class AnyChirpListTest extends TestHarness {
 		super.checkListingExists();
 		super.sortListing(0, "asc");
 		
-		super.checkColumnHasValue(recordIndex, 0, creationMoment);
 		super.checkColumnHasValue(recordIndex, 1, title);
 		super.checkColumnHasValue(recordIndex, 2, author);
 		super.checkColumnHasValue(recordIndex, 3, body);

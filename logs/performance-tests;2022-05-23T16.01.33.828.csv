@@ -1,0 +1,4 @@
+timestamp,test-class,test-method,time,description,result
+"2022-05-23 15:56:22.435","acme.testing.any.item.AnyToolListTest","positiveTest",2032,""[1] recordIndex=0, name=TOOL, technology=ASD-123, retailPrice=dshjhds"","Expected value 'TOOL' in attribute 0 of record 0, but found 'Escalera madera extensible VILLAR'"
+"2022-05-23 15:56:23.71","acme.testing.any.item.AnyToolListTest","positiveTest",909,""[2] recordIndex=1, name=TOOL, technology=JAY-715, retailPrice=Sierra circular con cable DEWALT de 1350 w y 5.332 kg de peso"","Record index 1 is out of range"
+"2022-05-23 15:56:24.913","acme.testing.any.item.AnyToolListTest","positiveTest",917,""[3] recordIndex=2, name=TOOL, technology=PAI-432, retailPrice=Escalera de madera extensible indicada para mantenimiento industrial y telecomunicaciones fabricada en pino y peldaño de haya."","Record index 2 is out of range"

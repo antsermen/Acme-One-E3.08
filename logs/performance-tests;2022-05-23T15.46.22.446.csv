@@ -1,0 +1,9 @@
+timestamp,test-class,test-method,time,description,result
+"2022-05-23 15:44:55.423","acme.testing.any.userAccount.AnyUserAccountListShowTest","positiveTest",4360,""[1] recordIndex=2, username=inventor1, roles=Inventor, name=Inventor, surname=One, email=inventor1@mail.com"","OK"
+"2022-05-23 15:44:57.973","acme.testing.any.userAccount.AnyUserAccountListShowTest","positiveTest",2206,""[2] recordIndex=3, username=inventor2, roles=Inventor, name=Inventor, surname=Two, email=inventor2@mail.com"","OK"
+"2022-05-23 15:45:00.6","acme.testing.any.userAccount.AnyUserAccountListShowTest","positiveTest",2314,""[3] recordIndex=4, username=patron1, roles=Patron, name=Patron, surname=One, email=patron1@mail.com"","OK"
+"2022-05-23 15:45:03.388","acme.testing.any.userAccount.AnyUserAccountListShowTest","positiveTest",2271,""[4] recordIndex=5, username=patron2, roles=Patron, name=Patron, surname=Two, email=patron2@mail.com"","OK"
+"2022-05-23 15:45:06.17","acme.testing.any.userAccount.AnyUserAccountListShowTest","positiveTest",2242,""[5] recordIndex=0, username=consumer1, roles=Consumer, name=Consumer, surname=One, email=consumer1@mail.com"","OK"
+"2022-05-23 15:45:08.92","acme.testing.any.userAccount.AnyUserAccountListShowTest","positiveTest",2265,""[6] recordIndex=1, username=consumer2, roles=Consumer, name=Consumer, surname=Two, email=consumer2@mail.com"","OK"
+"2022-05-23 15:45:11.643","acme.testing.any.userAccount.AnyUserAccountListShowTest","positiveTest",2220,""[7] recordIndex=6, username=provider1, roles=Provider, name=Provider, surname=One, email=provider1@mail.com"","OK"
+"2022-05-23 15:45:14.373","acme.testing.any.userAccount.AnyUserAccountListShowTest","positiveTest",2224,""[8] recordIndex=7, username=provider2, roles=Provider, name=Provider, surname=Two, email=provider2@mail.com"","OK"

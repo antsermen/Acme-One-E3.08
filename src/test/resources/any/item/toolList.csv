@@ -1,3 +1,2 @@
-record-index,name,code,technology,description,retail-price,link,key:inventor
-0,Escalera madera extensible VILLAR,PAI-432,pintura,Escalera de madera extensible indicada para mantenimiento industrial y telecomunicaciones fabricada en pino y peldaño de haya.,EUR 309.00,https://www.leroymerlin.es/fp/83611937/escalera-madera-extensible-villar,inventor-01
-1,Martillo,ASD-123,martillo,dshjhds,EUR 12.00,https://www.leroymerlin.es/fp/81968467/maceta-3-8-cm,inventor-01
+record-index,name,technology,retail-price
+0,Escalera madera extensible VILLAR,pintura,EUR 309.00

@@ -1,0 +1,16 @@
+1653319523880	geckodriver	INFO	Listening on 127.0.0.1:6224
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\pabli\\AppData\\Local\\Temp\\rust_mozprofileWCB9sq\\search.json.mozlz4", (void 0)))
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:JavaScript error: resource://gre/modules/LoginManagerParent.8jsm, line 136: TypeError: gRecipeManag081"e
+r is null
+console.warn:JavaScript error: resource://gre/modules/LoginMana gLerParent.jsm, line 13o6g:i TypeError: gRecipeManager is nRecipes: "getRecipes: falling back to a synchronnuous messlage for:"l "http:/
+/localJhaovsat:8S0c8r1i"pt error
+: resoucrocnes:o/l/eg.re/modules/LoginMawnagerPaarrne:n tL.ojgsimn,R elciinpee s1:3 6: TypeError:" ggeRtRecipeManager is nulelci
+pes: falling back to a synchronous message for:" "http://localhost:8081"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhJoast:80v8a1S"cr
+ipt error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRJavaSecipes: fcript eallinrror: reg backsource ://grteo/ mao dsuylnecsh/rLoongouinManags meerPassagrente for.:j"s "htm, ltp://ine local136:host Typ:808eError: gRec1i"pe
+Manager is null
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+

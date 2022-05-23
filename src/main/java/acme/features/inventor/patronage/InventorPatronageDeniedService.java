@@ -25,11 +25,8 @@ public class InventorPatronageDeniedService implements AbstractUpdateService<Inv
 			public boolean authorise(final Request<Patronage> request) {
 				assert request != null;
 
-				final boolean result=true;
-
 				
-
-				return result;
+				return true;
 			}
 
 			@Override

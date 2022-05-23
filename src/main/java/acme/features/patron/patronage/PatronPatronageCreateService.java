@@ -1,10 +1,9 @@
 package acme.features.patron.patronage;
 
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 import org.apache.commons.lang3.time.DateUtils;
+import org.assertj.core.util.Arrays;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -102,11 +101,7 @@ public class PatronPatronageCreateService implements AbstractCreateService<Patro
 		if(!errors.hasErrors("budget")) {
 			errors.state(request, entity.getBudget().getAmount()>0, "budget", "patron.patronage.form.error.budget.negative");
 			final String[] acceptedCurrencies = this.inventorItemRepository.findSystemConfiguration().getAcceptedCurrencies().split(",");
-			final List<String> acceptedCurrenciesList = new ArrayList<>();
-			for(final String ac : acceptedCurrencies) {
-				acceptedCurrenciesList.add(ac);
-			}
-			errors.state(request, acceptedCurrenciesList.contains(entity.getBudget().getCurrency()), "budget", "patron.patronage.form.error.budget.acceptedCurrencies");
+			errors.state(request, Arrays.asList(acceptedCurrencies).contains(entity.getBudget().getCurrency()), "budget", "patron.patronage.form.error.budget.acceptedCurrencies");
 		}
 	}
 

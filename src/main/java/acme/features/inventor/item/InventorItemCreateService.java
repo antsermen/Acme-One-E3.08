@@ -1,8 +1,6 @@
 package acme.features.inventor.item;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import org.assertj.core.util.Arrays;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -68,7 +66,7 @@ public class InventorItemCreateService implements AbstractCreateService<Inventor
 		
 		if(!errors.hasErrors("code")) {
 			final Item i = this.inventorItemRepository.findItemByCode(entity.getCode());
-			errors.state(request,i == null ||  i.getCode()==entity.getCode(),"code", "inventor.item.form.error.code.duplicated");
+			errors.state(request,i == null ||  i.getCode().equals(entity.getCode()),"code", "inventor.item.form.error.code.duplicated");
 		}
 		if(!errors.hasErrors("retailPrice")) {
 			errors.state(request, entity.getRetailPrice().getAmount() > 0, "retailPrice", "inventor.item.form.error.retailPrice.negative");
@@ -94,11 +92,7 @@ public class InventorItemCreateService implements AbstractCreateService<Inventor
 		}
 		if(!errors.hasErrors("retailPrice")) {
 			final String[] acceptedCurrencies = this.inventorItemRepository.findSystemConfiguration().getAcceptedCurrencies().split(",");
-			final List<String> acceptedCurrenciesList = new ArrayList<>();
-			for(final String ac : acceptedCurrencies) {
-				acceptedCurrenciesList.add(ac);
-			}
-			errors.state(request, acceptedCurrenciesList.contains(entity.getRetailPrice().getCurrency()), "retailPrice", "inventor.item.form.error.retailPrice.acceptedCurrencies");
+			errors.state(request, Arrays.asList(acceptedCurrencies).contains(entity.getRetailPrice().getCurrency()), "retailPrice", "inventor.item.form.error.retailPrice.acceptedCurrencies");
 		}
 	}
 

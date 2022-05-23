@@ -1,0 +1,25 @@
+1653316062530	geckodriver	INFO	Listening on 127.0.0.1:43209
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\rober\\AppData\\Local\\Temp\\rust_mozprofile6ArZAa\\search.json.mozlz4", (void 0)))
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message fJavaScript error: resource://gre/modules/LoginManoarg:erParent.jsm, line 136: TypeEr"ror:  gRecipeManager is null
+"http://localhost:8081"
+console.warn: LoginRecipes: "getRecipes: fallingJavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136 back to a synchronous mess:age for:" " http://localhost:8081"
+TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a JavaScsynchronript errous messaoge forr: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+:" "http://localhost:8081"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a syncJavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+hronous message for:" "http://localhost:8081"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling backJavaScript error: resource://gre/modules/LoginManagerParent.jsm, line to a synchronous message for:" "http://localhost:8081"
+ 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling baJavaScript erck to a synchronous message for:" "http://localhoror: resoust:80rce://g81"
+re/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 106: Error: IOUtils: Shutting down and refusing additional I/O tasks
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+

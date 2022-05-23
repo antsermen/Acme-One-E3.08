@@ -1,3 +1,6 @@
-recordIndex,status,code,legal-stuff,budget,creationDate,startDate,deadline,info,inventorProfile
-0,DENIED,AGR-101-C,No tiene términos legales,"EUR 47,765.00",2022/03/15 10:00,2022/04/01 10:30,2022/11/01 20:30,https://www.us.es/,inventor1
-1,PROPOSED,PSP-234-P,No tiene términos legales,"EUR 32,563.00",2022/01/15 10:00,2022/02/01 09:00,2022/09/01 20:00,https://www.us.es/,inventor1
+recordIndex,status,code,legal-stuff,budget,creationDate,startDate,deadline,info,inventor,patron
+0,PROPOSED,EXA-120-M,No tiene términos legales,"EUR 47,765.00",2022/03/15 10:00,2022/04/01 10:30,2022/11/01 20:30,https://www.google.es/,inventor1,patron2
+1,PROPOSED,EXA-121-M,No tiene términos legales pues se trata de un caso de prueba con muchos caracteres yo diría que el máximooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo,"EUR 497,965.00",2022/03/15 10:00,2022/01/01 13:46,2022/11/01 20:30,https://www.google.es/,inventor1,patron2
+2,DENIED,EXA-122-M,X,"EUR 7,725.00",2022/03/15 10:00,2022/04/01 10:30,2022/09/04 10:10,https://www.google.es/,inventor1,patron2
+3,PROPOSED,EXA-123-M,No tiene términos legales pues se trata de un caso de prueba con un número intermedio de caracteres para probar distintas longitudes,"EUR 1.00",2022/03/15 10:00,2022/04/01 10:30,2022/12/03 20:10,https://www.google.es/,inventor1,patron2
+4,ACCEPTED,EXA-124-M,No tiene términos legales ni enlace de información extra,"EUR 4,105.00",2022/03/15 10:00,2022/04/01 10:30,2022/10/01 20:30,,inventor1,patron2

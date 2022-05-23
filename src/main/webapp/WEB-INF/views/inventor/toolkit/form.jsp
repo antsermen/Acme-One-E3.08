@@ -24,18 +24,9 @@
 	<jstl:if test="${command == 'show'}">
 		<acme:input-textbox code="inventor.toolkit.form.label.toolkitPrice" path="toolkitPrice" placeholder="${toolkitPrice}"/>
 	</jstl:if>
-		<jstl:forEach var="item" items="${items}">
-			<acme:input-textbox code="inventor.toolkit.form.label.itemName" path="itemName" placeholder="${item.name}"/>
-			<acme:input-textbox code="inventor.toolkit.form.label.itemType" path="itemType" placeholder="${item.itemType}"/>
-			<acme:input-textarea code="inventor.toolkit.form.label.itemDescription" path="itemDescription" placeholder="${item.description}"/>
-			<acme:input-textbox code="inventor.toolkit.form.label.itemRetailPrice" path="itemSystemRetailPrice" placeholder="${item.retailPrice}"/>
-			<acme:input-textbox code="inventor.toolkit.form.label.itemSystemRetailPrice" path="itemSystemRetailPrice" placeholder="${item.systemRetailPrice}"/>
-		</jstl:forEach>
-	
-	
 	<jstl:choose>
 		<jstl:when test="${acme:anyOf(command, 'show, update, delete, publish') && published == false }">
-							 
+			<acme:button code="inventor.toolkit.form.button.quantity" action="/inventor/quantity/list?masterId=${id}"/>				 
 			<acme:submit code="inventor.toolkit.form.button.update" action="/inventor/toolkit/update"/>
 			<acme:submit code="inventor.toolkit.form.button.delete" action="/inventor/toolkit/delete"/>
 			<acme:submit code="inventor.toolkit.form.button.publish" action="/inventor/toolkit/publish"/>
@@ -44,5 +35,6 @@
 			<acme:submit code="inventor.toolkit.form.button.create" action="/inventor/toolkit/create"/>
 		</jstl:when>	
 	</jstl:choose>
+	
 	
 </acme:form>

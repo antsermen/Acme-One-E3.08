@@ -1,11 +1,8 @@
 package acme.features.inventor.toolkit;
 
-import java.util.Collection;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.Item;
 import acme.entities.Toolkit;
 import acme.forms.MoneyExchange;
 import acme.framework.components.models.Model;
@@ -54,29 +51,17 @@ public class InventorShowToolkitsService implements AbstractShowService<Inventor
 				final Money toolkitPrice = new Money();	
 				
 				id = request.getModel().getInteger("id");
-				
-			
-				final Collection<Item> items = this.repository.findItemsFromToolkitId(id);
-				
-				model.setAttribute("toolkitPrice", toolkitPrice);
-				model.setAttribute("items", items);
-				for (final Item i: items) {
-					Money source, target;
-					String targetCurrency;
-					MoneyExchange exchange;
-					source = i.getRetailPrice();
-					targetCurrency = this.repository.findSystemConfiguration().getSystemCurrency();
-					exchange=MoneyExchangeFunction.computeMoneyExchange(source, targetCurrency);
-					target=exchange.target;
-					i.setSystemRetailPrice(target);
-					model.setAttribute("itemName", i.getName());
-					model.setAttribute("itemType", i.getItemType());
-					model.setAttribute("itemDescription", i.getDescription());
-					model.setAttribute("itemRetailPrice", i.getRetailPrice());
-					model.setAttribute("itemSystemRetailPrice", i.getSystemRetailPrice());
+        
+				final Double rp= this.repository.calculateToolkitPrice(id);
+				if(rp==null) {
+					toolkitPrice.setAmount(0.);
+				}else {
+					toolkitPrice.setAmount(rp);
 				}
-				toolkitPrice.setAmount(this.repository.calculateToolkitPrice(id));
 				toolkitPrice.setCurrency(this.repository.findSystemConfiguration().getSystemCurrency());
+						
+				model.setAttribute("toolkitPrice", toolkitPrice);
+
 				request.unbind(entity, model,"code","title", "description", "notes", "link","published");
 			}
 }

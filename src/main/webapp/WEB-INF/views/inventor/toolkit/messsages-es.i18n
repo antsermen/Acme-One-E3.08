@@ -26,12 +26,13 @@ inventor.toolkit.form.button.delete = Borrar
 inventor.toolkit.form.button.publish = Publicar
 inventor.toolkit.form.button.create = Crear
 inventor.toolkit.list.button.create = Crear
+inventor.toolkit.form.button.quantity = Cantidades
 
 inventor.toolkit.list.label.title = Título
 inventor.toolkit.list.label.description = Descripción
 inventor.toolkit.list.label.link = Enlace
 
-inventor.toolkit.form.error.code.duplicated = This code is already assigned to an Item
+inventor.toolkit.form.error.code.duplicated = Este código ya está asignado a una caja de herramientas 
 inventor.toolkit.form.error.title.spam = El título es considerado spam, introduzca un título más apropiado por favor
 inventor.toolkit.form.error.description.spam = La descripcción es considerada spam, introduzca una descripcción más apropiada por favor
 inventor.toolkit.form.error.notes.spam = Las notas son consideradas spam, introduzca unas notas más apropiadas por favor

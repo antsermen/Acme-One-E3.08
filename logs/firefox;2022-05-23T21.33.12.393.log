@@ -1,0 +1,10 @@
+1653334310670	geckodriver	INFO	Listening on 127.0.0.1:12525
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\rober\\AppData\\Local\\Temp\\rust_mozprofileaplJmH\\search.json.mozlz4", (void 0)))
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+console.warn: LoginRecipes: "getRecipes: falling back to JavaScript error: resource://gre/modules/LoginManagerPara synchronous message ent.jsm, line 136: TypeError: gRecipeManager is null
+for:" "http://localhost:8081"
+console.warn: LoginRecipes: "getRecipes: falling bJavaScript error: resource://gre/modules/LoginMaack to a synchronous mensagsage for:"erParent.jsm, "http://localhost:808 1"
+line 136: TypeError: console.warn: LogginReciRecipeMapes: "gnager is null
+eJavaScript error: resource://gre/tmRoduelcipese: fallins/LoginManag back to ga synchronous messerParent.jsm, age for:" "http://localhline 13ost:8081"6: TypeError: gRecipeManager is null
+
+[Parent 18748, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:725

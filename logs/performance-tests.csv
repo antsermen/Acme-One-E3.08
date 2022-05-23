@@ -1,2 +1,3 @@
 timestamp,test-class,test-method,time,description,result
-"2022-05-23 20:26:55.043","acme.testing.authenticated.announcement.AuthenticatedAnnouncementListRecentTest","positiveTest",7790,""[1] recordIndex=0, creationMoment=2022/04/18 11:43, title=example announcement, body=this is an example of announcement, critical=false, link=null"","Record index 0 is out of range"
+"2022-05-23 22:04:51.188","acme.testing.any.chirp.AnyChirpListTest","positiveTest",3517,""[1] recordIndex=1, deltaDays=-1, title=Saludo, author=Antonio Roberto Serrano Mena, body=Quiero mandar un saludo, email=antsermen@alum.us.es"","OK"
+"2022-05-23 22:04:53.54","acme.testing.any.chirp.AnyChirpListTest","positiveTest",1873,""[2] recordIndex=0, deltaDays=-2, title=Respuesta, author=Pablo Santos Pérez, body=Todo genial, email=pabsanper3@alum.us.es"","OK"

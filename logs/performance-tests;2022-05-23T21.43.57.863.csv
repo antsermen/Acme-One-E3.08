@@ -1,0 +1,4 @@
+timestamp,test-class,test-method,time,description,result
+"2022-05-23 21:39:36.269","acme.testing.inventor.toolkits.InventorToolkitDeleteTest","positiveItem",7350,""[1] recordIndex=0, code=CDH-172, title=UManualidades, description=aja con objetos para realizar manualidades, notes=Nada importante, link=https://exampletoolkit.com"","Expected value 'UManualidades' in attribute 0 of record 0, but found 'Manualidades'"
+"2022-05-23 21:39:41.137","acme.testing.inventor.toolkits.InventorToolkitDeleteTest","negativeTest",4391,""[1] recordIndex=0, code=ADH-172, title=Manualidades, description=Caja con objetos para realizar manualidades, notes=Nada importante, link=https://exampletoolkit.com"","Expected value 'ADH-172' in input box 'code', but 'CDH-172' was found"
+"2022-05-23 21:39:47.702","acme.testing.inventor.toolkits.InventorToolkitDeleteTest","hackingTest",6125,""hackingTest()"","OK"

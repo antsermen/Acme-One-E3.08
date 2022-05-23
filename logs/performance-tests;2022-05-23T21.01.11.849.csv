@@ -1,0 +1,2 @@
+timestamp,test-class,test-method,time,description,result
+"2022-05-23 20:26:55.043","acme.testing.authenticated.announcement.AuthenticatedAnnouncementListRecentTest","positiveTest",7790,""[1] recordIndex=0, creationMoment=2022/04/18 11:43, title=example announcement, body=this is an example of announcement, critical=false, link=null"","Record index 0 is out of range"

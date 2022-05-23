@@ -1,10 +1,5 @@
 timestamp,simple-path,time
-"2022-05-23 20:26:47.252","/master/welcome",5576
-"2022-05-23 20:26:47.632","/master/welcome",327
-"2022-05-23 20:26:50.38","/master/sign-in",2688
-"2022-05-23 20:26:51.619","/master/welcome",553
-"2022-05-23 20:26:52.848","/authenticated/announcement/list-recent",1071
-"2022-05-23 20:26:55.467","/master/welcome",358
-"2022-05-23 20:26:55.814","/master/welcome",314
-"2022-05-23 20:26:56.427","/master/sign-in",553
-"2022-05-23 20:26:57.675","/master/welcome",564
+"2022-05-23 22:04:47.669","/master/welcome",7021
+"2022-05-23 22:04:50.019","/any/chirp/list",2156
+"2022-05-23 22:04:51.666","/master/welcome",419
+"2022-05-23 22:04:52.408","/any/chirp/list",620

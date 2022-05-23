@@ -1,0 +1,4 @@
+timestamp,test-class,test-method,time,description,result
+"2022-05-23 21:47:15.399","acme.testing.inventor.toolkits.InventorToolkitDeleteTest","positiveItem",12040,""[1] recordIndex=0, code=CDH-172, title=Manualidades, description=Caja con objetos para realizar manualidades, notes=Nada importante, link=https://exampletoolkit.com"","Cannot find 'By.xpath: //button[@type='submit' and normalize-space()='Delete']'"
+"2022-05-23 21:47:24.973","acme.testing.inventor.toolkits.InventorToolkitDeleteTest","negativeTest",9141,""[1] recordIndex=0, code=CDH-172, title=Manualidades, description=Caja con objetos para realizar manualidades, notes=Nada importante, link=https://exampletoolkit.com"","OK"
+"2022-05-23 21:47:31.755","acme.testing.inventor.toolkits.InventorToolkitDeleteTest","hackingTest",6372,""hackingTest()"","OK"

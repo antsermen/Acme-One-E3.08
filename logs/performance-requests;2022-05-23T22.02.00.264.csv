@@ -1,0 +1,11 @@
+timestamp,simple-path,time
+"2022-05-23 21:57:56.189","/master/welcome",6939
+"2022-05-23 21:57:56.739","/master/welcome",453
+"2022-05-23 21:58:00.069","/master/sign-in",3253
+"2022-05-23 21:58:01.332","/master/welcome",567
+"2022-05-23 21:58:03.115","/authenticated/announcement/list-recent",1626
+"2022-05-23 21:58:05.827","/master/welcome",457
+"2022-05-23 21:58:06.283","/master/welcome",422
+"2022-05-23 21:58:06.899","/master/sign-in",561
+"2022-05-23 21:58:08.17","/master/welcome",564
+"2022-05-23 21:58:08.891","/authenticated/announcement/list-recent",566

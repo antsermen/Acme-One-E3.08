@@ -1,4 +1,7 @@
 
+1653328460491	geckodriver	INFO	Listening on 127.0.0.1:8283
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\pabli\\AppData\\Local\\Temp\\rust_mozprofile1GPJYS\\search.json.mozlz4", (void 0)))
+
 1653328003309	geckodriver	INFO	Listening on 127.0.0.1:43781
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\USUARIO\\AppData\\Local\\Temp\\rust_mozprofileF4Epna\\search.json.mozlz4", (void 0)))
 console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
@@ -105,5 +108,6 @@ t.jsm, line 136: TypeError: gRecipeManager is null
 [Parent 15492, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
 
 ###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
 
 

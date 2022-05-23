@@ -1,0 +1,30 @@
+# i18n-es.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+inventor.quantity.item.list.label.itemType = Tipo
+inventor.quantity.item.list.label.name = Nombre
+inventor.quantity.item.list.label.retail-price = Precio de Venta al Público
+inventor.quantity.item.list.label.itemsNumber = Cantidad
+
+inventor.quantity.form.label.number = Cantidad:
+inventor.quantity.form.label.item = Selecciona un ítem:
+
+inventor.quantity.toolkit.form.label.code = Código del toolkit:
+inventor.quantity.item.form.label.code = Código del ítem:
+
+inventor.quantity.form.button.add = Añadir un nuevo ítem
+inventor.quantity.form.button.create = Añadir
+inventor.quantity.form.button.update = Actualizar
+inventor.quantity.form.button.delete = Borrar
+
+inventor.quantity.form.error.toolkit-one-quantity-tool = Solo puede seleccionar una unidad para una herramienta
+inventor.quantity.form.error.null-item = Por favor, selecciona un ítem
+inventor.quantity.form.error.null-itemsNumber = Por favor, seleccione una cantidad
+inventor.quantity.form.error.amount = Si el item a añadir es del tipo HERRAMIENTA, solo puedes indicar "1" en la cantidad

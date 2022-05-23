@@ -14,3 +14,6 @@ authenticated.inventor.form.label.info = Información
 
 authenticated.inventor.form.button.create = Registrar
 authenticated.inventor.form.button.update = Actualizar
+
+authenticated.inventor.form.error.company.spam = La compañía es considerada spam, introduzca una compañía más apropiada por favor
+authenticated.inventor.form.error.statement.spam = La declaración es considerada spam, introduzca una declaración más apropiada por favor

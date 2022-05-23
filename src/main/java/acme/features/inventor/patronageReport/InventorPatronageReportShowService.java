@@ -45,7 +45,9 @@ public class InventorPatronageReportShowService implements AbstractShowService<I
 		assert request != null;
 		assert entity != null;
 		assert model != null;
+		final PatronageReport pr = this.repository.findOnePatronageReportById(request.getModel().getInteger("id"));
 		model.setAttribute("patronage", entity.getPatronage().getCode());
+		model.setAttribute("patronageCode", pr.getPatronage().getCode());
 		model.setAttribute("patronages", this.repository.findManyPatronagesByInventorId(request.getPrincipal().getActiveRoleId(),true));
 		final String sn = "0000" + entity.getId();
 		entity.setSerialNumber(sn.substring(sn.length()-4));

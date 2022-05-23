@@ -1,16 +1,22 @@
-1653326740139	geckodriver	INFO	Listening on 127.0.0.1:25141
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JOSERR~1\\AppData\\Local\\Temp\\rust_mozprofileVIgeuZ\\search.json.mozlz4", (void 0)))
+1653328003309	geckodriver	INFO	Listening on 127.0.0.1:43781
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\USUARIO\\AppData\\Local\\Temp\\rust_mozprofileF4Epna\\search.json.mozlz4", (void 0)))
 console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhJavaScript error: resourceo://gre/modules/Lst:8081"oginM
-anagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous mesJasage fvaScrior:" "http://localhost:8081"
-pt error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" Ja"http://localhost:80vaScr81"
-ipt error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-[Parent 24456, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
-[Parent 24456, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
-[Parent 24456, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+console.warn: LoginRecipes: "getRecipes: falling bJaacvka Stcor iap tsy error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+nchronous message for:" "http://localhost:8081"
+consJavaScript error: resooulrec.ew:a/r/ng:r eL/moodulegsi/nLRoegciinpMeasn: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+agerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRJeacviapSecsr:i pfta lelrirnogr :b arceks otuor cae :s/y/gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is nncuhlrlo
+nous message for:" "http://localhost:8081"
+console.warn: LoginRecipes: "getRecipes: falling back to a sJyanvcahSrcornioputs  emrersosra: gree sfoourr:c"e :"/h/tgtrpe/:m/o/dluolceasl/hLoosgti:n8M0a8n1a"ge
+rParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getReciJpaevsa:S cfrailplti negr rboarc:k  rteos oau rscyen:ch/r/ognroeu/sm omdeuslseasg/eL ofgoirn:M"a n"ahttp://localhost:8081"
+gerParent.jsm, line 136: TypeError: gRecipeManager is null
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+

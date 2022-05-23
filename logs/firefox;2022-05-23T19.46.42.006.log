@@ -1,0 +1,18 @@
+1653327902965	geckodriver	INFO	Listening on 127.0.0.1:15927
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\USUARIO\\AppData\\Local\\Temp\\rust_mozprofilearfmnx\\search.json.mozlz4", (void 0)))
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message JfavaSocrri:p"t  "ehrtrtopr::/ r/elsoocuarlcheo:s/t/:g8r0e8/1m"od
+ules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: JLavaoSgcirniRpetc ieprreor: resosu:r c"eg:e/t/Rgercei/pmeos: falldiunlge sb/aLcokg itno Ma syanncahgreornous message for:" "http://Plaocraelhnotst.:j80s8m1", 
+line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: JavaScfrailplti negr rboarc:k  to a synchronous message for:" "http://localhost:8081resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeMan"
+ager is null
+console.warn: LoginRecipes: "getRecipesJa: fvaalSlcirnigp tb aecrkr otro:  ar essyonucrhcrone://groe/moduuls message for:" "http://localhost:8081"
+es/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecJaivapScript error: reess:o urce://gre/modules/LoginManagerParfeanlling bta.cjks to ma,  slynicnher o1n3o6u:s  TmyepsesEargeror :f ogrR:e"c i"phetMtap:/na/glero ciasl hnousltl:8
+081"
+console.warn: LoginRecipes: "getRecipes: fJavaSaclrliiptn ge rbraocrk:  troe sao usrycnec:h/r/ognroeu/sm message for:" "http://localhost:8081"
+odules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling baJackv atSoc rai psty necrhrroorn:ou sre smoeusrscae:g/e/ gfreo/rm:o"d u"lhetst/pL:o/g/ilocanlMahnoasgertP:a8r0e8n1t".j
+sm, line 136: TypeError: gRecipeManager is null
+JavaScript error: resource://gre/modules/CrashManager.jsm, line 898: AbortError: IOUtils: Shutting down and refusing additional I/O tasks

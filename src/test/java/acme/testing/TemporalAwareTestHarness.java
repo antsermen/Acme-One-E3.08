@@ -21,15 +21,15 @@ import org.junit.jupiter.api.BeforeAll;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import acme.entities.Announcement;
-import acme.features.authenticated.announcement.AuthenticatedAnnouncementRepository;
 import acme.framework.helpers.FactoryHelper;
+import acme.testing.authenticated.announcement.AnnouncementRepository;
 
 public class TemporalAwareTestHarness extends TestHarness {
 
 	// Lifecycle management ---------------------------------------------------
 
 	@Autowired
-	private AuthenticatedAnnouncementRepository repository;
+	private AnnouncementRepository repository;
 	
 	@Override
 	@BeforeAll
@@ -46,7 +46,7 @@ public class TemporalAwareTestHarness extends TestHarness {
 		Collection<Announcement> announcements;
 		Date moment;
 
-		announcements =this.repository.findAnnouncements();
+		announcements =this.repository.findAnnouncementsToPatch();
 		for (final Announcement announcement : announcements) {
 			moment = this.adjustMoment(announcement.getCreationMoment());
 			announcement.setCreationMoment(moment);

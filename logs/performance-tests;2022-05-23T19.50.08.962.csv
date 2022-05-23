@@ -1,0 +1,3 @@
+timestamp,test-class,test-method,time,description,result
+"2022-05-23 19:45:37.693","acme.testing.any.chirp.AnyChirpListTest","positiveTest",4840,""[1] recordIndex=0, deltaDays=-2, title=Saludo, author=Antonio Roberto Serrano Mena, body=Quiero mandar un saludo, email=antsermen@alum.us.es"","Record index 0 is out of range"
+"2022-05-23 19:45:41.125","acme.testing.any.chirp.AnyChirpListTest","positiveTest",2904,""[2] recordIndex=1, deltaDays=-1, title=Respuesta, author=Pablo Santos Pérez, body=Todo genial, email=pabsanper3@alum.us.es"","Record index 1 is out of range"

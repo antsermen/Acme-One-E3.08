@@ -1,0 +1,12 @@
+1653327589570	geckodriver	INFO	Listening on 127.0.0.1:44545
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\pabli\\AppData\\Local\\Temp\\rust_mozprofileCu6DdT\\search.json.mozlz4", (void 0)))
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "gJeatvRaScriepcti erpes: falling back to a synchronous message for:" "http://localhost:8081"r
+or: resource://gre/modules/LoginManagerParent.jsconsole.wamr,n: LoginRecipes:  l"getRecipine 136: TypeError: gRecipeManager is null
+eJavaScript error: resource://sgre/m:odules/LoginM afnaalglinge rbPaarcent.jsm, line 136: TypeError: gRecipeManager is null
+k to a synchronous message for:" "http://localhost:8081"
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+

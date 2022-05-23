@@ -1,0 +1,3 @@
+timestamp,test-class,test-method,time,description,result
+"2022-05-23 19:52:39.133","acme.testing.any.chirp.AnyChirpListTest","positiveTest",2946,""[1] recordIndex=0, deltaDays=-2, title=Saludo, author=Antonio Roberto Serrano Mena, body=Quiero mandar un saludo, email=antsermen@alum.us.es"","Expected value 'Saludo' in attribute 1 of record 0, but found 'Respuesta'"
+"2022-05-23 19:52:40.824","acme.testing.any.chirp.AnyChirpListTest","positiveTest",1202,""[2] recordIndex=1, deltaDays=-1, title=Respuesta, author=Pablo Santos Pérez, body=Todo genial, email=pabsanper3@alum.us.es"","Expected value 'Respuesta' in attribute 1 of record 1, but found 'Saludo'"

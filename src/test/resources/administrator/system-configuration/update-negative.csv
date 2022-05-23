@@ -1,2 +1,4 @@
-recordIndex,systemCurrency,acceptedCurrencies,strongSpamTerms,strongSpamThreshold,weakSpamTerms,weakSpamThreshold
-1,EURFFF,"EEERUR,USD,GBP","sex,sexo,hard core,núcleo duro,viagra,cialis",10.00,"sexy,nigeria,you’ve won,has ganado,one million,un millón",25.00
+recordIndex,acceptedCurrencies,systemCurrency,strongSpamTerms,strongSpamThreshold,weakSpamTerms,weakSpamThreshold
+0,"EUR,USD,GBP","AUD","sex,sexo,hard core,núcleo duro,viagra,cialis",10.00,"sexy,nigeria,you’ve won,has ganado,one million,un millón",25.00
+1,"EUR,USD,GBP","EUR","sex,sexo,hard core,núcleo duro,viagra,cialis",-10.00,"sexy,nigeria,you’ve won,has ganado,one million,un millón",25.00
+2,"EUR,USD,GBP","EUR","sex,sexo,hard core,núcleo duro,viagra,cialis",10.00,"sexy,nigeria,you’ve won,has ganado,one million,un millón",-25.00

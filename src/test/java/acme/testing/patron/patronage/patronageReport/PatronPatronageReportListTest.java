@@ -21,9 +21,9 @@ import acme.testing.TestHarness;
 public class PatronPatronageReportListTest extends TestHarness {
 
 	@ParameterizedTest
-	@CsvFileSource(resources = "/patron/patronage/patronage-report/patronage-report.csv", encoding = "utf-8", numLinesToSkip = 1)
+	@CsvFileSource(resources = "/patron/patronage-report/patronage-report.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void positiveTest(final int recordIndex, final String memorandum, final String link, final String creationMoment, final String name) {
+	public void positiveTest(final int recordIndex, final String memorandum, final String link, final String name, final String creationMoment) {
 		super.signIn("administrator", "administrator");
 		super.clickOnMenu("Patron", "My Patronage Report");
 		super.checkListingExists();
@@ -38,8 +38,8 @@ public class PatronPatronageReportListTest extends TestHarness {
         super.checkFormExists();
         super.checkInputBoxHasValue("memorandum", memorandum);
         super.checkInputBoxHasValue("link", link);
-        super.checkInputBoxHasValue("creationMoment", creationMoment);
         super.checkInputBoxHasValue("name", name);
+        super.checkInputBoxHasValue("creationMoment", creationMoment);
        
 		
         super.signOut();

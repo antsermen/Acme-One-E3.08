@@ -48,7 +48,7 @@ public class InventorPatronageReportCreateService implements AbstractCreateServi
 		entity.setPatronage(this.repository.findPatronageByCode(request.getModel().getAttribute("patronageCode").toString()));
 		entity.setVersion(0);
 		entity.setCreationMoment(new Date());
-		final String sn = "0000" + String.valueOf(request.getModel().getInteger("id"));		
+		final String sn = "0000" + (this.repository.findAllPatronageReports().size()+1);		
 		entity.setSerialNumber(sn.substring(sn.length()-4));
 		entity.setSequenceNumber(entity.getPatronage().getCode() + ":" + entity.getSerialNumber());	
 

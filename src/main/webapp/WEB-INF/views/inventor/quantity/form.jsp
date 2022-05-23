@@ -11,8 +11,7 @@
 			<acme:input-textbox code="inventor.item.form.label.itemType" path="item.itemType" readonly="true"/>
 			<acme:input-textbox code="inventor.item.form.label.name" path="item.name" readonly="true"/>
 			<acme:input-textbox code="inventor.quantity.item.form.label.code" path="item.code" readonly="true"/>
-			<acme:input-money code="inventor.item.form.label.retail-price" path="item.retailPrice" readonly="true" />
-			<acme:input-textbox code="inventor.quantity.toolkit.form.label.code" path="toolkit.code" readonly="true"/>					
+			<acme:input-money code="inventor.item.form.label.retail-price" path="item.retailPrice" readonly="true" />					
 		</jstl:if>
 				
 		<jstl:if test="${toolkitPublished == false}">

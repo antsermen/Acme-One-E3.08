@@ -98,9 +98,8 @@ public class InventorQuantityCreateService implements AbstractCreateService<Inve
 			errors.state(request, entity.getItem()!=null, "itemId", "inventor.quantity.form.error.null-item");
 		}
 		if(entity.getItem().getItemType() == ItemType.TOOL) {
-			errors.state(request, entity.getItemsNumber()>=1, "*", "inventor.quantity.form.error.only-1-type-of-tool-allowed");
+			errors.state(request, entity.getItemsNumber()<=1, "*", "inventor.quantity.form.error.only-1-type-of-tool-allowed");
 		}
-		
 		
 	}
 	

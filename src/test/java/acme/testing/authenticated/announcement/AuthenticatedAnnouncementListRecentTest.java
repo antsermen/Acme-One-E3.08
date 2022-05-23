@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import acme.testing.TemporalAwareTestHarness;
+import acme.testing.TestHarness;
 
-public class AuthenticatedAnnouncementListRecentTest extends TemporalAwareTestHarness{
+public class AuthenticatedAnnouncementListRecentTest extends TestHarness{
 	
 	// Lifecycle management ========================================================
 	
@@ -14,10 +14,7 @@ public class AuthenticatedAnnouncementListRecentTest extends TemporalAwareTestHa
 	@ParameterizedTest
 	@CsvFileSource(resources = "/authenticated/announcement/list.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void positiveTest(final int recordIndex, final int deltaDays, final String title, final String body, final String critical, final String link) {
-		String creationMoment;
-		creationMoment = super.computeDeltaMoment(deltaDays);
-		
+	public void positiveTest(final int recordIndex, final String creationMoment, final String title, final String body, final String critical, final String link) {
 		super.signIn("inventor1", "inventor1");
 		
 		super.clickOnMenu("Authenticated", "Announcement Recent List");

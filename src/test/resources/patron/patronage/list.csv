@@ -1,4 +1,4 @@
-recordIndex,status,code,legal-stuff,budget,creationDate,startDate,deadline,info,inventor,patron
+recordIndex,status,code,legal-stuff,budget,creation-date,start-date,deadline,info,inventor,patron
 0,PROPOSED,EXA-120-M,No tiene términos legales,"EUR 47,765.00",2022/03/15 10:00,2022/04/01 10:30,2022/11/01 20:30,https://www.google.es/,inventor1,patron2
 1,PROPOSED,EXA-121-M,No tiene términos legales pues se trata de un caso de prueba con muchos caracteres yo diría que el máximooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo,"EUR 497,965.00",2022/03/15 10:00,2022/01/01 13:46,2022/11/01 20:30,https://www.google.es/,inventor1,patron2
 2,DENIED,EXA-122-M,X,"EUR 7,725.00",2022/03/15 10:00,2022/04/01 10:30,2022/09/04 10:10,https://www.google.es/,inventor1,patron2

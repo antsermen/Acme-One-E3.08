@@ -11,7 +11,8 @@ public class AnyComponentListTest extends TestHarness{
 	@ParameterizedTest
 	@CsvFileSource(resources = "/any/item/componentList.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void positiveTest(final int recordIndex,final String name, final String code, final String technology, final String description, final String retailPrice, final String link) {
+	public void positiveTest(final int recordIndex,final String itemType, final String code, final String description, final String link, 
+		final String name, final String retailPrice, final String systemRetailPrice, final String technology, final String published, final String inventor) {
 		
 
 		super.clickOnMenu("Anonymous", "Component List");

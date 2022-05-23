@@ -21,8 +21,8 @@ public class InventorPatronageReportCreateTest extends TestHarness {
 		super.clickOnMenu("Inventor", "My Patronages List");
 		super.checkListingExists();
 		
-		super.sortListing(0, "asc");
-		super.clickOnListingRecord(1);
+		super.sortListing(0, "desc");
+		super.clickOnListingRecord(0);
 		super.clickOnButton("Create patronage report");
 
 		super.checkFormExists();
@@ -34,7 +34,7 @@ public class InventorPatronageReportCreateTest extends TestHarness {
 		super.clickOnMenu("Inventor", "My Patronage Reports");
 		super.checkListingExists();
 		super.sortListing(0, "desc");
-		super.clickOnListingRecord(recordIndex);
+		super.clickOnListingRecord(0);
 		
 		super.checkFormExists();
 		super.checkInputBoxHasValue("memorandum", memorandum);
@@ -55,8 +55,8 @@ public class InventorPatronageReportCreateTest extends TestHarness {
 		super.clickOnMenu("Inventor", "My Patronages List");
 		super.checkListingExists();
 		
-		super.sortListing(0, "asc");
-		super.clickOnListingRecord(1);
+		super.sortListing(0, "desc");
+		super.clickOnListingRecord(0);
 		super.clickOnButton("Create patronage report");
 
 		super.checkFormExists();

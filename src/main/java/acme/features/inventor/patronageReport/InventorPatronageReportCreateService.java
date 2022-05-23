@@ -63,7 +63,7 @@ public class InventorPatronageReportCreateService implements AbstractCreateServi
 		assert errors != null;
 		if(!errors.hasErrors("confirm")) {
 			final Boolean isConfirmed = request.getModel().getBoolean("confirm");
-			errors.state(request, isConfirmed, "confirm", "javax.validation.constraints.AssertTrue.message");
+			errors.state(request, isConfirmed== true, "confirm", "javax.validation.constraints.AssertTrue.message");
 		}
 		if(!errors.hasErrors("memorandum")) {
 			errors.state(request, !SpamDetector.spamDetector(entity.getMemorandum(), this.inventorItemRepository.findSystemConfiguration().getWeakSpamTerms(), 

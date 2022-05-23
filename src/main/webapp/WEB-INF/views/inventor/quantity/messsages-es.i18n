@@ -26,3 +26,5 @@ inventor.quantity.form.button.delete = Borrar
 
 inventor.quantity.form.error.toolkit-one-quantity-tool = Solo puede seleccionar una unidad para una herramienta
 inventor.quantity.form.error.null-item = Por favor, selecciona un ítem
+inventor.quantity.form.error.null-itemsNumber = Por favor, seleccione una cantidad
+inventor.quantity.form.error.amount = Si el item a añadir es del tipo HERRAMIENTA, solo puedes indicar "1" en la cantidad

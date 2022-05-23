@@ -3,7 +3,6 @@ package acme.features.inventor.quantity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.Item;
 import acme.entities.ItemType;
 import acme.entities.Quantity;
 import acme.entities.Toolkit;
@@ -24,11 +23,9 @@ public class InventorQuantityUpdateService implements AbstractUpdateService<Inve
 		assert request != null;
 		
 		boolean result;
-		int masterId;
 		Toolkit toolkit;
 
-		masterId = request.getModel().getInteger("masterId");
-		toolkit = this.toolkitRepository.findOneToolkitById(masterId);
+		toolkit = this.toolkitRepository.findOneQuantityById(request.getModel().getInteger("id")).getToolkit();
 		result = (toolkit != null && !toolkit.isPublished() && request.isPrincipal(toolkit.getInventor()));
 		return result;
 	}
@@ -39,7 +36,7 @@ public class InventorQuantityUpdateService implements AbstractUpdateService<Inve
 		assert entity != null;
 		assert errors != null;
 
-		request.bind(entity, errors, "number"); 
+		request.bind(entity, errors, "itemsNumber"); 
 		
 	}
 
@@ -51,8 +48,7 @@ public class InventorQuantityUpdateService implements AbstractUpdateService<Inve
 
 		model.setAttribute("toolkitPublished", entity.getToolkit().isPublished());
 		
-		request.unbind(entity, model, "number", "item.itemType", "item.name", "item.code", "item.technology",
-			"item.description", "item.retailPrice","item.systemRetailPrice" ,"item.link","item.published");
+		request.unbind(entity, model, "itemsNumber");
 		
 	}
 
@@ -74,10 +70,9 @@ public class InventorQuantityUpdateService implements AbstractUpdateService<Inve
 		assert entity != null; 
 		assert errors != null; 
 		
-		final Item selectedItem = entity.getItem();
-		
-		if(selectedItem.getItemType().equals(ItemType.TOOL)) {
-			errors.state(request, entity.getItemsNumber() == 1, "number", "inventor.quantity.form.error.toolkit-one-quantity-tool");
+		errors.state(request, entity.getItemsNumber()!=null, "itemsNumber", "inventor.quantity.form.error.null-itemsNumber");
+		if(!errors.hasErrors("itemsNumber")) {
+			errors.state(request, entity.getItem().getItemType().equals(ItemType.COMPONENT) || (entity.getItem().getItemType().equals(ItemType.TOOL) && entity.getItemsNumber()==1), "itemId", "inventor.quantity.form.error.amount");
 		}
 		
 		

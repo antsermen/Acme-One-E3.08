@@ -13,7 +13,7 @@ inventor.quantity.item.list.label.name = Name
 inventor.quantity.item.list.label.retail-price = Retail price
 inventor.quantity.item.list.label.itemsNumber = Quantity
 
-inventor.quantity.form.label.number = Quantity:
+inventor.quantity.form.label.itemsNumber = Quantity:
 inventor.quantity.form.label.item = Select an item:
 
 inventor.quantity.toolkit.form.label.code = Toolkit code:
@@ -26,3 +26,5 @@ inventor.quantity.form.button.delete = Delete
 
 inventor.quantity.form.error.toolkit-one-quantity-tool = You can only select one unit for a tool
 inventor.quantity.form.error.null-item = Please, select an item
+inventor.quantity.form.error.null-item = Please, select the quantity
+inventor.quantity.form.error.amount = You can only select "1" in quantity if the itemtype is TOOL 

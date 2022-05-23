@@ -1,0 +1,9 @@
+timestamp,simple-path,time
+"2022-05-23 17:13:05.684","/master/welcome",5110
+"2022-05-23 17:13:06.076","/master/welcome",331
+"2022-05-23 17:13:08.293","/master/sign-in",2138
+"2022-05-23 17:13:09.555","/master/welcome",563
+"2022-05-23 17:13:10.821","/patron/patronage/list",1119
+"2022-05-23 17:13:14.13","/patron/patronage/show",2141
+"2022-05-23 17:13:15.1","/master/welcome",299
+"2022-05-23 17:13:15.727","/master/welcome",566

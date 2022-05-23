@@ -1,0 +1,2 @@
+timestamp,test-class,test-method,time,description,result
+"2022-05-23 16:04:52.671","acme.testing.patron.patronage.PatronPatronageListTest","positiveTest",6646,""[1] recordIndex=0, status=PROPOSED, code=XDP-121-E, legalStuff=No tiene términos legales, budget=EUR 47,765.00, creationDate=EUR 47,765.00, startDate=2022/03/15 10:00, deadline=2022/04/01 10:30, info=2022/11/01 20:30, inventor=https://www.google.es/, patron=inventor-01, published=patron-02"","Expected value 'EUR 47,765.00' in attribute 3 of record 0, but found '2022/03/15 10:00'"

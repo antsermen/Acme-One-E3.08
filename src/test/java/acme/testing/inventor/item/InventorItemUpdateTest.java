@@ -24,9 +24,10 @@ public class InventorItemUpdateTest extends TestHarness{
 		super.clickOnListingRecord(0);
 		super.checkFormExists();
 		super.fillInputBoxIn("name", name);
+		super.fillInputBoxIn("code", code);
 		super.fillInputBoxIn("technology", technology);
-		super.fillInputBoxIn("retailPrice", retailPrice);
 		super.fillInputBoxIn("description", description);
+		super.fillInputBoxIn("retailPrice", retailPrice);
 		super.fillInputBoxIn("link", link);
 		super.clickOnSubmit("Update");
 		
@@ -67,7 +68,8 @@ public class InventorItemUpdateTest extends TestHarness{
 		super.fillInputBoxIn("retailPrice", retailPrice);
 		super.clickOnSubmit("Update");
 		super.checkErrorsExist();
+		
+		super.signOut();
 	}
-
 	
 }

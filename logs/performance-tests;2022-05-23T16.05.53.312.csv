@@ -1,0 +1,4 @@
+timestamp,test-class,test-method,time,description,result
+"2022-05-23 16:01:55.097","acme.testing.any.item.AnyToolListTest","positiveTest",2075,""[1] recordIndex=0, name=Martillo, technology=EUR 12.00, retailPrice=martillo"","Expected value 'Martillo' in attribute 0 of record 0, but found 'Escalera madera extensible VILLAR'"
+"2022-05-23 16:01:56.341","acme.testing.any.item.AnyToolListTest","positiveTest",912,""[2] recordIndex=1, name=Sierra Electrica, technology=EUR 163.00, retailPrice=Electrico"","Record index 1 is out of range"
+"2022-05-23 16:01:57.58","acme.testing.any.item.AnyToolListTest","positiveTest",925,""[3] recordIndex=2, name=Escalera madera extensible VILLAR, technology=EUR 309.00, retailPrice=pintura"","Record index 2 is out of range"

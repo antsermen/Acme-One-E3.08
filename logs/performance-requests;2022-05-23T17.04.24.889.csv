@@ -1,0 +1,18 @@
+timestamp,simple-path,time
+"2022-05-23 17:01:41.375","/master/welcome",5140
+"2022-05-23 17:01:41.808","/master/welcome",382
+"2022-05-23 17:01:44.556","/master/sign-in",2686
+"2022-05-23 17:01:45.793","/master/welcome",565
+"2022-05-23 17:01:47.05","/inventor/item/my-tools",1099
+"2022-05-23 17:01:47.47","/master/welcome",328
+"2022-05-23 17:01:47.808","/master/welcome",307
+"2022-05-23 17:01:48.422","/master/sign-in",552
+"2022-05-23 17:01:49.648","/master/welcome",553
+"2022-05-23 17:01:50.355","/inventor/item/my-tools",552
+"2022-05-23 17:01:52.764","/inventor/item/show",2128
+"2022-05-23 17:01:54.266","/inventor/item/update",567
+"2022-05-23 17:01:54.622","/master/welcome",294
+"2022-05-23 17:01:54.965","/master/welcome",313
+"2022-05-23 17:01:55.593","/master/sign-in",567
+"2022-05-23 17:01:56.828","/master/welcome",565
+"2022-05-23 17:01:57.535","/inventor/item/my-tools",551

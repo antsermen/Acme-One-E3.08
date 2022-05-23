@@ -1,0 +1,2 @@
+timestamp,test-class,test-method,time,description,result
+"2022-05-23 16:06:15.017","acme.testing.any.item.AnyToolListTest","positiveTest",2243,""[1] recordIndex=0, name=Escalera madera extensible VILLAR, technology=EUR 309.00, retailPrice=pintura"","Expected value 'EUR 309.00' in attribute 1 of record 0, but found 'pintura'"

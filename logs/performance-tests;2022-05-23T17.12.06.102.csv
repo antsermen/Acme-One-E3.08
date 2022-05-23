@@ -1,0 +1,2 @@
+timestamp,test-class,test-method,time,description,result
+"2022-05-23 17:11:08.586","acme.testing.patron.patronage.patronageReport.PatronPatronageReportListTest","positiveTest",7176,""[1] recordIndex=0, memorandum=Aqui va el memorandum, link=https://www.google.es/, creationMoment=Acme, Administrator, name=2022/01/15 10:00"","Expected value 'Acme, Administrator' in input box 'creationMoment', but '2022/01/15 10:00' was found"

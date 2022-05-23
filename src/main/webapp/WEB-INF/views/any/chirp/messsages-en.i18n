@@ -23,3 +23,7 @@ any.chirp.form.placeholder.email = youremail@example.com
 
 any.chirp.form.label.confirmation = Confirm the creation
 any.chirp.form.button.create = Create
+
+any.chirp.form.error.title.spam = The title is considered spam, choose a more appropiate title please.
+any.chirp.form.error.author.spam = The author is considered spam, choose a more appropiate author please.
+any.chirp.form.error.body.spam = The body is considered spam, choose a more appropiate body please.

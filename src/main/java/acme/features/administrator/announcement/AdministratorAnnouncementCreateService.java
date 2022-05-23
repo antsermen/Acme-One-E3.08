@@ -5,7 +5,9 @@ import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import SpamDetector.Spam_Detector.SpamDetector;
 import acme.entities.Announcement;
+import acme.features.inventor.item.InventorItemRepository;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Errors;
 import acme.framework.controllers.Request;
@@ -14,8 +16,11 @@ import acme.framework.services.AbstractCreateService;
 
 @Service
 public class AdministratorAnnouncementCreateService implements AbstractCreateService<Administrator, Announcement> {
+	
 	@Autowired
 	protected AdministratorAnnouncementRepository repository;
+	@Autowired
+	protected InventorItemRepository systemRepository;
 	
 	@Override
 	public boolean authorise(final Request<Announcement> request) {
@@ -69,6 +74,19 @@ public class AdministratorAnnouncementCreateService implements AbstractCreateSer
 
 		confirmation = request.getModel().getBoolean("confirmation");
 		errors.state(request, confirmation, "confirmation", "javax.validation.constraints.AssertTrue.message");
+		if(!errors.hasErrors("title")) {
+			errors.state(request, !SpamDetector.spamDetector(entity.getTitle(), this.systemRepository.findSystemConfiguration().getWeakSpamTerms(), 
+				this.systemRepository.findSystemConfiguration().getStrongSpamTerms(), 
+				this.systemRepository.findSystemConfiguration().getWeakSpamThreshold(),
+				this.systemRepository.findSystemConfiguration().getStrongSpamThreshold()), "title", "administrator.announcement.form.error.title.spam");
+		}
+		if(!errors.hasErrors("body")) {
+			errors.state(request, !SpamDetector.spamDetector(entity.getBody(), this.systemRepository.findSystemConfiguration().getWeakSpamTerms(), 
+				this.systemRepository.findSystemConfiguration().getStrongSpamTerms(), 
+				this.systemRepository.findSystemConfiguration().getWeakSpamThreshold(),
+				this.systemRepository.findSystemConfiguration().getStrongSpamThreshold()), "body", "administrator.announcement.form.error.body.spam");
+		}
+
 		
 	}
 

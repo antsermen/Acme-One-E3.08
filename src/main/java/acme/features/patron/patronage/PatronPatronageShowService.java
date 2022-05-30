@@ -32,7 +32,7 @@ public class PatronPatronageShowService implements AbstractShowService<Patron, P
 		
 		patronageId = request.getModel().getInteger("id");
 		patronage = this.repository.findOnePatronageById(patronageId);
-		result = patronage.getInventor().getId() == request.getPrincipal().getActiveRoleId() || patronage.getPatron().getId() == request.getPrincipal().getActiveRoleId();
+		result = patronage.getPatron().getId() == request.getPrincipal().getActiveRoleId();
 
 		return result;
 	}

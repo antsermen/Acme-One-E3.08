@@ -23,7 +23,7 @@ public class InventorItemCreateTest extends TestHarness {
 		
 		super.clickOnButton("Create");
 		super.checkFormExists();
-		super.fillInputBoxIn("itemType", "TOOL");
+		super.fillInputBoxIn("itemType", type);
 		super.fillInputBoxIn("name", name);
 		super.fillInputBoxIn("code", code);
 		super.fillInputBoxIn("technology", technology);
@@ -42,7 +42,7 @@ public class InventorItemCreateTest extends TestHarness {
 		super.clickOnListingRecord(recordIndex);
 		
 		super.checkFormExists();
-		super.checkInputBoxHasValue("itemType", "Tool");
+		super.checkInputBoxHasValue("itemType", type);
 		super.checkInputBoxHasValue("name", name);
 		super.checkInputBoxHasValue("code", code);
 		super.checkInputBoxHasValue("technology", technology);

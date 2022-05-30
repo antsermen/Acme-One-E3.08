@@ -24,9 +24,12 @@ public class InventorPatronageDeniedService implements AbstractUpdateService<Inv
 			@Override
 			public boolean authorise(final Request<Patronage> request) {
 				assert request != null;
-
 				
-				return true;
+				final Integer id = request.getModel().getInteger("id");
+				final Patronage patronage = this.repository.findOnePatronageById(id);
+				final Integer id_inv = patronage.getInventor().getId();
+
+				return request.getPrincipal().getActiveRoleId() == id_inv;
 			}
 
 			@Override

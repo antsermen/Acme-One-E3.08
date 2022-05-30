@@ -37,7 +37,7 @@ public class InventorItemUpdateTest extends TestHarness{
 		super.clickOnListingRecord(0);
 		super.checkFormExists();
 		
-		super.checkInputBoxHasValue("itemType", "Tool");
+		super.checkInputBoxHasValue("itemType", type);
 		super.checkInputBoxHasValue("name", name);
 		super.checkInputBoxHasValue("code", code);
 		super.checkInputBoxHasValue("technology", technology);

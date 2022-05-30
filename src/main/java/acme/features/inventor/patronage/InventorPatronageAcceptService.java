@@ -25,8 +25,11 @@ public class InventorPatronageAcceptService implements AbstractUpdateService<Inv
 			public boolean authorise(final Request<Patronage> request) {
 				assert request != null;
 				
+				final Integer id = request.getModel().getInteger("id");
+				final Patronage patronage = this.repository.findOnePatronageById(id);
+				final Integer id_inv = patronage.getInventor().getId();
 
-				return true;
+				return request.getPrincipal().getActiveRoleId() == id_inv;
 			}
 
 			@Override

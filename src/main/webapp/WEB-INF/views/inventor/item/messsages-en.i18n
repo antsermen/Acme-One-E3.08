@@ -14,6 +14,7 @@ inventor.item.list.label.retailPrice = Retail Price
 inventor.item.list.button.create = Create
 inventor.item.list.label.published = Published	
 
+
 inventor.item.form.label.published = Published	
 inventor.item.form.label.itemType = Type	
 inventor.item.form.label.component = Component
@@ -31,6 +32,9 @@ inventor.item.form.button.delete = Delete
 inventor.item.form.button.publish = Publish
 inventor.item.form.button.create = Create
 any.item.form.label.systemRetailPrice = System Retail Price:
+
+inventor.item.form.button.chimpum-list = Chimpum List
+inventor.chimpum.list.button.create = Create Chimpum
 
 inventor.item.form.error.itemType.modified = You cannot change the type of a created Item
 inventor.item.form.error.code.duplicated = This code is already assigned to an Item

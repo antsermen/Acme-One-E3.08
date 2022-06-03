@@ -1,0 +1,2 @@
+timestamp,test-class,test-method,time,description,result
+"2022-05-31 02:33:37.222","acme.testing.inventor.chimpum.InventorChimpumListShowTest","positiveTest",9296,""[1] recordIndex=0, itemCode=ASD-123, pattern=(pattern), creationMoment=2022/01/01 10:00, title=prueba chimpum, description=descripcion chimpum, initialPeriod=2022/02/01 10:00, finalPeriod=2022/02/09 10:00, budget=EUR 47,765.00, link=https://www.us.es/"","Record index 0 is out of range"

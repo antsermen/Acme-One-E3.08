@@ -1,0 +1,12 @@
+timestamp,simple-path,time
+"2022-06-01 00:49:52.389","/master/welcome",5190
+"2022-06-01 00:49:52.901","/master/welcome",432
+"2022-06-01 00:49:55.116","/master/sign-in",2158
+"2022-06-01 00:49:56.351","/master/welcome",562
+"2022-06-01 00:49:58.137","/inventor/item/my-tools",1099
+"2022-06-01 00:50:01.1","/inventor/item/show",2157
+"2022-06-01 00:50:02.272","/inventor/chimpum/create",584
+"2022-06-01 00:50:03.866","/inventor/chimpum/create",568
+"2022-06-01 00:50:04.551","/inventor/item/my-tools",561
+"2022-06-01 00:50:05.41","/inventor/item/show",562
+"2022-06-01 00:50:06.032","/inventor/chimpum/list",559

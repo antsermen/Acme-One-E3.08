@@ -1,0 +1,2 @@
+timestamp,test-class,test-method,time,description,result
+"2022-05-31 02:34:34.106","acme.testing.inventor.chimpum.InventorChimpumListShowTest","positiveTest",6018,""[1] recordIndex=0, itemCode=ASD-123, pattern=(pattern), creationMoment=2022/01/01 10:00, title=prueba chimpum, description=descripcion chimpum, initialPeriod=2022/02/01 10:00, finalPeriod=2022/02/09 10:00, budget=EUR 47,765.00, link=https://www.us.es/"","Cannot find 'By.xpath: //div[@id='mainMenu']/ul/li[a[normalize-space()='Inventor']]/div[contains(@class, 'dropdown-menu')]/a[normalize-space()='My Tool List']'"

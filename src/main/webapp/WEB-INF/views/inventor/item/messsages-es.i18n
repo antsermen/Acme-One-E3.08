@@ -32,6 +32,9 @@ inventor.item.form.button.publish = Publicar
 inventor.item.form.button.create = Crear
 any.item.form.label.retailPrice = Precio de venta al público:
 
+inventor.item.form.button.chimpum-list = Lista de Chimpums
+inventor.chimpum.list.button.create = Crear chimpum
+
 inventor.item.form.error.itemType.modified = No se puede modificar el tipo de un objeto creado
 inventor.item.form.error.code.duplicated = Ya hay un Item con este código asociado
 inventor.item.form.error.code.modified = No puedes modificar un código que ya ha sido asignado

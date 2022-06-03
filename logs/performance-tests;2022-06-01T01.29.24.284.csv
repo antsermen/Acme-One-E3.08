@@ -1,0 +1,2 @@
+timestamp,test-class,test-method,time,description,result
+"2022-06-01 01:07:25.949","acme.testing.inventor.chimpum.InventorChimpumCreateTest","positiveTest",21371,""[1] recordIndex=0, itemCode=ASD-123, pattern=Patron, creationMoment=2022/01/06 00:00, title=test positivo, description=test positivo, initialPeriod=2023/02/08 10:00, finalPeriod=2023/03/06 00:00, budget=EUR 30,765.00, link=https://www.google.es/"","OK"

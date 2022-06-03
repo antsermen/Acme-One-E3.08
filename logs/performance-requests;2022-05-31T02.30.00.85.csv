@@ -1,0 +1,13 @@
+timestamp,simple-path,time
+"2022-05-31 02:29:23.009","/master/welcome",4195
+"2022-05-31 02:29:23.478","/master/welcome",424
+"2022-05-31 02:29:25.69","/master/sign-in",2153
+"2022-05-31 02:29:26.907","/master/welcome",548
+"2022-05-31 02:29:28.175","/inventor/patronage/list",1121
+"2022-05-31 02:29:30.068","/inventor/patronage/show",1612
+"2022-05-31 02:29:31.217","/inventor/patronage-report/create",1085
+"2022-05-31 02:29:33.482","/inventor/patronage/show",560
+"2022-05-31 02:29:34.181","/inventor/patronage-report/list",557
+"2022-05-31 02:29:35.031","/inventor/patronage-report/show",561
+"2022-05-31 02:29:35.483","/master/welcome",236
+"2022-05-31 02:29:36.102","/master/welcome",561

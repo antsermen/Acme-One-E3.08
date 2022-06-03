@@ -1,0 +1,24 @@
+timestamp,simple-path,time
+"2022-06-01 01:36:46.883","/master/welcome",4979
+"2022-06-01 01:36:47.204","/master/welcome",269
+"2022-06-01 01:36:49.42","/master/sign-in",2157
+"2022-06-01 01:36:50.702","/master/welcome",578
+"2022-06-01 01:36:51.95","/inventor/item/my-tools",1092
+"2022-06-01 01:36:54.408","/inventor/item/show",2144
+"2022-06-01 01:36:55.048","/inventor/chimpum/create",553
+"2022-06-01 01:36:58.416","/master/welcome",263
+"2022-06-01 01:36:58.652","/master/welcome",204
+"2022-06-01 01:36:59.265","/master/sign-in",551
+"2022-06-01 01:37:00.537","/master/welcome",552
+"2022-06-01 01:37:01.258","/inventor/item/my-tools",564
+"2022-06-01 01:37:02.109","/inventor/item/show",564
+"2022-06-01 01:37:02.728","/inventor/chimpum/list",558
+"2022-06-01 01:37:03.295","/master/welcome",270
+"2022-06-01 01:37:03.592","/master/welcome",263
+"2022-06-01 01:37:04.21","/master/sign-in",560
+"2022-06-01 01:37:05.431","/master/welcome",563
+"2022-06-01 01:37:06.138","/inventor/item/my-tools",550
+"2022-06-01 01:37:06.979","/inventor/item/show",563
+"2022-06-01 01:37:07.603","/inventor/chimpum/list",562
+"2022-06-01 01:37:08.158","/master/welcome",257
+"2022-06-01 01:37:10.631","/inventor/chimpum/update",427

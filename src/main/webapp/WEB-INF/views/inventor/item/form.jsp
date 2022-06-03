@@ -41,11 +41,16 @@
 
 	
 	<jstl:choose>
-			<jstl:when test="${acme:anyOf(command, 'show, update, delete, publish') && published == false }">
-							 
+			<jstl:when test="${acme:anyOf(command, 'show, update, delete, publish') && published == false }">	 
 			<acme:submit code="inventor.item.form.button.update" action="/inventor/item/update"/>
 			<acme:submit code="inventor.item.form.button.delete" action="/inventor/item/delete"/>
 			<acme:submit code="inventor.item.form.button.publish" action="/inventor/item/publish"/>
+			<acme:button code="inventor.item.form.button.chimpum-list" action="/inventor/chimpum/list?id=${itemId}"/>
+			<acme:button code="inventor.chimpum.list.button.create" action="/inventor/chimpum/create?id=${itemId}"/>		
+		</jstl:when>
+		<jstl:when test="${command == 'show' }">
+			<acme:button code="inventor.item.form.button.chimpum-list" action="/inventor/chimpum/list?id=${itemId}"/>
+			<acme:button code="inventor.chimpum.list.button.create" action="/inventor/chimpum/create?id=${itemId}"/>
 		</jstl:when>
 		<jstl:when test="${command == 'create' }">
 			<acme:submit code="inventor.item.form.button.create" action="/inventor/item/create"/>

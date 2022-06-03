@@ -1,0 +1,19 @@
+1654040190895	geckodriver	INFO	Listening on 127.0.0.1:43530
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\pabli\\AppData\\Local\\Temp\\rust_mozprofile1fRMWR\\search.json.mozlz4", (void 0)))
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous messageJavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136:  for:" "http://localhost:8081"
+TypeError: gRecipeManager is null
+console.warn: LoginRJavaScript error: resoecipes: "getRecipes: falling back tou rce://gre/modules/LoginManagae synchronoursP amreessage fnotr.:j"s m",h tltipne 136: TypeEr:r/o/rl: gRoecalhost:8081"
+cipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous mJessage for:" "http://localhost:8081"
+avaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes:J afalling back vaScrto ipt a serrorynch: reronosourus message for:"c "http:/e://gre//locmodualhost:les8/L081"
+oginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous mJeavassageScr for:ipt " "hterrotp:/r: r/locesource://garle/mhostodu:8081"les/
+LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a syJnavaScripcthronous message for:" "http://localhost:8081"
+ error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: fallinJagvaScript erro back r: reto a source://gre/msynchronous odulmeessage sf/oLro:" "http://localhost:8ginManag081"
+erParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling backJava Scrito apt  syncerrohronr: resous ourcmee:s/s/agre/modules/Lgoe forginM:" "anagerParent.jsm, line 136: TypeError: httpgRecip://leoMancalhagero is null
+st:8081"

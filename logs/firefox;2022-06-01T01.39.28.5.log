@@ -1,0 +1,19 @@
+1654040320133	geckodriver	INFO	Listening on 127.0.0.1:5075
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\pabli\\AppData\\Local\\Temp\\rust_mozprofilenvmbek\\search.json.mozlz4", (void 0)))
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://loJavaScript error: resource://grec/alhost:8081"
+modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message forJavaScript error: r:e"s o"uhrtctp:e//localho://grst:8e/mod081"ules/L
+oginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronoJavaScus message for:"ript  e"rhrtotrp:: /r/elsource:/ocal/ghrost:8081"
+e/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:8081"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falliJavaScring bapt error: resource://gre/modules/LogicnkM atnagerParent.jsm, line 13o6: Ty paeError: synchronous message for: gRecipeM" "htanager is nulltp:/
+/localhost:8081"
+console.warn: LoginRecipes: "JavaScript geertrRoecipes: rf:alling back to a synchr resource://gre/modules/LoginManagerParent.jsm, lineonous me 136ssage f: Tyor:" "htpeErtp://localhror: ogsRte:c8i0p8e1M"an
+ager is null
+console.warn: LoginRecipes: "getRecipes: falliJavaScript ernrg bacor: k to resource:/a s/ygre/modnchrules/Loonous mesginMsaagnagere foPr:" arent.jsm, "http:line//loc 136alhost:808: Ty1"
+peError: gRecipeManager is null
